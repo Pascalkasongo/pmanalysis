@@ -1,0 +1,2 @@
+<?php
+bin.consol emake
