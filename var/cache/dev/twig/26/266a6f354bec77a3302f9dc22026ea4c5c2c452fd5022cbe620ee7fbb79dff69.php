@@ -186,6 +186,6 @@ class __TwigTemplate_b5d6121dff5d2fe8de1319a5d4e251982f73c0dda4ac10c9188f7fea1bf
     </div>
     {{include('content/data.html.twig')}}
 {% endblock %}
-", "registration/register_employe.html.twig", "C:\\Users\\SYNS-MANAGER\\Nouveau dossier\\my_project_directory\\templates\\registration\\register_employe.html.twig");
+", "registration/register_employe.html.twig", "C:\\Users\\SYNS-MANAGER\\Documents\\GitHub\\pmanalysis\\templates\\registration\\register_employe.html.twig");
     }
 }

@@ -213,6 +213,6 @@ class __TwigTemplate_4470c2bc22520bccf575be4803a7f881078098fc9c9411ee22ca615f4ec
 
     <a href=\"{{ path('app_ressource_new') }}\">Create new</a>
 {% endblock %}
-", "ressource/index.html.twig", "C:\\Users\\SYNS-MANAGER\\Nouveau dossier\\my_project_directory\\templates\\ressource\\index.html.twig");
+", "ressource/index.html.twig", "C:\\Users\\SYNS-MANAGER\\Documents\\GitHub\\pmanalysis\\templates\\ressource\\index.html.twig");
     }
 }

@@ -199,6 +199,6 @@ class __TwigTemplate_b1bcde8dfe3e22c0330ec30bdb29d965c73c5e0bb3575eba61ae780264e
 
     <a href=\"{{ path('app_role_new') }}\">Create new</a>
 {% endblock %}
-", "role/index.html.twig", "C:\\Users\\SYNS-MANAGER\\Nouveau dossier\\my_project_directory\\templates\\role\\index.html.twig");
+", "role/index.html.twig", "C:\\Users\\SYNS-MANAGER\\Documents\\GitHub\\pmanalysis\\templates\\role\\index.html.twig");
     }
 }

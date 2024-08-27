@@ -2828,6 +2828,6 @@ Current settings allow you to track user inactivity and launch a warning dialog 
 
 <!-- Mirrored from demo.dashboardpack.com/admindek-html/default/session-idle-timeout.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 18 Nov 2022 12:16:34 GMT -->
 </html>
-", "admindek-html/default/session-idle-timeout.html", "C:\\Users\\SYNS-MANAGER\\Nouveau dossier\\my_project_directory\\templates\\admindek-html\\default\\session-idle-timeout.html");
+", "admindek-html/default/session-idle-timeout.html", "C:\\Users\\SYNS-MANAGER\\Documents\\GitHub\\pmanalysis\\templates\\admindek-html\\default\\session-idle-timeout.html");
     }
 }

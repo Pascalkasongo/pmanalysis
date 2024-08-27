@@ -201,6 +201,6 @@ class __TwigTemplate_a86f31d3328b2d435fcdbbfc1882fb55ace22142ee64978de4c2267ba6c
 
     <a href=\"{{ path('app_notification_new') }}\">Create new</a>
 {% endblock %}
-", "notification/index.html.twig", "C:\\Users\\SYNS-MANAGER\\Nouveau dossier\\my_project_directory\\templates\\notification\\index.html.twig");
+", "notification/index.html.twig", "C:\\Users\\SYNS-MANAGER\\Documents\\GitHub\\pmanalysis\\templates\\notification\\index.html.twig");
     }
 }

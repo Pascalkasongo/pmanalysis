@@ -6754,6 +6754,6 @@ class __TwigTemplate_3528ee550baa56c20e8f2b4ef93eda79a1c3ee358853510a27287559df9
 
 <!-- Mirrored from demo.dashboardpack.com/admindek-html/default/dt-ext-responsive.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 18 Nov 2022 12:17:10 GMT -->
 </html>
-", "admindek-html/default/dt-ext-responsive.html", "C:\\Users\\SYNS-MANAGER\\Nouveau dossier\\my_project_directory\\templates\\admindek-html\\default\\dt-ext-responsive.html");
+", "admindek-html/default/dt-ext-responsive.html", "C:\\Users\\SYNS-MANAGER\\Documents\\GitHub\\pmanalysis\\templates\\admindek-html\\default\\dt-ext-responsive.html");
     }
 }

@@ -3494,6 +3494,6 @@ class __TwigTemplate_e03250ff5fc339c1f7949557bd5ad4ba6857162d16918704124d20d59f7
 
 <!-- Mirrored from demo.dashboardpack.com/admindek-html/default/tabs.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 18 Nov 2022 12:16:03 GMT -->
 </html>
-", "admindek-html/default/tabs.html", "C:\\Users\\SYNS-MANAGER\\Nouveau dossier\\my_project_directory\\templates\\admindek-html\\default\\tabs.html");
+", "admindek-html/default/tabs.html", "C:\\Users\\SYNS-MANAGER\\Documents\\GitHub\\pmanalysis\\templates\\admindek-html\\default\\tabs.html");
     }
 }

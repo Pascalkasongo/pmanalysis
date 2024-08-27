@@ -2872,6 +2872,6 @@ class __TwigTemplate_8e46ff0d02d87999901a381bd975b8b015ffbec7decc027585b3b6b567e
 
 <!-- Mirrored from demo.dashboardpack.com/admindek-html/default/error.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 18 Nov 2022 12:18:06 GMT -->
 </html>
-", "admindek-html/default/error.html", "C:\\Users\\SYNS-MANAGER\\Nouveau dossier\\my_project_directory\\templates\\admindek-html\\default\\error.html");
+", "admindek-html/default/error.html", "C:\\Users\\SYNS-MANAGER\\Documents\\GitHub\\pmanalysis\\templates\\admindek-html\\default\\error.html");
     }
 }

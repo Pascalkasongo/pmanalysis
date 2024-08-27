@@ -2960,6 +2960,6 @@ header-theme=\"theme6\" & logo-theme=\"theme6\"
 
 <!-- Mirrored from demo.dashboardpack.com/admindek-html/default/navbar-light.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 18 Nov 2022 12:15:42 GMT -->
 </html>
-", "admindek-html/default/navbar-light.html", "C:\\Users\\SYNS-MANAGER\\Nouveau dossier\\my_project_directory\\templates\\admindek-html\\default\\navbar-light.html");
+", "admindek-html/default/navbar-light.html", "C:\\Users\\SYNS-MANAGER\\Documents\\GitHub\\pmanalysis\\templates\\admindek-html\\default\\navbar-light.html");
     }
 }

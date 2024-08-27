@@ -3302,6 +3302,6 @@ class __TwigTemplate_5c5e653f0610ce66e27a82603ee94e4243f2105a569b037af8854c616dd
 
 <!-- Mirrored from demo.dashboardpack.com/admindek-html/default/bs-table-border.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 18 Nov 2022 12:16:53 GMT -->
 </html>
-", "admindek-html/default/bs-table-border.html", "C:\\Users\\SYNS-MANAGER\\Nouveau dossier\\my_project_directory\\templates\\admindek-html\\default\\bs-table-border.html");
+", "admindek-html/default/bs-table-border.html", "C:\\Users\\SYNS-MANAGER\\Documents\\GitHub\\pmanalysis\\templates\\admindek-html\\default\\bs-table-border.html");
     }
 }

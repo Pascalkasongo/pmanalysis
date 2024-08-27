@@ -74,6 +74,6 @@ class __TwigTemplate_7b0bdc47ff1c76d64d007a000f2bade3b414c1031084b686c4185966a9a
     <path d=\"M4 6v6a8 3 0 0 0 16 0v-6\"></path>
     <path d=\"M4 12v6a8 3 0 0 0 16 0v-6\"></path>
 </svg>
-", "@Doctrine/Collector/database.svg", "C:\\Users\\SYNS-MANAGER\\Nouveau dossier\\my_project_directory\\vendor\\doctrine\\doctrine-bundle\\templates\\Collector\\database.svg");
+", "@Doctrine/Collector/database.svg", "C:\\Users\\SYNS-MANAGER\\Documents\\GitHub\\pmanalysis\\vendor\\doctrine\\doctrine-bundle\\templates\\Collector\\database.svg");
     }
 }

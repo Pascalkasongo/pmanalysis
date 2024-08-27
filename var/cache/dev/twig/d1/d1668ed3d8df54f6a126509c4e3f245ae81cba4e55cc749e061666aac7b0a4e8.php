@@ -80,6 +80,6 @@ class __TwigTemplate_f7d9da7b5429eaae3d3ff4d4f6afb469d13a9347970e90336215b045b8c
 <hr>
 <address>Apache/2.4.54 (Debian) Server at demo.dashboardpack.com Port 80</address>
 </body></html>
-", "admindek-html/default/search-result2.html", "C:\\Users\\SYNS-MANAGER\\Nouveau dossier\\my_project_directory\\templates\\admindek-html\\default\\search-result2.html");
+", "admindek-html/default/search-result2.html", "C:\\Users\\SYNS-MANAGER\\Documents\\GitHub\\pmanalysis\\templates\\admindek-html\\default\\search-result2.html");
     }
 }

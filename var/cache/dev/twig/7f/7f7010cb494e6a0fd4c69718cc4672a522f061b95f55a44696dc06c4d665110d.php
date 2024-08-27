@@ -2990,6 +2990,6 @@ class __TwigTemplate_0ed6aa7085dffdefa1339eda7e7a6f05dfc3d82a57f484ed83634e352d4
 
 <!-- Mirrored from demo.dashboardpack.com/admindek-html/default/chart-float.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 18 Nov 2022 12:17:31 GMT -->
 </html>
-", "admindek-html/default/chart-float.html", "C:\\Users\\SYNS-MANAGER\\Nouveau dossier\\my_project_directory\\templates\\admindek-html\\default\\chart-float.html");
+", "admindek-html/default/chart-float.html", "C:\\Users\\SYNS-MANAGER\\Documents\\GitHub\\pmanalysis\\templates\\admindek-html\\default\\chart-float.html");
     }
 }

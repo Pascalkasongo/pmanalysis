@@ -150,6 +150,6 @@ class __TwigTemplate_916d0d295d083a3fda91588c918b52b6a85472d2364bcec566ad7ce11d2
 </div>
 {{include('content/data.html.twig')}}
 {% endblock %}
-", "facture/new.html.twig", "C:\\Users\\SYNS-MANAGER\\Nouveau dossier\\my_project_directory\\templates\\facture\\new.html.twig");
+", "facture/new.html.twig", "C:\\Users\\SYNS-MANAGER\\Documents\\GitHub\\pmanalysis\\templates\\facture\\new.html.twig");
     }
 }

@@ -2978,6 +2978,6 @@ class __TwigTemplate_12aa3ad9c7929509c6ef3e0ba6ce824df86c01da1ff3cf0f93957db878c
 
 <!-- Mirrored from demo.dashboardpack.com/admindek-html/default/chart-chartjs.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 18 Nov 2022 12:17:28 GMT -->
 </html>
-", "admindek-html/default/chart-chartjs.html", "C:\\Users\\SYNS-MANAGER\\Nouveau dossier\\my_project_directory\\templates\\admindek-html\\default\\chart-chartjs.html");
+", "admindek-html/default/chart-chartjs.html", "C:\\Users\\SYNS-MANAGER\\Documents\\GitHub\\pmanalysis\\templates\\admindek-html\\default\\chart-chartjs.html");
     }
 }

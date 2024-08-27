@@ -3560,6 +3560,6 @@ class __TwigTemplate_3003ba7eadd4fbc31e08f85faa3ed3251cb432f18a893c916a1566ac869
 
 <!-- Mirrored from demo.dashboardpack.com/admindek-html/default/menu-horizontal-static.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 18 Nov 2022 12:15:35 GMT -->
 </html>
-", "admindek-html/default/menu-horizontal-static.html", "C:\\Users\\SYNS-MANAGER\\Nouveau dossier\\my_project_directory\\templates\\admindek-html\\default\\menu-horizontal-static.html");
+", "admindek-html/default/menu-horizontal-static.html", "C:\\Users\\SYNS-MANAGER\\Documents\\GitHub\\pmanalysis\\templates\\admindek-html\\default\\menu-horizontal-static.html");
     }
 }

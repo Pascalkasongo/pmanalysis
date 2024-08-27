@@ -3098,6 +3098,6 @@ class __TwigTemplate_d42bc8808a2c920f83bde1bd350d88dd9d137f373e6bd9c1165278426d2
 
 <!-- Mirrored from demo.dashboardpack.com/admindek-html/default/editable-table.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 18 Nov 2022 12:17:27 GMT -->
 </html>
-", "admindek-html/default/editable-table.html", "C:\\Users\\SYNS-MANAGER\\Nouveau dossier\\my_project_directory\\templates\\admindek-html\\default\\editable-table.html");
+", "admindek-html/default/editable-table.html", "C:\\Users\\SYNS-MANAGER\\Documents\\GitHub\\pmanalysis\\templates\\admindek-html\\default\\editable-table.html");
     }
 }

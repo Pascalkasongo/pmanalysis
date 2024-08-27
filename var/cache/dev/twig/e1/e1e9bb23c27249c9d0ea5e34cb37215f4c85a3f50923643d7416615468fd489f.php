@@ -3840,6 +3840,6 @@ class __TwigTemplate_d06dba512e195a23bbbcd1645ff105a1ecec404c17961758c807d7a8669
 
 <!-- Mirrored from demo.dashboardpack.com/admindek-html/default/bs-basic-table.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 18 Nov 2022 12:16:53 GMT -->
 </html>
-", "admindek-html/default/bs-basic-table.html", "C:\\Users\\SYNS-MANAGER\\Nouveau dossier\\my_project_directory\\templates\\admindek-html\\default\\bs-basic-table.html");
+", "admindek-html/default/bs-basic-table.html", "C:\\Users\\SYNS-MANAGER\\Documents\\GitHub\\pmanalysis\\templates\\admindek-html\\default\\bs-basic-table.html");
     }
 }

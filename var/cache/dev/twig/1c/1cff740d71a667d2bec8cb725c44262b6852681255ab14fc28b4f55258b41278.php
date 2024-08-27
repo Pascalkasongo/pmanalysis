@@ -80,6 +80,6 @@ class __TwigTemplate_330e65acded81f6452a399260e2a0449f4aa85b7d2e8fff191fa30cbb26
 <hr>
 <address>Apache/2.4.54 (Debian) Server at demo.dashboardpack.com Port 80</address>
 </body></html>
-", "admindek-html/default/timeline-social.html", "C:\\Users\\SYNS-MANAGER\\Nouveau dossier\\my_project_directory\\templates\\admindek-html\\default\\timeline-social.html");
+", "admindek-html/default/timeline-social.html", "C:\\Users\\SYNS-MANAGER\\Documents\\GitHub\\pmanalysis\\templates\\admindek-html\\default\\timeline-social.html");
     }
 }

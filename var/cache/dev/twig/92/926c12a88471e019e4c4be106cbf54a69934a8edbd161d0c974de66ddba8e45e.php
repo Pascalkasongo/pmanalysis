@@ -4140,6 +4140,6 @@ Select Country</div>
 
 <!-- Mirrored from demo.dashboardpack.com/admindek-html/default/form-wizard.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 18 Nov 2022 12:16:53 GMT -->
 </html>
-", "admindek-html/default/form-wizard.html", "C:\\Users\\SYNS-MANAGER\\Nouveau dossier\\my_project_directory\\templates\\admindek-html\\default\\form-wizard.html");
+", "admindek-html/default/form-wizard.html", "C:\\Users\\SYNS-MANAGER\\Documents\\GitHub\\pmanalysis\\templates\\admindek-html\\default\\form-wizard.html");
     }
 }

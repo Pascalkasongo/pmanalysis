@@ -80,6 +80,6 @@ class __TwigTemplate_ecfe8ff77b4145c064da150be2a5d50cf5aa1bdc26a8903e0168e92eff7
 <hr>
 <address>Apache/2.4.54 (Debian) Server at demo.dashboardpack.com Port 80</address>
 </body></html>
-", "admindek-html/auth-sign-in-social.html", "C:\\Users\\SYNS-MANAGER\\Nouveau dossier\\my_project_directory\\templates\\admindek-html\\auth-sign-in-social.html");
+", "admindek-html/auth-sign-in-social.html", "C:\\Users\\SYNS-MANAGER\\Documents\\GitHub\\pmanalysis\\templates\\admindek-html\\auth-sign-in-social.html");
     }
 }

@@ -127,6 +127,6 @@ class __TwigTemplate_c5b33491b12903bdcdcd569f31a6e8837cbaf8a1548dc694c08d7ddaedf
 
     <a href=\"{{ path('app_fonction_index') }}\">back to list</a>
 {% endblock %}
-", "fonction/new.html.twig", "C:\\Users\\SYNS-MANAGER\\Nouveau dossier\\my_project_directory\\templates\\fonction\\new.html.twig");
+", "fonction/new.html.twig", "C:\\Users\\SYNS-MANAGER\\Documents\\GitHub\\pmanalysis\\templates\\fonction\\new.html.twig");
     }
 }

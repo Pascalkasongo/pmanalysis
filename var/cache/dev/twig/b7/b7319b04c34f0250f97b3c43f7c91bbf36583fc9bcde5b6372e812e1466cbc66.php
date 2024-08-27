@@ -1928,6 +1928,6 @@ class __TwigTemplate_eecd80445ec0e75ae8ae294110f1166542d80cd9cdbc63af715fde92d78
 
 
 <!-- Mirrored from themewagon.github.io/LifeSure/ by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 09 Aug 2024 04:56:58 GMT -->
-</html>", "home_user/tele/utilisateur/LifeSure/index.html", "C:\\Users\\SYNS-MANAGER\\Nouveau dossier\\my_project_directory\\templates\\home_user\\tele\\utilisateur\\LifeSure\\index.html");
+</html>", "home_user/tele/utilisateur/LifeSure/index.html", "C:\\Users\\SYNS-MANAGER\\Documents\\GitHub\\pmanalysis\\templates\\home_user\\tele\\utilisateur\\LifeSure\\index.html");
     }
 }

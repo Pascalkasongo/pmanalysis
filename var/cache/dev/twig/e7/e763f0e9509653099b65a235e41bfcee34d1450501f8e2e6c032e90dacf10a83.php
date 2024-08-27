@@ -3918,6 +3918,6 @@ class __TwigTemplate_3ea8d73a8117e91c965f647e7e1309a2cefecd3b5a6a62db6210c44f733
 
 <!-- Mirrored from demo.dashboardpack.com/admindek-html/default/generic-class.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 18 Nov 2022 12:16:03 GMT -->
 </html>
-", "admindek-html/default/generic-class.html", "C:\\Users\\SYNS-MANAGER\\Nouveau dossier\\my_project_directory\\templates\\admindek-html\\default\\generic-class.html");
+", "admindek-html/default/generic-class.html", "C:\\Users\\SYNS-MANAGER\\Documents\\GitHub\\pmanalysis\\templates\\admindek-html\\default\\generic-class.html");
     }
 }

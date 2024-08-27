@@ -127,6 +127,6 @@ class __TwigTemplate_66e473547da5d521f68dd8f04931753f8d042557aa11adec358d6545367
 
     <a href=\"{{ path('app_priorite_index') }}\">back to list</a>
 {% endblock %}
-", "priorite/new.html.twig", "C:\\Users\\SYNS-MANAGER\\Nouveau dossier\\my_project_directory\\templates\\priorite\\new.html.twig");
+", "priorite/new.html.twig", "C:\\Users\\SYNS-MANAGER\\Documents\\GitHub\\pmanalysis\\templates\\priorite\\new.html.twig");
     }
 }

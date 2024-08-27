@@ -84,6 +84,6 @@ class __TwigTemplate_ef351c086232e94887e9ee553782bda45593db3fb264f1189473acfa771
     <input type=\"hidden\" name=\"_token\" value=\"{{ csrf_token('delete' ~ notification.id) }}\">
     <button class=\"btn\">Delete</button>
 </form>
-", "notification/_delete_form.html.twig", "C:\\Users\\SYNS-MANAGER\\Nouveau dossier\\my_project_directory\\templates\\notification\\_delete_form.html.twig");
+", "notification/_delete_form.html.twig", "C:\\Users\\SYNS-MANAGER\\Documents\\GitHub\\pmanalysis\\templates\\notification\\_delete_form.html.twig");
     }
 }

@@ -4336,6 +4336,6 @@ class __TwigTemplate_9f13d7f9fba222031b29cfc505e7a5310ca2773daa56af90e649865314f
 
 <!-- Mirrored from demo.dashboardpack.com/admindek-html/default/widget-statistic.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 18 Nov 2022 12:15:44 GMT -->
 </html>
-", "admindek-html/default/widget-statistic.html", "C:\\Users\\SYNS-MANAGER\\Nouveau dossier\\my_project_directory\\templates\\admindek-html\\default\\widget-statistic.html");
+", "admindek-html/default/widget-statistic.html", "C:\\Users\\SYNS-MANAGER\\Documents\\GitHub\\pmanalysis\\templates\\admindek-html\\default\\widget-statistic.html");
     }
 }

@@ -5308,6 +5308,6 @@ class __TwigTemplate_b927905ed7b2fe3ee5ed7e992f5a48bde90725573ee15636ed2d39b8a33
 
 <!-- Mirrored from demo.dashboardpack.com/admindek-html/default/widget-data.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 18 Nov 2022 12:15:46 GMT -->
 </html>
-", "admindek-html/default/widget-data.html", "C:\\Users\\SYNS-MANAGER\\Nouveau dossier\\my_project_directory\\templates\\admindek-html\\default\\widget-data.html");
+", "admindek-html/default/widget-data.html", "C:\\Users\\SYNS-MANAGER\\Documents\\GitHub\\pmanalysis\\templates\\admindek-html\\default\\widget-data.html");
     }
 }

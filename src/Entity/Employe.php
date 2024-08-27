@@ -11,11 +11,6 @@ use Symfony\Component\Security\Core\User\UserInterface;
 #[ORM\Entity(repositoryClass: EmployeRepository::class)]
 class Employe extends Utilisateur implements UserInterface
 {
-    #[ORM\Id]
-    #[ORM\GeneratedValue]
-    #[ORM\Column]
-    private ?int $id = null;
-
     #[ORM\Column(length: 255)]
     private ?string $nom_employe = null;
 
@@ -41,11 +36,7 @@ class Employe extends Utilisateur implements UserInterface
 
 
 
-    public function getId(): ?int
-    {
-        return $this->id;
-    }
-
+    
     public function getNomEmploye(): ?string
     {
         return $this->nom_employe;

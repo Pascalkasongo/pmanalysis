@@ -378,6 +378,6 @@ class __TwigTemplate_a941d2a28bead495cf8c6270f70a698d5aa874562b0487ec99e358d6308
                     </div>
                 </div>
             </div>
-        </div>", "static/footer.html.twig", "C:\\Users\\SYNS-MANAGER\\Nouveau dossier\\my_project_directory\\templates\\static\\footer.html.twig");
+        </div>", "static/footer.html.twig", "C:\\Users\\SYNS-MANAGER\\Documents\\GitHub\\pmanalysis\\templates\\static\\footer.html.twig");
     }
 }

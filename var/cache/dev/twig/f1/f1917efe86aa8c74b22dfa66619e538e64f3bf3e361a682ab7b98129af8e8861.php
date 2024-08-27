@@ -285,6 +285,6 @@ class __TwigTemplate_44363b2556f85bba59fd2dac754cc215cf364c626e5976eb17efdad304e
 </div>
 </div>
 
-{{include('content/data.html.twig')}}", "admindek-html/index.html.twig", "C:\\Users\\SYNS-MANAGER\\Nouveau dossier\\my_project_directory\\templates\\admindek-html\\index.html.twig");
+{{include('content/data.html.twig')}}", "admindek-html/index.html.twig", "C:\\Users\\SYNS-MANAGER\\Documents\\GitHub\\pmanalysis\\templates\\admindek-html\\index.html.twig");
     }
 }

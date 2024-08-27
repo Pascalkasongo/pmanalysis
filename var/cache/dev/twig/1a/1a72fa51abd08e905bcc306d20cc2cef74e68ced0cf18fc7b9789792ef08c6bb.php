@@ -470,6 +470,6 @@ class __TwigTemplate_3c4623156c8341123d9a28377374abb8499795d3ef00cee70d8177f0007
 
 <!-- Mirrored from demo.dashboardpack.com/admindek-html/default/offline-ui.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 18 Nov 2022 12:18:08 GMT -->
 </html>
-", "admindek-html/default/offline-ui.html", "C:\\Users\\SYNS-MANAGER\\Nouveau dossier\\my_project_directory\\templates\\admindek-html\\default\\offline-ui.html");
+", "admindek-html/default/offline-ui.html", "C:\\Users\\SYNS-MANAGER\\Documents\\GitHub\\pmanalysis\\templates\\admindek-html\\default\\offline-ui.html");
     }
 }

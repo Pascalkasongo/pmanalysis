@@ -2836,6 +2836,6 @@ class __TwigTemplate_7dbecdc53d1e2f005a8d7e58bad27d09166aa1848fdc5e50b2133ea00b8
 
 <!-- Mirrored from demo.dashboardpack.com/admindek-html/default/wysiwyg-editor.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 18 Nov 2022 12:18:10 GMT -->
 </html>
-", "admindek-html/default/wysiwyg-editor.html", "C:\\Users\\SYNS-MANAGER\\Nouveau dossier\\my_project_directory\\templates\\admindek-html\\default\\wysiwyg-editor.html");
+", "admindek-html/default/wysiwyg-editor.html", "C:\\Users\\SYNS-MANAGER\\Documents\\GitHub\\pmanalysis\\templates\\admindek-html\\default\\wysiwyg-editor.html");
     }
 }

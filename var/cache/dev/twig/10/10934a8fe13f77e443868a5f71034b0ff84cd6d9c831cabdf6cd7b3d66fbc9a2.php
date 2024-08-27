@@ -2966,6 +2966,6 @@ class __TwigTemplate_08ecb90e82f8fa292e05f42ee1d42dd79eea8464f25cd910fbaeb888fbb
 
 <!-- Mirrored from demo.dashboardpack.com/admindek-html/default/chart-morris.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 18 Nov 2022 12:17:32 GMT -->
 </html>
-", "admindek-html/default/chart-morris.html", "C:\\Users\\SYNS-MANAGER\\Nouveau dossier\\my_project_directory\\templates\\admindek-html\\default\\chart-morris.html");
+", "admindek-html/default/chart-morris.html", "C:\\Users\\SYNS-MANAGER\\Documents\\GitHub\\pmanalysis\\templates\\admindek-html\\default\\chart-morris.html");
     }
 }

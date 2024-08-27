@@ -84,6 +84,6 @@ class __TwigTemplate_f8457b990abe52e100b059dfaba0f4421b2e7690912000e60e8fbbea78b
     <input type=\"hidden\" name=\"_token\" value=\"{{ csrf_token('delete' ~ priorite.id) }}\">
     <button class=\"btn\">Delete</button>
 </form>
-", "priorite/_delete_form.html.twig", "C:\\Users\\SYNS-MANAGER\\Nouveau dossier\\my_project_directory\\templates\\priorite\\_delete_form.html.twig");
+", "priorite/_delete_form.html.twig", "C:\\Users\\SYNS-MANAGER\\Documents\\GitHub\\pmanalysis\\templates\\priorite\\_delete_form.html.twig");
     }
 }

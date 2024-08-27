@@ -80,6 +80,6 @@ class __TwigTemplate_915a33f5b242642b4efa395cb495311b55a1d37a4299c0c717b39a91250
 <hr>
 <address>Apache/2.4.54 (Debian) Server at demo.dashboardpack.com Port 80</address>
 </body></html>
-", "admindek-html/default/icon-material-design.html", "C:\\Users\\SYNS-MANAGER\\Nouveau dossier\\my_project_directory\\templates\\admindek-html\\default\\icon-material-design.html");
+", "admindek-html/default/icon-material-design.html", "C:\\Users\\SYNS-MANAGER\\Documents\\GitHub\\pmanalysis\\templates\\admindek-html\\default\\icon-material-design.html");
     }
 }

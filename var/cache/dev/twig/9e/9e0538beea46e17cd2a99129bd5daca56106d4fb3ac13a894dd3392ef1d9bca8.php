@@ -7782,6 +7782,6 @@ class __TwigTemplate_665b0b0098fe86b6a56be21f57ee90baba163a841119f3f3125b28a4801
 
 <!-- Mirrored from demo.dashboardpack.com/admindek-html/default/dt-ext-basic-buttons.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 18 Nov 2022 12:17:04 GMT -->
 </html>
-", "admindek-html/default/dt-ext-basic-buttons.html", "C:\\Users\\SYNS-MANAGER\\Nouveau dossier\\my_project_directory\\templates\\admindek-html\\default\\dt-ext-basic-buttons.html");
+", "admindek-html/default/dt-ext-basic-buttons.html", "C:\\Users\\SYNS-MANAGER\\Documents\\GitHub\\pmanalysis\\templates\\admindek-html\\default\\dt-ext-basic-buttons.html");
     }
 }

@@ -470,6 +470,6 @@ class __TwigTemplate_91bebb3da213b5a448b33ad02293796a60fcd69a66640b4fee19c4bd181
 
 <!-- Mirrored from demo.dashboardpack.com/admindek-html/default/auth-lock-screen.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 18 Nov 2022 12:17:58 GMT -->
 </html>
-", "admindek-html/default/auth-lock-screen.html", "C:\\Users\\SYNS-MANAGER\\Nouveau dossier\\my_project_directory\\templates\\admindek-html\\default\\auth-lock-screen.html");
+", "admindek-html/default/auth-lock-screen.html", "C:\\Users\\SYNS-MANAGER\\Documents\\GitHub\\pmanalysis\\templates\\admindek-html\\default\\auth-lock-screen.html");
     }
 }

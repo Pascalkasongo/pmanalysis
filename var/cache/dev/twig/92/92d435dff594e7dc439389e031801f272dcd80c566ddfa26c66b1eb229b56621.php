@@ -84,6 +84,6 @@ class __TwigTemplate_4d593bf6849980e5084e26ad57a0467d6b1a49089c528537d99616966cd
     <input type=\"hidden\" name=\"_token\" value=\"{{ csrf_token('delete' ~ client.id) }}\">
     <button class=\"btn\">Delete</button>
 </form>
-", "client/_delete_form.html.twig", "C:\\Users\\SYNS-MANAGER\\Nouveau dossier\\my_project_directory\\templates\\client\\_delete_form.html.twig");
+", "client/_delete_form.html.twig", "C:\\Users\\SYNS-MANAGER\\Documents\\GitHub\\pmanalysis\\templates\\client\\_delete_form.html.twig");
     }
 }

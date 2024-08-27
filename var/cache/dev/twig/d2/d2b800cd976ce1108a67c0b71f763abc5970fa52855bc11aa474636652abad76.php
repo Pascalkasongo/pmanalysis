@@ -3238,6 +3238,6 @@ class __TwigTemplate_250da8444414b2fbbcc7f67d97f1ba9aff13776cd2e1817d761bf969d88
 
 <!-- Mirrored from demo.dashboardpack.com/admindek-html/default/bs-table-styling.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 18 Nov 2022 12:16:53 GMT -->
 </html>
-", "admindek-html/default/bs-table-styling.html", "C:\\Users\\SYNS-MANAGER\\Nouveau dossier\\my_project_directory\\templates\\admindek-html\\default\\bs-table-styling.html");
+", "admindek-html/default/bs-table-styling.html", "C:\\Users\\SYNS-MANAGER\\Documents\\GitHub\\pmanalysis\\templates\\admindek-html\\default\\bs-table-styling.html");
     }
 }

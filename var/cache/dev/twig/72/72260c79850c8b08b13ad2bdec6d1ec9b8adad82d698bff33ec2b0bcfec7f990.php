@@ -2944,6 +2944,6 @@ class __TwigTemplate_6309b35b1eeaf3a0f10dbce109a97a5cc64c5e4b3fc79cb2fcba5922af2
 
 <!-- Mirrored from demo.dashboardpack.com/admindek-html/default/chart-sparkline.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 18 Nov 2022 12:17:39 GMT -->
 </html>
-", "admindek-html/default/chart-sparkline.html", "C:\\Users\\SYNS-MANAGER\\Nouveau dossier\\my_project_directory\\templates\\admindek-html\\default\\chart-sparkline.html");
+", "admindek-html/default/chart-sparkline.html", "C:\\Users\\SYNS-MANAGER\\Documents\\GitHub\\pmanalysis\\templates\\admindek-html\\default\\chart-sparkline.html");
     }
 }

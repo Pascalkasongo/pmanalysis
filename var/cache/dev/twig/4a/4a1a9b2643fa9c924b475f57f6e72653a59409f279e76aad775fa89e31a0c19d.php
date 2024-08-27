@@ -476,6 +476,6 @@ class __TwigTemplate_4c512d8a691748faccab14e5b341e8c31ebc86cc4649697cb7720701dd0
 
 <!-- Mirrored from demo.dashboardpack.com/admindek-html/default/auth-reset-password.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 18 Nov 2022 12:17:58 GMT -->
 </html>
-", "admindek-html/default/auth-reset-password.html", "C:\\Users\\SYNS-MANAGER\\Nouveau dossier\\my_project_directory\\templates\\admindek-html\\default\\auth-reset-password.html");
+", "admindek-html/default/auth-reset-password.html", "C:\\Users\\SYNS-MANAGER\\Documents\\GitHub\\pmanalysis\\templates\\admindek-html\\default\\auth-reset-password.html");
     }
 }

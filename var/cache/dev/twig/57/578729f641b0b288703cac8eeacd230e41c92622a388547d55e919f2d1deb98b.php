@@ -194,7 +194,7 @@ class __TwigTemplate_0a4de1b128d853722a4b4bd3a2f0de86da1ab155a9c2c6d847041cda4a4
                                 <li class=\"\">
                                     <a href=\"";
         // line 122
-        yield $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_employe_index");
+        yield $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_facture_index");
         yield "\" class=\"waves-effect waves-dark\">
                                         <span class=\"pcoded-mtext\">Lister</span>
                                     </a>
@@ -387,7 +387,7 @@ class __TwigTemplate_0a4de1b128d853722a4b4bd3a2f0de86da1ab155a9c2c6d847041cda4a4
                                     </a>
                                 </li>
                                 <li class=\"\">
-                                    <a href=\"{{path('app_employe_index')}}\" class=\"waves-effect waves-dark\">
+                                    <a href=\"{{path('app_facture_index')}}\" class=\"waves-effect waves-dark\">
                                         <span class=\"pcoded-mtext\">Lister</span>
                                     </a>
                                 </li>
@@ -419,6 +419,6 @@ class __TwigTemplate_0a4de1b128d853722a4b4bd3a2f0de86da1ab155a9c2c6d847041cda4a4
         </nav>
     </div>
 </div>
-", "content/slidebar.html.twig", "C:\\Users\\SYNS-MANAGER\\Nouveau dossier\\my_project_directory\\templates\\content\\slidebar.html.twig");
+", "content/slidebar.html.twig", "C:\\Users\\SYNS-MANAGER\\Documents\\GitHub\\pmanalysis\\templates\\content\\slidebar.html.twig");
     }
 }

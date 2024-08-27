@@ -3216,6 +3216,6 @@ class __TwigTemplate_2b4236042857b013892e751e45a3ad1b121ed5241b27bb1630fcd8813c4
 
 <!-- Mirrored from demo.dashboardpack.com/admindek-html/default/alert.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 18 Nov 2022 12:15:49 GMT -->
 </html>
-", "admindek-html/default/alert.html", "C:\\Users\\SYNS-MANAGER\\Nouveau dossier\\my_project_directory\\templates\\admindek-html\\default\\alert.html");
+", "admindek-html/default/alert.html", "C:\\Users\\SYNS-MANAGER\\Documents\\GitHub\\pmanalysis\\templates\\admindek-html\\default\\alert.html");
     }
 }

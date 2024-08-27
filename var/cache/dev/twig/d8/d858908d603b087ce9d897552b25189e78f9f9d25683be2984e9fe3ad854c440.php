@@ -242,6 +242,6 @@ class __TwigTemplate_73b99ae73f5d27f3303acbdb372c3fb4cde8c6ba13a23cb4fe76c67e0ed
    
     {{include('content/data.html.twig')}}
 {% endblock %}
-", "facture/index.html.twig", "C:\\Users\\SYNS-MANAGER\\Nouveau dossier\\my_project_directory\\templates\\facture\\index.html.twig");
+", "facture/index.html.twig", "C:\\Users\\SYNS-MANAGER\\Documents\\GitHub\\pmanalysis\\templates\\facture\\index.html.twig");
     }
 }

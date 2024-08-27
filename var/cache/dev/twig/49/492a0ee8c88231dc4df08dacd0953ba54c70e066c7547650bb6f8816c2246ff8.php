@@ -3680,6 +3680,6 @@ class __TwigTemplate_063ddbcfb9846d7738a2816df457b3746f73f4e69fa347ab2fd09aab09c
 
 <!-- Mirrored from demo.dashboardpack.com/admindek-html/default/widget-chart.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 18 Nov 2022 12:15:49 GMT -->
 </html>
-", "admindek-html/default/widget-chart.html", "C:\\Users\\SYNS-MANAGER\\Nouveau dossier\\my_project_directory\\templates\\admindek-html\\default\\widget-chart.html");
+", "admindek-html/default/widget-chart.html", "C:\\Users\\SYNS-MANAGER\\Documents\\GitHub\\pmanalysis\\templates\\admindek-html\\default\\widget-chart.html");
     }
 }

@@ -3074,6 +3074,6 @@ class __TwigTemplate_76ea66595d968a5ebacc0a5d279e409563ba96db10747ea563a60922251
 
 <!-- Mirrored from demo.dashboardpack.com/admindek-html/default/email-compose.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 18 Nov 2022 12:18:09 GMT -->
 </html>
-", "admindek-html/default/email-compose.html", "C:\\Users\\SYNS-MANAGER\\Nouveau dossier\\my_project_directory\\templates\\admindek-html\\default\\email-compose.html");
+", "admindek-html/default/email-compose.html", "C:\\Users\\SYNS-MANAGER\\Documents\\GitHub\\pmanalysis\\templates\\admindek-html\\default\\email-compose.html");
     }
 }

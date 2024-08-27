@@ -928,6 +928,6 @@ class __TwigTemplate_1a5c21295fc4b03ad35f2dca5f645f21d57386ea2114f9ea3efdecbf1a7
 
 
 <!-- Mirrored from themewagon.github.io/LifeSure/feature.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 09 Aug 2024 04:57:01 GMT -->
-</html>", "home_user/tele/utilisateur/LifeSure/feature.html", "C:\\Users\\SYNS-MANAGER\\Nouveau dossier\\my_project_directory\\templates\\home_user\\tele\\utilisateur\\LifeSure\\feature.html");
+</html>", "home_user/tele/utilisateur/LifeSure/feature.html", "C:\\Users\\SYNS-MANAGER\\Documents\\GitHub\\pmanalysis\\templates\\home_user\\tele\\utilisateur\\LifeSure\\feature.html");
     }
 }

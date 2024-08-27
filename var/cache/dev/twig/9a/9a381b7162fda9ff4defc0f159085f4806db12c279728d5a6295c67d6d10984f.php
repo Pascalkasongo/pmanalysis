@@ -80,6 +80,6 @@ class __TwigTemplate_61bbceec583c47eba81b42db3f975be23f68e35b2e302304d96b307291f
 <hr>
 <address>Apache/2.4.54 (Debian) Server at demo.dashboardpack.com Port 80</address>
 </body></html>
-", "admindek-html/default/long-press-editor.html", "C:\\Users\\SYNS-MANAGER\\Nouveau dossier\\my_project_directory\\templates\\admindek-html\\default\\long-press-editor.html");
+", "admindek-html/default/long-press-editor.html", "C:\\Users\\SYNS-MANAGER\\Documents\\GitHub\\pmanalysis\\templates\\admindek-html\\default\\long-press-editor.html");
     }
 }

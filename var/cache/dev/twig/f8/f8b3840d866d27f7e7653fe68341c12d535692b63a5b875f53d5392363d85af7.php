@@ -2924,6 +2924,6 @@ Static layout is useful for those users who wants less scroll when using theme.
 
 <!-- Mirrored from demo.dashboardpack.com/admindek-html/default/menu-static.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 18 Nov 2022 12:15:30 GMT -->
 </html>
-", "admindek-html/default/menu-static.html", "C:\\Users\\SYNS-MANAGER\\Nouveau dossier\\my_project_directory\\templates\\admindek-html\\default\\menu-static.html");
+", "admindek-html/default/menu-static.html", "C:\\Users\\SYNS-MANAGER\\Documents\\GitHub\\pmanalysis\\templates\\admindek-html\\default\\menu-static.html");
     }
 }

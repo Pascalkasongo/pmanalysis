@@ -3396,6 +3396,6 @@ For a blockquote with right-aligned content.
 
 <!-- Mirrored from demo.dashboardpack.com/admindek-html/default/typography.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 18 Nov 2022 12:16:04 GMT -->
 </html>
-", "admindek-html/default/typography.html", "C:\\Users\\SYNS-MANAGER\\Nouveau dossier\\my_project_directory\\templates\\admindek-html\\default\\typography.html");
+", "admindek-html/default/typography.html", "C:\\Users\\SYNS-MANAGER\\Documents\\GitHub\\pmanalysis\\templates\\admindek-html\\default\\typography.html");
     }
 }

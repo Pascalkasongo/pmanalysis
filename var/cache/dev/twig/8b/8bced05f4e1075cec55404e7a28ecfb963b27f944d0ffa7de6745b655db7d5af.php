@@ -6392,6 +6392,6 @@ class __TwigTemplate_0d6ee3b3d218ea678da0b56dd719543ffba5fbc01c77ab28675e28e649b
 
 <!-- Mirrored from demo.dashboardpack.com/admindek-html/default/dt-basic.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 18 Nov 2022 12:16:58 GMT -->
 </html>
-", "admindek-html/default/dt-basic.html", "C:\\Users\\SYNS-MANAGER\\Nouveau dossier\\my_project_directory\\templates\\admindek-html\\default\\dt-basic.html");
+", "admindek-html/default/dt-basic.html", "C:\\Users\\SYNS-MANAGER\\Documents\\GitHub\\pmanalysis\\templates\\admindek-html\\default\\dt-basic.html");
     }
 }

@@ -2846,6 +2846,6 @@ class __TwigTemplate_b1cd7c3f90b3a2e96d06c7ac9e6c4744f96d41ced33b244a22832effbab
 
 <!-- Mirrored from demo.dashboardpack.com/admindek-html/default/handson-rows-only.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 18 Nov 2022 12:17:25 GMT -->
 </html>
-", "admindek-html/default/handson-rows-only.html", "C:\\Users\\SYNS-MANAGER\\Nouveau dossier\\my_project_directory\\templates\\admindek-html\\default\\handson-rows-only.html");
+", "admindek-html/default/handson-rows-only.html", "C:\\Users\\SYNS-MANAGER\\Documents\\GitHub\\pmanalysis\\templates\\admindek-html\\default\\handson-rows-only.html");
     }
 }

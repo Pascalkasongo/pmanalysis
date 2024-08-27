@@ -250,6 +250,6 @@ class __TwigTemplate_988b924c238356a28718eba2ae0f45ea4ab9edc7657bc5ba17a693467e8
                     </div>
                 </nav>
             </div>
-        </div>", "static/navbar.html.twig", "C:\\Users\\SYNS-MANAGER\\Nouveau dossier\\my_project_directory\\templates\\static\\navbar.html.twig");
+        </div>", "static/navbar.html.twig", "C:\\Users\\SYNS-MANAGER\\Documents\\GitHub\\pmanalysis\\templates\\static\\navbar.html.twig");
     }
 }

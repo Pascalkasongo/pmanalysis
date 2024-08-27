@@ -3372,6 +3372,6 @@ class __TwigTemplate_c566bf7707a165f3b1806d83f2a144de2ebd804418028823f1823ebe1c7
 
 <!-- Mirrored from demo.dashboardpack.com/admindek-html/default/syntax-highlighter.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 18 Nov 2022 12:16:27 GMT -->
 </html>
-", "admindek-html/default/syntax-highlighter.html", "C:\\Users\\SYNS-MANAGER\\Nouveau dossier\\my_project_directory\\templates\\admindek-html\\default\\syntax-highlighter.html");
+", "admindek-html/default/syntax-highlighter.html", "C:\\Users\\SYNS-MANAGER\\Documents\\GitHub\\pmanalysis\\templates\\admindek-html\\default\\syntax-highlighter.html");
     }
 }

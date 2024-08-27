@@ -184,6 +184,6 @@ class __TwigTemplate_38619308fc3abac1cdd5782ac91d32118261ea952242f1480f6ddfc4ad1
 </div>
     {{include('content/data.html.twig')}}
 {% endblock %}
-", "registration/register_client.html.twig", "C:\\Users\\SYNS-MANAGER\\Nouveau dossier\\my_project_directory\\templates\\registration\\register_client.html.twig");
+", "registration/register_client.html.twig", "C:\\Users\\SYNS-MANAGER\\Documents\\GitHub\\pmanalysis\\templates\\registration\\register_client.html.twig");
     }
 }

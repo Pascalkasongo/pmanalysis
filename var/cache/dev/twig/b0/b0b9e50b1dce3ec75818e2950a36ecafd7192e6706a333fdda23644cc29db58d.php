@@ -3080,6 +3080,6 @@ survived not only five centuries, but also the leap into electronic typesetting,
 
 <!-- Mirrored from demo.dashboardpack.com/admindek-html/default/tour.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 18 Nov 2022 12:16:28 GMT -->
 </html>
-", "admindek-html/default/tour.html", "C:\\Users\\SYNS-MANAGER\\Nouveau dossier\\my_project_directory\\templates\\admindek-html\\default\\tour.html");
+", "admindek-html/default/tour.html", "C:\\Users\\SYNS-MANAGER\\Documents\\GitHub\\pmanalysis\\templates\\admindek-html\\default\\tour.html");
     }
 }

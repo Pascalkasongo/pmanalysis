@@ -2874,6 +2874,6 @@ class __TwigTemplate_818bd7bb9653142a4d8b056f33452d71cf578f7b2e87154378f2140d975
 
 <!-- Mirrored from demo.dashboardpack.com/admindek-html/default/handson-integrations.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 18 Nov 2022 12:17:25 GMT -->
 </html>
-", "admindek-html/default/handson-integrations.html", "C:\\Users\\SYNS-MANAGER\\Nouveau dossier\\my_project_directory\\templates\\admindek-html\\default\\handson-integrations.html");
+", "admindek-html/default/handson-integrations.html", "C:\\Users\\SYNS-MANAGER\\Documents\\GitHub\\pmanalysis\\templates\\admindek-html\\default\\handson-integrations.html");
     }
 }

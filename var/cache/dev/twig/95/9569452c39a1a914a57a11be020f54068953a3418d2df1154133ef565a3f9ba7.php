@@ -3194,6 +3194,6 @@ class __TwigTemplate_07a2401deb7bbd422da95cd74001fc1134003ddd68223d4f7b2c1870d21
 
 <!-- Mirrored from demo.dashboardpack.com/admindek-html/default/animation.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 18 Nov 2022 12:16:36 GMT -->
 </html>
-", "admindek-html/default/animation.html", "C:\\Users\\SYNS-MANAGER\\Nouveau dossier\\my_project_directory\\templates\\admindek-html\\default\\animation.html");
+", "admindek-html/default/animation.html", "C:\\Users\\SYNS-MANAGER\\Documents\\GitHub\\pmanalysis\\templates\\admindek-html\\default\\animation.html");
     }
 }

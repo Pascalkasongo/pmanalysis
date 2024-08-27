@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <container xmlns="http://symfony.com/schema/dic/services" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://symfony.com/schema/dic/services https://symfony.com/schema/dic/services/services-1.0.xsd">
   <parameters>
-    <parameter key="kernel.project_dir">C:\Users\SYNS-MANAGER\Documents\pmanalysis\Nouveau dossier\my_project_directory</parameter>
+    <parameter key="kernel.project_dir">C:\Users\SYNS-MANAGER\Documents\GitHub\pmanalysis</parameter>
     <parameter key="kernel.environment">dev</parameter>
     <parameter key="kernel.runtime_environment">%env(default:kernel.environment:APP_RUNTIME_ENV)%</parameter>
     <parameter key="kernel.debug">true</parameter>
-    <parameter key="kernel.build_dir">C:\Users\SYNS-MANAGER\Documents\pmanalysis\Nouveau dossier\my_project_directory\var\cache\dev</parameter>
-    <parameter key="kernel.cache_dir">C:\Users\SYNS-MANAGER\Documents\pmanalysis\Nouveau dossier\my_project_directory\var\cache\dev</parameter>
-    <parameter key="kernel.logs_dir">C:\Users\SYNS-MANAGER\Documents\pmanalysis\Nouveau dossier\my_project_directory\var\log</parameter>
+    <parameter key="kernel.build_dir">C:/Users/SYNS-MANAGER/Documents/GitHub/pmanalysis/var/cache/dev</parameter>
+    <parameter key="kernel.cache_dir">C:/Users/SYNS-MANAGER/Documents/GitHub/pmanalysis/var/cache/dev</parameter>
+    <parameter key="kernel.logs_dir">C:\Users\SYNS-MANAGER\Documents\GitHub\pmanalysis\var\log</parameter>
     <parameter key="kernel.bundles" type="collection">
       <parameter key="FrameworkBundle">Symfony\Bundle\FrameworkBundle\FrameworkBundle</parameter>
       <parameter key="MonologBundle">Symfony\Bundle\MonologBundle\MonologBundle</parameter>
@@ -22,43 +22,43 @@
     </parameter>
     <parameter key="kernel.bundles_metadata" type="collection">
       <parameter key="FrameworkBundle" type="collection">
-        <parameter key="path">C:\Users\SYNS-MANAGER\Documents\pmanalysis\Nouveau dossier\my_project_directory\vendor\symfony\framework-bundle</parameter>
+        <parameter key="path">C:\Users\SYNS-MANAGER\Documents\GitHub\pmanalysis\vendor\symfony\framework-bundle</parameter>
         <parameter key="namespace">Symfony\Bundle\FrameworkBundle</parameter>
       </parameter>
       <parameter key="MonologBundle" type="collection">
-        <parameter key="path">C:\Users\SYNS-MANAGER\Documents\pmanalysis\Nouveau dossier\my_project_directory\vendor\symfony\monolog-bundle</parameter>
+        <parameter key="path">C:\Users\SYNS-MANAGER\Documents\GitHub\pmanalysis\vendor\symfony\monolog-bundle</parameter>
         <parameter key="namespace">Symfony\Bundle\MonologBundle</parameter>
       </parameter>
       <parameter key="TwigBundle" type="collection">
-        <parameter key="path">C:\Users\SYNS-MANAGER\Documents\pmanalysis\Nouveau dossier\my_project_directory\vendor\symfony\twig-bundle</parameter>
+        <parameter key="path">C:\Users\SYNS-MANAGER\Documents\GitHub\pmanalysis\vendor\symfony\twig-bundle</parameter>
         <parameter key="namespace">Symfony\Bundle\TwigBundle</parameter>
       </parameter>
       <parameter key="TwigExtraBundle" type="collection">
-        <parameter key="path">C:\Users\SYNS-MANAGER\Documents\pmanalysis\Nouveau dossier\my_project_directory\vendor\twig\extra-bundle</parameter>
+        <parameter key="path">C:\Users\SYNS-MANAGER\Documents\GitHub\pmanalysis\vendor\twig\extra-bundle</parameter>
         <parameter key="namespace">Twig\Extra\TwigExtraBundle</parameter>
       </parameter>
       <parameter key="MakerBundle" type="collection">
-        <parameter key="path">C:\Users\SYNS-MANAGER\Documents\pmanalysis\Nouveau dossier\my_project_directory\vendor\symfony\maker-bundle\src</parameter>
+        <parameter key="path">C:\Users\SYNS-MANAGER\Documents\GitHub\pmanalysis\vendor\symfony\maker-bundle\src</parameter>
         <parameter key="namespace">Symfony\Bundle\MakerBundle</parameter>
       </parameter>
       <parameter key="DoctrineBundle" type="collection">
-        <parameter key="path">C:\Users\SYNS-MANAGER\Documents\pmanalysis\Nouveau dossier\my_project_directory\vendor\doctrine\doctrine-bundle</parameter>
+        <parameter key="path">C:\Users\SYNS-MANAGER\Documents\GitHub\pmanalysis\vendor\doctrine\doctrine-bundle</parameter>
         <parameter key="namespace">Doctrine\Bundle\DoctrineBundle</parameter>
       </parameter>
       <parameter key="DoctrineMigrationsBundle" type="collection">
-        <parameter key="path">C:\Users\SYNS-MANAGER\Documents\pmanalysis\Nouveau dossier\my_project_directory\vendor\doctrine\doctrine-migrations-bundle</parameter>
+        <parameter key="path">C:\Users\SYNS-MANAGER\Documents\GitHub\pmanalysis\vendor\doctrine\doctrine-migrations-bundle</parameter>
         <parameter key="namespace">Doctrine\Bundle\MigrationsBundle</parameter>
       </parameter>
       <parameter key="SensioFrameworkExtraBundle" type="collection">
-        <parameter key="path">C:\Users\SYNS-MANAGER\Documents\pmanalysis\Nouveau dossier\my_project_directory\vendor\sensio\framework-extra-bundle\src</parameter>
+        <parameter key="path">C:\Users\SYNS-MANAGER\Documents\GitHub\pmanalysis\vendor\sensio\framework-extra-bundle\src</parameter>
         <parameter key="namespace">Sensio\Bundle\FrameworkExtraBundle</parameter>
       </parameter>
       <parameter key="SymfonyCastsVerifyEmailBundle" type="collection">
-        <parameter key="path">C:\Users\SYNS-MANAGER\Documents\pmanalysis\Nouveau dossier\my_project_directory\vendor\symfonycasts\verify-email-bundle\src</parameter>
+        <parameter key="path">C:\Users\SYNS-MANAGER\Documents\GitHub\pmanalysis\vendor\symfonycasts\verify-email-bundle\src</parameter>
         <parameter key="namespace">SymfonyCasts\Bundle\VerifyEmail</parameter>
       </parameter>
       <parameter key="SecurityBundle" type="collection">
-        <parameter key="path">C:\Users\SYNS-MANAGER\Documents\pmanalysis\Nouveau dossier\my_project_directory\vendor\symfony\security-bundle</parameter>
+        <parameter key="path">C:\Users\SYNS-MANAGER\Documents\GitHub\pmanalysis\vendor\symfony\security-bundle</parameter>
         <parameter key="namespace">Symfony\Bundle\SecurityBundle</parameter>
       </parameter>
     </parameter>
@@ -98,14 +98,14 @@
     <parameter key="asset.request_context.base_path">null</parameter>
     <parameter key="asset.request_context.secure">null</parameter>
     <parameter key="debug.error_handler.throw_at">-1</parameter>
-    <parameter key="debug.container.dump">C:\Users\SYNS-MANAGER\Documents\pmanalysis\Nouveau dossier\my_project_directory\var\cache\dev/App_KernelDevDebugContainer.xml</parameter>
+    <parameter key="debug.container.dump">C:/Users/SYNS-MANAGER/Documents/GitHub/pmanalysis/var/cache/dev/App_KernelDevDebugContainer.xml</parameter>
     <parameter key="router.request_context.host">localhost</parameter>
     <parameter key="router.request_context.scheme">http</parameter>
     <parameter key="router.request_context.base_url"></parameter>
     <parameter key="router.resource">kernel::loadRoutes</parameter>
     <parameter key="request_listener.http_port">80</parameter>
     <parameter key="request_listener.https_port">443</parameter>
-    <parameter key="cache.prefix.seed">_C:\Users\SYNS-MANAGER\Documents\pmanalysis\Nouveau dossier\my_project_directory.App_KernelDevDebugContainer</parameter>
+    <parameter key="cache.prefix.seed">_C:\Users\SYNS-MANAGER\Documents\GitHub\pmanalysis.App_KernelDevDebugContainer</parameter>
     <parameter key="session.metadata.storage_key">_sf2_meta</parameter>
     <parameter key="session.storage.options" type="collection">
       <parameter key="cache_limiter" type="string">0</parameter>
@@ -114,11 +114,11 @@
       <parameter key="cookie_samesite">lax</parameter>
       <parameter key="gc_probability">1</parameter>
     </parameter>
-    <parameter key="session.save_path">C:\Users\SYNS-MANAGER\Documents\pmanalysis\Nouveau dossier\my_project_directory\var\cache\dev/sessions</parameter>
+    <parameter key="session.save_path">C:/Users/SYNS-MANAGER/Documents/GitHub/pmanalysis/var/cache/dev/sessions</parameter>
     <parameter key="session.metadata.update_threshold">0</parameter>
     <parameter key="form.type_extension.csrf.enabled">true</parameter>
     <parameter key="form.type_extension.csrf.field_name">_token</parameter>
-    <parameter key="validator.mapping.cache.file">C:\Users\SYNS-MANAGER\Documents\pmanalysis\Nouveau dossier\my_project_directory\var\cache\dev/validation.php</parameter>
+    <parameter key="validator.mapping.cache.file">C:/Users/SYNS-MANAGER/Documents/GitHub/pmanalysis/var/cache/dev/validation.php</parameter>
     <parameter key="validator.translation_domain">validators</parameter>
     <parameter key="data_collector.templates" type="collection"/>
     <parameter key="monolog.use_microseconds">true</parameter>
@@ -142,7 +142,7 @@
     <parameter key="twig.form.resources" type="collection">
       <parameter>form_div_layout.html.twig</parameter>
     </parameter>
-    <parameter key="twig.default_path">C:\Users\SYNS-MANAGER\Documents\pmanalysis\Nouveau dossier\my_project_directory/templates</parameter>
+    <parameter key="twig.default_path">C:\Users\SYNS-MANAGER\Documents\GitHub\pmanalysis/templates</parameter>
     <parameter key="doctrine.dbal.configuration.class">Doctrine\DBAL\Configuration</parameter>
     <parameter key="doctrine.data_collector.class">Doctrine\Bundle\DoctrineBundle\DataCollector\DoctrineDataCollector</parameter>
     <parameter key="doctrine.dbal.connection.event_manager.class">Symfony\Bridge\Doctrine\ContainerAwareEventManager</parameter>
@@ -207,7 +207,7 @@
     <parameter key="doctrine.orm.second_level_cache.regions_configuration.class">Doctrine\ORM\Cache\RegionsConfiguration</parameter>
     <parameter key="doctrine.orm.auto_generate_proxy_classes">true</parameter>
     <parameter key="doctrine.orm.enable_lazy_ghost_objects">false</parameter>
-    <parameter key="doctrine.orm.proxy_dir">C:\Users\SYNS-MANAGER\Documents\pmanalysis\Nouveau dossier\my_project_directory\var\cache\dev/doctrine/orm/Proxies</parameter>
+    <parameter key="doctrine.orm.proxy_dir">C:/Users/SYNS-MANAGER/Documents/GitHub/pmanalysis/var/cache/dev/doctrine/orm/Proxies</parameter>
     <parameter key="doctrine.orm.proxy_namespace">Proxies</parameter>
     <parameter key="doctrine.migrations.preferred_em">null</parameter>
     <parameter key="doctrine.migrations.preferred_connection">null</parameter>
@@ -481,6 +481,12 @@
       <tag name="doctrine.repository_service"/>
       <argument type="service" id="doctrine"/>
     </service>
+    <service id="App\Security\AppAuthentificatorAuthenticator" class="App\Security\AppAuthentificatorAuthenticator" autowire="true" autoconfigure="true">
+      <argument type="service" id="router.default"/>
+    </service>
+    <service id="App\Security\UserProvider" class="App\Security\UserProvider" autowire="true" autoconfigure="true">
+      <argument type="service" id="doctrine.orm.default_entity_manager"/>
+    </service>
     <service id="App\Service\TwilioService" class="App\Service\TwilioService" autowire="true" autoconfigure="true">
       <argument>%env(TWILIO_ACCOUNT_SID)%</argument>
       <argument>%env(TWILIO_AUTH_TOKEN)%</argument>
@@ -555,7 +561,7 @@
       </argument>
     </service>
     <service id="http_cache.store" class="Symfony\Component\HttpKernel\HttpCache\Store">
-      <argument>C:\Users\SYNS-MANAGER\Documents\pmanalysis\Nouveau dossier\my_project_directory\var\cache\dev/http_cache</argument>
+      <argument>C:/Users/SYNS-MANAGER/Documents/GitHub/pmanalysis/var/cache/dev/http_cache</argument>
     </service>
     <service id="url_helper" class="Symfony\Component\HttpFoundation\UrlHelper">
       <argument type="service" id="request_stack"/>
@@ -565,7 +571,7 @@
       <tag name="container.no_preload"/>
       <argument type="tagged_iterator" tag="kernel.cache_warmer"/>
       <argument>true</argument>
-      <argument>C:\Users\SYNS-MANAGER\Documents\pmanalysis\Nouveau dossier\my_project_directory\var\cache\dev/App_KernelDevDebugContainerDeprecations.log</argument>
+      <argument>C:/Users/SYNS-MANAGER/Documents/GitHub/pmanalysis/var/cache/dev/App_KernelDevDebugContainerDeprecations.log</argument>
     </service>
     <service id="cache_clearer" class="Symfony\Component\HttpKernel\CacheClearer\ChainCacheClearer">
       <argument type="tagged_iterator" tag="kernel.cache_clearer"/>
@@ -608,6 +614,7 @@
         <argument key="form.type.entity" type="service" id="form.type.entity" on-invalid="ignore_uninitialized"/>
         <argument key="security.token_storage" type="service" id="security.token_storage" on-invalid="ignore_uninitialized"/>
         <argument key="cache.security_expression_language" type="service" id="cache.security_expression_language" on-invalid="ignore_uninitialized"/>
+        <argument key="cache.security_token_verifier" type="service" id="cache.security_token_verifier" on-invalid="ignore_uninitialized"/>
       </argument>
       <argument type="collection">
         <argument key="cache.app" type="collection">
@@ -666,6 +673,9 @@
           <argument>setToken</argument>
         </argument>
         <argument key="cache.security_expression_language" type="collection">
+          <argument>reset</argument>
+        </argument>
+        <argument key="cache.security_token_verifier" type="collection">
           <argument>reset</argument>
         </argument>
       </argument>
@@ -737,7 +747,7 @@
       </argument>
       <argument>UTF-8</argument>
       <argument type="service" id="debug.file_link_formatter" on-invalid="null"/>
-      <argument>C:\Users\SYNS-MANAGER\Documents\pmanalysis\Nouveau dossier\my_project_directory</argument>
+      <argument>C:\Users\SYNS-MANAGER\Documents\GitHub\pmanalysis</argument>
       <argument type="service">
         <service>
           <argument type="service" id="request_stack"/>
@@ -770,7 +780,7 @@
       <tag name="console.command"/>
       <tag name="container.no_preload"/>
       <argument type="service" id="filesystem"/>
-      <argument>C:\Users\SYNS-MANAGER\Documents\pmanalysis\Nouveau dossier\my_project_directory</argument>
+      <argument>C:\Users\SYNS-MANAGER\Documents\GitHub\pmanalysis</argument>
       <call method="setName">
         <argument>assets:install</argument>
       </call>
@@ -805,6 +815,7 @@
         <argument>cache.doctrine.orm.default.result</argument>
         <argument>cache.doctrine.orm.default.query</argument>
         <argument>cache.security_expression_language</argument>
+        <argument>cache.security_token_verifier</argument>
       </argument>
       <call method="setName">
         <argument>cache:pool:clear</argument>
@@ -839,6 +850,7 @@
         <argument>cache.doctrine.orm.default.result</argument>
         <argument>cache.doctrine.orm.default.query</argument>
         <argument>cache.security_expression_language</argument>
+        <argument>cache.security_token_verifier</argument>
       </argument>
       <call method="setName">
         <argument>cache:pool:delete</argument>
@@ -861,6 +873,7 @@
         <argument>cache.doctrine.orm.default.result</argument>
         <argument>cache.doctrine.orm.default.query</argument>
         <argument>cache.security_expression_language</argument>
+        <argument>cache.security_token_verifier</argument>
       </argument>
       <call method="setName">
         <argument>cache:pool:list</argument>
@@ -936,7 +949,7 @@
       <tag name="console.command"/>
       <tag name="container.no_preload"/>
       <argument>dev</argument>
-      <argument>C:\Users\SYNS-MANAGER\Documents\pmanalysis\Nouveau dossier\my_project_directory</argument>
+      <argument>C:\Users\SYNS-MANAGER\Documents\GitHub\pmanalysis</argument>
       <call method="setName">
         <argument>debug:dotenv</argument>
       </call>
@@ -1127,9 +1140,9 @@
     <service id="cache.app" class="Symfony\Component\Cache\Adapter\FilesystemAdapter" public="true">
       <tag name="cache.pool"/>
       <tag name="kernel.reset" method="reset"/>
-      <argument>T8buWqbXxZ</argument>
+      <argument>iYvbdkXsrC</argument>
       <argument>0</argument>
-      <argument>C:\Users\SYNS-MANAGER\Documents\pmanalysis\Nouveau dossier\my_project_directory\var\cache\dev/pools/app</argument>
+      <argument>C:/Users/SYNS-MANAGER/Documents/GitHub/pmanalysis/var/cache/dev/pools/app</argument>
       <argument type="service" id="cache.default_marshaller" on-invalid="ignore"/>
       <call method="setLogger">
         <argument type="service" id="monolog.logger.cache" on-invalid="ignore"/>
@@ -1141,50 +1154,50 @@
     <service id="cache.system" class="Symfony\Component\Cache\Adapter\AdapterInterface" public="true">
       <tag name="cache.pool"/>
       <tag name="kernel.reset" method="reset"/>
-      <argument>cQN+cg16q7</argument>
+      <argument>G9rHzI3Lop</argument>
       <argument>0</argument>
       <argument>%container.build_id%</argument>
-      <argument>C:\Users\SYNS-MANAGER\Documents\pmanalysis\Nouveau dossier\my_project_directory\var\cache\dev/pools/system</argument>
+      <argument>C:/Users/SYNS-MANAGER/Documents/GitHub/pmanalysis/var/cache/dev/pools/system</argument>
       <argument type="service" id="monolog.logger.cache" on-invalid="ignore"/>
       <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
     </service>
     <service id="cache.validator" class="Symfony\Component\Cache\Adapter\AdapterInterface">
       <tag name="cache.pool"/>
       <tag name="kernel.reset" method="reset"/>
-      <argument>tPA-No5a59</argument>
+      <argument>thbGSNLU+8</argument>
       <argument>0</argument>
       <argument>%container.build_id%</argument>
-      <argument>C:\Users\SYNS-MANAGER\Documents\pmanalysis\Nouveau dossier\my_project_directory\var\cache\dev/pools/system</argument>
+      <argument>C:/Users/SYNS-MANAGER/Documents/GitHub/pmanalysis/var/cache/dev/pools/system</argument>
       <argument type="service" id="monolog.logger.cache" on-invalid="ignore"/>
       <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
     </service>
     <service id="cache.serializer" class="Symfony\Component\Cache\Adapter\AdapterInterface">
       <tag name="cache.pool"/>
       <tag name="kernel.reset" method="reset"/>
-      <argument>bDNCJ5ksSj</argument>
+      <argument>F1rMzhPxFP</argument>
       <argument>0</argument>
       <argument>%container.build_id%</argument>
-      <argument>C:\Users\SYNS-MANAGER\Documents\pmanalysis\Nouveau dossier\my_project_directory\var\cache\dev/pools/system</argument>
+      <argument>C:/Users/SYNS-MANAGER/Documents/GitHub/pmanalysis/var/cache/dev/pools/system</argument>
       <argument type="service" id="monolog.logger.cache" on-invalid="ignore"/>
       <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
     </service>
     <service id="cache.annotations" class="Symfony\Component\Cache\Adapter\AdapterInterface">
       <tag name="cache.pool"/>
       <tag name="kernel.reset" method="reset"/>
-      <argument>6-u4r1r1IV</argument>
+      <argument>7S7SaNbxsA</argument>
       <argument>0</argument>
       <argument>%container.build_id%</argument>
-      <argument>C:\Users\SYNS-MANAGER\Documents\pmanalysis\Nouveau dossier\my_project_directory\var\cache\dev/pools/system</argument>
+      <argument>C:/Users/SYNS-MANAGER/Documents/GitHub/pmanalysis/var/cache/dev/pools/system</argument>
       <argument type="service" id="monolog.logger.cache" on-invalid="ignore"/>
       <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
     </service>
     <service id="cache.property_info" class="Symfony\Component\Cache\Adapter\AdapterInterface">
       <tag name="cache.pool"/>
       <tag name="kernel.reset" method="reset"/>
-      <argument>j0f2NPaBpL</argument>
+      <argument>PzMynOPBH8</argument>
       <argument>0</argument>
       <argument>%container.build_id%</argument>
-      <argument>C:\Users\SYNS-MANAGER\Documents\pmanalysis\Nouveau dossier\my_project_directory\var\cache\dev/pools/system</argument>
+      <argument>C:/Users/SYNS-MANAGER/Documents/GitHub/pmanalysis/var/cache/dev/pools/system</argument>
       <argument type="service" id="monolog.logger.cache" on-invalid="ignore"/>
       <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
     </service>
@@ -1194,7 +1207,7 @@
       <argument></argument>
       <argument>0</argument>
       <argument>%container.build_id%</argument>
-      <argument>C:\Users\SYNS-MANAGER\Documents\pmanalysis\Nouveau dossier\my_project_directory\var\cache\dev/pools/system</argument>
+      <argument>C:/Users/SYNS-MANAGER/Documents/GitHub/pmanalysis/var/cache/dev/pools/system</argument>
       <argument type="service" id="monolog.logger.cache" on-invalid="ignore"/>
       <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
     </service>
@@ -1213,7 +1226,7 @@
       <tag name="monolog.logger" channel="cache"/>
       <argument></argument>
       <argument>0</argument>
-      <argument>C:\Users\SYNS-MANAGER\Documents\pmanalysis\Nouveau dossier\my_project_directory\var\cache\dev/pools/app</argument>
+      <argument>C:/Users/SYNS-MANAGER/Documents/GitHub/pmanalysis/var/cache/dev/pools/app</argument>
       <argument type="service" id="cache.default_marshaller" on-invalid="ignore"/>
       <call method="setLogger">
         <argument type="service" id="monolog.logger.cache" on-invalid="ignore"/>
@@ -1311,6 +1324,7 @@
         <argument key="cache.property_info" type="service" id="cache.property_info" on-invalid="ignore_uninitialized"/>
         <argument key="cache.validator_expression_language" type="service" id="cache.validator_expression_language" on-invalid="ignore_uninitialized"/>
         <argument key="cache.security_expression_language" type="service" id="cache.security_expression_language" on-invalid="ignore_uninitialized"/>
+        <argument key="cache.security_token_verifier" type="service" id="cache.security_token_verifier" on-invalid="ignore_uninitialized"/>
       </argument>
     </service>
     <service id="cache.global_clearer" class="Symfony\Component\HttpKernel\CacheClearer\Psr6CacheClearer" public="true">
@@ -1326,6 +1340,7 @@
         <argument key="cache.doctrine.orm.default.result" type="service" id="cache.doctrine.orm.default.result" on-invalid="ignore_uninitialized"/>
         <argument key="cache.doctrine.orm.default.query" type="service" id="cache.doctrine.orm.default.query" on-invalid="ignore_uninitialized"/>
         <argument key="cache.security_expression_language" type="service" id="cache.security_expression_language" on-invalid="ignore_uninitialized"/>
+        <argument key="cache.security_token_verifier" type="service" id="cache.security_token_verifier" on-invalid="ignore_uninitialized"/>
       </argument>
     </service>
     <service id="assets.packages" class="Symfony\Component\Asset\Packages">
@@ -1746,6 +1761,14 @@
         <argument>0</argument>
       </call>
       <call method="addListener">
+        <argument>kernel.response</argument>
+        <argument type="collection">
+          <argument type="service_closure" id="security.rememberme.response_listener"/>
+          <argument>onKernelResponse</argument>
+        </argument>
+        <argument>0</argument>
+      </call>
+      <call method="addListener">
         <argument>Symfony\Component\Security\Http\Event\CheckPassportEvent</argument>
         <argument type="collection">
           <argument type="service_closure" id="security.listener.csrf_protection"/>
@@ -1846,7 +1869,7 @@
       <argument type="service" id=".service_locator.COviwFv.router.default"/>
       <argument>kernel::loadRoutes</argument>
       <argument type="collection">
-        <argument key="cache_dir">C:\Users\SYNS-MANAGER\Documents\pmanalysis\Nouveau dossier\my_project_directory\var\cache\dev</argument>
+        <argument key="cache_dir">C:/Users/SYNS-MANAGER/Documents/GitHub/pmanalysis/var/cache/dev</argument>
         <argument key="debug">true</argument>
         <argument key="generator_class">Symfony\Component\Routing\Generator\CompiledUrlGenerator</argument>
         <argument key="generator_dumper_class">Symfony\Component\Routing\Generator\Dumper\CompiledUrlGeneratorDumper</argument>
@@ -1885,7 +1908,7 @@
       <argument type="service" id="request_stack"/>
       <argument type="service" id="router.request_context" on-invalid="ignore"/>
       <argument type="service" id="monolog.logger.request" on-invalid="ignore"/>
-      <argument>C:\Users\SYNS-MANAGER\Documents\pmanalysis\Nouveau dossier\my_project_directory</argument>
+      <argument>C:\Users\SYNS-MANAGER\Documents\GitHub\pmanalysis</argument>
       <argument>true</argument>
     </service>
     <service id="Symfony\Bundle\FrameworkBundle\Controller\RedirectController" class="Symfony\Bundle\FrameworkBundle\Controller\RedirectController" public="true">
@@ -1943,13 +1966,13 @@
     <service id="annotations.cache_warmer" class="Symfony\Bundle\FrameworkBundle\CacheWarmer\AnnotationsCacheWarmer">
       <tag name="kernel.cache_warmer"/>
       <argument type="service" id="annotations.reader"/>
-      <argument>C:\Users\SYNS-MANAGER\Documents\pmanalysis\Nouveau dossier\my_project_directory\var\cache\dev/annotations.php</argument>
+      <argument>C:/Users/SYNS-MANAGER/Documents/GitHub/pmanalysis/var/cache/dev/annotations.php</argument>
       <argument>#^Symfony\\(?:Component\\HttpKernel\\|Bundle\\FrameworkBundle\\Controller\\(?!.*Controller$))#</argument>
       <argument>true</argument>
     </service>
     <service id="annotations.cache_adapter" class="Symfony\Component\Cache\Adapter\PhpArrayAdapter">
       <tag name="container.hot_path"/>
-      <argument>C:\Users\SYNS-MANAGER\Documents\pmanalysis\Nouveau dossier\my_project_directory\var\cache\dev/annotations.php</argument>
+      <argument>C:/Users/SYNS-MANAGER/Documents/GitHub/pmanalysis/var/cache/dev/annotations.php</argument>
       <argument type="service" id="cache.annotations"/>
       <factory class="Symfony\Component\Cache\Adapter\PhpArrayAdapter" method="create"/>
     </service>
@@ -1962,7 +1985,7 @@
     </service>
     <service id="secrets.vault" class="Symfony\Bundle\FrameworkBundle\Secrets\SodiumVault">
       <tag name="container.env_var_loader"/>
-      <argument>C:\Users\SYNS-MANAGER\Documents\pmanalysis\Nouveau dossier\my_project_directory/config/secrets/%env(default:kernel.environment:APP_RUNTIME_ENV)%</argument>
+      <argument>C:\Users\SYNS-MANAGER\Documents\GitHub\pmanalysis/config/secrets/%env(default:kernel.environment:APP_RUNTIME_ENV)%</argument>
       <argument type="service" id="secrets.decryption_key" on-invalid="ignore"/>
     </service>
     <service id="secrets.decryption_key" class="Symfony\Component\String\LazyString">
@@ -1971,7 +1994,7 @@
       <factory class="Symfony\Component\String\LazyString" method="fromCallable"/>
     </service>
     <service id="secrets.local_vault" class="Symfony\Bundle\FrameworkBundle\Secrets\DotenvVault">
-      <argument>C:\Users\SYNS-MANAGER\Documents\pmanalysis\Nouveau dossier\my_project_directory/.env.dev.local</argument>
+      <argument>C:\Users\SYNS-MANAGER\Documents\GitHub\pmanalysis/.env.dev.local</argument>
     </service>
     <service id="property_info" class="Symfony\Component\PropertyInfo\PropertyInfoExtractor">
       <argument type="iterator">
@@ -2045,7 +2068,7 @@
       <argument>true</argument>
     </service>
     <service id="session.storage.factory.mock_file" class="Symfony\Component\HttpFoundation\Session\Storage\MockFileSessionStorageFactory">
-      <argument>C:\Users\SYNS-MANAGER\Documents\pmanalysis\Nouveau dossier\my_project_directory\var\cache\dev/sessions</argument>
+      <argument>C:/Users/SYNS-MANAGER/Documents/GitHub/pmanalysis/var/cache/dev/sessions</argument>
       <argument>MOCKSESSID</argument>
       <argument type="service">
         <service class="Symfony\Component\HttpFoundation\Session\Storage\MetadataBag">
@@ -2057,7 +2080,7 @@
     <service id="session.handler.native_file" class="Symfony\Component\HttpFoundation\Session\Storage\Handler\StrictSessionHandler">
       <argument type="service">
         <service class="Symfony\Component\HttpFoundation\Session\Storage\Handler\NativeFileSessionHandler">
-          <argument>C:\Users\SYNS-MANAGER\Documents\pmanalysis\Nouveau dossier\my_project_directory\var\cache\dev/sessions</argument>
+          <argument>C:/Users/SYNS-MANAGER/Documents/GitHub/pmanalysis/var/cache/dev/sessions</argument>
         </service>
       </argument>
     </service>
@@ -2200,7 +2223,7 @@
       </call>
       <call method="addXmlMappings">
         <argument type="collection">
-          <argument>C:\Users\SYNS-MANAGER\Documents\pmanalysis\Nouveau dossier\my_project_directory\vendor\symfony\form/Resources/config/validation.xml</argument>
+          <argument>C:\Users\SYNS-MANAGER\Documents\GitHub\pmanalysis\vendor\symfony\form/Resources/config/validation.xml</argument>
         </argument>
       </call>
       <call method="enableAnnotationMapping">
@@ -2228,10 +2251,10 @@
     <service id="validator.mapping.cache_warmer" class="Symfony\Bundle\FrameworkBundle\CacheWarmer\ValidatorCacheWarmer">
       <tag name="kernel.cache_warmer"/>
       <argument type="service" id="validator.builder"/>
-      <argument>C:\Users\SYNS-MANAGER\Documents\pmanalysis\Nouveau dossier\my_project_directory\var\cache\dev/validation.php</argument>
+      <argument>C:/Users/SYNS-MANAGER/Documents/GitHub/pmanalysis/var/cache/dev/validation.php</argument>
     </service>
     <service id="validator.mapping.cache.adapter" class="Symfony\Component\Cache\Adapter\PhpArrayAdapter">
-      <argument>C:\Users\SYNS-MANAGER\Documents\pmanalysis\Nouveau dossier\my_project_directory\var\cache\dev/validation.php</argument>
+      <argument>C:/Users/SYNS-MANAGER/Documents/GitHub/pmanalysis/var/cache/dev/validation.php</argument>
       <argument type="service" id="cache.validator"/>
       <factory class="Symfony\Component\Cache\Adapter\PhpArrayAdapter" method="create"/>
     </service>
@@ -2245,10 +2268,10 @@
     <service id="cache.validator_expression_language" class="Symfony\Component\Cache\Adapter\AdapterInterface" public="true">
       <tag name="cache.pool"/>
       <tag name="kernel.reset" method="reset"/>
-      <argument>Cjc71WM3Sk</argument>
+      <argument>LcHjRFshwH</argument>
       <argument>0</argument>
       <argument>%container.build_id%</argument>
-      <argument>C:\Users\SYNS-MANAGER\Documents\pmanalysis\Nouveau dossier\my_project_directory\var\cache\dev/pools/system</argument>
+      <argument>C:/Users/SYNS-MANAGER/Documents/GitHub/pmanalysis/var/cache/dev/pools/system</argument>
       <argument type="service" id="monolog.logger.cache" on-invalid="ignore"/>
       <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
     </service>
@@ -2305,7 +2328,7 @@
     <service id="monolog.processor.psr_log_message" class="Monolog\Processor\PsrLogMessageProcessor"/>
     <service id="monolog.handler.main" class="Monolog\Handler\StreamHandler">
       <tag name="kernel.reset" method="reset"/>
-      <argument>C:\Users\SYNS-MANAGER\Documents\pmanalysis\Nouveau dossier\my_project_directory\var\log/dev.log</argument>
+      <argument>C:\Users\SYNS-MANAGER\Documents\GitHub\pmanalysis\var\log/dev.log</argument>
       <argument>debug</argument>
       <argument>true</argument>
       <argument>null</argument>
@@ -2335,7 +2358,7 @@
       <argument type="service" id="twig.loader.native_filesystem"/>
       <argument type="collection">
         <argument key="autoescape">name</argument>
-        <argument key="cache">C:\Users\SYNS-MANAGER\Documents\pmanalysis\Nouveau dossier\my_project_directory\var\cache\dev/twig</argument>
+        <argument key="cache">C:/Users/SYNS-MANAGER/Documents/GitHub/pmanalysis/var/cache/dev/twig</argument>
         <argument key="charset">UTF-8</argument>
         <argument key="debug">true</argument>
         <argument key="strict_variables">true</argument>
@@ -2429,9 +2452,9 @@
     <service id="twig.template_iterator" class="Symfony\Bundle\TwigBundle\TemplateIterator">
       <argument type="service" id="kernel"/>
       <argument type="collection">
-        <argument key="C:\Users\SYNS-MANAGER\Documents\pmanalysis\Nouveau dossier\my_project_directory\vendor\symfony\twig-bridge/Resources/views/Form">null</argument>
+        <argument key="C:\Users\SYNS-MANAGER\Documents\GitHub\pmanalysis\vendor\symfony\twig-bridge/Resources/views/Form">null</argument>
       </argument>
-      <argument>C:\Users\SYNS-MANAGER\Documents\pmanalysis\Nouveau dossier\my_project_directory/templates</argument>
+      <argument>C:\Users\SYNS-MANAGER\Documents\GitHub\pmanalysis/templates</argument>
     </service>
     <service id="twig.template_cache_warmer" class="Symfony\Bundle\TwigBundle\CacheWarmer\TemplateCacheWarmer">
       <tag name="kernel.cache_warmer"/>
@@ -2442,36 +2465,36 @@
     <service id="twig.loader.native_filesystem" class="Twig\Loader\FilesystemLoader">
       <tag name="twig.loader"/>
       <argument type="collection"/>
-      <argument>C:\Users\SYNS-MANAGER\Documents\pmanalysis\Nouveau dossier\my_project_directory</argument>
+      <argument>C:\Users\SYNS-MANAGER\Documents\GitHub\pmanalysis</argument>
       <call method="addPath">
-        <argument>C:\Users\SYNS-MANAGER\Documents\pmanalysis\Nouveau dossier\my_project_directory\vendor\doctrine\doctrine-bundle/templates</argument>
+        <argument>C:\Users\SYNS-MANAGER\Documents\GitHub\pmanalysis\vendor\doctrine\doctrine-bundle/templates</argument>
         <argument>Doctrine</argument>
       </call>
       <call method="addPath">
-        <argument>C:\Users\SYNS-MANAGER\Documents\pmanalysis\Nouveau dossier\my_project_directory\vendor\doctrine\doctrine-bundle/templates</argument>
+        <argument>C:\Users\SYNS-MANAGER\Documents\GitHub\pmanalysis\vendor\doctrine\doctrine-bundle/templates</argument>
         <argument>!Doctrine</argument>
       </call>
       <call method="addPath">
-        <argument>C:\Users\SYNS-MANAGER\Documents\pmanalysis\Nouveau dossier\my_project_directory\vendor\doctrine\doctrine-migrations-bundle/Resources/views</argument>
+        <argument>C:\Users\SYNS-MANAGER\Documents\GitHub\pmanalysis\vendor\doctrine\doctrine-migrations-bundle/Resources/views</argument>
         <argument>DoctrineMigrations</argument>
       </call>
       <call method="addPath">
-        <argument>C:\Users\SYNS-MANAGER\Documents\pmanalysis\Nouveau dossier\my_project_directory\vendor\doctrine\doctrine-migrations-bundle/Resources/views</argument>
+        <argument>C:\Users\SYNS-MANAGER\Documents\GitHub\pmanalysis\vendor\doctrine\doctrine-migrations-bundle/Resources/views</argument>
         <argument>!DoctrineMigrations</argument>
       </call>
       <call method="addPath">
-        <argument>C:\Users\SYNS-MANAGER\Documents\pmanalysis\Nouveau dossier\my_project_directory\vendor\symfony\security-bundle/Resources/views</argument>
+        <argument>C:\Users\SYNS-MANAGER\Documents\GitHub\pmanalysis\vendor\symfony\security-bundle/Resources/views</argument>
         <argument>Security</argument>
       </call>
       <call method="addPath">
-        <argument>C:\Users\SYNS-MANAGER\Documents\pmanalysis\Nouveau dossier\my_project_directory\vendor\symfony\security-bundle/Resources/views</argument>
+        <argument>C:\Users\SYNS-MANAGER\Documents\GitHub\pmanalysis\vendor\symfony\security-bundle/Resources/views</argument>
         <argument>!Security</argument>
       </call>
       <call method="addPath">
-        <argument>C:\Users\SYNS-MANAGER\Documents\pmanalysis\Nouveau dossier\my_project_directory/templates</argument>
+        <argument>C:\Users\SYNS-MANAGER\Documents\GitHub\pmanalysis/templates</argument>
       </call>
       <call method="addPath">
-        <argument>C:\Users\SYNS-MANAGER\Documents\pmanalysis\Nouveau dossier\my_project_directory\vendor\symfony\twig-bridge/Resources/views/Form</argument>
+        <argument>C:\Users\SYNS-MANAGER\Documents\GitHub\pmanalysis\vendor\symfony\twig-bridge/Resources/views/Form</argument>
       </call>
     </service>
     <service id="twig.loader.chain" class="Twig\Loader\ChainLoader"/>
@@ -2497,7 +2520,7 @@
     <service id="twig.extension.code" class="Symfony\Bridge\Twig\Extension\CodeExtension">
       <tag name="twig.extension"/>
       <argument type="service" id="debug.file_link_formatter" on-invalid="ignore"/>
-      <argument>C:\Users\SYNS-MANAGER\Documents\pmanalysis\Nouveau dossier\my_project_directory</argument>
+      <argument>C:\Users\SYNS-MANAGER\Documents\GitHub\pmanalysis</argument>
       <argument>UTF-8</argument>
     </service>
     <service id="twig.extension.routing" class="Symfony\Bridge\Twig\Extension\RoutingExtension">
@@ -2574,9 +2597,9 @@
       <tag name="console.command"/>
       <tag name="container.no_preload"/>
       <argument type="service" id="twig"/>
-      <argument>C:\Users\SYNS-MANAGER\Documents\pmanalysis\Nouveau dossier\my_project_directory</argument>
+      <argument>C:\Users\SYNS-MANAGER\Documents\GitHub\pmanalysis</argument>
       <argument>%kernel.bundles_metadata%</argument>
-      <argument>C:\Users\SYNS-MANAGER\Documents\pmanalysis\Nouveau dossier\my_project_directory/templates</argument>
+      <argument>C:\Users\SYNS-MANAGER\Documents\GitHub\pmanalysis/templates</argument>
       <argument type="service" id="debug.file_link_formatter" on-invalid="null"/>
       <call method="setName">
         <argument>debug:twig</argument>
@@ -2601,8 +2624,8 @@
       <argument type="service" id="filesystem"/>
       <argument type="service" id="maker.autoloader_util"/>
       <argument type="service" id="maker.file_link_formatter"/>
-      <argument>C:\Users\SYNS-MANAGER\Documents\pmanalysis\Nouveau dossier\my_project_directory</argument>
-      <argument>C:\Users\SYNS-MANAGER\Documents\pmanalysis\Nouveau dossier\my_project_directory/templates</argument>
+      <argument>C:\Users\SYNS-MANAGER\Documents\GitHub\pmanalysis</argument>
+      <argument>C:\Users\SYNS-MANAGER\Documents\GitHub\pmanalysis/templates</argument>
     </service>
     <service id="maker.autoloader_finder" class="Symfony\Bundle\MakerBundle\Util\ComposerAutoloaderFinder">
       <argument>App</argument>
@@ -2767,7 +2790,7 @@
     </service>
     <service id="maker.maker.make_migration" class="Symfony\Bundle\MakerBundle\Maker\MakeMigration">
       <tag name="maker.command"/>
-      <argument>C:\Users\SYNS-MANAGER\Documents\pmanalysis\Nouveau dossier\my_project_directory</argument>
+      <argument>C:\Users\SYNS-MANAGER\Documents\GitHub\pmanalysis</argument>
       <argument type="service" id="maker.file_link_formatter"/>
     </service>
     <service id="maker.maker.make_stimulus_controller" class="Symfony\Bundle\MakerBundle\Maker\MakeStimulusController">
@@ -2940,7 +2963,7 @@
       <argument type="service" id="doctrine.debug_data_holder"/>
       <argument type="service" id="debug.stopwatch" on-invalid="null"/>
     </service>
-    <service id=".1_ServiceLocator~0AftUbE" class="Symfony\Component\DependencyInjection\ServiceLocator">
+    <service id=".1_ServiceLocator~KuN_2ya" class="Symfony\Component\DependencyInjection\ServiceLocator">
       <argument type="collection"/>
     </service>
     <service id="doctrine.orm.proxy_cache_warmer" class="Symfony\Bridge\Doctrine\CacheWarmer\ProxyCacheWarmer">
@@ -3145,7 +3168,7 @@
         <argument type="service" id=".doctrine.orm.default_metadata_driver"/>
       </call>
       <call method="setProxyDir">
-        <argument>C:\Users\SYNS-MANAGER\Documents\pmanalysis\Nouveau dossier\my_project_directory\var\cache\dev/doctrine/orm/Proxies</argument>
+        <argument>C:/Users/SYNS-MANAGER/Documents/GitHub/pmanalysis/var/cache/dev/doctrine/orm/Proxies</argument>
       </call>
       <call method="setProxyNamespace">
         <argument>Proxies</argument>
@@ -3180,7 +3203,7 @@
     </service>
     <service id="doctrine.orm.default_attribute_metadata_driver" class="Doctrine\ORM\Mapping\Driver\AttributeDriver">
       <argument type="collection">
-        <argument>C:\Users\SYNS-MANAGER\Documents\pmanalysis\Nouveau dossier\my_project_directory\src\Entity</argument>
+        <argument>C:\Users\SYNS-MANAGER\Documents\GitHub\pmanalysis\src\Entity</argument>
       </argument>
       <argument>false</argument>
     </service>
@@ -3245,7 +3268,7 @@
     <service id="doctrine.migrations.configuration" class="Doctrine\Migrations\Configuration\Configuration">
       <call method="addMigrationsDirectory">
         <argument>DoctrineMigrations</argument>
-        <argument>C:\Users\SYNS-MANAGER\Documents\pmanalysis\Nouveau dossier\my_project_directory/migrations</argument>
+        <argument>C:\Users\SYNS-MANAGER\Documents\GitHub\pmanalysis/migrations</argument>
       </call>
       <call method="setAllOrNothing">
         <argument>false</argument>
@@ -3588,10 +3611,10 @@
     <service id="cache.security_expression_language" class="Symfony\Component\Cache\Adapter\AdapterInterface">
       <tag name="cache.pool"/>
       <tag name="kernel.reset" method="reset"/>
-      <argument>7kXDo4+jvo</argument>
+      <argument>JnsWRztTLe</argument>
       <argument>0</argument>
       <argument>%container.build_id%</argument>
-      <argument>C:\Users\SYNS-MANAGER\Documents\pmanalysis\Nouveau dossier\my_project_directory\var\cache\dev/pools/system</argument>
+      <argument>C:/Users/SYNS-MANAGER/Documents/GitHub/pmanalysis/var/cache/dev/pools/system</argument>
       <argument type="service" id="monolog.logger.cache" on-invalid="ignore"/>
       <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
     </service>
@@ -3636,7 +3659,7 @@
       <argument type="iterator">
         <argument type="service" id="security.user.provider.concrete.app_user_provider"/>
         <argument type="service" id="security.user.provider.concrete.app_client_provider"/>
-        <argument type="service" id="security.user.provider.concrete.all_users"/>
+        <argument type="service" id="App\Security\UserProvider"/>
       </argument>
       <argument type="abstract">Provider Key</argument>
       <argument type="service" id="monolog.logger.security" on-invalid="null"/>
@@ -3857,7 +3880,8 @@
       <argument type="service" id=".service_locator.jlyTfzM"/>
       <argument type="collection">
         <argument key="main" type="collection">
-          <argument type="service" id="security.authenticator.form_login.main"/>
+          <argument type="service" id="App\Security\AppAuthentificatorAuthenticator"/>
+          <argument type="service" id="security.authenticator.remember_me.main"/>
         </argument>
       </argument>
       <argument>false</argument>
@@ -3880,17 +3904,11 @@
       <argument>email</argument>
       <argument>null</argument>
     </service>
-    <service id="security.user.provider.concrete.all_users" class="Symfony\Component\Security\Core\User\ChainUserProvider">
-      <argument type="iterator">
-        <argument type="service" id="security.user.provider.concrete.app_user_provider"/>
-        <argument type="service" id="security.user.provider.concrete.app_client_provider"/>
-      </argument>
-    </service>
     <service id="security.user_providers" class="Symfony\Component\Security\Core\User\ChainUserProvider">
       <argument type="iterator">
         <argument type="service" id="security.user.provider.concrete.app_user_provider"/>
         <argument type="service" id="security.user.provider.concrete.app_client_provider"/>
-        <argument type="service" id="security.user.provider.concrete.all_users"/>
+        <argument type="service" id="App\Security\UserProvider"/>
       </argument>
     </service>
     <service id="security.firewall.map.config.dev" class="Symfony\Bundle\SecurityBundle\Security\FirewallConfig">
@@ -3922,19 +3940,20 @@
       <argument>null</argument>
       <argument>true</argument>
       <argument>false</argument>
-      <argument>security.user.provider.concrete.all_users</argument>
+      <argument>App\Security\UserProvider</argument>
       <argument>main</argument>
-      <argument>security.authenticator.form_login.main</argument>
+      <argument>App\Security\AppAuthentificatorAuthenticator</argument>
       <argument>null</argument>
       <argument>null</argument>
       <argument type="collection">
-        <argument>form_login</argument>
+        <argument>remember_me</argument>
+        <argument>App\Security\AppAuthentificatorAuthenticator</argument>
       </argument>
       <argument>null</argument>
     </service>
     <service id="security.listener.main.user_provider" class="Symfony\Component\Security\Http\EventListener\UserProviderListener">
       <tag name="kernel.event_listener" dispatcher="security.event_dispatcher.main" event="Symfony\Component\Security\Http\Event\CheckPassportEvent" priority="2048" method="checkPassport"/>
-      <argument type="service" id="security.user.provider.concrete.all_users"/>
+      <argument type="service" id="App\Security\UserProvider"/>
     </service>
     <service id="security.event_dispatcher.main" class="Symfony\Component\EventDispatcher\EventDispatcher">
       <tag name="security.event_dispatcher.main">event_dispatcher.dispatcher</tag>
@@ -3967,6 +3986,46 @@
         <argument type="collection">
           <argument type="service_closure" id="security.logout.listener.session.main"/>
           <argument>onLogout</argument>
+        </argument>
+        <argument>0</argument>
+      </call>
+      <call method="addListener">
+        <argument>Symfony\Component\Security\Http\Event\LoginSuccessEvent</argument>
+        <argument type="collection">
+          <argument type="service_closure" id="security.listener.check_remember_me_conditions.main"/>
+          <argument>onSuccessfulLogin</argument>
+        </argument>
+        <argument>-32</argument>
+      </call>
+      <call method="addListener">
+        <argument>Symfony\Component\Security\Http\Event\LoginSuccessEvent</argument>
+        <argument type="collection">
+          <argument type="service_closure" id="security.listener.remember_me.main"/>
+          <argument>onSuccessfulLogin</argument>
+        </argument>
+        <argument>-64</argument>
+      </call>
+      <call method="addListener">
+        <argument>Symfony\Component\Security\Http\Event\LoginFailureEvent</argument>
+        <argument type="collection">
+          <argument type="service_closure" id="security.listener.remember_me.main"/>
+          <argument>clearCookie</argument>
+        </argument>
+        <argument>0</argument>
+      </call>
+      <call method="addListener">
+        <argument>Symfony\Component\Security\Http\Event\LogoutEvent</argument>
+        <argument type="collection">
+          <argument type="service_closure" id="security.listener.remember_me.main"/>
+          <argument>clearCookie</argument>
+        </argument>
+        <argument>0</argument>
+      </call>
+      <call method="addListener">
+        <argument>Symfony\Component\Security\Http\Event\TokenDeauthenticatedEvent</argument>
+        <argument type="collection">
+          <argument type="service_closure" id="security.listener.remember_me.main"/>
+          <argument>clearCookie</argument>
         </argument>
         <argument>0</argument>
       </call>
@@ -4029,12 +4088,13 @@
     </service>
     <service id="security.context_listener.0" class="Symfony\Component\Security\Http\Firewall\ContextListener">
       <tag name="kernel.event_listener" event="kernel.response" method="onKernelResponse"/>
+      <tag name="security.remember_me_aware" id="main" provider="none"/>
       <tag name="container.hot_path"/>
       <argument type="service" id="security.untracked_token_storage"/>
       <argument type="iterator">
         <argument type="service" id="security.user.provider.concrete.app_user_provider"/>
         <argument type="service" id="security.user.provider.concrete.app_client_provider"/>
-        <argument type="service" id="security.user.provider.concrete.all_users"/>
+        <argument type="service" id="App\Security\UserProvider"/>
       </argument>
       <argument>main</argument>
       <argument type="service" id="monolog.logger.security" on-invalid="null"/>
@@ -4067,60 +4127,125 @@
     <service id="security.logout.listener.session.main" class="Symfony\Component\Security\Http\EventListener\SessionLogoutListener">
       <tag name="kernel.event_subscriber" dispatcher="security.event_dispatcher.main"/>
     </service>
-    <service id="security.authenticator.form_login.main" class="Symfony\Component\Security\Http\Authenticator\FormLoginAuthenticator">
-      <argument type="service" id="security.http_utils"/>
-      <argument type="service" id="security.user.provider.concrete.all_users"/>
-      <argument type="service" id="security.authentication.success_handler.main.form_login"/>
-      <argument type="service" id="security.authentication.failure_handler.main.form_login"/>
-      <argument type="collection">
-        <argument key="login_path">app_login</argument>
-        <argument key="check_path">app_login</argument>
-        <argument key="enable_csrf">true</argument>
-        <argument key="use_forward">false</argument>
-        <argument key="require_previous_session">false</argument>
-        <argument key="username_parameter">_username</argument>
-        <argument key="password_parameter">_password</argument>
-        <argument key="csrf_parameter">_csrf_token</argument>
-        <argument key="csrf_token_id">authenticate</argument>
-        <argument key="post_only">true</argument>
-        <argument key="form_only">false</argument>
-      </argument>
+    <service id="security.rememberme.response_listener" class="Symfony\Component\Security\Http\RememberMe\ResponseListener">
+      <tag name="kernel.event_subscriber"/>
+      <tag name="container.hot_path"/>
     </service>
-    <service id="security.authentication.success_handler.main.form_login" class="Symfony\Component\Security\Http\Authentication\DefaultAuthenticationSuccessHandler">
-      <argument type="service" id="security.http_utils"/>
-      <argument type="collection"/>
-      <argument type="service" id="monolog.logger" on-invalid="null"/>
-      <call method="setOptions">
-        <argument type="collection">
-          <argument key="login_path">app_login</argument>
-          <argument key="always_use_default_target_path">false</argument>
-          <argument key="default_target_path">/</argument>
-          <argument key="target_path_parameter">_target_path</argument>
-          <argument key="use_referer">false</argument>
-        </argument>
-      </call>
-      <call method="setFirewallName">
-        <argument>main</argument>
-      </call>
+    <service id="security.authenticator.remember_me_signature_hasher" class="Symfony\Component\Security\Core\Signature\SignatureHasher">
+      <argument type="service" id="property_accessor"/>
+      <argument type="abstract">signature properties</argument>
+      <argument>%env(APP_SECRET)%</argument>
+      <argument>null</argument>
+      <argument>null</argument>
     </service>
-    <service id="security.authentication.failure_handler.main.form_login" class="Symfony\Component\Security\Http\Authentication\DefaultAuthenticationFailureHandler">
-      <argument type="service" id="http_kernel"/>
-      <argument type="service" id="security.http_utils"/>
-      <argument type="collection"/>
+    <service id="security.authenticator.signature_remember_me_handler" class="Symfony\Component\Security\Http\RememberMe\SignatureRememberMeHandler" abstract="true">
+      <tag name="monolog.logger" channel="security"/>
+      <argument type="abstract">signature hasher</argument>
+      <argument type="abstract">user provider</argument>
+      <argument type="service" id="request_stack"/>
+      <argument type="abstract">options</argument>
       <argument type="service" id="monolog.logger.security" on-invalid="null"/>
-      <call method="setOptions">
-        <argument type="collection">
-          <argument key="login_path">app_login</argument>
-          <argument key="failure_path">null</argument>
-          <argument key="failure_forward">false</argument>
-          <argument key="failure_path_parameter">_failure_path</argument>
+    </service>
+    <service id="security.authenticator.persistent_remember_me_handler" class="Symfony\Component\Security\Http\RememberMe\PersistentRememberMeHandler" abstract="true">
+      <tag name="monolog.logger" channel="security"/>
+      <argument type="abstract">token provider</argument>
+      <argument>%env(APP_SECRET)%</argument>
+      <argument type="abstract">user provider</argument>
+      <argument type="service" id="request_stack"/>
+      <argument type="abstract">options</argument>
+      <argument type="service" id="monolog.logger.security" on-invalid="null"/>
+      <argument type="abstract">token verifier</argument>
+    </service>
+    <service id="security.authenticator.firewall_aware_remember_me_handler" class="Symfony\Bundle\SecurityBundle\RememberMe\FirewallAwareRememberMeHandler">
+      <argument type="service" id="security.firewall.map"/>
+      <argument type="service" id=".service_locator.tl8I8bj"/>
+      <argument type="service" id="request_stack"/>
+    </service>
+    <service id="security.listener.check_remember_me_conditions" class="Symfony\Component\Security\Http\EventListener\CheckRememberMeConditionsListener" abstract="true">
+      <argument type="abstract">options</argument>
+      <argument type="service" id="monolog.logger" on-invalid="null"/>
+    </service>
+    <service id="security.listener.remember_me" class="Symfony\Component\Security\Http\EventListener\RememberMeListener" abstract="true">
+      <tag name="monolog.logger" channel="security"/>
+      <argument type="abstract">remember me handler</argument>
+      <argument type="service" id="monolog.logger.security" on-invalid="null"/>
+    </service>
+    <service id="security.authenticator.remember_me" class="Symfony\Component\Security\Http\Authenticator\RememberMeAuthenticator" abstract="true">
+      <tag name="monolog.logger" channel="security"/>
+      <argument type="abstract">remember me handler</argument>
+      <argument>%env(APP_SECRET)%</argument>
+      <argument type="service" id="security.token_storage"/>
+      <argument type="abstract">options</argument>
+      <argument type="service" id="monolog.logger.security" on-invalid="null"/>
+    </service>
+    <service id="cache.security_token_verifier" class="Symfony\Component\Cache\Adapter\AdapterInterface">
+      <tag name="cache.pool"/>
+      <tag name="kernel.reset" method="reset"/>
+      <argument>XsakqRlC8j</argument>
+      <argument>0</argument>
+      <argument>%container.build_id%</argument>
+      <argument>C:/Users/SYNS-MANAGER/Documents/GitHub/pmanalysis/var/cache/dev/pools/system</argument>
+      <argument type="service" id="monolog.logger.cache" on-invalid="ignore"/>
+      <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
+    </service>
+    <service id="security.authenticator.remember_me_signature_hasher.main" class="Symfony\Component\Security\Core\Signature\SignatureHasher">
+      <argument type="service" id="property_accessor"/>
+      <argument type="collection">
+        <argument>password</argument>
+      </argument>
+      <argument>%env(APP_SECRET)%</argument>
+      <argument>null</argument>
+      <argument>null</argument>
+    </service>
+    <service id="security.authenticator.remember_me_handler.main" class="Symfony\Component\Security\Http\RememberMe\SignatureRememberMeHandler">
+      <tag name="security.remember_me_handler" firewall="main"/>
+      <argument type="service" id="security.authenticator.remember_me_signature_hasher.main"/>
+      <argument type="service" id="App\Security\UserProvider"/>
+      <argument type="service" id="request_stack"/>
+      <argument type="collection">
+        <argument key="secret">%env(APP_SECRET)%</argument>
+        <argument key="lifetime">604800</argument>
+        <argument key="path">/</argument>
+        <argument key="always_remember_me">true</argument>
+        <argument key="user_providers" type="collection"/>
+        <argument key="catch_exceptions">true</argument>
+        <argument key="signature_properties" type="collection">
+          <argument>password</argument>
         </argument>
-      </call>
+        <argument key="name">REMEMBERME</argument>
+        <argument key="domain">null</argument>
+        <argument key="secure">null</argument>
+        <argument key="httponly">true</argument>
+        <argument key="samesite">lax</argument>
+        <argument key="remember_me_parameter">_remember_me</argument>
+      </argument>
+      <argument type="service" id="monolog.logger.security" on-invalid="null"/>
+    </service>
+    <service id="security.listener.check_remember_me_conditions.main" class="Symfony\Component\Security\Http\EventListener\CheckRememberMeConditionsListener">
+      <tag name="kernel.event_subscriber" dispatcher="security.event_dispatcher.main"/>
+      <argument type="collection">
+        <argument key="always_remember_me">true</argument>
+        <argument key="remember_me_parameter">_remember_me</argument>
+      </argument>
+      <argument type="service" id="monolog.logger" on-invalid="null"/>
+    </service>
+    <service id="security.listener.remember_me.main" class="Symfony\Component\Security\Http\EventListener\RememberMeListener">
+      <tag name="kernel.event_subscriber" dispatcher="security.event_dispatcher.main"/>
+      <argument type="service" id="security.authenticator.remember_me_handler.main"/>
+      <argument type="service" id="monolog.logger.security" on-invalid="null"/>
+    </service>
+    <service id="security.authenticator.remember_me.main" class="Symfony\Component\Security\Http\Authenticator\RememberMeAuthenticator">
+      <argument type="service" id="security.authenticator.remember_me_handler.main"/>
+      <argument>%env(APP_SECRET)%</argument>
+      <argument type="service" id="security.token_storage"/>
+      <argument>REMEMBERME</argument>
+      <argument type="service" id="monolog.logger.security" on-invalid="null"/>
     </service>
     <service id="security.authenticator.manager.main" class="Symfony\Component\Security\Http\Authentication\AuthenticatorManager">
       <tag name="monolog.logger" channel="security"/>
       <argument type="collection">
-        <argument type="service" id="security.authenticator.form_login.main"/>
+        <argument type="service" id="App\Security\AppAuthentificatorAuthenticator"/>
+        <argument type="service" id="security.authenticator.remember_me.main"/>
       </argument>
       <argument type="service" id="security.token_storage"/>
       <argument type="service" id="security.event_dispatcher.main"/>
@@ -4142,7 +4267,7 @@
       <argument type="service" id="security.authentication.trust_resolver"/>
       <argument type="service" id="security.http_utils"/>
       <argument>main</argument>
-      <argument type="service" id="security.authenticator.form_login.main"/>
+      <argument type="service" id="App\Security\AppAuthentificatorAuthenticator"/>
       <argument>null</argument>
       <argument>null</argument>
       <argument type="service" id="monolog.logger.security" on-invalid="null"/>
@@ -4855,6 +4980,16 @@
         <argument key="tache" type="service_closure" id="App\Repository\TacheRepository"/>
       </argument>
     </service>
+    <service id=".service_locator.AW43DMG" class="Symfony\Component\DependencyInjection\ServiceLocator">
+      <tag name="container.service_locator"/>
+      <argument type="collection">
+        <argument key="equipe" type="service_closure" id="App\Repository\EquipeRepository"/>
+        <argument key="notificationRepo" type="service_closure" id="App\Repository\NotificationRepository"/>
+        <argument key="projet" type="service_closure" id="App\Repository\ProjetRepository"/>
+        <argument key="security" type="service_closure" id="security.helper"/>
+        <argument key="tache" type="service_closure" id="App\Repository\TacheRepository"/>
+      </argument>
+    </service>
     <service id=".service_locator.6etVjkp" class="Symfony\Component\DependencyInjection\ServiceLocator">
       <tag name="container.service_locator"/>
       <argument type="collection">
@@ -4996,7 +5131,7 @@
         <argument key="security" type="service_closure" id="security.helper"/>
       </argument>
     </service>
-    <service id=".service_locator.mRw6yxS" class="Symfony\Component\DependencyInjection\ServiceLocator">
+    <service id=".service_locator.ekUvRCn" class="Symfony\Component\DependencyInjection\ServiceLocator">
       <tag name="container.service_locator"/>
       <argument type="collection">
         <argument key="App\Controller\ClientController::delete" type="service_closure" id=".service_locator.a2UKxPj"/>
@@ -5039,7 +5174,8 @@
         <argument key="App\Controller\FonctionController::index" type="service_closure" id=".service_locator.WFmNc4M"/>
         <argument key="App\Controller\FonctionController::new" type="service_closure" id=".service_locator.l2QwsaZ"/>
         <argument key="App\Controller\FonctionController::show" type="service_closure" id=".service_locator.Y3X3d_D"/>
-        <argument key="App\Controller\HomeController::index" type="service_closure" id=".service_locator.7R6lnhe"/>
+        <argument key="App\Controller\HomeController::conf" type="service_closure" id=".service_locator.7R6lnhe"/>
+        <argument key="App\Controller\HomeController::index" type="service_closure" id=".service_locator.AW43DMG"/>
         <argument key="App\Controller\NotificationController::delete" type="service_closure" id=".service_locator.iPzJNuw"/>
         <argument key="App\Controller\NotificationController::edit" type="service_closure" id=".service_locator.iPzJNuw"/>
         <argument key="App\Controller\NotificationController::index" type="service_closure" id=".service_locator.6etVjkp"/>
@@ -5118,7 +5254,8 @@
         <argument key="App\Controller\FonctionController:index" type="service_closure" id=".service_locator.WFmNc4M"/>
         <argument key="App\Controller\FonctionController:new" type="service_closure" id=".service_locator.l2QwsaZ"/>
         <argument key="App\Controller\FonctionController:show" type="service_closure" id=".service_locator.Y3X3d_D"/>
-        <argument key="App\Controller\HomeController:index" type="service_closure" id=".service_locator.7R6lnhe"/>
+        <argument key="App\Controller\HomeController:conf" type="service_closure" id=".service_locator.7R6lnhe"/>
+        <argument key="App\Controller\HomeController:index" type="service_closure" id=".service_locator.AW43DMG"/>
         <argument key="App\Controller\NotificationController:delete" type="service_closure" id=".service_locator.iPzJNuw"/>
         <argument key="App\Controller\NotificationController:edit" type="service_closure" id=".service_locator.iPzJNuw"/>
         <argument key="App\Controller\NotificationController:index" type="service_closure" id=".service_locator.6etVjkp"/>
@@ -5601,6 +5738,12 @@
         <argument key="security.token_storage" type="service_closure" id="security.token_storage"/>
       </argument>
     </service>
+    <service id=".service_locator.tl8I8bj" class="Symfony\Component\DependencyInjection\ServiceLocator">
+      <tag name="container.service_locator"/>
+      <argument type="collection">
+        <argument key="main" type="service_closure" id="security.authenticator.remember_me_handler.main"/>
+      </argument>
+    </service>
     <service id="debug.event_dispatcher.inner" class="Symfony\Component\EventDispatcher\EventDispatcher"/>
     <service id="debug.controller_resolver.inner" class="Symfony\Bundle\FrameworkBundle\Controller\ControllerResolver">
       <argument type="service" id="service_container"/>
@@ -5643,12 +5786,12 @@
       <argument type="service" id="security.token_storage"/>
     </service>
     <service id="debug.argument_resolver.service.inner" class="Symfony\Component\HttpKernel\Controller\ArgumentResolver\ServiceValueResolver">
-      <argument type="service" id=".service_locator.mRw6yxS"/>
+      <argument type="service" id=".service_locator.ekUvRCn"/>
     </service>
     <service id="debug.argument_resolver.default.inner" class="Symfony\Component\HttpKernel\Controller\ArgumentResolver\DefaultValueResolver"/>
     <service id="debug.argument_resolver.variadic.inner" class="Symfony\Component\HttpKernel\Controller\ArgumentResolver\VariadicValueResolver"/>
     <service id="debug.argument_resolver.not_tagged_controller.inner" class="Symfony\Component\HttpKernel\Controller\ArgumentResolver\NotTaggedControllerValueResolver">
-      <argument type="service" id=".service_locator.mRw6yxS"/>
+      <argument type="service" id=".service_locator.ekUvRCn"/>
     </service>
     <service id=".doctrine.orm.default_metadata_driver.inner" class="Doctrine\Persistence\Mapping\Driver\MappingDriverChain">
       <call method="addDriver">
@@ -6354,13 +6497,15 @@
     <service id="Symfony\Component\PasswordHasher\Hasher\UserPasswordHasherInterface" alias="security.user_password_hasher"/>
     <service id="Symfony\Component\Security\Http\Authentication\UserAuthenticatorInterface" alias="security.user_authenticator"/>
     <service id="security.firewall" alias="debug.security.firewall"/>
+    <service id="security.user.provider.concrete.all_users" alias="App\Security\UserProvider"/>
     <service id="security.authentication.session_strategy.main" alias="security.authentication.session_strategy"/>
+    <service id="Symfony\Component\Security\Http\RememberMe\RememberMeHandlerInterface" alias="security.authenticator.firewall_aware_remember_me_handler"/>
     <service id="security.user_checker.main" alias="security.user_checker"/>
     <service id="security.firewall.context_locator" alias=".service_locator.zJyh7qS"/>
     <service id="Symfony\Component\Security\Core\User\UserCheckerInterface" alias="security.user_checker"/>
     <service id="container.env_var_processors_locator" alias=".service_locator.gSv9zYw" public="true"/>
     <service id="twig.loader.filesystem" alias="twig.loader.native_filesystem"/>
-    <service id="argument_resolver.controller_locator" alias=".service_locator.mRw6yxS"/>
+    <service id="argument_resolver.controller_locator" alias=".service_locator.ekUvRCn"/>
     <service id="Psr\Log\LoggerInterface $requestLogger" alias="monolog.logger.request"/>
     <service id="Psr\Log\LoggerInterface $consoleLogger" alias="monolog.logger.console"/>
     <service id="Psr\Log\LoggerInterface $cacheLogger" alias="monolog.logger.cache"/>
@@ -6379,7 +6524,7 @@
     <service id=".service_locator.zJgRO22" alias=".service_locator.G6VsHmh"/>
     <service id=".service_locator.sy.PpqE" alias=".service_locator.JVUHItZ"/>
     <service id=".service_locator.k8_kl6W" alias=".service_locator.WAid7fk"/>
-    <service id=".service_locator.U7b5V1A" alias=".service_locator.7R6lnhe"/>
+    <service id=".service_locator.U7b5V1A" alias=".service_locator.AW43DMG"/>
     <service id=".service_locator.jlAV_Cy" alias=".service_locator.iPzJNuw"/>
     <service id=".service_locator.45Yq4M1" alias=".service_locator.oB26OpH"/>
     <service id=".service_locator.Th9IVhd" alias=".service_locator.QDkw4M0"/>
@@ -6387,7 +6532,7 @@
     <service id=".service_locator.CubzJEE" alias=".service_locator.6Vk5gGa"/>
     <service id=".service_locator.87TvLY8" alias=".service_locator.CDhANYI"/>
     <service id=".service_locator.yyMrrGo" alias=".service_locator.1yXxVY1"/>
-    <service id=".service_locator.gJzYpnd" alias=".service_locator.mRw6yxS"/>
+    <service id=".service_locator.lubY5vr" alias=".service_locator.ekUvRCn"/>
     <service id=".service_locator.wKF4yn1" alias=".service_locator.19_mNxd"/>
     <service id=".service_locator.uSNgImI" alias=".service_locator.JF3VXm6"/>
     <service id=".service_locator.qBCHs1a" alias=".service_locator.QXcJQkF"/>
@@ -6435,7 +6580,7 @@
     <service id=".service_locator.Hhm9Bdw" alias=".service_locator.WFmNc4M"/>
     <service id=".service_locator.aWUOlQU" alias=".service_locator.Y3X3d_D"/>
     <service id=".service_locator.Sd3J8_S" alias=".service_locator.WAid7fk"/>
-    <service id=".service_locator.TD5aJW8" alias=".service_locator.7R6lnhe"/>
+    <service id=".service_locator.TD5aJW8" alias=".service_locator.AW43DMG"/>
     <service id=".service_locator.NrlEDW3" alias=".service_locator.6etVjkp"/>
     <service id=".service_locator.dWbSMJQ" alias=".service_locator.DZXoutK"/>
     <service id=".service_locator.44VVKKV" alias=".service_locator.jebdhuC"/>

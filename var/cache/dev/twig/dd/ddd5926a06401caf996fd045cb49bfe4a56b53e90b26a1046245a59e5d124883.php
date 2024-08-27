@@ -170,6 +170,6 @@ class __TwigTemplate_91bc127f7cde2bbd2caa24ac9bbb99f913449fae78ea9c8d1c8cbbef5a3
     {{form_end(form)}}
 {{include('static/data.html.twig')}}
 {% endblock %}
-", "notification/new.html.twig", "C:\\Users\\SYNS-MANAGER\\Nouveau dossier\\my_project_directory\\templates\\notification\\new.html.twig");
+", "notification/new.html.twig", "C:\\Users\\SYNS-MANAGER\\Documents\\GitHub\\pmanalysis\\templates\\notification\\new.html.twig");
     }
 }

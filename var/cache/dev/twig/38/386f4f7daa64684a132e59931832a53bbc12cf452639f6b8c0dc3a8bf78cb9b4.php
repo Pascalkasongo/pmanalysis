@@ -127,6 +127,6 @@ class __TwigTemplate_657f47be073eb1ab6487e0363bcdfa1bbd260adf13690c034559a86663f
 
     <a href=\"{{ path('app_competance_index') }}\">back to list</a>
 {% endblock %}
-", "competance/new.html.twig", "C:\\Users\\SYNS-MANAGER\\Nouveau dossier\\my_project_directory\\templates\\competance\\new.html.twig");
+", "competance/new.html.twig", "C:\\Users\\SYNS-MANAGER\\Documents\\GitHub\\pmanalysis\\templates\\competance\\new.html.twig");
     }
 }

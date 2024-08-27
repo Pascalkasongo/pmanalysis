@@ -3218,6 +3218,6 @@ class __TwigTemplate_1acdae281cd43224e1fac6a9af657a3180e1ad79a883bcc0b7f3a0e151a
 
 <!-- Mirrored from demo.dashboardpack.com/admindek-html/default/bs-table-sizing.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 18 Nov 2022 12:16:53 GMT -->
 </html>
-", "admindek-html/default/bs-table-sizing.html", "C:\\Users\\SYNS-MANAGER\\Nouveau dossier\\my_project_directory\\templates\\admindek-html\\default\\bs-table-sizing.html");
+", "admindek-html/default/bs-table-sizing.html", "C:\\Users\\SYNS-MANAGER\\Documents\\GitHub\\pmanalysis\\templates\\admindek-html\\default\\bs-table-sizing.html");
     }
 }

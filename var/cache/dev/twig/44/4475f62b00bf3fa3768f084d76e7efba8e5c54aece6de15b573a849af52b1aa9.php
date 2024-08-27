@@ -3018,6 +3018,6 @@ class __TwigTemplate_698b5b60a408244111b5e4cbeb66a1efa1c99c232d4a36b9e8646402b3c
 
 <!-- Mirrored from demo.dashboardpack.com/admindek-html/default/chart-list.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 18 Nov 2022 12:17:29 GMT -->
 </html>
-", "admindek-html/default/chart-list.html", "C:\\Users\\SYNS-MANAGER\\Nouveau dossier\\my_project_directory\\templates\\admindek-html\\default\\chart-list.html");
+", "admindek-html/default/chart-list.html", "C:\\Users\\SYNS-MANAGER\\Documents\\GitHub\\pmanalysis\\templates\\admindek-html\\default\\chart-list.html");
     }
 }

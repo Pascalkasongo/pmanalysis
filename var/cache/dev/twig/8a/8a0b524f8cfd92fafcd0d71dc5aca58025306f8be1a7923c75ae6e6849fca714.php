@@ -2936,6 +2936,6 @@ class __TwigTemplate_537249fa1c770c527e17658e49b221b83418514a8d150b40b33a65fcb45
 
 <!-- Mirrored from demo.dashboardpack.com/admindek-html/default/chart-rickshaw.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 18 Nov 2022 12:17:38 GMT -->
 </html>
-", "admindek-html/default/chart-rickshaw.html", "C:\\Users\\SYNS-MANAGER\\Nouveau dossier\\my_project_directory\\templates\\admindek-html\\default\\chart-rickshaw.html");
+", "admindek-html/default/chart-rickshaw.html", "C:\\Users\\SYNS-MANAGER\\Documents\\GitHub\\pmanalysis\\templates\\admindek-html\\default\\chart-rickshaw.html");
     }
 }

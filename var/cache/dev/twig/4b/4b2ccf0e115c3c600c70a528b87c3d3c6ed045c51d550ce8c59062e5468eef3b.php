@@ -216,6 +216,6 @@ class __TwigTemplate_fdb9203417940129e011c9e2d51955a5a62bf27771ab00343e28b6e700a
     <a href=\"{{ path('app_equipe_index') }}\">back to list</a>
  {{include('content/data.html.twig')}}
 {% endblock %}
-", "equipe/new.html.twig", "C:\\Users\\SYNS-MANAGER\\Nouveau dossier\\my_project_directory\\templates\\equipe\\new.html.twig");
+", "equipe/new.html.twig", "C:\\Users\\SYNS-MANAGER\\Documents\\GitHub\\pmanalysis\\templates\\equipe\\new.html.twig");
     }
 }

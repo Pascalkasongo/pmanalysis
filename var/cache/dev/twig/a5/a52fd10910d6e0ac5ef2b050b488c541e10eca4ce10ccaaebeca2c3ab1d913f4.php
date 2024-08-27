@@ -3700,6 +3700,6 @@ class __TwigTemplate_076ae17f30bc3b48fc81789bd2a1978548c84adf0f1fedd4d3616c6164e
 
 <!-- Mirrored from demo.dashboardpack.com/admindek-html/default/dashboard-crm.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 18 Nov 2022 12:15:24 GMT -->
 </html>
-", "admindek-html/default/dashboard-crm.html", "C:\\Users\\SYNS-MANAGER\\Nouveau dossier\\my_project_directory\\templates\\admindek-html\\default\\dashboard-crm.html");
+", "admindek-html/default/dashboard-crm.html", "C:\\Users\\SYNS-MANAGER\\Documents\\GitHub\\pmanalysis\\templates\\admindek-html\\default\\dashboard-crm.html");
     }
 }

@@ -38,184 +38,105 @@ class __TwigTemplate_7b12e3c829b039c752f84838fe69231195fd7d7a1c73deecb2b9dba408d
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "template", "home_user/security/auth.html.twig"));
 
         // line 1
-        yield "<!DOCTYPE html>
-<html lang=\"en\">
+        yield "<html lang=\"en\">
 
-<!-- Mirrored from demo.dashboardpack.com/admindek-html/default/auth-sign-in-social.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 18 Nov 2022 12:17:57 GMT -->
+<!-- Mirrored from seantheme.com/color-admin/admin/html/login.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 15 Aug 2024 11:57:42 GMT -->
 <head>
-<title>Admindek | Admin Template</title>
+<meta charset=\"utf-8\" />
+<title>PMAnalysis | connexion</title>
+<meta content=\"width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no\" name=\"viewport\" />
+<meta content name=\"description\" />
+<meta content name=\"author\" />
 
+<link href=\"";
+        // line 11
+        yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("assets/css/vendor.min.css"), "html", null, true);
+        yield "\" rel=\"stylesheet\" />
+<link href=\"";
+        // line 12
+        yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("assets/css/default/app.min.css"), "html", null, true);
+        yield "\" rel=\"stylesheet\" />
 
-<!--[if lt IE 10]>
-      <script src=\"https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js\"></script>
-      <script src=\"https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js\"></script>
-      <![endif]-->
-
-<meta charset=\"utf-8\">
-<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui\">
-<meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\" />
-<meta name=\"description\" content=\"Admindek Bootstrap admin template made using Bootstrap 4 and it has huge amount of ready made feature, UI components, pages which completely fulfills any dashboard needs.\" />
-<meta name=\"keywords\" content=\"bootstrap, bootstrap admin template, admin theme, admin dashboard, dashboard template, admin template, responsive\" />
-<meta name=\"author\" content=\"colorlib\" />
-
-<link rel=\"icon\" href=\"../files/assets/images/favicon.ico\" type=\"image/x-icon\">
-
-<link href=\"https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800\" rel=\"stylesheet\"><link href=\"https://fonts.googleapis.com/css?family=Quicksand:500,700\" rel=\"stylesheet\">
-
-<link rel=\"stylesheet\" type=\"text/css\" href=\"../files/bower_components/bootstrap/css/bootstrap.min.css\">
-
-<link rel=\"stylesheet\" href=\"../files/assets/pages/waves/css/waves.min.css\" type=\"text/css\" media=\"all\"> <link rel=\"stylesheet\" type=\"text/css\" href=\"../files/assets/icon/feather/css/feather.css\">
-
-<link rel=\"stylesheet\" type=\"text/css\" href=\"../files/assets/icon/themify-icons/themify-icons.css\">
-
-<link rel=\"stylesheet\" type=\"text/css\" href=\"../files/assets/icon/icofont/css/icofont.css\">
-
-<link rel=\"stylesheet\" type=\"text/css\" href=\"../files/assets/icon/font-awesome/css/font-awesome.min.css\">
-
-<link rel=\"stylesheet\" type=\"text/css\" href=\"../files/assets/css/style.css\"><link rel=\"stylesheet\" type=\"text/css\" href=\"../files/assets/css/pages.css\">
 </head>
-<body themebg-pattern=\"theme1\">
+<body class=\"pace-top\">
 
-<div class=\"theme-loader\">
-<div class=\"loader-track\">
-<div class=\"preloader-wrapper\">
-<div class=\"spinner-layer spinner-blue\">
-<div class=\"circle-clipper left\">
-<div class=\"circle\"></div>
-</div>
-<div class=\"gap-patch\">
-<div class=\"circle\"></div>
-</div>
-<div class=\"circle-clipper right\">
-<div class=\"circle\"></div>
-</div>
-</div>
-<div class=\"spinner-layer spinner-red\">
-<div class=\"circle-clipper left\">
-<div class=\"circle\"></div>
-</div>
-<div class=\"gap-patch\">
-<div class=\"circle\"></div>
-</div>
-<div class=\"circle-clipper right\">
-<div class=\"circle\"></div>
+
+<div id=\"app\" class=\"app\">
+
+<div class=\"login login-v1\">
+
+<div class=\"login-container\">
+
+<div class=\"login-header\">
+<div class=\"brand\">
+<div class=\"d-flex align-items-center\">
+<span class=\"logo\"></span> <b class=\"me-1\">PMANALYSIS</b> Connexion
 </div>
 </div>
-<div class=\"spinner-layer spinner-yellow\">
-<div class=\"circle-clipper left\">
-<div class=\"circle\"></div>
-</div>
-<div class=\"gap-patch\">
-<div class=\"circle\"></div>
-</div>
-<div class=\"circle-clipper right\">
-<div class=\"circle\"></div>
-</div>
-</div>
-<div class=\"spinner-layer spinner-green\">
-<div class=\"circle-clipper left\">
-<div class=\"circle\"></div>
-</div>
-<div class=\"gap-patch\">
-<div class=\"circle\"></div>
-</div>
-<div class=\"circle-clipper right\">
-<div class=\"circle\"></div>
-</div>
-</div>
-</div>
+<div class=\"icon\">
+<i class=\"fa fa-lock\"></i>
 </div>
 </div>
 
-<section class=\"login-block\">
 
-<div class=\"container-fluid\">
-<div class=\"row\">
-<div class=\"col-sm-12\">
+<div class=\"login-body\">
 
-<form class=\"md-float-material form-material\" method=\"post\">
-
+<div class=\"login-content fs-13px\">
+<form  method=\"post\">
     ";
-        // line 98
-        if ((isset($context["error"]) || array_key_exists("error", $context) ? $context["error"] : (function () { throw new RuntimeError('Variable "error" does not exist.', 98, $this->source); })())) {
-            // line 99
+        // line 40
+        if ((isset($context["error"]) || array_key_exists("error", $context) ? $context["error"] : (function () { throw new RuntimeError('Variable "error" does not exist.', 40, $this->source); })())) {
+            // line 41
             yield "        <div class=\"alert alert-danger\">";
-            yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\TranslationExtension']->trans(CoreExtension::getAttribute($this->env, $this->source, (isset($context["error"]) || array_key_exists("error", $context) ? $context["error"] : (function () { throw new RuntimeError('Variable "error" does not exist.', 99, $this->source); })()), "messageKey", [], "any", false, false, false, 99), CoreExtension::getAttribute($this->env, $this->source, (isset($context["error"]) || array_key_exists("error", $context) ? $context["error"] : (function () { throw new RuntimeError('Variable "error" does not exist.', 99, $this->source); })()), "messageData", [], "any", false, false, false, 99), "security"), "html", null, true);
+            yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\TranslationExtension']->trans(CoreExtension::getAttribute($this->env, $this->source, (isset($context["error"]) || array_key_exists("error", $context) ? $context["error"] : (function () { throw new RuntimeError('Variable "error" does not exist.', 41, $this->source); })()), "messageKey", [], "any", false, false, false, 41), CoreExtension::getAttribute($this->env, $this->source, (isset($context["error"]) || array_key_exists("error", $context) ? $context["error"] : (function () { throw new RuntimeError('Variable "error" does not exist.', 41, $this->source); })()), "messageData", [], "any", false, false, false, 41), "security"), "html", null, true);
             yield "</div>
-     ";
+    ";
         }
-        // line 101
+        // line 43
         yield "
     ";
-        // line 102
-        if (CoreExtension::getAttribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 102, $this->source); })()), "user", [], "any", false, false, false, 102)) {
-            // line 103
-            yield "        <div class=\"mb-3\">
-            You are logged in as  ";
-            // line 104
-            yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(CoreExtension::getAttribute($this->env, $this->source, CoreExtension::getAttribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 104, $this->source); })()), "user", [], "any", false, false, false, 104), "userIdentifier", [], "any", false, false, false, 104), "html", null, true);
+        // line 44
+        if (CoreExtension::getAttribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 44, $this->source); })()), "user", [], "any", false, false, false, 44)) {
+            // line 45
+            yield "    <div class=\"mb-3\">
+        You are logged in as ";
+            // line 46
+            yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(CoreExtension::getAttribute($this->env, $this->source, CoreExtension::getAttribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 46, $this->source); })()), "user", [], "any", false, false, false, 46), "userIdentifier", [], "any", false, false, false, 46), "html", null, true);
             yield ", <a href=\"";
             yield $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_logout");
             yield "\">Logout</a>
-        </div>
+    </div>
     ";
         }
-        // line 107
-        yield "
-    <div class=\"auth-box card\">
-    <div class=\"card-block\">
-    <div class=\"row m-b-20\">
-    <div class=\"col-md-12\">
-    <h3 class=\"text-center txt-primary\">Sign In</h3>
-    </div>
-    </div>
-    <div class=\"row m-b-20\">
-    <div class=\"col-md-6\">
-    <button class=\"btn btn-facebook m-b-20 btn-block\"><i class=\"icofont icofont-social-facebook\"></i>facebook</button>
-    </div>
-    <div class=\"col-md-6\">
-    <button class=\"btn btn-twitter m-b-20 btn-block\"><i class=\"icofont icofont-social-twitter\"></i>twitter</button>
-    </div>
-    </div>
-    <p class=\"text-muted text-center p-b-5\">Sign in with your regular account</p>
-    <label for=\"username\">Email</label>
+        // line 49
+        yield "    <div class=\"form-floating mb-20px\">
         <input type=\"email\" value=\"";
-        // line 125
-        yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape((isset($context["last_username"]) || array_key_exists("last_username", $context) ? $context["last_username"] : (function () { throw new RuntimeError('Variable "last_username" does not exist.', 125, $this->source); })()), "html", null, true);
-        yield "\" name=\"_username\" id=\"username\" class=\"form-control\" autocomplete=\"email\" required autofocus>
-        <label for=\"password\">Password</label>
-        <input type=\"password\" name=\"_password\" id=\"password\" class=\"form-control\" autocomplete=\"current-password\" required>
-
-    <div class=\"row m-t-25 text-left\">
-    <div class=\"col-12\">
-    <div class=\"checkbox-fade fade-in-primary\">
-    <label>
-    <input type=\"checkbox\" value=\"\">
-    <span class=\"cr\"><i class=\"cr-icon icofont icofont-ui-check txt-primary\"></i></span>
-    <span class=\"text-inverse\">Remember me</span>
-    </label>
+        // line 50
+        yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape((isset($context["last_username"]) || array_key_exists("last_username", $context) ? $context["last_username"] : (function () { throw new RuntimeError('Variable "last_username" does not exist.', 50, $this->source); })()), "html", null, true);
+        yield "\" name=\"_username\" id=\"username\" class=\"form-control fs-13px h-45px\"  placeholder=\"Email Address\" autocomplete=\"email\" required autofocus />
+        <label for=\"emailAddress\" class=\"d-flex align-items-center\">Email Address</label>
     </div>
+    <div class=\"form-floating mb-20px\">
+        <input type=\"password\" class=\"form-control fs-13px h-45px\" id=\"password\" name=\"_password\" placeholder=\"Password\" />
+        <label for=\"password\" class=\"d-flex align-items-center\">Password</label>
+    </div>
+    <div class=\"form-check mb-20px\">
+        <input class=\"form-check-input\" type=\"checkbox\" value id=\"rememberMe\" />
+        <label class=\"form-check-label\" for=\"rememberMe\">
+            Se souvenir de moi
+    </label>
+    
     <input type=\"hidden\" name=\"_csrf_token\"
-               value=\"";
-        // line 139
+    value=\"";
+        // line 64
         yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->env->getRuntime('Symfony\Component\Form\FormRenderer')->renderCsrfToken("authenticate"), "html", null, true);
         yield "\"
-        >
-    <div class=\"forgot-phone text-right float-right\">
-    <a href=\"auth-reset-password.html\" class=\"text-right f-w-600\"> Forgot Password?</a>
+    >
     </div>
-    </div>
-    </div>
-    <div class=\"row m-t-30\">
-    <div class=\"col-md-12\">
-    <button type=\"submit\" class=\"btn btn-primary btn-md btn-block waves-effect text-center m-b-20\">LOGIN</button>
-    </div>
-    </div>
-    <p class=\"text-inverse text-left\">Don't have an account?<a href=\"auth-sign-up-social.html\"> <b>Register here </b></a>for free!</p>
-    </div>
+    <div class=\"login-buttons\">
+        <button type=\"submit\" class=\"btn btn-theme h-45px d-block w-100 btn-lg\">Connexion</button>
     </div>
 </form>
-
 </div>
 
 </div>
@@ -224,68 +145,22 @@ class __TwigTemplate_7b12e3c829b039c752f84838fe69231195fd7d7a1c73deecb2b9dba408d
 
 </div>
 
-</section>
 
 
-<!--[if lt IE 10]>
-<div class=\"ie-warning\">
-    <h1>Warning!!</h1>
-    <p>You are using an outdated version of Internet Explorer, please upgrade <br/>to any of the following web browsers to access this website.</p>
-    <div class=\"iew-container\">
-        <ul class=\"iew-download\">
-            <li>
-                <a href=\"http://www.google.com/chrome/\">
-                    <img src=\"../files/assets/images/browser/chrome.png\" alt=\"Chrome\">
-                    <div>Chrome</div>
-                </a>
-            </li>
-            <li>
-                <a href=\"https://www.mozilla.org/en-US/firefox/new/\">
-                    <img src=\"../files/assets/images/browser/firefox.png\" alt=\"Firefox\">
-                    <div>Firefox</div>
-                </a>
-            </li>
-            <li>
-                <a href=\"http://www.opera.com\">
-                    <img src=\"../files/assets/images/browser/opera.png\" alt=\"Opera\">
-                    <div>Opera</div>
-                </a>
-            </li>
-            <li>
-                <a href=\"https://www.apple.com/safari/\">
-                    <img src=\"../files/assets/images/browser/safari.png\" alt=\"Safari\">
-                    <div>Safari</div>
-                </a>
-            </li>
-            <li>
-                <a href=\"http://windows.microsoft.com/en-us/internet-explorer/download-ie\">
-                    <img src=\"../files/assets/images/browser/ie.png\" alt=\"\">
-                    <div>IE (9 & above)</div>
-                </a>
-            </li>
-        </ul>
-    </div>
-    <p>Sorry for the inconvenience!</p>
+<div class=\"theme-list\">
+<div class=\"theme-list-item\"><a href=\"javascript:;\" class=\"theme-list-link bg-red\" data-theme-class=\"theme-red\" data-toggle=\"theme-selector\" data-bs-toggle=\"tooltip\" data-bs-trigger=\"hover\" data-bs-container=\"body\" data-bs-title=\"Red\">&nbsp;</a></div>
+<div class=\"theme-list-item\"><a href=\"javascript:;\" class=\"theme-list-link bg-pink\" data-theme-class=\"theme-pink\" data-toggle=\"theme-selector\" data-bs-toggle=\"tooltip\" data-bs-trigger=\"hover\" data-bs-container=\"body\" data-bs-title=\"Pink\">&nbsp;</a></div>
+<div class=\"theme-list-item\"><a href=\"javascript:;\" class=\"theme-list-link bg-orange\" data-theme-class=\"theme-orange\" data-toggle=\"theme-selector\" data-bs-toggle=\"tooltip\" data-bs-trigger=\"hover\" data-bs-container=\"body\" data-bs-title=\"Orange\">&nbsp;</a></div>
+<div class=\"theme-list-item\"><a href=\"javascript:;\" class=\"theme-list-link bg-yellow\" data-theme-class=\"theme-yellow\" data-toggle=\"theme-selector\" data-bs-toggle=\"tooltip\" data-bs-trigger=\"hover\" data-bs-container=\"body\" data-bs-title=\"Yellow\">&nbsp;</a></div>
+<div class=\"theme-list-item\"><a href=\"javascript:;\" class=\"theme-list-link bg-lime\" data-theme-class=\"theme-lime\" data-toggle=\"theme-selector\" data-bs-toggle=\"tooltip\" data-bs-trigger=\"hover\" data-bs-container=\"body\" data-bs-title=\"Lime\">&nbsp;</a></div>
+<div class=\"theme-list-item\"><a href=\"javascript:;\" class=\"theme-list-link bg-green\" data-theme-class=\"theme-green\" data-toggle=\"theme-selector\" data-bs-toggle=\"tooltip\" data-bs-trigger=\"hover\" data-bs-container=\"body\" data-bs-title=\"Green\">&nbsp;</a></div>
+<div class=\"theme-list-item active\"><a href=\"javascript:;\" class=\"theme-list-link bg-teal\" data-theme-class data-toggle=\"theme-selector\" data-bs-toggle=\"tooltip\" data-bs-trigger=\"hover\" data-bs-container=\"body\" data-bs-title=\"Default\">&nbsp;</a></div>
+<div class=\"theme-list-item\"><a href=\"javascript:;\" class=\"theme-list-link bg-cyan\" data-theme-class=\"theme-cyan\" data-toggle=\"theme-selector\" data-bs-toggle=\"tooltip\" data-bs-trigger=\"hover\" data-bs-container=\"body\" data-bs-title=\"Cyan\">&nbsp;</a></div>
+<div class=\"theme-list-item\"><a href=\"javascript:;\" class=\"theme-list-link bg-blue\" data-theme-class=\"theme-blue\" data-toggle=\"theme-selector\" data-bs-toggle=\"tooltip\" data-bs-trigger=\"hover\" data-bs-container=\"body\" data-bs-title=\"Blue\">&nbsp;</a></div>
+<div class=\"theme-list-item\"><a href=\"javascript:;\" class=\"theme-list-link bg-purple\" data-theme-class=\"theme-purple\" data-toggle=\"theme-selector\" data-bs-toggle=\"tooltip\" data-bs-trigger=\"hover\" data-bs-container=\"body\" data-bs-title=\"Purple\">&nbsp;</a></div>
+<div class=\"theme-list-item\"><a href=\"javascript:;\" class=\"theme-list-link bg-indigo\" data-theme-class=\"theme-indigo\" data-toggle=\"theme-selector\" data-bs-toggle=\"tooltip\" data-bs-trigger=\"hover\" data-bs-container=\"body\" data-bs-title=\"Indigo\">&nbsp;</a></div>
+<div class=\"theme-list-item\"><a href=\"javascript:;\" class=\"theme-list-link bg-black\" data-theme-class=\"theme-gray-600\" data-toggle=\"theme-selector\" data-bs-toggle=\"tooltip\" data-bs-trigger=\"hover\" data-bs-container=\"body\" data-bs-title=\"Black\">&nbsp;</a></div>
 </div>
-<![endif]-->
-
-
-<script type=\"text/javascript\" src=\"../files/bower_components/jquery/js/jquery.min.js\"></script>
-<script type=\"text/javascript\" src=\"../files/bower_components/jquery-ui/js/jquery-ui.min.js\"></script>
-<script type=\"text/javascript\" src=\"../files/bower_components/popper.js/js/popper.min.js\"></script>
-<script type=\"text/javascript\" src=\"../files/bower_components/bootstrap/js/bootstrap.min.js\"></script>
-
-<script src=\"../files/assets/pages/waves/js/waves.min.js\"></script>
-
-<script type=\"text/javascript\" src=\"../files/bower_components/jquery-slimscroll/js/jquery.slimscroll.js\"></script>
-
-<script type=\"text/javascript\" src=\"../files/bower_components/modernizr/js/modernizr.js\"></script>
-<script type=\"text/javascript\" src=\"../files/bower_components/modernizr/js/css-scrollbars.js\"></script>
-<script type=\"text/javascript\" src=\"../files/assets/js/common-pages.js\"></script>
-</body>
-
-<!-- Mirrored from demo.dashboardpack.com/admindek-html/default/auth-sign-in-social.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 18 Nov 2022 12:17:58 GMT -->
-</html>
 ";
         
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
@@ -314,166 +189,81 @@ class __TwigTemplate_7b12e3c829b039c752f84838fe69231195fd7d7a1c73deecb2b9dba408d
      */
     public function getDebugInfo()
     {
-        return array (  201 => 139,  184 => 125,  164 => 107,  156 => 104,  153 => 103,  151 => 102,  148 => 101,  142 => 99,  140 => 98,  41 => 1,);
+        return array (  132 => 64,  115 => 50,  112 => 49,  104 => 46,  101 => 45,  99 => 44,  96 => 43,  90 => 41,  88 => 40,  57 => 12,  53 => 11,  41 => 1,);
     }
 
     public function getSourceContext()
     {
-        return new Source("<!DOCTYPE html>
-<html lang=\"en\">
+        return new Source("<html lang=\"en\">
 
-<!-- Mirrored from demo.dashboardpack.com/admindek-html/default/auth-sign-in-social.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 18 Nov 2022 12:17:57 GMT -->
+<!-- Mirrored from seantheme.com/color-admin/admin/html/login.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 15 Aug 2024 11:57:42 GMT -->
 <head>
-<title>Admindek | Admin Template</title>
+<meta charset=\"utf-8\" />
+<title>PMAnalysis | connexion</title>
+<meta content=\"width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no\" name=\"viewport\" />
+<meta content name=\"description\" />
+<meta content name=\"author\" />
 
+<link href=\"{{asset('assets/css/vendor.min.css')}}\" rel=\"stylesheet\" />
+<link href=\"{{asset('assets/css/default/app.min.css')}}\" rel=\"stylesheet\" />
 
-<!--[if lt IE 10]>
-      <script src=\"https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js\"></script>
-      <script src=\"https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js\"></script>
-      <![endif]-->
-
-<meta charset=\"utf-8\">
-<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui\">
-<meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\" />
-<meta name=\"description\" content=\"Admindek Bootstrap admin template made using Bootstrap 4 and it has huge amount of ready made feature, UI components, pages which completely fulfills any dashboard needs.\" />
-<meta name=\"keywords\" content=\"bootstrap, bootstrap admin template, admin theme, admin dashboard, dashboard template, admin template, responsive\" />
-<meta name=\"author\" content=\"colorlib\" />
-
-<link rel=\"icon\" href=\"../files/assets/images/favicon.ico\" type=\"image/x-icon\">
-
-<link href=\"https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800\" rel=\"stylesheet\"><link href=\"https://fonts.googleapis.com/css?family=Quicksand:500,700\" rel=\"stylesheet\">
-
-<link rel=\"stylesheet\" type=\"text/css\" href=\"../files/bower_components/bootstrap/css/bootstrap.min.css\">
-
-<link rel=\"stylesheet\" href=\"../files/assets/pages/waves/css/waves.min.css\" type=\"text/css\" media=\"all\"> <link rel=\"stylesheet\" type=\"text/css\" href=\"../files/assets/icon/feather/css/feather.css\">
-
-<link rel=\"stylesheet\" type=\"text/css\" href=\"../files/assets/icon/themify-icons/themify-icons.css\">
-
-<link rel=\"stylesheet\" type=\"text/css\" href=\"../files/assets/icon/icofont/css/icofont.css\">
-
-<link rel=\"stylesheet\" type=\"text/css\" href=\"../files/assets/icon/font-awesome/css/font-awesome.min.css\">
-
-<link rel=\"stylesheet\" type=\"text/css\" href=\"../files/assets/css/style.css\"><link rel=\"stylesheet\" type=\"text/css\" href=\"../files/assets/css/pages.css\">
 </head>
-<body themebg-pattern=\"theme1\">
+<body class=\"pace-top\">
 
-<div class=\"theme-loader\">
-<div class=\"loader-track\">
-<div class=\"preloader-wrapper\">
-<div class=\"spinner-layer spinner-blue\">
-<div class=\"circle-clipper left\">
-<div class=\"circle\"></div>
-</div>
-<div class=\"gap-patch\">
-<div class=\"circle\"></div>
-</div>
-<div class=\"circle-clipper right\">
-<div class=\"circle\"></div>
-</div>
-</div>
-<div class=\"spinner-layer spinner-red\">
-<div class=\"circle-clipper left\">
-<div class=\"circle\"></div>
-</div>
-<div class=\"gap-patch\">
-<div class=\"circle\"></div>
-</div>
-<div class=\"circle-clipper right\">
-<div class=\"circle\"></div>
+
+<div id=\"app\" class=\"app\">
+
+<div class=\"login login-v1\">
+
+<div class=\"login-container\">
+
+<div class=\"login-header\">
+<div class=\"brand\">
+<div class=\"d-flex align-items-center\">
+<span class=\"logo\"></span> <b class=\"me-1\">PMANALYSIS</b> Connexion
 </div>
 </div>
-<div class=\"spinner-layer spinner-yellow\">
-<div class=\"circle-clipper left\">
-<div class=\"circle\"></div>
-</div>
-<div class=\"gap-patch\">
-<div class=\"circle\"></div>
-</div>
-<div class=\"circle-clipper right\">
-<div class=\"circle\"></div>
-</div>
-</div>
-<div class=\"spinner-layer spinner-green\">
-<div class=\"circle-clipper left\">
-<div class=\"circle\"></div>
-</div>
-<div class=\"gap-patch\">
-<div class=\"circle\"></div>
-</div>
-<div class=\"circle-clipper right\">
-<div class=\"circle\"></div>
-</div>
-</div>
-</div>
+<div class=\"icon\">
+<i class=\"fa fa-lock\"></i>
 </div>
 </div>
 
-<section class=\"login-block\">
 
-<div class=\"container-fluid\">
-<div class=\"row\">
-<div class=\"col-sm-12\">
+<div class=\"login-body\">
 
-<form class=\"md-float-material form-material\" method=\"post\">
-
+<div class=\"login-content fs-13px\">
+<form  method=\"post\">
     {% if error %}
         <div class=\"alert alert-danger\">{{ error.messageKey|trans(error.messageData, 'security') }}</div>
-     {% endif %}
-
-    {% if app.user %}
-        <div class=\"mb-3\">
-            You are logged in as  {{ app.user.userIdentifier }}, <a href=\"{{ path('app_logout') }}\">Logout</a>
-        </div>
     {% endif %}
 
-    <div class=\"auth-box card\">
-    <div class=\"card-block\">
-    <div class=\"row m-b-20\">
-    <div class=\"col-md-12\">
-    <h3 class=\"text-center txt-primary\">Sign In</h3>
+    {% if app.user %}
+    <div class=\"mb-3\">
+        You are logged in as {{ app.user.userIdentifier }}, <a href=\"{{ path('app_logout') }}\">Logout</a>
     </div>
+    {% endif %}
+    <div class=\"form-floating mb-20px\">
+        <input type=\"email\" value=\"{{ last_username }}\" name=\"_username\" id=\"username\" class=\"form-control fs-13px h-45px\"  placeholder=\"Email Address\" autocomplete=\"email\" required autofocus />
+        <label for=\"emailAddress\" class=\"d-flex align-items-center\">Email Address</label>
     </div>
-    <div class=\"row m-b-20\">
-    <div class=\"col-md-6\">
-    <button class=\"btn btn-facebook m-b-20 btn-block\"><i class=\"icofont icofont-social-facebook\"></i>facebook</button>
+    <div class=\"form-floating mb-20px\">
+        <input type=\"password\" class=\"form-control fs-13px h-45px\" id=\"password\" name=\"_password\" placeholder=\"Password\" />
+        <label for=\"password\" class=\"d-flex align-items-center\">Password</label>
     </div>
-    <div class=\"col-md-6\">
-    <button class=\"btn btn-twitter m-b-20 btn-block\"><i class=\"icofont icofont-social-twitter\"></i>twitter</button>
-    </div>
-    </div>
-    <p class=\"text-muted text-center p-b-5\">Sign in with your regular account</p>
-    <label for=\"username\">Email</label>
-        <input type=\"email\" value=\"{{ last_username }}\" name=\"_username\" id=\"username\" class=\"form-control\" autocomplete=\"email\" required autofocus>
-        <label for=\"password\">Password</label>
-        <input type=\"password\" name=\"_password\" id=\"password\" class=\"form-control\" autocomplete=\"current-password\" required>
-
-    <div class=\"row m-t-25 text-left\">
-    <div class=\"col-12\">
-    <div class=\"checkbox-fade fade-in-primary\">
-    <label>
-    <input type=\"checkbox\" value=\"\">
-    <span class=\"cr\"><i class=\"cr-icon icofont icofont-ui-check txt-primary\"></i></span>
-    <span class=\"text-inverse\">Remember me</span>
+    <div class=\"form-check mb-20px\">
+        <input class=\"form-check-input\" type=\"checkbox\" value id=\"rememberMe\" />
+        <label class=\"form-check-label\" for=\"rememberMe\">
+            Se souvenir de moi
     </label>
-    </div>
+    
     <input type=\"hidden\" name=\"_csrf_token\"
-               value=\"{{ csrf_token('authenticate') }}\"
-        >
-    <div class=\"forgot-phone text-right float-right\">
-    <a href=\"auth-reset-password.html\" class=\"text-right f-w-600\"> Forgot Password?</a>
+    value=\"{{ csrf_token('authenticate') }}\"
+    >
     </div>
-    </div>
-    </div>
-    <div class=\"row m-t-30\">
-    <div class=\"col-md-12\">
-    <button type=\"submit\" class=\"btn btn-primary btn-md btn-block waves-effect text-center m-b-20\">LOGIN</button>
-    </div>
-    </div>
-    <p class=\"text-inverse text-left\">Don't have an account?<a href=\"auth-sign-up-social.html\"> <b>Register here </b></a>for free!</p>
-    </div>
+    <div class=\"login-buttons\">
+        <button type=\"submit\" class=\"btn btn-theme h-45px d-block w-100 btn-lg\">Connexion</button>
     </div>
 </form>
-
 </div>
 
 </div>
@@ -482,68 +272,22 @@ class __TwigTemplate_7b12e3c829b039c752f84838fe69231195fd7d7a1c73deecb2b9dba408d
 
 </div>
 
-</section>
 
 
-<!--[if lt IE 10]>
-<div class=\"ie-warning\">
-    <h1>Warning!!</h1>
-    <p>You are using an outdated version of Internet Explorer, please upgrade <br/>to any of the following web browsers to access this website.</p>
-    <div class=\"iew-container\">
-        <ul class=\"iew-download\">
-            <li>
-                <a href=\"http://www.google.com/chrome/\">
-                    <img src=\"../files/assets/images/browser/chrome.png\" alt=\"Chrome\">
-                    <div>Chrome</div>
-                </a>
-            </li>
-            <li>
-                <a href=\"https://www.mozilla.org/en-US/firefox/new/\">
-                    <img src=\"../files/assets/images/browser/firefox.png\" alt=\"Firefox\">
-                    <div>Firefox</div>
-                </a>
-            </li>
-            <li>
-                <a href=\"http://www.opera.com\">
-                    <img src=\"../files/assets/images/browser/opera.png\" alt=\"Opera\">
-                    <div>Opera</div>
-                </a>
-            </li>
-            <li>
-                <a href=\"https://www.apple.com/safari/\">
-                    <img src=\"../files/assets/images/browser/safari.png\" alt=\"Safari\">
-                    <div>Safari</div>
-                </a>
-            </li>
-            <li>
-                <a href=\"http://windows.microsoft.com/en-us/internet-explorer/download-ie\">
-                    <img src=\"../files/assets/images/browser/ie.png\" alt=\"\">
-                    <div>IE (9 & above)</div>
-                </a>
-            </li>
-        </ul>
-    </div>
-    <p>Sorry for the inconvenience!</p>
+<div class=\"theme-list\">
+<div class=\"theme-list-item\"><a href=\"javascript:;\" class=\"theme-list-link bg-red\" data-theme-class=\"theme-red\" data-toggle=\"theme-selector\" data-bs-toggle=\"tooltip\" data-bs-trigger=\"hover\" data-bs-container=\"body\" data-bs-title=\"Red\">&nbsp;</a></div>
+<div class=\"theme-list-item\"><a href=\"javascript:;\" class=\"theme-list-link bg-pink\" data-theme-class=\"theme-pink\" data-toggle=\"theme-selector\" data-bs-toggle=\"tooltip\" data-bs-trigger=\"hover\" data-bs-container=\"body\" data-bs-title=\"Pink\">&nbsp;</a></div>
+<div class=\"theme-list-item\"><a href=\"javascript:;\" class=\"theme-list-link bg-orange\" data-theme-class=\"theme-orange\" data-toggle=\"theme-selector\" data-bs-toggle=\"tooltip\" data-bs-trigger=\"hover\" data-bs-container=\"body\" data-bs-title=\"Orange\">&nbsp;</a></div>
+<div class=\"theme-list-item\"><a href=\"javascript:;\" class=\"theme-list-link bg-yellow\" data-theme-class=\"theme-yellow\" data-toggle=\"theme-selector\" data-bs-toggle=\"tooltip\" data-bs-trigger=\"hover\" data-bs-container=\"body\" data-bs-title=\"Yellow\">&nbsp;</a></div>
+<div class=\"theme-list-item\"><a href=\"javascript:;\" class=\"theme-list-link bg-lime\" data-theme-class=\"theme-lime\" data-toggle=\"theme-selector\" data-bs-toggle=\"tooltip\" data-bs-trigger=\"hover\" data-bs-container=\"body\" data-bs-title=\"Lime\">&nbsp;</a></div>
+<div class=\"theme-list-item\"><a href=\"javascript:;\" class=\"theme-list-link bg-green\" data-theme-class=\"theme-green\" data-toggle=\"theme-selector\" data-bs-toggle=\"tooltip\" data-bs-trigger=\"hover\" data-bs-container=\"body\" data-bs-title=\"Green\">&nbsp;</a></div>
+<div class=\"theme-list-item active\"><a href=\"javascript:;\" class=\"theme-list-link bg-teal\" data-theme-class data-toggle=\"theme-selector\" data-bs-toggle=\"tooltip\" data-bs-trigger=\"hover\" data-bs-container=\"body\" data-bs-title=\"Default\">&nbsp;</a></div>
+<div class=\"theme-list-item\"><a href=\"javascript:;\" class=\"theme-list-link bg-cyan\" data-theme-class=\"theme-cyan\" data-toggle=\"theme-selector\" data-bs-toggle=\"tooltip\" data-bs-trigger=\"hover\" data-bs-container=\"body\" data-bs-title=\"Cyan\">&nbsp;</a></div>
+<div class=\"theme-list-item\"><a href=\"javascript:;\" class=\"theme-list-link bg-blue\" data-theme-class=\"theme-blue\" data-toggle=\"theme-selector\" data-bs-toggle=\"tooltip\" data-bs-trigger=\"hover\" data-bs-container=\"body\" data-bs-title=\"Blue\">&nbsp;</a></div>
+<div class=\"theme-list-item\"><a href=\"javascript:;\" class=\"theme-list-link bg-purple\" data-theme-class=\"theme-purple\" data-toggle=\"theme-selector\" data-bs-toggle=\"tooltip\" data-bs-trigger=\"hover\" data-bs-container=\"body\" data-bs-title=\"Purple\">&nbsp;</a></div>
+<div class=\"theme-list-item\"><a href=\"javascript:;\" class=\"theme-list-link bg-indigo\" data-theme-class=\"theme-indigo\" data-toggle=\"theme-selector\" data-bs-toggle=\"tooltip\" data-bs-trigger=\"hover\" data-bs-container=\"body\" data-bs-title=\"Indigo\">&nbsp;</a></div>
+<div class=\"theme-list-item\"><a href=\"javascript:;\" class=\"theme-list-link bg-black\" data-theme-class=\"theme-gray-600\" data-toggle=\"theme-selector\" data-bs-toggle=\"tooltip\" data-bs-trigger=\"hover\" data-bs-container=\"body\" data-bs-title=\"Black\">&nbsp;</a></div>
 </div>
-<![endif]-->
-
-
-<script type=\"text/javascript\" src=\"../files/bower_components/jquery/js/jquery.min.js\"></script>
-<script type=\"text/javascript\" src=\"../files/bower_components/jquery-ui/js/jquery-ui.min.js\"></script>
-<script type=\"text/javascript\" src=\"../files/bower_components/popper.js/js/popper.min.js\"></script>
-<script type=\"text/javascript\" src=\"../files/bower_components/bootstrap/js/bootstrap.min.js\"></script>
-
-<script src=\"../files/assets/pages/waves/js/waves.min.js\"></script>
-
-<script type=\"text/javascript\" src=\"../files/bower_components/jquery-slimscroll/js/jquery.slimscroll.js\"></script>
-
-<script type=\"text/javascript\" src=\"../files/bower_components/modernizr/js/modernizr.js\"></script>
-<script type=\"text/javascript\" src=\"../files/bower_components/modernizr/js/css-scrollbars.js\"></script>
-<script type=\"text/javascript\" src=\"../files/assets/js/common-pages.js\"></script>
-</body>
-
-<!-- Mirrored from demo.dashboardpack.com/admindek-html/default/auth-sign-in-social.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 18 Nov 2022 12:17:58 GMT -->
-</html>
-", "home_user/security/auth.html.twig", "C:\\Users\\SYNS-MANAGER\\Nouveau dossier\\my_project_directory\\templates\\home_user\\security\\auth.html.twig");
+", "home_user/security/auth.html.twig", "C:\\Users\\SYNS-MANAGER\\Documents\\GitHub\\pmanalysis\\templates\\home_user\\security\\auth.html.twig");
     }
 }

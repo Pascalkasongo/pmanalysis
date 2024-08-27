@@ -3078,6 +3078,6 @@ in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
 
 <!-- Mirrored from demo.dashboardpack.com/admindek-html/default/sample-page.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 18 Nov 2022 12:18:17 GMT -->
 </html>
-", "admindek-html/default/sample-page.html", "C:\\Users\\SYNS-MANAGER\\Nouveau dossier\\my_project_directory\\templates\\admindek-html\\default\\sample-page.html");
+", "admindek-html/default/sample-page.html", "C:\\Users\\SYNS-MANAGER\\Documents\\GitHub\\pmanalysis\\templates\\admindek-html\\default\\sample-page.html");
     }
 }

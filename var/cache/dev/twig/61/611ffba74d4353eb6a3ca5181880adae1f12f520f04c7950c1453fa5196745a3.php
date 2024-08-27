@@ -2956,6 +2956,6 @@ Column sorting plugin works as a proxy between the data source and the Handson t
 
 <!-- Mirrored from demo.dashboardpack.com/admindek-html/default/handson-data-operation.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 18 Nov 2022 12:17:20 GMT -->
 </html>
-", "admindek-html/default/handson-data-operation.html", "C:\\Users\\SYNS-MANAGER\\Nouveau dossier\\my_project_directory\\templates\\admindek-html\\default\\handson-data-operation.html");
+", "admindek-html/default/handson-data-operation.html", "C:\\Users\\SYNS-MANAGER\\Documents\\GitHub\\pmanalysis\\templates\\admindek-html\\default\\handson-data-operation.html");
     }
 }

@@ -134,6 +134,6 @@ class __TwigTemplate_02157948b132355524f659a27bd2de00e21b2aafe236c2051071581579c
 
     {{ include('facture/_delete_form.html.twig') }}
 {% endblock %}
-", "facture/edit.html.twig", "C:\\Users\\SYNS-MANAGER\\Nouveau dossier\\my_project_directory\\templates\\facture\\edit.html.twig");
+", "facture/edit.html.twig", "C:\\Users\\SYNS-MANAGER\\Documents\\GitHub\\pmanalysis\\templates\\facture\\edit.html.twig");
     }
 }

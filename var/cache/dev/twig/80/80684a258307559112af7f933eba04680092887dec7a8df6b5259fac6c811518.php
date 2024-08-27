@@ -148,6 +148,6 @@ class __TwigTemplate_fd17170dcb4a7645ee4b5200885fcf165576e8543337ca2bdce0aa043b8
     </ul>
 </div>
 {% endblock %}
-", "user/index.html.twig", "C:\\Users\\SYNS-MANAGER\\Nouveau dossier\\my_project_directory\\templates\\user\\index.html.twig");
+", "user/index.html.twig", "C:\\Users\\SYNS-MANAGER\\Documents\\GitHub\\pmanalysis\\templates\\user\\index.html.twig");
     }
 }

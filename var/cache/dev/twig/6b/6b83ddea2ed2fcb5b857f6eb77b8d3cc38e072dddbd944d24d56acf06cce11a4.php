@@ -166,6 +166,6 @@ class __TwigTemplate_8d29b6ed542e93382341b51be017e9229909a679fcccfebc8f5c8053909
 
     {{ include('role/_delete_form.html.twig') }}
 {% endblock %}
-", "role/show.html.twig", "C:\\Users\\SYNS-MANAGER\\Nouveau dossier\\my_project_directory\\templates\\role\\show.html.twig");
+", "role/show.html.twig", "C:\\Users\\SYNS-MANAGER\\Documents\\GitHub\\pmanalysis\\templates\\role\\show.html.twig");
     }
 }

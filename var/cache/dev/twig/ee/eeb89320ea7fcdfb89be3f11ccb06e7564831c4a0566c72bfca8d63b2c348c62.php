@@ -3014,6 +3014,6 @@ In many cases you will need to configure a certain column to be non-editable. Do
 
 <!-- Mirrored from demo.dashboardpack.com/admindek-html/default/handson-cell-features.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 18 Nov 2022 12:17:22 GMT -->
 </html>
-", "admindek-html/default/handson-cell-features.html", "C:\\Users\\SYNS-MANAGER\\Nouveau dossier\\my_project_directory\\templates\\admindek-html\\default\\handson-cell-features.html");
+", "admindek-html/default/handson-cell-features.html", "C:\\Users\\SYNS-MANAGER\\Documents\\GitHub\\pmanalysis\\templates\\admindek-html\\default\\handson-cell-features.html");
     }
 }

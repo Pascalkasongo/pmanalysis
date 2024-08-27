@@ -89,6 +89,6 @@ class __TwigTemplate_aec96713326ff269bf5e2ac6aadfafc18d31c71a22cbde46eaa3c6c7b75
     {{ form_widget(form) }}
     <button class=\"btn\">{{ button_label|default('Save') }}</button>
 {{ form_end(form) }}
-", "role/_form.html.twig", "C:\\Users\\SYNS-MANAGER\\Nouveau dossier\\my_project_directory\\templates\\role\\_form.html.twig");
+", "role/_form.html.twig", "C:\\Users\\SYNS-MANAGER\\Documents\\GitHub\\pmanalysis\\templates\\role\\_form.html.twig");
     }
 }

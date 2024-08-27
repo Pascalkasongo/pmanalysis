@@ -147,6 +147,6 @@ class __TwigTemplate_7ef10375b40b6b4dd8cf151ee9910f009b1ee0817bb993cc436a8ebc656
     </div>
     {{include('content/data.html.twig')}}
 {% endblock %}
-", "client/new.html.twig", "C:\\Users\\SYNS-MANAGER\\Nouveau dossier\\my_project_directory\\templates\\client\\new.html.twig");
+", "client/new.html.twig", "C:\\Users\\SYNS-MANAGER\\Documents\\GitHub\\pmanalysis\\templates\\client\\new.html.twig");
     }
 }

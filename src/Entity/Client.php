@@ -12,7 +12,11 @@ use Symfony\Component\Security\Core\User\UserInterface;
 class Client extends Utilisateur implements UserInterface
 {
     
+    
 
+    // Autres propriétés comme $email, $password, etc.
+
+    
     #[ORM\Column(length: 255)]
     private ?string $nom_client = null;
 

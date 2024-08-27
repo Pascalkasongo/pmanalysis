@@ -5302,6 +5302,6 @@ class __TwigTemplate_10beb8aac7ab54dc35d41fc4e8d1e6279434354f00cef04fc9330023e63
 
 <!-- Mirrored from demo.dashboardpack.com/admindek-html/default/color.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 18 Nov 2022 12:16:03 GMT -->
 </html>
-", "admindek-html/default/color.html", "C:\\Users\\SYNS-MANAGER\\Nouveau dossier\\my_project_directory\\templates\\admindek-html\\default\\color.html");
+", "admindek-html/default/color.html", "C:\\Users\\SYNS-MANAGER\\Documents\\GitHub\\pmanalysis\\templates\\admindek-html\\default\\color.html");
     }
 }

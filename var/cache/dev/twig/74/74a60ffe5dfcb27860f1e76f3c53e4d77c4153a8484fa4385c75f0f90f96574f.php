@@ -134,6 +134,6 @@ class __TwigTemplate_de3f1f3793f6d7441846f77b9dcde270d051d9de6d7412d88e7e551b0cc
 
     {{ include('priorite/_delete_form.html.twig') }}
 {% endblock %}
-", "priorite/edit.html.twig", "C:\\Users\\SYNS-MANAGER\\Nouveau dossier\\my_project_directory\\templates\\priorite\\edit.html.twig");
+", "priorite/edit.html.twig", "C:\\Users\\SYNS-MANAGER\\Documents\\GitHub\\pmanalysis\\templates\\priorite\\edit.html.twig");
     }
 }

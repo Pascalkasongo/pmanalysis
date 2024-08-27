@@ -3132,6 +3132,6 @@ class __TwigTemplate_50b5fa47b49f085f3529c4bd1b92141aec4c34e3f28d21df2355ee62c98
 
 <!-- Mirrored from demo.dashboardpack.com/admindek-html/default/draggable.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 18 Nov 2022 12:16:08 GMT -->
 </html>
-", "admindek-html/default/draggable.html", "C:\\Users\\SYNS-MANAGER\\Nouveau dossier\\my_project_directory\\templates\\admindek-html\\default\\draggable.html");
+", "admindek-html/default/draggable.html", "C:\\Users\\SYNS-MANAGER\\Documents\\GitHub\\pmanalysis\\templates\\admindek-html\\default\\draggable.html");
     }
 }

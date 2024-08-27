@@ -199,6 +199,6 @@ class __TwigTemplate_1a432765bd96edda1d25807df906e8becde5846baa0dc6236466ba06de5
 
     <a href=\"{{ path('app_priorite_new') }}\">Create new</a>
 {% endblock %}
-", "priorite/index.html.twig", "C:\\Users\\SYNS-MANAGER\\Nouveau dossier\\my_project_directory\\templates\\priorite\\index.html.twig");
+", "priorite/index.html.twig", "C:\\Users\\SYNS-MANAGER\\Documents\\GitHub\\pmanalysis\\templates\\priorite\\index.html.twig");
     }
 }

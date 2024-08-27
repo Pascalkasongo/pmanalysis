@@ -241,6 +241,6 @@ class __TwigTemplate_5405c5e9e9bf56bae0383b9c9d6cfc96a816842cc8f5dfe1a893b1da20a
 
     <a href=\"{{ path('app_client_new') }}\">Create new</a>
 {% endblock %}
-", "client/index.html.twig", "C:\\Users\\SYNS-MANAGER\\Nouveau dossier\\my_project_directory\\templates\\client\\index.html.twig");
+", "client/index.html.twig", "C:\\Users\\SYNS-MANAGER\\Documents\\GitHub\\pmanalysis\\templates\\client\\index.html.twig");
     }
 }

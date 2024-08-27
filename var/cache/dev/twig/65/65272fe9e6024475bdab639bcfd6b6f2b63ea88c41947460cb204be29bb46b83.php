@@ -2972,6 +2972,6 @@ class __TwigTemplate_27bb5110d8b7d19137a498519c16a77b9a71588c46df9b886dbec1ba58d
 
 <!-- Mirrored from demo.dashboardpack.com/admindek-html/default/dt-ext-scroller.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 18 Nov 2022 12:17:12 GMT -->
 </html>
-", "admindek-html/default/dt-ext-scroller.html", "C:\\Users\\SYNS-MANAGER\\Nouveau dossier\\my_project_directory\\templates\\admindek-html\\default\\dt-ext-scroller.html");
+", "admindek-html/default/dt-ext-scroller.html", "C:\\Users\\SYNS-MANAGER\\Documents\\GitHub\\pmanalysis\\templates\\admindek-html\\default\\dt-ext-scroller.html");
     }
 }

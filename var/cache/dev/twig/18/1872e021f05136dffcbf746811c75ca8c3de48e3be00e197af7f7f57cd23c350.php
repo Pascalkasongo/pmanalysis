@@ -2960,6 +2960,6 @@ class __TwigTemplate_9d5341af302f9a78f679d51e0a318ee96dfbc4d523832506a5d2c7eb93f
 
 <!-- Mirrored from demo.dashboardpack.com/admindek-html/default/chart-radial.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 18 Nov 2022 12:17:37 GMT -->
 </html>
-", "admindek-html/default/chart-radial.html", "C:\\Users\\SYNS-MANAGER\\Nouveau dossier\\my_project_directory\\templates\\admindek-html\\default\\chart-radial.html");
+", "admindek-html/default/chart-radial.html", "C:\\Users\\SYNS-MANAGER\\Documents\\GitHub\\pmanalysis\\templates\\admindek-html\\default\\chart-radial.html");
     }
 }

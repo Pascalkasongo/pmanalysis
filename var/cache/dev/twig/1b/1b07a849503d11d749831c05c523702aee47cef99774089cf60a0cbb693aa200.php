@@ -80,6 +80,6 @@ class __TwigTemplate_1e6fffae7112c5fe6f04385d8828fc7ece4d5df7a7a53c008278cf397f0
 <hr>
 <address>Apache/2.4.54 (Debian) Server at demo.dashboardpack.com Port 80</address>
 </body></html>
-", "admindek-html/default/bs-grid.html", "C:\\Users\\SYNS-MANAGER\\Nouveau dossier\\my_project_directory\\templates\\admindek-html\\default\\bs-grid.html");
+", "admindek-html/default/bs-grid.html", "C:\\Users\\SYNS-MANAGER\\Documents\\GitHub\\pmanalysis\\templates\\admindek-html\\default\\bs-grid.html");
     }
 }

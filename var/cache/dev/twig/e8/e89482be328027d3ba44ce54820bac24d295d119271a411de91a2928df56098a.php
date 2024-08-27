@@ -3346,6 +3346,6 @@ class __TwigTemplate_06d2aa3025e569430729a628ed5bfc850c10d1e2a26ba20b2f3f6d1a9ee
 
 <!-- Mirrored from demo.dashboardpack.com/admindek-html/default/dashboard-analytics.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 18 Nov 2022 12:15:26 GMT -->
 </html>
-", "admindek-html/default/dashboard-analytics.html", "C:\\Users\\SYNS-MANAGER\\Nouveau dossier\\my_project_directory\\templates\\admindek-html\\default\\dashboard-analytics.html");
+", "admindek-html/default/dashboard-analytics.html", "C:\\Users\\SYNS-MANAGER\\Documents\\GitHub\\pmanalysis\\templates\\admindek-html\\default\\dashboard-analytics.html");
     }
 }

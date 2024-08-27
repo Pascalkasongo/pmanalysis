@@ -2958,6 +2958,6 @@ class __TwigTemplate_47ec26fff454b240cb431ff37027c21a259c48be792db7c1faa0d39dbbb
 
 <!-- Mirrored from demo.dashboardpack.com/admindek-html/default/chart-knob.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 18 Nov 2022 12:17:31 GMT -->
 </html>
-", "admindek-html/default/chart-knob.html", "C:\\Users\\SYNS-MANAGER\\Nouveau dossier\\my_project_directory\\templates\\admindek-html\\default\\chart-knob.html");
+", "admindek-html/default/chart-knob.html", "C:\\Users\\SYNS-MANAGER\\Documents\\GitHub\\pmanalysis\\templates\\admindek-html\\default\\chart-knob.html");
     }
 }

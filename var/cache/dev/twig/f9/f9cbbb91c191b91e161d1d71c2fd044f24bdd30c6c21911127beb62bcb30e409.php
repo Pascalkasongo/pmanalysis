@@ -3104,6 +3104,6 @@ class __TwigTemplate_238671821f2d77ffe92d6c0a87a880a98b52f1fdb91fdd7b7ed99c0e3ab
 
 <!-- Mirrored from demo.dashboardpack.com/admindek-html/default/slider.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 18 Nov 2022 12:16:27 GMT -->
 </html>
-", "admindek-html/default/slider.html", "C:\\Users\\SYNS-MANAGER\\Nouveau dossier\\my_project_directory\\templates\\admindek-html\\default\\slider.html");
+", "admindek-html/default/slider.html", "C:\\Users\\SYNS-MANAGER\\Documents\\GitHub\\pmanalysis\\templates\\admindek-html\\default\\slider.html");
     }
 }

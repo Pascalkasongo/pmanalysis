@@ -134,6 +134,6 @@ class __TwigTemplate_7705dc5d03be13660ef632ca21f4b6f9a9aa143cb9900889dc808034ab2
 
     {{ include('competance/_delete_form.html.twig') }}
 {% endblock %}
-", "competance/edit.html.twig", "C:\\Users\\SYNS-MANAGER\\Nouveau dossier\\my_project_directory\\templates\\competance\\edit.html.twig");
+", "competance/edit.html.twig", "C:\\Users\\SYNS-MANAGER\\Documents\\GitHub\\pmanalysis\\templates\\competance\\edit.html.twig");
     }
 }

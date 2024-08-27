@@ -3034,6 +3034,6 @@ class __TwigTemplate_d8cd33419b612b270f21f4e80cd8b07bb91eb39cef6bc7dacf12ab48432
 
 <!-- Mirrored from demo.dashboardpack.com/admindek-html/default/handson-cell-types.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 18 Nov 2022 12:17:23 GMT -->
 </html>
-", "admindek-html/default/handson-cell-types.html", "C:\\Users\\SYNS-MANAGER\\Nouveau dossier\\my_project_directory\\templates\\admindek-html\\default\\handson-cell-types.html");
+", "admindek-html/default/handson-cell-types.html", "C:\\Users\\SYNS-MANAGER\\Documents\\GitHub\\pmanalysis\\templates\\admindek-html\\default\\handson-cell-types.html");
     }
 }

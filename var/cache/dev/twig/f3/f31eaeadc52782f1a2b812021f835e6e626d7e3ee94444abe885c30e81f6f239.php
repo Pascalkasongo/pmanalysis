@@ -4162,6 +4162,6 @@ class __TwigTemplate_4299e9e825b8d8be5a97129545e9ccf253f6cca8c3e641165ffe23868eb
 
 <!-- Mirrored from demo.dashboardpack.com/admindek-html/default/modal.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 18 Nov 2022 12:16:11 GMT -->
 </html>
-", "admindek-html/default/modal.html", "C:\\Users\\SYNS-MANAGER\\Nouveau dossier\\my_project_directory\\templates\\admindek-html\\default\\modal.html");
+", "admindek-html/default/modal.html", "C:\\Users\\SYNS-MANAGER\\Documents\\GitHub\\pmanalysis\\templates\\admindek-html\\default\\modal.html");
     }
 }

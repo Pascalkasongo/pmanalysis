@@ -186,7 +186,7 @@ PMANALYSIS
 <div class=\"dropdown-toggle\" data-toggle=\"dropdown\">
 <span class=\"initial\">";
         // line 126
-        yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(Twig\Extension\CoreExtension::upper($this->env->getCharset(), Twig\Extension\CoreExtension::slice($this->env->getCharset(), CoreExtension::getAttribute($this->env, $this->source, CoreExtension::getAttribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 126, $this->source); })()), "user", [], "any", false, false, false, 126), "nomEmploye", [], "any", false, false, false, 126), 0, 1)), "html", null, true);
+        yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(Twig\Extension\CoreExtension::upper($this->env->getCharset(), Twig\Extension\CoreExtension::slice($this->env->getCharset(), CoreExtension::getAttribute($this->env, $this->source, CoreExtension::getAttribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 126, $this->source); })()), "session", [], "any", false, false, false, 126), "get", ["user_name"], "method", false, false, false, 126), 0, 1)), "html", null, true);
         yield "</span>
 <i class=\"feather icon-chevron-down\"></i>
 </div>
@@ -505,7 +505,7 @@ PMANALYSIS
 <li class=\"user-profile header-notification\">
 <div class=\"dropdown-primary dropdown\">
 <div class=\"dropdown-toggle\" data-toggle=\"dropdown\">
-<span class=\"initial\">{{app.user.nomEmploye|slice(0,1)|upper}}</span>
+<span class=\"initial\">{{app.session.get('user_name')|slice(0,1)|upper}}</span>
 <i class=\"feather icon-chevron-down\"></i>
 </div>
 <ul class=\"show-notification profile-notification dropdown-menu\" data-dropdown-in=\"fadeIn\" data-dropdown-out=\"fadeOut\">
@@ -662,6 +662,6 @@ PMANALYSIS
 </div>
 </div>
 <div class=\"app app-header-fixed app-sidebar-fixed\">
-", "content/navbar.html.twig", "C:\\Users\\SYNS-MANAGER\\Nouveau dossier\\my_project_directory\\templates\\content\\navbar.html.twig");
+", "content/navbar.html.twig", "C:\\Users\\SYNS-MANAGER\\Documents\\GitHub\\pmanalysis\\templates\\content\\navbar.html.twig");
     }
 }

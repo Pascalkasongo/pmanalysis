@@ -350,6 +350,6 @@ h4 { margin: 0;  font-weight: bold;  font-size: 1.18em; }
 </html>
 
 
-", "home_user/tele/index.html", "C:\\Users\\SYNS-MANAGER\\Nouveau dossier\\my_project_directory\\templates\\home_user\\tele\\index.html");
+", "home_user/tele/index.html", "C:\\Users\\SYNS-MANAGER\\Documents\\GitHub\\pmanalysis\\templates\\home_user\\tele\\index.html");
     }
 }

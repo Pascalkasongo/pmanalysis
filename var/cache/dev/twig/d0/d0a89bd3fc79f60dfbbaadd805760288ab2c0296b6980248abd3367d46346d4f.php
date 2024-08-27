@@ -89,6 +89,6 @@ class __TwigTemplate_b1b13186771df671787e5216e6062dda77e5f1ccc89beb7e7072e50086c
     {{ form_widget(form) }}
     <button class=\"btn btn-primary\">{{ button_label|default('Save') }}</button>
 {{ form_end(form) }}
-", "client/_form.html.twig", "C:\\Users\\SYNS-MANAGER\\Nouveau dossier\\my_project_directory\\templates\\client\\_form.html.twig");
+", "client/_form.html.twig", "C:\\Users\\SYNS-MANAGER\\Documents\\GitHub\\pmanalysis\\templates\\client\\_form.html.twig");
     }
 }

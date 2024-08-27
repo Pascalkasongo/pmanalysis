@@ -984,6 +984,6 @@ class __TwigTemplate_d39c16c6d25b96425faf521d062b3d659b2bce831d82404a8c7d8bb1557
 
 
 <!-- Mirrored from themewagon.github.io/LifeSure/testimonial.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 09 Aug 2024 04:57:01 GMT -->
-</html>", "home_user/tele/utilisateur/LifeSure/testimonial.html", "C:\\Users\\SYNS-MANAGER\\Nouveau dossier\\my_project_directory\\templates\\home_user\\tele\\utilisateur\\LifeSure\\testimonial.html");
+</html>", "home_user/tele/utilisateur/LifeSure/testimonial.html", "C:\\Users\\SYNS-MANAGER\\Documents\\GitHub\\pmanalysis\\templates\\home_user\\tele\\utilisateur\\LifeSure\\testimonial.html");
     }
 }

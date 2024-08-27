@@ -500,6 +500,6 @@ class __TwigTemplate_164481f4ccfce00e8c2abb41bc319e5d9b3413108be75feb533ffd3b1e5
 
 <!-- Mirrored from demo.dashboardpack.com/admindek-html/default/auth-sign-in-social.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 18 Nov 2022 12:17:58 GMT -->
 </html>
-", "admindek-html/default/auth-sign-in-social.html", "C:\\Users\\SYNS-MANAGER\\Nouveau dossier\\my_project_directory\\templates\\admindek-html\\default\\auth-sign-in-social.html");
+", "admindek-html/default/auth-sign-in-social.html", "C:\\Users\\SYNS-MANAGER\\Documents\\GitHub\\pmanalysis\\templates\\admindek-html\\default\\auth-sign-in-social.html");
     }
 }

@@ -127,6 +127,6 @@ class __TwigTemplate_c7aaaa78252e3dac56d0c2e780f535da56fd25e5a8c60af1fb706fcc6a7
 
     <a href=\"{{ path('app_role_index') }}\">back to list</a>
 {% endblock %}
-", "role/new.html.twig", "C:\\Users\\SYNS-MANAGER\\Nouveau dossier\\my_project_directory\\templates\\role\\new.html.twig");
+", "role/new.html.twig", "C:\\Users\\SYNS-MANAGER\\Documents\\GitHub\\pmanalysis\\templates\\role\\new.html.twig");
     }
 }
