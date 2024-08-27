@@ -67,10 +67,10 @@ class Employe extends \App\Entity\Employe implements \Doctrine\ORM\Proxy\Proxy
     public function __sleep()
     {
         if ($this->__isInitialized__) {
-            return ['__isInitialized__', '' . "\0" . 'App\\Entity\\Employe' . "\0" . 'id', '' . "\0" . 'App\\Entity\\Employe' . "\0" . 'nom_employe', '' . "\0" . 'App\\Entity\\Employe' . "\0" . 'prenom_employe', '' . "\0" . 'App\\Entity\\Employe' . "\0" . 'adresse', '' . "\0" . 'App\\Entity\\Employe' . "\0" . 'telephone', '' . "\0" . 'App\\Entity\\Employe' . "\0" . 'fonction', '' . "\0" . 'App\\Entity\\Employe' . "\0" . 'equipes'];
+            return ['__isInitialized__', '' . "\0" . 'App\\Entity\\Employe' . "\0" . 'nom_employe', '' . "\0" . 'App\\Entity\\Employe' . "\0" . 'prenom_employe', '' . "\0" . 'App\\Entity\\Employe' . "\0" . 'adresse', '' . "\0" . 'App\\Entity\\Employe' . "\0" . 'telephone', '' . "\0" . 'App\\Entity\\Employe' . "\0" . 'fonction', '' . "\0" . 'App\\Entity\\Employe' . "\0" . 'equipes'];
         }
 
-        return ['__isInitialized__', '' . "\0" . 'App\\Entity\\Employe' . "\0" . 'id', '' . "\0" . 'App\\Entity\\Employe' . "\0" . 'nom_employe', '' . "\0" . 'App\\Entity\\Employe' . "\0" . 'prenom_employe', '' . "\0" . 'App\\Entity\\Employe' . "\0" . 'adresse', '' . "\0" . 'App\\Entity\\Employe' . "\0" . 'telephone', '' . "\0" . 'App\\Entity\\Employe' . "\0" . 'fonction', '' . "\0" . 'App\\Entity\\Employe' . "\0" . 'equipes'];
+        return ['__isInitialized__', '' . "\0" . 'App\\Entity\\Employe' . "\0" . 'nom_employe', '' . "\0" . 'App\\Entity\\Employe' . "\0" . 'prenom_employe', '' . "\0" . 'App\\Entity\\Employe' . "\0" . 'adresse', '' . "\0" . 'App\\Entity\\Employe' . "\0" . 'telephone', '' . "\0" . 'App\\Entity\\Employe' . "\0" . 'fonction', '' . "\0" . 'App\\Entity\\Employe' . "\0" . 'equipes'];
     }
 
     /**
@@ -177,21 +177,6 @@ class Employe extends \App\Entity\Employe implements \Doctrine\ORM\Proxy\Proxy
     }
 
     
-    /**
-     * {@inheritDoc}
-     */
-    public function getId(): ?int
-    {
-        if ($this->__isInitialized__ === false) {
-            return (int)  parent::getId();
-        }
-
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getId', []);
-
-        return parent::getId();
-    }
-
     /**
      * {@inheritDoc}
      */
@@ -333,6 +318,21 @@ class Employe extends \App\Entity\Employe implements \Doctrine\ORM\Proxy\Proxy
         $this->__initializer__ && $this->__initializer__->__invoke($this, 'removeEquipe', [$equipe]);
 
         return parent::removeEquipe($equipe);
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    public function getId(): ?int
+    {
+        if ($this->__isInitialized__ === false) {
+            return (int)  parent::getId();
+        }
+
+
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getId', []);
+
+        return parent::getId();
     }
 
     /**

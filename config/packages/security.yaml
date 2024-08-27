@@ -7,37 +7,31 @@ security:
         # used to reload user from session & other features (e.g. switch_user)
         app_user_provider:
             entity:
-                class: App\Entity\Employe
+                class: App\Entity\Utilisateur
                 property: email
         app_client_provider:
             entity:
                 class: App\Entity\Client
                 property: email
         all_users:
-            id: App\Security\UserProvider
+            chain:
+                providers: [app_user_provider,app_client_provider]
     firewalls:
         dev:
             pattern: ^/(_(profiler|wdt)|css|images|js)/
             security: false
         main:
             lazy: true
-            provider: all_users
+            provider: app_user_provider
+            custom_authenticator: App\Security\AppAuthentificatorAuthenticator
             # form_login:
             #     login_path: app_login
             #     check_path: app_login
-            #     default_target_path: app_home_conf
             #     enable_csrf: true
             logout:
                 path: app_logout
                 # where to redirect after logout
                 target: app_login
-            custom_authenticator: App\Security\AppAuthentificatorAuthenticator
-
-            remember_me:
-                secret: '%kernel.secret%'
-                lifetime: 604800
-                path: /
-                always_remember_me: true
 
             # activate different ways to authenticate
             # https://symfony.com/doc/current/security.html#the-firewall

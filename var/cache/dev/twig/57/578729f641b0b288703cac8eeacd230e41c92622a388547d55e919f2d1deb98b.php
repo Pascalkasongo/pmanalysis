@@ -49,7 +49,7 @@ class __TwigTemplate_0a4de1b128d853722a4b4bd3a2f0de86da1ab155a9c2c6d847041cda4a4
                     <ul class=\"pcoded-item pcoded-left-item\">
                         <li class=\"pcoded-hasmenu active pcoded-trigger\">
                             <a href=\"javascript:void(0)\" class=\"waves-effect waves-dark\">
-                                <span class=\"pcoded-micon\"><i class=\"feather icon-home\"></i></span>
+                                <span class=\"pcoded-micon\"><i class=\"fa-briefcase\"></i></span>
                                 <span class=\"pcoded-mtext\">Projet</span>
                             </a>
                             <ul class=\"pcoded-submenu\">
@@ -75,7 +75,7 @@ class __TwigTemplate_0a4de1b128d853722a4b4bd3a2f0de86da1ab155a9c2c6d847041cda4a4
                         </li>
                         <li class=\"pcoded-hasmenu active pcoded-trigger\">
                             <a href=\"javascript:void(0)\" class=\"waves-effect waves-dark\">
-                                <span class=\"pcoded-micon\"><i class=\"feather icon-home\"></i></span>
+                                <span class=\"pcoded-micon\"><i class=\"fas fa-tasks\"></i></span>
                                 <span class=\"pcoded-mtext\">Tache</span>
                             </a>
                             <ul class=\"pcoded-submenu\">
@@ -101,11 +101,11 @@ class __TwigTemplate_0a4de1b128d853722a4b4bd3a2f0de86da1ab155a9c2c6d847041cda4a4
                         </li>
                         <li class=\"pcoded-hasmenu active pcoded-trigger\">
                             <a href=\"javascript:void(0)\" class=\"waves-effect waves-dark\">
-                                <span class=\"pcoded-micon\"><i class=\"feather icon-home\"></i></span>
+                                <span class=\"pcoded-micon\"><i class=\"fas fa-user-circle\"></i></span>
                                 <span class=\"pcoded-mtext\">Equipe</span>
                             </a>
                             <ul class=\"pcoded-submenu\">
-                                <li class=\"active\">
+                                <li class=\"\">
                                     <a href=\"";
         // line 57
         yield $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_equipe_new");
@@ -113,7 +113,7 @@ class __TwigTemplate_0a4de1b128d853722a4b4bd3a2f0de86da1ab155a9c2c6d847041cda4a4
                                         <span class=\"pcoded-mtext\">ajouter</span>
                                     </a>
                                 </li>
-                                <li class=\"active\">
+                                <li class=\"\">
                                     <a href=\"";
         // line 62
         yield $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_equipe_index");
@@ -127,7 +127,7 @@ class __TwigTemplate_0a4de1b128d853722a4b4bd3a2f0de86da1ab155a9c2c6d847041cda4a4
                         </li>
                         <li class=\"pcoded-hasmenu active pcoded-trigger\">
                             <a href=\"javascript:void(0)\" class=\"waves-effect waves-dark\">
-                                <span class=\"pcoded-micon\"><i class=\"feather icon-home\"></i></span>
+                                <span class=\"pcoded-micon\"><i class=\"fas fa-cogs\"></i></span>
                                 <span class=\"pcoded-mtext\">Domaine</span>
                             </a>
                             <ul class=\"pcoded-submenu\">
@@ -153,7 +153,7 @@ class __TwigTemplate_0a4de1b128d853722a4b4bd3a2f0de86da1ab155a9c2c6d847041cda4a4
                         </li>
                         <li class=\"pcoded-hasmenu active pcoded-trigger\">
                             <a href=\"javascript:void(0)\" class=\"waves-effect waves-dark\">
-                                <span class=\"pcoded-micon\"><i class=\"feather icon-home\"></i></span>
+                                <span class=\"pcoded-micon\"><i class=\"fas fa-users\"></i></span>
                                 <span class=\"pcoded-mtext\">Employé</span>
                             </a>
                             <ul class=\"pcoded-submenu\">
@@ -178,8 +178,8 @@ class __TwigTemplate_0a4de1b128d853722a4b4bd3a2f0de86da1ab155a9c2c6d847041cda4a4
 
                         </li>
                         <li class=\"pcoded-hasmenu active pcoded-trigger\">
-                            <a href=\"javascript:void(0)\" class=\"waves-effect waves-dark\">
-                                <span class=\"pcoded-micon\"><i class=\"feather icon-home\"></i></span>
+                            <a href=\"javascript:void(0)\" class=\"\">
+                                <span class=\"pcoded-micon\"><i class=\"fas fa-print\"></i></span>
                                 <span class=\"pcoded-mtext\">Facture</span>
                             </a>
                             <ul class=\"pcoded-submenu\">
@@ -197,7 +197,7 @@ class __TwigTemplate_0a4de1b128d853722a4b4bd3a2f0de86da1ab155a9c2c6d847041cda4a4
         yield $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_facture_index");
         yield "\" class=\"waves-effect waves-dark\">
                                         <span class=\"pcoded-mtext\">Lister</span>
-                                    </a>
+                                    </a>    
                                 </li>
                             </ul>
                             
@@ -205,7 +205,7 @@ class __TwigTemplate_0a4de1b128d853722a4b4bd3a2f0de86da1ab155a9c2c6d847041cda4a4
                         </li>
                         <li class=\"pcoded-hasmenu active pcoded-trigger\">
                             <a href=\"javascript:void(0)\" class=\"waves-effect waves-dark\">
-                                <span class=\"pcoded-micon\"><i class=\"feather icon-home\"></i></span>
+                                <span class=\"pcoded-micon\"><i class=\"fas fa-briefcase\"></i></span>
                                 <span class=\"pcoded-mtext\">Ressource</span>
                             </a>
                             <ul class=\"pcoded-submenu\">
@@ -277,7 +277,7 @@ class __TwigTemplate_0a4de1b128d853722a4b4bd3a2f0de86da1ab155a9c2c6d847041cda4a4
                     <ul class=\"pcoded-item pcoded-left-item\">
                         <li class=\"pcoded-hasmenu active pcoded-trigger\">
                             <a href=\"javascript:void(0)\" class=\"waves-effect waves-dark\">
-                                <span class=\"pcoded-micon\"><i class=\"feather icon-home\"></i></span>
+                                <span class=\"pcoded-micon\"><i class=\"fa-briefcase\"></i></span>
                                 <span class=\"pcoded-mtext\">Projet</span>
                             </a>
                             <ul class=\"pcoded-submenu\">
@@ -297,7 +297,7 @@ class __TwigTemplate_0a4de1b128d853722a4b4bd3a2f0de86da1ab155a9c2c6d847041cda4a4
                         </li>
                         <li class=\"pcoded-hasmenu active pcoded-trigger\">
                             <a href=\"javascript:void(0)\" class=\"waves-effect waves-dark\">
-                                <span class=\"pcoded-micon\"><i class=\"feather icon-home\"></i></span>
+                                <span class=\"pcoded-micon\"><i class=\"fas fa-tasks\"></i></span>
                                 <span class=\"pcoded-mtext\">Tache</span>
                             </a>
                             <ul class=\"pcoded-submenu\">
@@ -317,16 +317,16 @@ class __TwigTemplate_0a4de1b128d853722a4b4bd3a2f0de86da1ab155a9c2c6d847041cda4a4
                         </li>
                         <li class=\"pcoded-hasmenu active pcoded-trigger\">
                             <a href=\"javascript:void(0)\" class=\"waves-effect waves-dark\">
-                                <span class=\"pcoded-micon\"><i class=\"feather icon-home\"></i></span>
+                                <span class=\"pcoded-micon\"><i class=\"fas fa-user-circle\"></i></span>
                                 <span class=\"pcoded-mtext\">Equipe</span>
                             </a>
                             <ul class=\"pcoded-submenu\">
-                                <li class=\"active\">
+                                <li class=\"\">
                                     <a href=\"{{path('app_equipe_new')}}\" class=\"waves-effect waves-dark\">
                                         <span class=\"pcoded-mtext\">ajouter</span>
                                     </a>
                                 </li>
-                                <li class=\"active\">
+                                <li class=\"\">
                                     <a href=\"{{path('app_equipe_index')}}\" class=\"waves-effect waves-dark\">
                                         <span class=\"pcoded-mtext\">Lister</span>
                                     </a>
@@ -337,7 +337,7 @@ class __TwigTemplate_0a4de1b128d853722a4b4bd3a2f0de86da1ab155a9c2c6d847041cda4a4
                         </li>
                         <li class=\"pcoded-hasmenu active pcoded-trigger\">
                             <a href=\"javascript:void(0)\" class=\"waves-effect waves-dark\">
-                                <span class=\"pcoded-micon\"><i class=\"feather icon-home\"></i></span>
+                                <span class=\"pcoded-micon\"><i class=\"fas fa-cogs\"></i></span>
                                 <span class=\"pcoded-mtext\">Domaine</span>
                             </a>
                             <ul class=\"pcoded-submenu\">
@@ -357,7 +357,7 @@ class __TwigTemplate_0a4de1b128d853722a4b4bd3a2f0de86da1ab155a9c2c6d847041cda4a4
                         </li>
                         <li class=\"pcoded-hasmenu active pcoded-trigger\">
                             <a href=\"javascript:void(0)\" class=\"waves-effect waves-dark\">
-                                <span class=\"pcoded-micon\"><i class=\"feather icon-home\"></i></span>
+                                <span class=\"pcoded-micon\"><i class=\"fas fa-users\"></i></span>
                                 <span class=\"pcoded-mtext\">Employé</span>
                             </a>
                             <ul class=\"pcoded-submenu\">
@@ -376,8 +376,8 @@ class __TwigTemplate_0a4de1b128d853722a4b4bd3a2f0de86da1ab155a9c2c6d847041cda4a4
 
                         </li>
                         <li class=\"pcoded-hasmenu active pcoded-trigger\">
-                            <a href=\"javascript:void(0)\" class=\"waves-effect waves-dark\">
-                                <span class=\"pcoded-micon\"><i class=\"feather icon-home\"></i></span>
+                            <a href=\"javascript:void(0)\" class=\"\">
+                                <span class=\"pcoded-micon\"><i class=\"fas fa-print\"></i></span>
                                 <span class=\"pcoded-mtext\">Facture</span>
                             </a>
                             <ul class=\"pcoded-submenu\">
@@ -389,7 +389,7 @@ class __TwigTemplate_0a4de1b128d853722a4b4bd3a2f0de86da1ab155a9c2c6d847041cda4a4
                                 <li class=\"\">
                                     <a href=\"{{path('app_facture_index')}}\" class=\"waves-effect waves-dark\">
                                         <span class=\"pcoded-mtext\">Lister</span>
-                                    </a>
+                                    </a>    
                                 </li>
                             </ul>
                             
@@ -397,7 +397,7 @@ class __TwigTemplate_0a4de1b128d853722a4b4bd3a2f0de86da1ab155a9c2c6d847041cda4a4
                         </li>
                         <li class=\"pcoded-hasmenu active pcoded-trigger\">
                             <a href=\"javascript:void(0)\" class=\"waves-effect waves-dark\">
-                                <span class=\"pcoded-micon\"><i class=\"feather icon-home\"></i></span>
+                                <span class=\"pcoded-micon\"><i class=\"fas fa-briefcase\"></i></span>
                                 <span class=\"pcoded-mtext\">Ressource</span>
                             </a>
                             <ul class=\"pcoded-submenu\">

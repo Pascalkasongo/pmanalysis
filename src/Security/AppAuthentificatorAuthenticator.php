@@ -46,6 +46,7 @@ class AppAuthentificatorAuthenticator extends AbstractLoginFormAuthenticator
 
     public function onAuthenticationSuccess(Request $request, TokenInterface $token, string $firewallName): ?Response
     {
+       
         $user = $token->getUser();
         $request->getSession()->set('user_name', $user->getUserIdentifier());
         if ($targetPath = $this->getTargetPath($request->getSession(), $firewallName)) {
@@ -53,7 +54,7 @@ class AppAuthentificatorAuthenticator extends AbstractLoginFormAuthenticator
         }
 
       
-
+       
         if($user instanceof Client){
             return new RedirectResponse($this->urlGenerator->generate('app_user_project'));
         }elseif($user instanceof Employe){

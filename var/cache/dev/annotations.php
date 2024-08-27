@@ -252,8 +252,6 @@ return [[
 '[C]App%5CController%5CUserProjectController%23index' => 1,
 'App%5CEntity%5CClient' => 0,
 '[C]App%5CEntity%5CClient' => 1,
-'App%5CEntity%5CClient%23getId' => 0,
-'[C]App%5CEntity%5CClient%23getId' => 1,
 'App%5CEntity%5CClient%23__construct' => 0,
 '[C]App%5CEntity%5CClient%23__construct' => 1,
 'App%5CEntity%5CClient%23getNomClient' => 0,
@@ -282,6 +280,8 @@ return [[
 '[C]App%5CEntity%5CClient%23addNotification' => 1,
 'App%5CEntity%5CClient%23removeNotification' => 0,
 '[C]App%5CEntity%5CClient%23removeNotification' => 1,
+'App%5CEntity%5CUtilisateur%23getId' => 0,
+'[C]App%5CEntity%5CUtilisateur%23getId' => 1,
 'App%5CEntity%5CUtilisateur%23getEmail' => 0,
 '[C]App%5CEntity%5CUtilisateur%23getEmail' => 1,
 'App%5CEntity%5CUtilisateur%23setEmail' => 0,
@@ -298,8 +298,6 @@ return [[
 '[C]App%5CEntity%5CUtilisateur%23setPassword' => 1,
 'App%5CEntity%5CUtilisateur%23eraseCredentials' => 0,
 '[C]App%5CEntity%5CUtilisateur%23eraseCredentials' => 1,
-'App%5CEntity%5CClient%24id' => 2,
-'[C]App%5CEntity%5CClient%24id' => 1,
 'App%5CEntity%5CClient%24nom_client' => 0,
 '[C]App%5CEntity%5CClient%24nom_client' => 1,
 'App%5CEntity%5CClient%24prenom_client' => 0,
@@ -356,8 +354,6 @@ return [[
 '[C]App%5CEntity%5CEmploye' => 1,
 'App%5CEntity%5CEmploye%23__construct' => 0,
 '[C]App%5CEntity%5CEmploye%23__construct' => 1,
-'App%5CEntity%5CEmploye%23getId' => 0,
-'[C]App%5CEntity%5CEmploye%23getId' => 1,
 'App%5CEntity%5CEmploye%23getNomEmploye' => 0,
 '[C]App%5CEntity%5CEmploye%23getNomEmploye' => 1,
 'App%5CEntity%5CEmploye%23setNomEmploye' => 0,
@@ -384,8 +380,6 @@ return [[
 '[C]App%5CEntity%5CEmploye%23addEquipe' => 1,
 'App%5CEntity%5CEmploye%23removeEquipe' => 0,
 '[C]App%5CEntity%5CEmploye%23removeEquipe' => 1,
-'App%5CEntity%5CEmploye%24id' => 0,
-'[C]App%5CEntity%5CEmploye%24id' => 1,
 'App%5CEntity%5CEmploye%24nom_employe' => 0,
 '[C]App%5CEntity%5CEmploye%24nom_employe' => 1,
 'App%5CEntity%5CEmploye%24prenom_employe' => 0,
@@ -818,8 +812,6 @@ return [[
 '[C]App%5CEntity%5CUser%24password' => 1,
 'App%5CEntity%5CUtilisateur' => 0,
 '[C]App%5CEntity%5CUtilisateur' => 1,
-'App%5CEntity%5CUtilisateur%23getId' => 0,
-'[C]App%5CEntity%5CUtilisateur%23getId' => 1,
 'App%5CEntity%5CUtilisateur%24id' => 0,
 '[C]App%5CEntity%5CUtilisateur%24id' => 1,
 'App%5CEntity%5CUtilisateur%24email' => 0,
@@ -1568,35 +1560,6 @@ return [[
 ], [
 
 0 => [],
-1 => 1724739745,
-2 => static function () {
-    return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
-        $o = [
-            clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Doctrine\\ORM\\Mapping\\Id'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\Id')),
-            clone ($p['Doctrine\\ORM\\Mapping\\GeneratedValue'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\GeneratedValue')),
-            clone ($p['Doctrine\\ORM\\Mapping\\Column'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\Column')),
-        ],
-        null,
-        [
-            'stdClass' => [
-                'type' => [
-                    2 => 'integer',
-                ],
-                'precision' => [
-                    2 => null,
-                ],
-                'scale' => [
-                    2 => null,
-                ],
-            ],
-        ],
-        [
-            $o[0],
-            $o[1],
-            $o[2],
-        ],
-        []
-    );
-},
+1 => 1724781208,
 
 ]];
