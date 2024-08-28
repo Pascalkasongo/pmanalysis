@@ -87,13 +87,35 @@ class __TwigTemplate_9be42f620d4852b7007ebf115ffe0db01f535f35fb9f596870029b85bb9
         // line 34
         yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("files/bower_components/chartist/css/chartist.css"), "html", null, true);
         yield "\" type=\"text/css\" media=\"all\">
+<link href=\"";
+        // line 35
+        yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("assets/css/vendor.min.css\""), "html", null, true);
+        yield " rel=\"stylesheet\" />
+<link href=\"";
+        // line 36
+        yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("assets/css/default/app.min.css"), "html", null, true);
+        yield "\" rel=\"stylesheet\" />
+
+
+<link href=\"";
+        // line 39
+        yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("assets/plugins/jvectormap-next/jquery-jvectormap.css"), "html", null, true);
+        yield "\" rel=\"stylesheet\" />
+<link href=\"";
+        // line 40
+        yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("assets/plugins/bootstrap-datepicker/dist/css/bootstrap-datepicker.css"), "html", null, true);
+        yield "\" rel=\"stylesheet\" />
+<link href=\"";
+        // line 41
+        yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("assets/plugins/gritter/css/jquery.gritter.css"), "html", null, true);
+        yield "\" rel=\"stylesheet\" />
 
 <link rel=\"stylesheet\" type=\"text/css\" href=\"";
-        // line 36
+        // line 43
         yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("files/assets/css/style.css"), "html", null, true);
         yield "\">
 <link rel=\"stylesheet\" type=\"text/css\" href=\"";
-        // line 37
+        // line 44
         yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("files/assets/css/widget.css"), "html", null, true);
         yield "\">
 </head>
@@ -112,7 +134,7 @@ class __TwigTemplate_9be42f620d4852b7007ebf115ffe0db01f535f35fb9f596870029b85bb9
 }
 
 </style>
-<body>
+<body classe=\"pace-done\">
 
 <div class=\"loader-bg\">
 <div class=\"loader-bar\"></div>
@@ -125,8 +147,10 @@ class __TwigTemplate_9be42f620d4852b7007ebf115ffe0db01f535f35fb9f596870029b85bb9
 <nav class=\"navbar header-navbar pcoded-header\">
 <div class=\"navbar-wrapper\">
 <div class=\"navbar-logo\">
-<a href=\"index.html\">
-PMANALYSIS
+<a >
+    <h5>
+        PMANALYSIS
+    </h5>
 </a>
 <a class=\"mobile-menu\" id=\"mobile-collapse\" href=\"#!\">
 <i class=\"feather icon-menu icon-toggle-right\"></i>
@@ -177,16 +201,16 @@ PMANALYSIS
 <div class=\"dropdown-primary dropdown\">
 <div class=\"displayChatbox dropdown-toggle\" data-toggle=\"dropdown\">
 <i class=\"feather icon-message-square\"></i>
-
+<span class=\"badge bg-c-green\">3</span>
 </div>
 </div>
 </li>
 <li class=\"user-profile header-notification\">
 <div class=\"dropdown-primary dropdown\">
 <div class=\"dropdown-toggle\" data-toggle=\"dropdown\">
-<span class=\"initial\">";
-        // line 126
-        yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(Twig\Extension\CoreExtension::upper($this->env->getCharset(), Twig\Extension\CoreExtension::slice($this->env->getCharset(), CoreExtension::getAttribute($this->env, $this->source, CoreExtension::getAttribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 126, $this->source); })()), "session", [], "any", false, false, false, 126), "get", ["user_name"], "method", false, false, false, 126), 0, 1)), "html", null, true);
+<span>";
+        // line 135
+        yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(CoreExtension::getAttribute($this->env, $this->source, CoreExtension::getAttribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 135, $this->source); })()), "session", [], "any", false, false, false, 135), "get", ["user_name"], "method", false, false, false, 135), "html", null, true);
         yield "</span>
 <i class=\"feather icon-chevron-down\"></i>
 </div>
@@ -213,7 +237,7 @@ PMANALYSIS
 </li>
 <li>
 <a href=\"";
-        // line 151
+        // line 160
         yield $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_logout");
         yield "\">
 <i class=\"feather icon-log-out\"></i> Logout
@@ -375,7 +399,7 @@ PMANALYSIS
      */
     public function getDebugInfo()
     {
-        return array (  217 => 151,  189 => 126,  97 => 37,  93 => 36,  88 => 34,  83 => 32,  78 => 30,  73 => 28,  68 => 26,  41 => 1,);
+        return array (  241 => 160,  213 => 135,  119 => 44,  115 => 43,  110 => 41,  106 => 40,  102 => 39,  96 => 36,  92 => 35,  88 => 34,  83 => 32,  78 => 30,  73 => 28,  68 => 26,  41 => 1,);
     }
 
     public function getSourceContext()
@@ -414,6 +438,13 @@ PMANALYSIS
 <link rel=\"stylesheet\" type=\"text/css\" href=\"{{asset('files/assets/css/font-awesome-n.min.css')}}\">
 
 <link rel=\"stylesheet\" href=\"{{asset('files/bower_components/chartist/css/chartist.css')}}\" type=\"text/css\" media=\"all\">
+<link href=\"{{asset('assets/css/vendor.min.css\"')}} rel=\"stylesheet\" />
+<link href=\"{{asset('assets/css/default/app.min.css')}}\" rel=\"stylesheet\" />
+
+
+<link href=\"{{asset('assets/plugins/jvectormap-next/jquery-jvectormap.css')}}\" rel=\"stylesheet\" />
+<link href=\"{{asset('assets/plugins/bootstrap-datepicker/dist/css/bootstrap-datepicker.css')}}\" rel=\"stylesheet\" />
+<link href=\"{{asset('assets/plugins/gritter/css/jquery.gritter.css')}}\" rel=\"stylesheet\" />
 
 <link rel=\"stylesheet\" type=\"text/css\" href=\"{{asset('files/assets/css/style.css')}}\">
 <link rel=\"stylesheet\" type=\"text/css\" href=\"{{asset('files/assets/css/widget.css')}}\">
@@ -433,7 +464,7 @@ PMANALYSIS
 }
 
 </style>
-<body>
+<body classe=\"pace-done\">
 
 <div class=\"loader-bg\">
 <div class=\"loader-bar\"></div>
@@ -446,8 +477,10 @@ PMANALYSIS
 <nav class=\"navbar header-navbar pcoded-header\">
 <div class=\"navbar-wrapper\">
 <div class=\"navbar-logo\">
-<a href=\"index.html\">
-PMANALYSIS
+<a >
+    <h5>
+        PMANALYSIS
+    </h5>
 </a>
 <a class=\"mobile-menu\" id=\"mobile-collapse\" href=\"#!\">
 <i class=\"feather icon-menu icon-toggle-right\"></i>
@@ -498,14 +531,14 @@ PMANALYSIS
 <div class=\"dropdown-primary dropdown\">
 <div class=\"displayChatbox dropdown-toggle\" data-toggle=\"dropdown\">
 <i class=\"feather icon-message-square\"></i>
-
+<span class=\"badge bg-c-green\">3</span>
 </div>
 </div>
 </li>
 <li class=\"user-profile header-notification\">
 <div class=\"dropdown-primary dropdown\">
 <div class=\"dropdown-toggle\" data-toggle=\"dropdown\">
-<span class=\"initial\">{{app.session.get('user_name')|slice(0,1)|upper}}</span>
+<span>{{app.session.get('user_name')}}</span>
 <i class=\"feather icon-chevron-down\"></i>
 </div>
 <ul class=\"show-notification profile-notification dropdown-menu\" data-dropdown-in=\"fadeIn\" data-dropdown-out=\"fadeOut\">

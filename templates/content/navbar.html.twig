@@ -32,6 +32,13 @@
 <link rel="stylesheet" type="text/css" href="{{asset('files/assets/css/font-awesome-n.min.css')}}">
 
 <link rel="stylesheet" href="{{asset('files/bower_components/chartist/css/chartist.css')}}" type="text/css" media="all">
+<link href="{{asset('assets/css/vendor.min.css"')}} rel="stylesheet" />
+<link href="{{asset('assets/css/default/app.min.css')}}" rel="stylesheet" />
+
+
+<link href="{{asset('assets/plugins/jvectormap-next/jquery-jvectormap.css')}}" rel="stylesheet" />
+<link href="{{asset('assets/plugins/bootstrap-datepicker/dist/css/bootstrap-datepicker.css')}}" rel="stylesheet" />
+<link href="{{asset('assets/plugins/gritter/css/jquery.gritter.css')}}" rel="stylesheet" />
 
 <link rel="stylesheet" type="text/css" href="{{asset('files/assets/css/style.css')}}">
 <link rel="stylesheet" type="text/css" href="{{asset('files/assets/css/widget.css')}}">
@@ -51,7 +58,7 @@
 }
 
 </style>
-<body>
+<body classe="pace-done">
 
 <div class="loader-bg">
 <div class="loader-bar"></div>
@@ -64,8 +71,10 @@
 <nav class="navbar header-navbar pcoded-header">
 <div class="navbar-wrapper">
 <div class="navbar-logo">
-<a href="index.html">
-PMANALYSIS
+<a >
+    <h5>
+        PMANALYSIS
+    </h5>
 </a>
 <a class="mobile-menu" id="mobile-collapse" href="#!">
 <i class="feather icon-menu icon-toggle-right"></i>
@@ -116,14 +125,14 @@ PMANALYSIS
 <div class="dropdown-primary dropdown">
 <div class="displayChatbox dropdown-toggle" data-toggle="dropdown">
 <i class="feather icon-message-square"></i>
-
+<span class="badge bg-c-green">3</span>
 </div>
 </div>
 </li>
 <li class="user-profile header-notification">
 <div class="dropdown-primary dropdown">
 <div class="dropdown-toggle" data-toggle="dropdown">
-<span class="initial">{{app.session.get('user_name')|slice(0,1)|upper}}</span>
+<span>{{app.session.get('user_name')}}</span>
 <i class="feather icon-chevron-down"></i>
 </div>
 <ul class="show-notification profile-notification dropdown-menu" data-dropdown-in="fadeIn" data-dropdown-out="fadeOut">

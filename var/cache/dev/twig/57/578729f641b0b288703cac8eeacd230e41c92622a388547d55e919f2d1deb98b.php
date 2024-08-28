@@ -47,13 +47,13 @@ class __TwigTemplate_0a4de1b128d853722a4b4bd3a2f0de86da1ab155a9c2c6d847041cda4a4
                 <div class=\"pcoded-inner-navbar main-menu\">
 
                     <ul class=\"pcoded-item pcoded-left-item\">
-                        <li class=\"pcoded-hasmenu active pcoded-trigger\">
+                        <li class=\"pcoded-hasmenu     pcoded-trigger\">
                             <a href=\"javascript:void(0)\" class=\"waves-effect waves-dark\">
                                 <span class=\"pcoded-micon\"><i class=\"fa-briefcase\"></i></span>
                                 <span class=\"pcoded-mtext\">Projet</span>
                             </a>
                             <ul class=\"pcoded-submenu\">
-                                <li class=\"active\">
+                                <li class=\"   \">
                                     <a href=\"";
         // line 17
         yield $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_projet_new");
@@ -73,13 +73,13 @@ class __TwigTemplate_0a4de1b128d853722a4b4bd3a2f0de86da1ab155a9c2c6d847041cda4a4
                             
 
                         </li>
-                        <li class=\"pcoded-hasmenu active pcoded-trigger\">
+                        <li class=\"pcoded-hasmenu     pcoded-trigger\">
                             <a href=\"javascript:void(0)\" class=\"waves-effect waves-dark\">
                                 <span class=\"pcoded-micon\"><i class=\"fas fa-tasks\"></i></span>
                                 <span class=\"pcoded-mtext\">Tache</span>
                             </a>
                             <ul class=\"pcoded-submenu\">
-                                <li class=\"active\">
+                                <li class=\"   \">
                                     <a href=\"";
         // line 37
         yield $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_tache_new");
@@ -99,7 +99,7 @@ class __TwigTemplate_0a4de1b128d853722a4b4bd3a2f0de86da1ab155a9c2c6d847041cda4a4
                             
 
                         </li>
-                        <li class=\"pcoded-hasmenu active pcoded-trigger\">
+                        <li class=\"pcoded-hasmenu  pcoded-trigger\">
                             <a href=\"javascript:void(0)\" class=\"waves-effect waves-dark\">
                                 <span class=\"pcoded-micon\"><i class=\"fas fa-user-circle\"></i></span>
                                 <span class=\"pcoded-mtext\">Equipe</span>
@@ -125,13 +125,13 @@ class __TwigTemplate_0a4de1b128d853722a4b4bd3a2f0de86da1ab155a9c2c6d847041cda4a4
                             
 
                         </li>
-                        <li class=\"pcoded-hasmenu active pcoded-trigger\">
+                        <li class=\"pcoded-hasmenu     pcoded-trigger\">
                             <a href=\"javascript:void(0)\" class=\"waves-effect waves-dark\">
                                 <span class=\"pcoded-micon\"><i class=\"fas fa-cogs\"></i></span>
                                 <span class=\"pcoded-mtext\">Domaine</span>
                             </a>
                             <ul class=\"pcoded-submenu\">
-                                <li class=\"active\">
+                                <li class=\"   \">
                                     <a href=\"";
         // line 77
         yield $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_domaine_new");
@@ -151,13 +151,13 @@ class __TwigTemplate_0a4de1b128d853722a4b4bd3a2f0de86da1ab155a9c2c6d847041cda4a4
                             
 
                         </li>
-                        <li class=\"pcoded-hasmenu active pcoded-trigger\">
+                        <li class=\"pcoded-hasmenu     pcoded-trigger\">
                             <a href=\"javascript:void(0)\" class=\"waves-effect waves-dark\">
                                 <span class=\"pcoded-micon\"><i class=\"fas fa-users\"></i></span>
                                 <span class=\"pcoded-mtext\">Employé</span>
                             </a>
                             <ul class=\"pcoded-submenu\">
-                                <li class=\"active\">
+                                <li class=\"   \">
                                     <a href=\"";
         // line 97
         yield $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_employe_new");
@@ -177,13 +177,13 @@ class __TwigTemplate_0a4de1b128d853722a4b4bd3a2f0de86da1ab155a9c2c6d847041cda4a4
                             
 
                         </li>
-                        <li class=\"pcoded-hasmenu active pcoded-trigger\">
+                        <li class=\"pcoded-hasmenu     pcoded-trigger\">
                             <a href=\"javascript:void(0)\" class=\"\">
                                 <span class=\"pcoded-micon\"><i class=\"fas fa-print\"></i></span>
                                 <span class=\"pcoded-mtext\">Facture</span>
                             </a>
                             <ul class=\"pcoded-submenu\">
-                                <li class=\"active\">
+                                <li class=\"   \">
                                     <a href=\"";
         // line 117
         yield $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_facture_new");
@@ -203,13 +203,13 @@ class __TwigTemplate_0a4de1b128d853722a4b4bd3a2f0de86da1ab155a9c2c6d847041cda4a4
                             
 
                         </li>
-                        <li class=\"pcoded-hasmenu active pcoded-trigger\">
+                        <li class=\"pcoded-hasmenu     pcoded-trigger\">
                             <a href=\"javascript:void(0)\" class=\"waves-effect waves-dark\">
                                 <span class=\"pcoded-micon\"><i class=\"fas fa-briefcase\"></i></span>
                                 <span class=\"pcoded-mtext\">Ressource</span>
                             </a>
                             <ul class=\"pcoded-submenu\">
-                                <li class=\"active\">
+                                <li class=\"   \">
                                     <a href=\"";
         // line 137
         yield $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_ressource_new");
@@ -275,13 +275,13 @@ class __TwigTemplate_0a4de1b128d853722a4b4bd3a2f0de86da1ab155a9c2c6d847041cda4a4
                 <div class=\"pcoded-inner-navbar main-menu\">
 
                     <ul class=\"pcoded-item pcoded-left-item\">
-                        <li class=\"pcoded-hasmenu active pcoded-trigger\">
+                        <li class=\"pcoded-hasmenu     pcoded-trigger\">
                             <a href=\"javascript:void(0)\" class=\"waves-effect waves-dark\">
                                 <span class=\"pcoded-micon\"><i class=\"fa-briefcase\"></i></span>
                                 <span class=\"pcoded-mtext\">Projet</span>
                             </a>
                             <ul class=\"pcoded-submenu\">
-                                <li class=\"active\">
+                                <li class=\"   \">
                                     <a href=\"{{path('app_projet_new')}}\" class=\"waves-effect waves-dark\">
                                         <span class=\"pcoded-mtext\">ajouter</span>
                                     </a>
@@ -295,13 +295,13 @@ class __TwigTemplate_0a4de1b128d853722a4b4bd3a2f0de86da1ab155a9c2c6d847041cda4a4
                             
 
                         </li>
-                        <li class=\"pcoded-hasmenu active pcoded-trigger\">
+                        <li class=\"pcoded-hasmenu     pcoded-trigger\">
                             <a href=\"javascript:void(0)\" class=\"waves-effect waves-dark\">
                                 <span class=\"pcoded-micon\"><i class=\"fas fa-tasks\"></i></span>
                                 <span class=\"pcoded-mtext\">Tache</span>
                             </a>
                             <ul class=\"pcoded-submenu\">
-                                <li class=\"active\">
+                                <li class=\"   \">
                                     <a href=\"{{path('app_tache_new')}}\" class=\"waves-effect waves-dark\">
                                         <span class=\"pcoded-mtext\">ajouter</span>
                                     </a>
@@ -315,7 +315,7 @@ class __TwigTemplate_0a4de1b128d853722a4b4bd3a2f0de86da1ab155a9c2c6d847041cda4a4
                             
 
                         </li>
-                        <li class=\"pcoded-hasmenu active pcoded-trigger\">
+                        <li class=\"pcoded-hasmenu  pcoded-trigger\">
                             <a href=\"javascript:void(0)\" class=\"waves-effect waves-dark\">
                                 <span class=\"pcoded-micon\"><i class=\"fas fa-user-circle\"></i></span>
                                 <span class=\"pcoded-mtext\">Equipe</span>
@@ -335,13 +335,13 @@ class __TwigTemplate_0a4de1b128d853722a4b4bd3a2f0de86da1ab155a9c2c6d847041cda4a4
                             
 
                         </li>
-                        <li class=\"pcoded-hasmenu active pcoded-trigger\">
+                        <li class=\"pcoded-hasmenu     pcoded-trigger\">
                             <a href=\"javascript:void(0)\" class=\"waves-effect waves-dark\">
                                 <span class=\"pcoded-micon\"><i class=\"fas fa-cogs\"></i></span>
                                 <span class=\"pcoded-mtext\">Domaine</span>
                             </a>
                             <ul class=\"pcoded-submenu\">
-                                <li class=\"active\">
+                                <li class=\"   \">
                                     <a href=\"{{path('app_domaine_new')}}\" class=\"waves-effect waves-dark\">
                                         <span class=\"pcoded-mtext\">ajouter</span>
                                     </a>
@@ -355,13 +355,13 @@ class __TwigTemplate_0a4de1b128d853722a4b4bd3a2f0de86da1ab155a9c2c6d847041cda4a4
                             
 
                         </li>
-                        <li class=\"pcoded-hasmenu active pcoded-trigger\">
+                        <li class=\"pcoded-hasmenu     pcoded-trigger\">
                             <a href=\"javascript:void(0)\" class=\"waves-effect waves-dark\">
                                 <span class=\"pcoded-micon\"><i class=\"fas fa-users\"></i></span>
                                 <span class=\"pcoded-mtext\">Employé</span>
                             </a>
                             <ul class=\"pcoded-submenu\">
-                                <li class=\"active\">
+                                <li class=\"   \">
                                     <a href=\"{{path('app_employe_new')}}\" class=\"waves-effect waves-dark\">
                                         <span class=\"pcoded-mtext\">ajouter</span>
                                     </a>
@@ -375,13 +375,13 @@ class __TwigTemplate_0a4de1b128d853722a4b4bd3a2f0de86da1ab155a9c2c6d847041cda4a4
                             
 
                         </li>
-                        <li class=\"pcoded-hasmenu active pcoded-trigger\">
+                        <li class=\"pcoded-hasmenu     pcoded-trigger\">
                             <a href=\"javascript:void(0)\" class=\"\">
                                 <span class=\"pcoded-micon\"><i class=\"fas fa-print\"></i></span>
                                 <span class=\"pcoded-mtext\">Facture</span>
                             </a>
                             <ul class=\"pcoded-submenu\">
-                                <li class=\"active\">
+                                <li class=\"   \">
                                     <a href=\"{{path('app_facture_new')}}\" class=\"waves-effect waves-dark\">
                                         <span class=\"pcoded-mtext\">ajouter</span>
                                     </a>
@@ -395,13 +395,13 @@ class __TwigTemplate_0a4de1b128d853722a4b4bd3a2f0de86da1ab155a9c2c6d847041cda4a4
                             
 
                         </li>
-                        <li class=\"pcoded-hasmenu active pcoded-trigger\">
+                        <li class=\"pcoded-hasmenu     pcoded-trigger\">
                             <a href=\"javascript:void(0)\" class=\"waves-effect waves-dark\">
                                 <span class=\"pcoded-micon\"><i class=\"fas fa-briefcase\"></i></span>
                                 <span class=\"pcoded-mtext\">Ressource</span>
                             </a>
                             <ul class=\"pcoded-submenu\">
-                                <li class=\"active\">
+                                <li class=\"   \">
                                     <a href=\"{{path('app_ressource_new')}}\" class=\"waves-effect waves-dark\">
                                         <span class=\"pcoded-mtext\">ajouter</span>
                                     </a>
