@@ -1,9 +1,153 @@
-<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
-<html><head>
-<title>404 Not Found</title>
-</head><body>
-<h1>Not Found</h1>
-<p>The requested URL was not found on this server.</p>
-<hr>
-<address>Apache/2.4.54 (Debian) Server at demo.dashboardpack.com Port 80</address>
-</body></html>
+
+<div class="pcoded-main-container">
+    <div class="pcoded-wrapper">
+
+        <nav class="pcoded-navbar">
+            <div class="nav-list">
+                <div class="pcoded-inner-navbar main-menu">
+
+                    <ul class="pcoded-item pcoded-left-item">
+                        <li class="pcoded-hasmenu     pcoded-trigger">
+                            <a href="javascript:void(0)" class="waves-effect waves-dark">
+                                <span class="pcoded-micon"><i class="fa-briefcase"></i></span>
+                                <span class="pcoded-mtext">Projet</span>
+                            </a>
+                            <ul class="pcoded-submenu">
+                                <li class="   ">
+                                    <a href="{{path('app_projet_new')}}" class="waves-effect waves-dark">
+                                        <span class="pcoded-mtext">ajouter</span>
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="{{path('app_projet_index')}}" class="waves-effect waves-dark">
+                                        <span class="pcoded-mtext">Lister</span>
+                                    </a>
+                                </li>
+                            </ul>
+                            
+
+                        </li>
+                        <li class="pcoded-hasmenu     pcoded-trigger">
+                            <a href="javascript:void(0)" class="waves-effect waves-dark">
+                                <span class="pcoded-micon"><i class="fas fa-tasks"></i></span>
+                                <span class="pcoded-mtext">Tache</span>
+                            </a>
+                            <ul class="pcoded-submenu">
+                                <li class="   ">
+                                    <a href="{{path('app_tache_new')}}" class="waves-effect waves-dark">
+                                        <span class="pcoded-mtext">ajouter</span>
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="{{path('app_tache_index')}}" class="waves-effect waves-dark">
+                                        <span class="pcoded-mtext">Lister</span>
+                                    </a>
+                                </li>
+                            </ul>
+                            
+
+                        </li>
+                        <li class="pcoded-hasmenu  pcoded-trigger">
+                            <a href="javascript:void(0)" class="waves-effect waves-dark">
+                                <span class="pcoded-micon"><i class="fas fa-user-circle"></i></span>
+                                <span class="pcoded-mtext">Equipe</span>
+                            </a>
+                            <ul class="pcoded-submenu">
+                                <li class="">
+                                    <a href="{{path('app_equipe_new')}}" class="waves-effect waves-dark">
+                                        <span class="pcoded-mtext">ajouter</span>
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="{{path('app_equipe_index')}}" class="waves-effect waves-dark">
+                                        <span class="pcoded-mtext">Lister</span>
+                                    </a>
+                                </li>
+                            </ul>
+                            
+
+                        </li>
+                        <li class="pcoded-hasmenu     pcoded-trigger">
+                            <a href="javascript:void(0)" class="waves-effect waves-dark">
+                                <span class="pcoded-micon"><i class="fas fa-cogs"></i></span>
+                                <span class="pcoded-mtext">Domaine</span>
+                            </a>
+                            <ul class="pcoded-submenu">
+                                <li class="   ">
+                                    <a href="{{path('app_domaine_new')}}" class="waves-effect waves-dark">
+                                        <span class="pcoded-mtext">ajouter</span>
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="{{path('app_domaine_index')}}" class="waves-effect waves-dark">
+                                        <span class="pcoded-mtext">Lister</span>
+                                    </a>
+                                </li>
+                            </ul>
+                            
+
+                        </li>
+                        <li class="pcoded-hasmenu     pcoded-trigger">
+                            <a href="javascript:void(0)" class="waves-effect waves-dark">
+                                <span class="pcoded-micon"><i class="fas fa-users"></i></span>
+                                <span class="pcoded-mtext">Employé</span>
+                            </a>
+                            <ul class="pcoded-submenu">
+                                <li class="   ">
+                                    <a href="{{path('app_employe_new')}}" class="waves-effect waves-dark">
+                                        <span class="pcoded-mtext">ajouter</span>
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="{{path('app_employe_index')}}" class="waves-effect waves-dark">
+                                        <span class="pcoded-mtext">Lister</span>
+                                    </a>
+                                </li>
+                            </ul>
+                            
+
+                        </li>
+                        <li class="pcoded-hasmenu     pcoded-trigger">
+                            <a href="javascript:void(0)" class="">
+                                <span class="pcoded-micon"><i class="fas fa-print"></i></span>
+                                <span class="pcoded-mtext">Facture</span>
+                            </a>
+                            <ul class="pcoded-submenu">
+                                <li class="   ">
+                                    <a href="{{path('app_facture_new')}}" class="waves-effect waves-dark">
+                                        <span class="pcoded-mtext">ajouter</span>
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="{{path('app_facture_index')}}" class="waves-effect waves-dark">
+                                        <span class="pcoded-mtext">Lister</span>
+                                    </a>    
+                                </li>
+                            </ul>
+                            
+
+                        </li>
+                        <li class="pcoded-hasmenu     pcoded-trigger">
+                            <a href="javascript:void(0)" class="waves-effect waves-dark">
+                                <span class="pcoded-micon"><i class="fas fa-briefcase"></i></span>
+                                <span class="pcoded-mtext">Ressource</span>
+                            </a>
+                            <ul class="pcoded-submenu">
+                                <li class="   ">
+                                    <a href="{{path('app_ressource_new')}}" class="waves-effect waves-dark">
+                                        <span class="pcoded-mtext">ajouter</span>
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="{{path('app_ressource_index')}}" class="waves-effect waves-dark">
+                                        <span class="pcoded-mtext">Lister</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+</div>

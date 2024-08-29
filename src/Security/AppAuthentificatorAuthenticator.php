@@ -49,6 +49,7 @@ class AppAuthentificatorAuthenticator extends AbstractLoginFormAuthenticator
        
         $user = $token->getUser();
         $request->getSession()->set('user_name', $user->getUserIdentifier());
+        $request->getSession()->set('user_role',$user->getRoles());
         if ($targetPath = $this->getTargetPath($request->getSession(), $firewallName)) {
             return new RedirectResponse($targetPath);
         }
