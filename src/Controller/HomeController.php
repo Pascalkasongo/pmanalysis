@@ -26,18 +26,7 @@ class HomeController extends AbstractController
         return $this->redirectToRoute('app_login');
     }
   
-  #[Route('/home-conf', name: 'app_home_conf')]
-    public function conf(Security $security, NotificationRepository $notificationRepo,ProjetRepository $projet,TacheRepository $tache, EquipeRepository $equipe): Response
-    {
-        if($security->getUser() instanceof Client){
-          return $this->redirectToRoute('app_user_project');
-        }else{
-          return $this->redirectToRoute('app_home');
-        }
-
-        
-    }
-
+ 
     #[Route('/home',name:'app_home')]
     public function index(SessionInterface $session, NotificationRepository $notificationRepo,ProjetRepository $projet,TacheRepository $tache, EquipeRepository $equipe,Security $security): Response
     {

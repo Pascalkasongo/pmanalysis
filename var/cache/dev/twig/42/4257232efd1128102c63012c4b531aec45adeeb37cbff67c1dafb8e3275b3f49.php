@@ -97,7 +97,7 @@ class __TwigTemplate_2ebe41f4e4ea56080dc2f133d6037e7cdfd0c8371472aa2af17e93671be
         yield "
                 ";
         // line 13
-        yield $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(CoreExtension::getAttribute($this->env, $this->source, (isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 13, $this->source); })()), "nom_tache", [], "any", false, false, false, 13), 'widget', ["attr" => ["class" => "form-control", "placeholder" => "nom tache"]]);
+        yield $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(CoreExtension::getAttribute($this->env, $this->source, (isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 13, $this->source); })()), "nom_tache", [], "any", false, false, false, 13), 'widget', ["attr" => ["class" => "form-control", "placeholder" => "nom tache", "readOnly" => "True"]]);
         yield "
                 ";
         // line 14
@@ -111,7 +111,7 @@ class __TwigTemplate_2ebe41f4e4ea56080dc2f133d6037e7cdfd0c8371472aa2af17e93671be
         yield "
                 ";
         // line 18
-        yield $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(CoreExtension::getAttribute($this->env, $this->source, (isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 18, $this->source); })()), "date_from", [], "any", false, false, false, 18), 'widget', ["attr" => ["class" => "form-control", "placeholder" => "Date debut"]]);
+        yield $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(CoreExtension::getAttribute($this->env, $this->source, (isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 18, $this->source); })()), "date_from", [], "any", false, false, false, 18), 'widget', ["attr" => ["class" => "form-control", "placeholder" => "Date debut", "readOnly" => "True"]]);
         yield "
                 ";
         // line 19
@@ -125,7 +125,7 @@ class __TwigTemplate_2ebe41f4e4ea56080dc2f133d6037e7cdfd0c8371472aa2af17e93671be
         yield "
                 ";
         // line 23
-        yield $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(CoreExtension::getAttribute($this->env, $this->source, (isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 23, $this->source); })()), "date_up", [], "any", false, false, false, 23), 'widget', ["attr" => ["class" => "form-control", "placeholder" => "Date fin"]]);
+        yield $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(CoreExtension::getAttribute($this->env, $this->source, (isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 23, $this->source); })()), "date_up", [], "any", false, false, false, 23), 'widget', ["attr" => ["class" => "form-control", "placeholder" => "Date fin", "readOnly" => "True"]]);
         yield "
                 ";
         // line 24
@@ -139,7 +139,7 @@ class __TwigTemplate_2ebe41f4e4ea56080dc2f133d6037e7cdfd0c8371472aa2af17e93671be
         yield "
                 ";
         // line 28
-        yield $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(CoreExtension::getAttribute($this->env, $this->source, (isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 28, $this->source); })()), "nombre_heure", [], "any", false, false, false, 28), 'widget', ["attr" => ["class" => "form-control", "placeholder" => "Nombre heure"]]);
+        yield $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(CoreExtension::getAttribute($this->env, $this->source, (isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 28, $this->source); })()), "nombre_heure", [], "any", false, false, false, 28), 'widget', ["attr" => ["class" => "form-control", "placeholder" => "Nombre heure", "readOnly" => "True"]]);
         yield "
                 ";
         // line 29
@@ -153,7 +153,7 @@ class __TwigTemplate_2ebe41f4e4ea56080dc2f133d6037e7cdfd0c8371472aa2af17e93671be
         yield "
                 ";
         // line 33
-        yield $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(CoreExtension::getAttribute($this->env, $this->source, (isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 33, $this->source); })()), "cout_horaire", [], "any", false, false, false, 33), 'widget', ["attr" => ["class" => "form-control", "placeholder" => "cout horaire"]]);
+        yield $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(CoreExtension::getAttribute($this->env, $this->source, (isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 33, $this->source); })()), "cout_horaire", [], "any", false, false, false, 33), 'widget', ["attr" => ["class" => "form-control", "placeholder" => "cout horaire", "readOnly" => "True"]]);
         yield "
                 ";
         // line 34
@@ -167,7 +167,7 @@ class __TwigTemplate_2ebe41f4e4ea56080dc2f133d6037e7cdfd0c8371472aa2af17e93671be
         yield "
                 ";
         // line 38
-        yield $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(CoreExtension::getAttribute($this->env, $this->source, (isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 38, $this->source); })()), "projet", [], "any", false, false, false, 38), 'widget', ["attr" => ["class" => "form-control", "placeholder" => "Nom projet"]]);
+        yield $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(CoreExtension::getAttribute($this->env, $this->source, (isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 38, $this->source); })()), "projet", [], "any", false, false, false, 38), 'widget', ["attr" => ["class" => "form-control", "placeholder" => "Nom projet", "readOnly" => "True"]]);
         yield "
                 ";
         // line 39
@@ -181,7 +181,7 @@ class __TwigTemplate_2ebe41f4e4ea56080dc2f133d6037e7cdfd0c8371472aa2af17e93671be
         yield "
                 ";
         // line 43
-        yield $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(CoreExtension::getAttribute($this->env, $this->source, (isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 43, $this->source); })()), "priorite", [], "any", false, false, false, 43), 'widget', ["attr" => ["class" => "form-control", "placeholder" => "Priorite"]]);
+        yield $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(CoreExtension::getAttribute($this->env, $this->source, (isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 43, $this->source); })()), "priorite", [], "any", false, false, false, 43), 'widget', ["attr" => ["class" => "form-control", "placeholder" => "Priorite", "readOnly" => "True"]]);
         yield "
                 ";
         // line 44
@@ -209,7 +209,7 @@ class __TwigTemplate_2ebe41f4e4ea56080dc2f133d6037e7cdfd0c8371472aa2af17e93671be
         yield "
                 ";
         // line 53
-        yield $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(CoreExtension::getAttribute($this->env, $this->source, (isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 53, $this->source); })()), "equipe", [], "any", false, false, false, 53), 'widget', ["attr" => ["class" => "form-control", "placeholder" => "Etat"]]);
+        yield $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(CoreExtension::getAttribute($this->env, $this->source, (isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 53, $this->source); })()), "equipe", [], "any", false, false, false, 53), 'widget', ["attr" => ["class" => "form-control", "placeholder" => "Equipe", "readOnly" => "True"]]);
         yield "
                 ";
         // line 54
@@ -223,7 +223,7 @@ class __TwigTemplate_2ebe41f4e4ea56080dc2f133d6037e7cdfd0c8371472aa2af17e93671be
         yield "
                 ";
         // line 58
-        yield $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(CoreExtension::getAttribute($this->env, $this->source, (isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 58, $this->source); })()), "ressource", [], "any", false, false, false, 58), 'widget', ["attr" => ["class" => "form-control", "placeholder" => "Ressource"]]);
+        yield $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(CoreExtension::getAttribute($this->env, $this->source, (isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 58, $this->source); })()), "ressource", [], "any", false, false, false, 58), 'widget', ["attr" => ["class" => "form-control", "placeholder" => "Ressource", "readOnly" => "True"]]);
         yield "
                 ";
         // line 59
@@ -288,37 +288,37 @@ class __TwigTemplate_2ebe41f4e4ea56080dc2f133d6037e7cdfd0c8371472aa2af17e93671be
         {{form_start(form)}}
             <div class=\"form-group\">
                 {{ form_label(form.nom_tache, 'Nom tâche') }}
-                {{ form_widget(form.nom_tache, {'attr': {'class': 'form-control', 'placeholder': \"nom tache\"}}) }}
+                {{ form_widget(form.nom_tache, {'attr': {'class': 'form-control', 'placeholder': \"nom tache\",'readOnly':\"True\"}}) }}
                 {{ form_errors(form.nom_tache) }}
             </div>
             <div class=\"form-group\">
                 {{ form_label(form.date_from, 'Date debut') }}
-                {{ form_widget(form.date_from, {'attr': {'class': 'form-control', 'placeholder': \"Date debut\"}}) }}
+                {{ form_widget(form.date_from, {'attr': {'class': 'form-control', 'placeholder': \"Date debut\",'readOnly':\"True\"}}) }}
                 {{ form_errors(form.date_from) }}
             </div>
              <div class=\"form-group\">
                 {{ form_label(form.date_up, 'Date fin') }}
-                {{ form_widget(form.date_up, {'attr': {'class': 'form-control', 'placeholder': 'Date fin'}}) }}
+                {{ form_widget(form.date_up, {'attr': {'class': 'form-control', 'placeholder': 'Date fin','readOnly':\"True\"}}) }}
                 {{ form_errors(form.date_up) }}
             </div>
             <div class=\"form-group\">
                 {{ form_label(form.nombre_heure, 'Nombre heure') }}
-                {{ form_widget(form.nombre_heure, {'attr': {'class': 'form-control', 'placeholder': \"Nombre heure\"}}) }}
+                {{ form_widget(form.nombre_heure, {'attr': {'class': 'form-control', 'placeholder': \"Nombre heure\",'readOnly':\"True\"}}) }}
                 {{ form_errors(form.nombre_heure) }}
             </div>
             <div class=\"form-group\">
                 {{ form_label(form.cout_horaire, 'cout horaire') }}
-                {{ form_widget(form.cout_horaire, {'attr': {'class': 'form-control', 'placeholder': \"cout horaire\"}}) }}
+                {{ form_widget(form.cout_horaire, {'attr': {'class': 'form-control', 'placeholder': \"cout horaire\",'readOnly':\"True\"}}) }}
                 {{ form_errors(form.cout_horaire) }}
             </div>
             <div class=\"form-group\">
                 {{ form_label(form.projet, 'Nom Projet') }}
-                {{ form_widget(form.projet, {'attr': {'class': 'form-control', 'placeholder': \"Nom projet\"}}) }}
+                {{ form_widget(form.projet, {'attr': {'class': 'form-control', 'placeholder': \"Nom projet\",'readOnly':\"True\"}}) }}
                 {{ form_errors(form.projet) }}
             </div>
             <div class=\"form-group\">
                 {{ form_label(form.priorite, 'Priorite') }}
-                {{ form_widget(form.priorite, {'attr': {'class': 'form-control', 'placeholder': \"Priorite\"}}) }}
+                {{ form_widget(form.priorite, {'attr': {'class': 'form-control', 'placeholder': \"Priorite\",'readOnly':\"True\"}}) }}
                 {{ form_errors(form.priorite) }}
             </div>
             <div class=\"form-group\">
@@ -328,12 +328,12 @@ class __TwigTemplate_2ebe41f4e4ea56080dc2f133d6037e7cdfd0c8371472aa2af17e93671be
             </div>
              <div class=\"form-group\">
                 {{ form_label(form.equipe, 'Equipe') }}
-                {{ form_widget(form.equipe, {'attr': {'class': 'form-control', 'placeholder': \"Etat\"}}) }}
+                {{ form_widget(form.equipe, {'attr': {'class': 'form-control', 'placeholder': \"Equipe\",'readOnly':\"True\"}}) }}
                 {{ form_errors(form.equipe) }}
             </div>
              <div class=\"form-group\">
                 {{ form_label(form.ressource, 'Ressource') }}
-                {{ form_widget(form.ressource, {'attr': {'class': 'form-control', 'placeholder': \"Ressource\"}}) }}
+                {{ form_widget(form.ressource, {'attr': {'class': 'form-control', 'placeholder': \"Ressource\",'readOnly':\"True\"}}) }}
                 {{ form_errors(form.ressource) }}
             </div>
         <button type=\"submit\" class=\"btn btn-primary\">Modifier</button>

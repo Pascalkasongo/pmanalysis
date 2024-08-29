@@ -1,10 +1,13 @@
-{% extends 'base.html.twig' %}
+{{include('content/navbar.html.twig')}}
+{{include('content/slidebar.html.twig')}}
 
-{% block title %}Ressource index{% endblock %}
+{% block title %}Projets{% endblock %}
 
 {% block body %}
-    <h1>Ressource index</h1>
-
+<div class="pcoded-content">
+             
+    <div class="container mt-4">
+    <h1>Ressource</h1>
     <table class="table">
         <thead>
             <tr>
@@ -22,9 +25,10 @@
                 <td>{{ ressource.nomRessource }}</td>
                 <td>{{ ressource.qtyRessource }}</td>
                 <td>{{ ressource.coutRessource }}</td>
-                <td>
-                    <a href="{{ path('app_ressource_show', {'id': ressource.id}) }}">show</a>
-                    <a href="{{ path('app_ressource_edit', {'id': ressource.id}) }}">edit</a>
+                    <td>
+                    <a href="{{ path('app_ressource_show', {'id': ressource.id}) }}"class="btn btn-primary btn-sm" title="View"><i class="fas fa-eye"></i></a>
+                    <a href="{{ path('app_ressource_edit', {'id': ressource.id}) }}"class="btn btn-warning btn-sm" title="Edit"><i class="fas fa-edit"></i></a>
+                    <a href="{{ path('app_ressource_delete', {'id': ressource.id}) }}"class="btn btn-danger btn-sm" title="Delete"><i class="fas fa-trash"></i></a>
                 </td>
             </tr>
         {% else %}
@@ -37,3 +41,4 @@
 
     <a href="{{ path('app_ressource_new') }}">Create new</a>
 {% endblock %}
+{{include('content/data.html.twig')}}

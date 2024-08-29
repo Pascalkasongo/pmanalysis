@@ -6,12 +6,14 @@ use App\Entity\Ressource;
 use App\Form\RessourceType;
 use App\Repository\RessourceRepository;
 use Doctrine\ORM\EntityManagerInterface;
+use Sensio\Bundle\FrameworkExtraBundle\Configuration\IsGranted;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 
 #[Route('/ressource')]
+#[IsGranted('ROLE_CHEF_PROJET')]
 class RessourceController extends AbstractController
 {
     #[Route('/', name: 'app_ressource_index', methods: ['GET'])]

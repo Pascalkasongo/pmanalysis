@@ -89,89 +89,57 @@ class __TwigTemplate_95bc4c2e4dc5cc34240b4a4c277add1244eb9a35db65038b1c20bdbe600
     <table class=\"table\">
         <thead>
             <tr>
-                <th>Id</th>
                 <th>Nom Tache</th>
                 <th>Nombre Heure</th>
                 <th>Cout Horaire</th>
                 <th>Projet</th>
-                <th>Equipe</th>
-                <th>Priorite</th>
-                <th>Etat</th>
                 <th>actions</th>
             </tr>
         </thead>
         <tbody>
         ";
-        // line 25
+        // line 21
         $context["nombre"] = 0;
-        // line 26
+        // line 22
         yield "        ";
         $context['_parent'] = $context;
-        $context['_seq'] = CoreExtension::ensureTraversable((isset($context["taches"]) || array_key_exists("taches", $context) ? $context["taches"] : (function () { throw new RuntimeError('Variable "taches" does not exist.', 26, $this->source); })()));
+        $context['_seq'] = CoreExtension::ensureTraversable((isset($context["taches"]) || array_key_exists("taches", $context) ? $context["taches"] : (function () { throw new RuntimeError('Variable "taches" does not exist.', 22, $this->source); })()));
         $context['_iterated'] = false;
         foreach ($context['_seq'] as $context["_key"] => $context["tache"]) {
-            // line 27
+            // line 23
             yield "        ";
-            $context["nombre"] = ((isset($context["nombre"]) || array_key_exists("nombre", $context) ? $context["nombre"] : (function () { throw new RuntimeError('Variable "nombre" does not exist.', 27, $this->source); })()) + 1);
-            // line 28
+            $context["nombre"] = ((isset($context["nombre"]) || array_key_exists("nombre", $context) ? $context["nombre"] : (function () { throw new RuntimeError('Variable "nombre" does not exist.', 23, $this->source); })()) + 1);
+            // line 24
             yield "            <tr>
              
                 <td>";
-            // line 30
-            yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape((isset($context["nombre"]) || array_key_exists("nombre", $context) ? $context["nombre"] : (function () { throw new RuntimeError('Variable "nombre" does not exist.', 30, $this->source); })()), "html", null, true);
-            yield "</td>
-                <td>";
-            // line 31
-            if (($context["tache"] && CoreExtension::getAttribute($this->env, $this->source, $context["tache"], "nomTache", [], "any", false, false, false, 31))) {
-                yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(CoreExtension::getAttribute($this->env, $this->source, $context["tache"], "nomTache", [], "any", false, false, false, 31), "html", null, true);
+            // line 26
+            if (($context["tache"] && CoreExtension::getAttribute($this->env, $this->source, $context["tache"], "nomTache", [], "any", false, false, false, 26))) {
+                yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(CoreExtension::getAttribute($this->env, $this->source, $context["tache"], "nomTache", [], "any", false, false, false, 26), "html", null, true);
             } else {
                 yield "N/A";
             }
             yield "</td>
                 <td>";
-            // line 32
-            if (($context["tache"] && CoreExtension::getAttribute($this->env, $this->source, $context["tache"], "nombreHeure", [], "any", false, false, false, 32))) {
-                yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(CoreExtension::getAttribute($this->env, $this->source, $context["tache"], "nombreHeure", [], "any", false, false, false, 32), "html", null, true);
+            // line 27
+            if (($context["tache"] && CoreExtension::getAttribute($this->env, $this->source, $context["tache"], "nombreHeure", [], "any", false, false, false, 27))) {
+                yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(CoreExtension::getAttribute($this->env, $this->source, $context["tache"], "nombreHeure", [], "any", false, false, false, 27), "html", null, true);
             } else {
                 yield "N/A";
             }
             yield "</td>
                 <td>";
-            // line 33
-            if (($context["tache"] && CoreExtension::getAttribute($this->env, $this->source, $context["tache"], "coutHoraire", [], "any", false, false, false, 33))) {
-                yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(CoreExtension::getAttribute($this->env, $this->source, $context["tache"], "coutHoraire", [], "any", false, false, false, 33), "html", null, true);
+            // line 28
+            if (($context["tache"] && CoreExtension::getAttribute($this->env, $this->source, $context["tache"], "coutHoraire", [], "any", false, false, false, 28))) {
+                yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(CoreExtension::getAttribute($this->env, $this->source, $context["tache"], "coutHoraire", [], "any", false, false, false, 28), "html", null, true);
             } else {
                 yield "N/A";
             }
             yield "</td>
                 <td>";
-            // line 34
-            if ((($context["tache"] && CoreExtension::getAttribute($this->env, $this->source, $context["tache"], "projet", [], "any", false, false, false, 34)) && CoreExtension::getAttribute($this->env, $this->source, CoreExtension::getAttribute($this->env, $this->source, $context["tache"], "projet", [], "any", false, false, false, 34), "nom", [], "any", false, false, false, 34))) {
-                yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(CoreExtension::getAttribute($this->env, $this->source, CoreExtension::getAttribute($this->env, $this->source, $context["tache"], "projet", [], "any", false, false, false, 34), "nom", [], "any", false, false, false, 34), "html", null, true);
-            } else {
-                yield "N/A";
-            }
-            yield "</td>
-                <td>";
-            // line 35
-            if ((($context["tache"] && CoreExtension::getAttribute($this->env, $this->source, $context["tache"], "equipe", [], "any", false, false, false, 35)) && CoreExtension::getAttribute($this->env, $this->source, CoreExtension::getAttribute($this->env, $this->source, $context["tache"], "equipe", [], "any", false, false, false, 35), "nomEquipe", [], "any", false, false, false, 35))) {
-                yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(CoreExtension::getAttribute($this->env, $this->source, CoreExtension::getAttribute($this->env, $this->source, $context["tache"], "equipe", [], "any", false, false, false, 35), "nomEquipe", [], "any", false, false, false, 35), "html", null, true);
-            } else {
-                yield "N/A";
-            }
-            yield "</td>
-                <td>";
-            // line 36
-            if ((($context["tache"] && CoreExtension::getAttribute($this->env, $this->source, $context["tache"], "priorite", [], "any", false, false, false, 36)) && CoreExtension::getAttribute($this->env, $this->source, CoreExtension::getAttribute($this->env, $this->source, $context["tache"], "priorite", [], "any", false, false, false, 36), "nomPriorite", [], "any", false, false, false, 36))) {
-                yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(CoreExtension::getAttribute($this->env, $this->source, CoreExtension::getAttribute($this->env, $this->source, $context["tache"], "priorite", [], "any", false, false, false, 36), "nomPriorite", [], "any", false, false, false, 36), "html", null, true);
-            } else {
-                yield "N/A";
-            }
-            yield "</td>
-                <td>";
-            // line 37
-            if ((($context["tache"] && CoreExtension::getAttribute($this->env, $this->source, $context["tache"], "etat", [], "any", false, false, false, 37)) && CoreExtension::getAttribute($this->env, $this->source, CoreExtension::getAttribute($this->env, $this->source, $context["tache"], "etat", [], "any", false, false, false, 37), "nomEtat", [], "any", false, false, false, 37))) {
-                yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(CoreExtension::getAttribute($this->env, $this->source, CoreExtension::getAttribute($this->env, $this->source, $context["tache"], "etat", [], "any", false, false, false, 37), "nomEtat", [], "any", false, false, false, 37), "html", null, true);
+            // line 29
+            if ((($context["tache"] && CoreExtension::getAttribute($this->env, $this->source, $context["tache"], "projet", [], "any", false, false, false, 29)) && CoreExtension::getAttribute($this->env, $this->source, CoreExtension::getAttribute($this->env, $this->source, $context["tache"], "projet", [], "any", false, false, false, 29), "nom", [], "any", false, false, false, 29))) {
+                yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(CoreExtension::getAttribute($this->env, $this->source, CoreExtension::getAttribute($this->env, $this->source, $context["tache"], "projet", [], "any", false, false, false, 29), "nom", [], "any", false, false, false, 29), "html", null, true);
             } else {
                 yield "N/A";
             }
@@ -179,16 +147,16 @@ class __TwigTemplate_95bc4c2e4dc5cc34240b4a4c277add1244eb9a35db65038b1c20bdbe600
 
                 <td>
                      <a href=\"";
-            // line 40
-            yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_tache_show", ["id" => CoreExtension::getAttribute($this->env, $this->source, $context["tache"], "id", [], "any", false, false, false, 40)]), "html", null, true);
+            // line 32
+            yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_tache_show", ["id" => CoreExtension::getAttribute($this->env, $this->source, $context["tache"], "id", [], "any", false, false, false, 32)]), "html", null, true);
             yield "\"class=\"btn btn-primary btn-sm\" title=\"View\"><i class=\"fas fa-eye\"></i></a>
                         <a href=\"";
-            // line 41
-            yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_tache_edit", ["id" => CoreExtension::getAttribute($this->env, $this->source, $context["tache"], "id", [], "any", false, false, false, 41)]), "html", null, true);
+            // line 33
+            yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_tache_edit", ["id" => CoreExtension::getAttribute($this->env, $this->source, $context["tache"], "id", [], "any", false, false, false, 33)]), "html", null, true);
             yield "\"class=\"btn btn-warning btn-sm\" title=\"Edit\"><i class=\"fas fa-edit\"></i></a>
                          <a href=\"";
-            // line 42
-            yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_tache_delete", ["id" => CoreExtension::getAttribute($this->env, $this->source, $context["tache"], "id", [], "any", false, false, false, 42)]), "html", null, true);
+            // line 34
+            yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_tache_delete", ["id" => CoreExtension::getAttribute($this->env, $this->source, $context["tache"], "id", [], "any", false, false, false, 34)]), "html", null, true);
             yield "\"class=\"btn btn-danger btn-sm\" title=\"Delete\"><i class=\"fas fa-trash\"></i></a>
                 </td>
             </tr>
@@ -196,7 +164,7 @@ class __TwigTemplate_95bc4c2e4dc5cc34240b4a4c277add1244eb9a35db65038b1c20bdbe600
             $context['_iterated'] = true;
         }
         if (!$context['_iterated']) {
-            // line 46
+            // line 38
             yield "            <tr>
                 <td colspan=\"7\">no records found</td>
             </tr>
@@ -205,18 +173,18 @@ class __TwigTemplate_95bc4c2e4dc5cc34240b4a4c277add1244eb9a35db65038b1c20bdbe600
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['tache'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 50
+        // line 42
         yield "        </tbody>
     </table>
 
     <a href=\"";
-        // line 53
+        // line 45
         yield $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_tache_new");
         yield "\">Create new</a>
 </div>
 </div>
     ";
-        // line 56
+        // line 48
         yield Twig\Extension\CoreExtension::include($this->env, $context, "content/data.html.twig");
         yield "
 ";
@@ -247,7 +215,7 @@ class __TwigTemplate_95bc4c2e4dc5cc34240b4a4c277add1244eb9a35db65038b1c20bdbe600
      */
     public function getDebugInfo()
     {
-        return array (  220 => 56,  214 => 53,  209 => 50,  200 => 46,  191 => 42,  187 => 41,  183 => 40,  173 => 37,  165 => 36,  157 => 35,  149 => 34,  141 => 33,  133 => 32,  125 => 31,  121 => 30,  117 => 28,  114 => 27,  108 => 26,  106 => 25,  85 => 6,  78 => 5,  64 => 3,  56 => 5,  53 => 4,  51 => 3,  47 => 2,  43 => 1,);
+        return array (  188 => 48,  182 => 45,  177 => 42,  168 => 38,  159 => 34,  155 => 33,  151 => 32,  141 => 29,  133 => 28,  125 => 27,  117 => 26,  113 => 24,  110 => 23,  104 => 22,  102 => 21,  85 => 6,  78 => 5,  64 => 3,  56 => 5,  53 => 4,  51 => 3,  47 => 2,  43 => 1,);
     }
 
     public function getSourceContext()
@@ -264,14 +232,10 @@ class __TwigTemplate_95bc4c2e4dc5cc34240b4a4c277add1244eb9a35db65038b1c20bdbe600
     <table class=\"table\">
         <thead>
             <tr>
-                <th>Id</th>
                 <th>Nom Tache</th>
                 <th>Nombre Heure</th>
                 <th>Cout Horaire</th>
                 <th>Projet</th>
-                <th>Equipe</th>
-                <th>Priorite</th>
-                <th>Etat</th>
                 <th>actions</th>
             </tr>
         </thead>
@@ -281,14 +245,10 @@ class __TwigTemplate_95bc4c2e4dc5cc34240b4a4c277add1244eb9a35db65038b1c20bdbe600
         {%set nombre = nombre+1%}
             <tr>
              
-                <td>{{ nombre }}</td>
                 <td>{% if tache and tache.nomTache %}{{ tache.nomTache }}{% else %}N/A{% endif %}</td>
                 <td>{% if tache and tache.nombreHeure %}{{ tache.nombreHeure }}{% else %}N/A{% endif %}</td>
                 <td>{% if tache and tache.coutHoraire %}{{ tache.coutHoraire }}{% else %}N/A{% endif %}</td>
                 <td>{% if tache and tache.projet and tache.projet.nom %}{{ tache.projet.nom }}{% else %}N/A{% endif %}</td>
-                <td>{% if tache and tache.equipe and tache.equipe.nomEquipe %}{{ tache.equipe.nomEquipe }}{% else %}N/A{% endif %}</td>
-                <td>{% if tache and tache.priorite and tache.priorite.nomPriorite %}{{ tache.priorite.nomPriorite }}{% else %}N/A{% endif %}</td>
-                <td>{% if tache and tache.etat and tache.etat.nomEtat %}{{ tache.etat.nomEtat }}{% else %}N/A{% endif %}</td>
 
                 <td>
                      <a href=\"{{ path('app_tache_show', {'id': tache.id}) }}\"class=\"btn btn-primary btn-sm\" title=\"View\"><i class=\"fas fa-eye\"></i></a>

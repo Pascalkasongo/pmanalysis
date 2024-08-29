@@ -7,12 +7,16 @@ use App\Form\ProjetType;
 use App\Repository\NotificationRepository;
 use App\Repository\ProjetRepository;
 use Doctrine\ORM\EntityManagerInterface;
+use Sensio\Bundle\FrameworkExtraBundle\Configuration\IsGranted;
+use Sensio\Bundle\FrameworkExtraBundle\Configuration\Security;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 
 #[Route('/projet')]
+
+#[IsGranted('ROLE_CHEF_PROJET')]
 class ProjetController extends AbstractController
 {
     #[Route('/', name: 'app_projet_index', methods: ['GET'])]

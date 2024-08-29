@@ -6,12 +6,14 @@ use App\Entity\Tache;
 use App\Form\TacheType;
 use App\Repository\TacheRepository;
 use Doctrine\ORM\EntityManagerInterface;
+use Sensio\Bundle\FrameworkExtraBundle\Configuration\IsGranted;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 
 #[Route('/tache')]
+
 class TacheController extends AbstractController
 {
     #[Route('/', name: 'app_tache_index', methods: ['GET'])]
@@ -21,7 +23,7 @@ class TacheController extends AbstractController
             'taches' => $tacheRepository->findAll(),
         ]);
     }
-
+    #[IsGranted('ROLE_CHEF_PROJET')]
     #[Route('/new', name: 'app_tache_new', methods: ['GET', 'POST'])]
     public function new(Request $request, EntityManagerInterface $entityManager): Response
     {
@@ -49,7 +51,7 @@ class TacheController extends AbstractController
             'tache' => $tache,
         ]);
     }
-
+    #[IsGranted('ROLE_CHEF')]
     #[Route('/{id}/edit', name: 'app_tache_edit', methods: ['GET', 'POST'])]
     public function edit(Request $request, Tache $tache, EntityManagerInterface $entityManager): Response
     {
@@ -67,7 +69,7 @@ class TacheController extends AbstractController
             'form' => $form,
         ]);
     }
-
+    #[IsGranted('ROLE_CHEF_PROJET')]
     #[Route('/{id}', name: 'app_tache_delete', methods: ['POST'])]
     public function delete(Request $request, Tache $tache, EntityManagerInterface $entityManager): Response
     {

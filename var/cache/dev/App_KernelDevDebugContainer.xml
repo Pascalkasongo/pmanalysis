@@ -4811,16 +4811,6 @@
         <argument key="fonction" type="service_closure" id=".errored..service_locator.WAid7fk.App\Entity\Fonction"/>
       </argument>
     </service>
-    <service id=".service_locator.7R6lnhe" class="Symfony\Component\DependencyInjection\ServiceLocator">
-      <tag name="container.service_locator"/>
-      <argument type="collection">
-        <argument key="equipe" type="service_closure" id="App\Repository\EquipeRepository"/>
-        <argument key="notificationRepo" type="service_closure" id="App\Repository\NotificationRepository"/>
-        <argument key="projet" type="service_closure" id="App\Repository\ProjetRepository"/>
-        <argument key="security" type="service_closure" id="security.helper"/>
-        <argument key="tache" type="service_closure" id="App\Repository\TacheRepository"/>
-      </argument>
-    </service>
     <service id=".service_locator.AW43DMG" class="Symfony\Component\DependencyInjection\ServiceLocator">
       <tag name="container.service_locator"/>
       <argument type="collection">
@@ -4972,7 +4962,7 @@
         <argument key="security" type="service_closure" id="security.helper"/>
       </argument>
     </service>
-    <service id=".service_locator.ijAx82p" class="Symfony\Component\DependencyInjection\ServiceLocator">
+    <service id=".service_locator.t6cDI9V" class="Symfony\Component\DependencyInjection\ServiceLocator">
       <tag name="container.service_locator"/>
       <argument type="collection">
         <argument key="App\Controller\ClientController::delete" type="service_closure" id=".service_locator.a2UKxPj"/>
@@ -5015,7 +5005,6 @@
         <argument key="App\Controller\FonctionController::index" type="service_closure" id=".service_locator.WFmNc4M"/>
         <argument key="App\Controller\FonctionController::new" type="service_closure" id=".service_locator.l2QwsaZ"/>
         <argument key="App\Controller\FonctionController::show" type="service_closure" id=".service_locator.Y3X3d_D"/>
-        <argument key="App\Controller\HomeController::conf" type="service_closure" id=".service_locator.7R6lnhe"/>
         <argument key="App\Controller\HomeController::index" type="service_closure" id=".service_locator.AW43DMG"/>
         <argument key="App\Controller\NotificationController::delete" type="service_closure" id=".service_locator.iPzJNuw"/>
         <argument key="App\Controller\NotificationController::edit" type="service_closure" id=".service_locator.iPzJNuw"/>
@@ -5095,7 +5084,6 @@
         <argument key="App\Controller\FonctionController:index" type="service_closure" id=".service_locator.WFmNc4M"/>
         <argument key="App\Controller\FonctionController:new" type="service_closure" id=".service_locator.l2QwsaZ"/>
         <argument key="App\Controller\FonctionController:show" type="service_closure" id=".service_locator.Y3X3d_D"/>
-        <argument key="App\Controller\HomeController:conf" type="service_closure" id=".service_locator.7R6lnhe"/>
         <argument key="App\Controller\HomeController:index" type="service_closure" id=".service_locator.AW43DMG"/>
         <argument key="App\Controller\NotificationController:delete" type="service_closure" id=".service_locator.iPzJNuw"/>
         <argument key="App\Controller\NotificationController:edit" type="service_closure" id=".service_locator.iPzJNuw"/>
@@ -5627,12 +5615,12 @@
       <argument type="service" id="security.token_storage"/>
     </service>
     <service id="debug.argument_resolver.service.inner" class="Symfony\Component\HttpKernel\Controller\ArgumentResolver\ServiceValueResolver">
-      <argument type="service" id=".service_locator.ijAx82p"/>
+      <argument type="service" id=".service_locator.t6cDI9V"/>
     </service>
     <service id="debug.argument_resolver.default.inner" class="Symfony\Component\HttpKernel\Controller\ArgumentResolver\DefaultValueResolver"/>
     <service id="debug.argument_resolver.variadic.inner" class="Symfony\Component\HttpKernel\Controller\ArgumentResolver\VariadicValueResolver"/>
     <service id="debug.argument_resolver.not_tagged_controller.inner" class="Symfony\Component\HttpKernel\Controller\ArgumentResolver\NotTaggedControllerValueResolver">
-      <argument type="service" id=".service_locator.ijAx82p"/>
+      <argument type="service" id=".service_locator.t6cDI9V"/>
     </service>
     <service id=".doctrine.orm.default_metadata_driver.inner" class="Doctrine\Persistence\Mapping\Driver\MappingDriverChain">
       <call method="addDriver">
@@ -6344,7 +6332,7 @@
     <service id="Symfony\Component\Security\Core\User\UserCheckerInterface" alias="security.user_checker"/>
     <service id="container.env_var_processors_locator" alias=".service_locator.gSv9zYw" public="true"/>
     <service id="twig.loader.filesystem" alias="twig.loader.native_filesystem"/>
-    <service id="argument_resolver.controller_locator" alias=".service_locator.ijAx82p"/>
+    <service id="argument_resolver.controller_locator" alias=".service_locator.t6cDI9V"/>
     <service id="Psr\Log\LoggerInterface $requestLogger" alias="monolog.logger.request"/>
     <service id="Psr\Log\LoggerInterface $consoleLogger" alias="monolog.logger.console"/>
     <service id="Psr\Log\LoggerInterface $cacheLogger" alias="monolog.logger.cache"/>
@@ -6371,7 +6359,7 @@
     <service id=".service_locator.CubzJEE" alias=".service_locator.6Vk5gGa"/>
     <service id=".service_locator.87TvLY8" alias=".service_locator.CDhANYI"/>
     <service id=".service_locator.yyMrrGo" alias=".service_locator.1yXxVY1"/>
-    <service id=".service_locator.uvHbZbs" alias=".service_locator.ijAx82p"/>
+    <service id=".service_locator.sge2GLu" alias=".service_locator.t6cDI9V"/>
     <service id=".service_locator.wKF4yn1" alias=".service_locator.19_mNxd"/>
     <service id=".service_locator.uSNgImI" alias=".service_locator.JF3VXm6"/>
     <service id=".service_locator.qBCHs1a" alias=".service_locator.QXcJQkF"/>

@@ -25,16 +25,11 @@ class __TwigTemplate_c5b33491b12903bdcdcd569f31a6e8837cbaf8a1548dc694c08d7ddaedf
 
         $this->source = $this->getSourceContext();
 
+        $this->parent = false;
+
         $this->blocks = [
-            'title' => [$this, 'block_title'],
             'body' => [$this, 'block_body'],
         ];
-    }
-
-    protected function doGetParent(array $context)
-    {
-        // line 1
-        return "base.html.twig";
     }
 
     protected function doDisplay(array $context, array $blocks = [])
@@ -43,28 +38,24 @@ class __TwigTemplate_c5b33491b12903bdcdcd569f31a6e8837cbaf8a1548dc694c08d7ddaedf
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "template", "fonction/new.html.twig"));
 
-        $this->parent = $this->loadTemplate("base.html.twig", "fonction/new.html.twig", 1);
-        yield from $this->parent->unwrap()->yield($context, array_merge($this->blocks, $blocks));
-        
-        $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
+        // line 1
+        yield Twig\Extension\CoreExtension::include($this->env, $context, "content/navbar.html.twig");
+        yield "
+";
+        // line 2
+        yield Twig\Extension\CoreExtension::include($this->env, $context, "content/slidebar.html.twig");
+        yield "
 
-    }
 
-    // line 3
-    public function block_title($context, array $blocks = [])
-    {
-        $macros = $this->macros;
-        $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
-        $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "title"));
-
-        yield "New Fonction";
+";
+        // line 5
+        yield from $this->unwrap()->yieldBlock('body', $context, $blocks);
         
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
 
         return; yield '';
     }
 
-    // line 5
     public function block_body($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -72,15 +63,35 @@ class __TwigTemplate_c5b33491b12903bdcdcd569f31a6e8837cbaf8a1548dc694c08d7ddaedf
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "body"));
 
         // line 6
-        yield "    <h1>Create new Fonction</h1>
-
+        yield "<div class=\"pcoded-content\">
+<div class=\"container mt-4\">
+    <h2> Fonction</h2>
     ";
-        // line 8
-        yield Twig\Extension\CoreExtension::include($this->env, $context, "fonction/_form.html.twig");
+        // line 9
+        yield         $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->renderBlock((isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 9, $this->source); })()), 'form_start');
         yield "
-
+    
+    <div class=\"form-group\">
+        ";
+        // line 12
+        yield $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(CoreExtension::getAttribute($this->env, $this->source, (isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 12, $this->source); })()), "name", [], "any", false, false, false, 12), 'label', ["label" => "Nom de la fonction"]);
+        yield "
+        ";
+        // line 13
+        yield $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(CoreExtension::getAttribute($this->env, $this->source, (isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 13, $this->source); })()), "name", [], "any", false, false, false, 13), 'widget', ["attr" => ["class" => "form-control", "placeholder" => "Entrez le nom de la fonction"]]);
+        yield "
+        ";
+        // line 14
+        yield $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(CoreExtension::getAttribute($this->env, $this->source, (isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 14, $this->source); })()), "name", [], "any", false, false, false, 14), 'errors');
+        yield "
+    </div>
+<button type=\"submit\" class=\"btn btn-primary\">Enregistrer</button>
+    ";
+        // line 17
+        yield         $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->renderBlock((isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 17, $this->source); })()), 'form_end');
+        yield "
     <a href=\"";
-        // line 10
+        // line 18
         yield $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_fonction_index");
         yield "\">back to list</a>
 ";
@@ -111,20 +122,28 @@ class __TwigTemplate_c5b33491b12903bdcdcd569f31a6e8837cbaf8a1548dc694c08d7ddaedf
      */
     public function getDebugInfo()
     {
-        return array (  84 => 10,  79 => 8,  75 => 6,  68 => 5,  54 => 3,  37 => 1,);
+        return array (  95 => 18,  91 => 17,  85 => 14,  81 => 13,  77 => 12,  71 => 9,  66 => 6,  52 => 5,  46 => 2,  42 => 1,);
     }
 
     public function getSourceContext()
     {
-        return new Source("{% extends 'base.html.twig' %}
+        return new Source("{{include('content/navbar.html.twig')}}
+{{include('content/slidebar.html.twig')}}
 
-{% block title %}New Fonction{% endblock %}
 
 {% block body %}
-    <h1>Create new Fonction</h1>
-
-    {{ include('fonction/_form.html.twig') }}
-
+<div class=\"pcoded-content\">
+<div class=\"container mt-4\">
+    <h2> Fonction</h2>
+    {{ form_start(form) }}
+    
+    <div class=\"form-group\">
+        {{ form_label(form.name, 'Nom de la fonction') }}
+        {{ form_widget(form.name, {'attr': {'class': 'form-control', 'placeholder': \"Entrez le nom de la fonction\"}}) }}
+        {{ form_errors(form.name) }}
+    </div>
+<button type=\"submit\" class=\"btn btn-primary\">Enregistrer</button>
+    {{ form_end(form) }}
     <a href=\"{{ path('app_fonction_index') }}\">back to list</a>
 {% endblock %}
 ", "fonction/new.html.twig", "C:\\Users\\SYNS-MANAGER\\Documents\\GitHub\\pmanalysis\\templates\\fonction\\new.html.twig");

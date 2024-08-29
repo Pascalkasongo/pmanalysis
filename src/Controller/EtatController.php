@@ -6,6 +6,7 @@ use App\Entity\Etat;
 use App\Form\EtatType;
 use App\Repository\EtatRepository;
 use Doctrine\ORM\EntityManagerInterface;
+use Sensio\Bundle\FrameworkExtraBundle\Configuration\IsGranted;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
@@ -42,6 +43,7 @@ class EtatController extends AbstractController
         ]);
     }
 
+   
     #[Route('/{id}', name: 'app_etat_show', methods: ['GET'])]
     public function show(Etat $etat): Response
     {

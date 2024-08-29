@@ -16,8 +16,17 @@
     </div>
     <div class="menu-caret ms-auto"></div>
     </div>
-    <small> {{app.session.get('user_role')[0]}}</small>
-    </div>
+    {% if app.session.get('user_role')[0] == 'ROLE_ADMIN' %}
+        <small>ADMINISTRATEUR </small>
+    
+        {% elseif app.session.get('user_role')[0] == 'ROLE_DIRECTEUR' %}
+        <small>DIRECTEUR</small>
+            {% elseif app.session.get('user_role')[0] == 'ROLE_CHEF_PROJET' %}
+        <small>CHEF DE PROJET</small>
+            {% elseif app.session.get('user_role')[0] == 'ROLE_CHEF' %}
+        <small>CHEF D'EQUIPE</small>
+        {% endif %} 
+        </div>
     </a>
     </div>
     <div id="appSidebarProfileMenu" class="collapse">
@@ -51,7 +60,7 @@
             </a>
             <div class="menu-submenu">
                 <div class="menu-item active">
-                    <a href="{{path('app_projet_new')}}" class="menu-link"><div class="menu-text">Informations projet</div></a>
+                    <a href="{{path('app_projet_new')}}" class="menu-link"><div class="menu-text">Enregistrer projet</div></a>
                 </div>
                 <div class="menu-item">
                     <a href="{{path('app_projet_index')}}" class="menu-link"><div class="menu-text">Liste Projets</div></a>
@@ -177,6 +186,48 @@
     </div>
     <div class="menu-item">
         <a href="{{path('app_client_index')}}" class="menu-link"><div class="menu-text">Liste des clients </div></a>
+    </div>
+    {# <div class="menu-item">
+         <a href="index_v3.html" class="menu-link"><div class="menu-text">Dashboard v3</div></a>
+    </div> #}
+</div>
+
+
+</div>
+<div class="menu-item has-sub active ">
+<a href="javascript:;" class="menu-link">
+    <div class="menu-icon">
+    <i class="fa fa-customer"></i> </div>
+    <div class="menu-text">Fonction</div>
+    <div class="menu-caret"></div>
+</a>
+<div class="menu-submenu">
+    <div class="menu-item active">
+        <a href="{{path('app_fonction_new')}}" class="menu-link"><div class="menu-text">Nouvelle Fonction</div></a>
+    </div>
+    <div class="menu-item">
+        <a href="{{path('app_fonction_index')}}" class="menu-link"><div class="menu-text">Liste des Fonctions </div></a>
+    </div>
+    {# <div class="menu-item">
+         <a href="index_v3.html" class="menu-link"><div class="menu-text">Dashboard v3</div></a>
+    </div> #}
+</div>
+
+
+</div>
+<div class="menu-item has-sub active ">
+<a href="javascript:;" class="menu-link">
+    <div class="menu-icon">
+    <i class="fa fa-customer"></i> </div>
+    <div class="menu-text">Ressource</div>
+    <div class="menu-caret"></div>
+</a>
+<div class="menu-submenu">
+    <div class="menu-item active">
+        <a href="{{path('app_ressource_new')}}" class="menu-link"><div class="menu-text">Nouvelle Ressource</div></a>
+    </div>
+    <div class="menu-item">
+        <a href="{{path('app_ressource_index')}}" class="menu-link"><div class="menu-text">Liste des ressources </div></a>
     </div>
     {# <div class="menu-item">
          <a href="index_v3.html" class="menu-link"><div class="menu-text">Dashboard v3</div></a>

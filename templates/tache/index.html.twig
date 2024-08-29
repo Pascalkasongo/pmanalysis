@@ -10,14 +10,10 @@
     <table class="table">
         <thead>
             <tr>
-                <th>Id</th>
                 <th>Nom Tache</th>
                 <th>Nombre Heure</th>
                 <th>Cout Horaire</th>
                 <th>Projet</th>
-                <th>Equipe</th>
-                <th>Priorite</th>
-                <th>Etat</th>
                 <th>actions</th>
             </tr>
         </thead>
@@ -27,14 +23,10 @@
         {%set nombre = nombre+1%}
             <tr>
              
-                <td>{{ nombre }}</td>
                 <td>{% if tache and tache.nomTache %}{{ tache.nomTache }}{% else %}N/A{% endif %}</td>
                 <td>{% if tache and tache.nombreHeure %}{{ tache.nombreHeure }}{% else %}N/A{% endif %}</td>
                 <td>{% if tache and tache.coutHoraire %}{{ tache.coutHoraire }}{% else %}N/A{% endif %}</td>
                 <td>{% if tache and tache.projet and tache.projet.nom %}{{ tache.projet.nom }}{% else %}N/A{% endif %}</td>
-                <td>{% if tache and tache.equipe and tache.equipe.nomEquipe %}{{ tache.equipe.nomEquipe }}{% else %}N/A{% endif %}</td>
-                <td>{% if tache and tache.priorite and tache.priorite.nomPriorite %}{{ tache.priorite.nomPriorite }}{% else %}N/A{% endif %}</td>
-                <td>{% if tache and tache.etat and tache.etat.nomEtat %}{{ tache.etat.nomEtat }}{% else %}N/A{% endif %}</td>
 
                 <td>
                      <a href="{{ path('app_tache_show', {'id': tache.id}) }}"class="btn btn-primary btn-sm" title="View"><i class="fas fa-eye"></i></a>

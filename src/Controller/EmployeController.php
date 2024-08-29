@@ -6,6 +6,7 @@ use App\Entity\Employe;
 use App\Form\EmployeType;
 use App\Repository\EmployeRepository;
 use Doctrine\ORM\EntityManagerInterface;
+use Sensio\Bundle\FrameworkExtraBundle\Configuration\IsGranted;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
@@ -13,6 +14,7 @@ use Symfony\Component\PasswordHasher\Hasher\UserPasswordHasherInterface;
 use Symfony\Component\Routing\Annotation\Route;
 
 #[Route('/employe')]
+#[IsGranted('ROLE_DIRECTEUR')]
 class EmployeController extends AbstractController
 {
     #[Route('/', name: 'app_employe_index', methods: ['GET'])]
