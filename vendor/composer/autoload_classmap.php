@@ -78,6 +78,7 @@ return array(
     'App\\Repository\\TacheRepository' => $baseDir . '/src/Repository/TacheRepository.php',
     'App\\Repository\\UserRepository' => $baseDir . '/src/Repository/UserRepository.php',
     'App\\Repository\\UtilisateurRepository' => $baseDir . '/src/Repository/UtilisateurRepository.php',
+    'App\\Security\\AppAuthentificatorAuthenticator' => $baseDir . '/src/Security/AppAuthentificatorAuthenticator.php',
     'App\\Security\\UserProvider' => $baseDir . '/src/Security/UserProvider.php',
     'App\\Service\\TwilioService' => $baseDir . '/src/Service/TwilioService.php',
     'CURLStringFile' => $vendorDir . '/symfony/polyfill-php81/Resources/stubs/CURLStringFile.php',

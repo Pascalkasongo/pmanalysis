@@ -212,7 +212,7 @@
     <parameter key="doctrine.migrations.preferred_em">null</parameter>
     <parameter key="doctrine.migrations.preferred_connection">null</parameter>
     <parameter key="security.role_hierarchy.roles" type="collection"/>
-    <parameter key="security.access.denied_url">null</parameter>
+    <parameter key="security.access.denied_url">/error</parameter>
     <parameter key="security.authentication.manager.erase_credentials">true</parameter>
     <parameter key="security.authentication.session_strategy.strategy">migrate</parameter>
     <parameter key="security.authentication.hide_user_not_found">true</parameter>
@@ -261,6 +261,13 @@
       <tag name="container.service_subscriber"/>
       <call method="setContainer">
         <argument type="service" id=".service_locator.l1ae.Qz.App\Controller\EquipeController"/>
+      </call>
+    </service>
+    <service id="App\Controller\ErrorController" class="App\Controller\ErrorController" public="true" autowire="true" autoconfigure="true">
+      <tag name="controller.service_arguments"/>
+      <tag name="container.service_subscriber"/>
+      <call method="setContainer">
+        <argument type="service" id=".service_locator.l1ae.Qz.App\Controller\ErrorController"/>
       </call>
     </service>
     <service id="App\Controller\EtatController" class="App\Controller\EtatController" public="true" autowire="true" autoconfigure="true">
@@ -3706,7 +3713,7 @@
       <argument type="service" id="security.http_utils"/>
       <argument type="abstract">Provider-shared Key</argument>
       <argument type="service" id="security.authentication.entry_point" on-invalid="null"/>
-      <argument>null</argument>
+      <argument>/error</argument>
       <argument type="service" id="security.access.denied_handler" on-invalid="null"/>
       <argument type="service" id="monolog.logger.security" on-invalid="null"/>
       <argument>false</argument>
@@ -4099,7 +4106,7 @@
       <argument type="service" id="security.http_utils"/>
       <argument>main</argument>
       <argument type="service" id="App\Security\AppAuthentificatorAuthenticator"/>
-      <argument>null</argument>
+      <argument>/error</argument>
       <argument>null</argument>
       <argument type="service" id="monolog.logger.security" on-invalid="null"/>
       <argument>false</argument>
@@ -4152,6 +4159,9 @@
     <service id=".instanceof.Symfony\Contracts\Service\ServiceSubscriberInterface.0.App\Controller\EquipeController" class="App\Controller\EquipeController" autowire="true" abstract="true"/>
     <service id=".instanceof.Symfony\Bundle\FrameworkBundle\Controller\AbstractController.0.App\Controller\EquipeController" class="App\Controller\EquipeController" autowire="true" abstract="true"/>
     <service id=".abstract.instanceof.App\Controller\EquipeController" class="App\Controller\EquipeController" autowire="true" autoconfigure="true" abstract="true"/>
+    <service id=".instanceof.Symfony\Contracts\Service\ServiceSubscriberInterface.0.App\Controller\ErrorController" class="App\Controller\ErrorController" autowire="true" abstract="true"/>
+    <service id=".instanceof.Symfony\Bundle\FrameworkBundle\Controller\AbstractController.0.App\Controller\ErrorController" class="App\Controller\ErrorController" autowire="true" abstract="true"/>
+    <service id=".abstract.instanceof.App\Controller\ErrorController" class="App\Controller\ErrorController" autowire="true" autoconfigure="true" abstract="true"/>
     <service id=".instanceof.Symfony\Contracts\Service\ServiceSubscriberInterface.0.App\Controller\EtatController" class="App\Controller\EtatController" autowire="true" abstract="true"/>
     <service id=".instanceof.Symfony\Bundle\FrameworkBundle\Controller\AbstractController.0.App\Controller\EtatController" class="App\Controller\EtatController" autowire="true" abstract="true"/>
     <service id=".abstract.instanceof.App\Controller\EtatController" class="App\Controller\EtatController" autowire="true" autoconfigure="true" abstract="true"/>
@@ -5395,6 +5405,12 @@
     <service id=".service_locator.l1ae.Qz.App\Controller\EquipeController" class="Symfony\Component\DependencyInjection\ServiceLocator">
       <tag name="container.service_locator_context" id="App\Controller\EquipeController"/>
       <argument>App\Controller\EquipeController</argument>
+      <argument type="service" id="service_container"/>
+      <factory service=".service_locator.l1ae.Qz" method="withContext"/>
+    </service>
+    <service id=".service_locator.l1ae.Qz.App\Controller\ErrorController" class="Symfony\Component\DependencyInjection\ServiceLocator">
+      <tag name="container.service_locator_context" id="App\Controller\ErrorController"/>
+      <argument>App\Controller\ErrorController</argument>
       <argument type="service" id="service_container"/>
       <factory service=".service_locator.l1ae.Qz" method="withContext"/>
     </service>

@@ -7,6 +7,7 @@ use App\Form\Client1Type;
 use App\Form\ClientType;
 use App\Repository\ClientRepository;
 use Doctrine\ORM\EntityManagerInterface;
+use Sensio\Bundle\FrameworkExtraBundle\Configuration\IsGranted;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
@@ -23,7 +24,8 @@ class ClientController extends AbstractController
             'clients' => $clientRepository->findAll(),
         ]);
     }
-
+        
+   #[IsGranted('ROLE_ADMIN')]
     #[Route('/new', name: 'app_client_new', methods: ['GET', 'POST'])]
     public function new(Request $request,UserPasswordHasherInterface $userPasswordHasher, EntityManagerInterface $entityManager): Response
     {

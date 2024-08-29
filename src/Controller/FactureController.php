@@ -8,12 +8,14 @@ use App\Form\FactureType;
 use App\Repository\FactureRepository;
 use Doctrine\ORM\EntityManagerInterface;
 use Doctrine\ORM\Mapping\Id;
+use Sensio\Bundle\FrameworkExtraBundle\Configuration\IsGranted;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 
 #[Route('/facture')]
+#[IsGranted('ROLE_DIRECTEUR')]
 class FactureController extends AbstractController
 {
     #[Route('/', name: 'app_facture_index', methods: ['GET'])]

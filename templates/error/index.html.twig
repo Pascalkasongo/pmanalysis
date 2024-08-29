@@ -1,0 +1,50 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Accès Refusé - 403{% endblock %}
+
+{% block body %}
+<style>
+    .error-wrapper {
+        margin: 2em auto;
+        max-width: 600px;
+        width: 95%;
+        text-align: center;
+        font-family: Arial, sans-serif;
+    }
+    .error-wrapper h1 {
+        font-size: 3em;
+        color: #D9534F;
+    }
+    .error-wrapper p {
+        font-size: 1.2em;
+        color: #666;
+    }
+    .error-wrapper a {
+        color: #337AB7;
+        text-decoration: none;
+    }
+    .error-wrapper a:hover {
+        text-decoration: underline;
+    }
+    .error-wrapper .btn {
+        display: inline-block;
+        margin-top: 20px;
+        padding: 10px 20px;
+        font-size: 1.1em;
+        color: #fff;
+        background-color: #5CB85C;
+        border-radius: 5px;
+        text-decoration: none;
+    }
+    .error-wrapper .btn:hover {
+        background-color: #4CAE4C;
+    }
+</style>
+
+<div class="error-wrapper">
+    <h1>403</h1>
+    <p>Accès Refusé</p>
+    <p>Vous n'avez pas l'autorisation nécessaire pour accéder à cette page.</p>
+    <a href="{{ path('app_home') }}" class="btn">Retour à l'accueil</a>
+</div>
+{% endblock %}

@@ -29,6 +29,7 @@ return [
     'app_equipe_show' => [['id'], ['_controller' => 'App\\Controller\\EquipeController::show'], [], [['variable', '/', '[^/]++', 'id', true], ['text', '/equipe']], [], [], []],
     'app_equipe_edit' => [['id'], ['_controller' => 'App\\Controller\\EquipeController::edit'], [], [['text', '/edit'], ['variable', '/', '[^/]++', 'id', true], ['text', '/equipe']], [], [], []],
     'app_equipe_delete' => [['id'], ['_controller' => 'App\\Controller\\EquipeController::delete'], [], [['variable', '/', '[^/]++', 'id', true], ['text', '/equipe']], [], [], []],
+    'app_error' => [[], ['_controller' => 'App\\Controller\\ErrorController::index'], [], [['text', '/error']], [], [], []],
     'app_etat_index' => [[], ['_controller' => 'App\\Controller\\EtatController::index'], [], [['text', '/etat/']], [], [], []],
     'app_etat_new' => [[], ['_controller' => 'App\\Controller\\EtatController::new'], [], [['text', '/etat/new']], [], [], []],
     'app_etat_show' => [['id'], ['_controller' => 'App\\Controller\\EtatController::show'], [], [['variable', '/', '[^/]++', 'id', true], ['text', '/etat']], [], [], []],

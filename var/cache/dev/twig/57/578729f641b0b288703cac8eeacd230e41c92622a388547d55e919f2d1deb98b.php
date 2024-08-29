@@ -149,13 +149,13 @@ class __TwigTemplate_0a4de1b128d853722a4b4bd3a2f0de86da1ab155a9c2c6d847041cda4a4
              <a href=\"";
         // line 93
         yield $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_equipe_new");
-        yield "\" class=\"menu-link\"><div class=\"menu-text\">Nouvelle Tache</div></a>
+        yield "\" class=\"menu-link\"><div class=\"menu-text\">Nouvelle equipe</div></a>
          </div>
          <div class=\"menu-item\">
              <a href=\"";
         // line 96
         yield $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_equipe_index");
-        yield "\" class=\"menu-link\"><div class=\"menu-text\">Liste des taches </div></a>
+        yield "\" class=\"menu-link\"><div class=\"menu-text\">Liste des equipes </div></a>
          </div>
          ";
         // line 101
@@ -174,13 +174,13 @@ class __TwigTemplate_0a4de1b128d853722a4b4bd3a2f0de86da1ab155a9c2c6d847041cda4a4
         <a href=\"";
         // line 113
         yield $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_facture_new");
-        yield "\" class=\"menu-link\"><div class=\"menu-text\">Nouvelle Tache</div></a>
+        yield "\" class=\"menu-link\"><div class=\"menu-text\">Nouvelle Facture</div></a>
     </div>
     <div class=\"menu-item\">
         <a href=\"";
         // line 116
         yield $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_facture_index");
-        yield "\" class=\"menu-link\"><div class=\"menu-text\">Liste des taches </div></a>
+        yield "\" class=\"menu-link\"><div class=\"menu-text\">Liste des Factures </div></a>
     </div>
     ";
         // line 121
@@ -200,13 +200,13 @@ class __TwigTemplate_0a4de1b128d853722a4b4bd3a2f0de86da1ab155a9c2c6d847041cda4a4
         <a href=\"";
         // line 134
         yield $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_employe_new");
-        yield "\" class=\"menu-link\"><div class=\"menu-text\">Nouvelle Tache</div></a>
+        yield "\" class=\"menu-link\"><div class=\"menu-text\">Ajouter employé </div></a>
     </div>
     <div class=\"menu-item\">
         <a href=\"";
         // line 137
         yield $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_employe_index");
-        yield "\" class=\"menu-link\"><div class=\"menu-text\">Liste des taches </div></a>
+        yield "\" class=\"menu-link\"><div class=\"menu-text\">Liste des employés</div></a>
     </div>
     ";
         // line 142
@@ -226,13 +226,13 @@ class __TwigTemplate_0a4de1b128d853722a4b4bd3a2f0de86da1ab155a9c2c6d847041cda4a4
         <a href=\"";
         // line 155
         yield $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_domaine_new");
-        yield "\" class=\"menu-link\"><div class=\"menu-text\">Nouvelle Tache</div></a>
+        yield "\" class=\"menu-link\"><div class=\"menu-text\">Nouveau domaine</div></a>
     </div>
     <div class=\"menu-item\">
         <a href=\"";
         // line 158
         yield $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_domaine_index");
-        yield "\" class=\"menu-link\"><div class=\"menu-text\">Liste des taches </div></a>
+        yield "\" class=\"menu-link\"><div class=\"menu-text\">Liste des domaines </div></a>
     </div>
     ";
         // line 163
@@ -252,13 +252,13 @@ class __TwigTemplate_0a4de1b128d853722a4b4bd3a2f0de86da1ab155a9c2c6d847041cda4a4
         <a href=\"";
         // line 176
         yield $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_client_new");
-        yield "\" class=\"menu-link\"><div class=\"menu-text\">Nouvelle Tache</div></a>
+        yield "\" class=\"menu-link\"><div class=\"menu-text\">Nouveau client</div></a>
     </div>
     <div class=\"menu-item\">
         <a href=\"";
         // line 179
         yield $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_client_index");
-        yield "\" class=\"menu-link\"><div class=\"menu-text\">Liste des taches </div></a>
+        yield "\" class=\"menu-link\"><div class=\"menu-text\">Liste des clients </div></a>
     </div>
     ";
         // line 184
@@ -399,10 +399,10 @@ class __TwigTemplate_0a4de1b128d853722a4b4bd3a2f0de86da1ab155a9c2c6d847041cda4a4
      </a>
      <div class=\"menu-submenu\">
          <div class=\"menu-item active\">
-             <a href=\"{{path('app_equipe_new')}}\" class=\"menu-link\"><div class=\"menu-text\">Nouvelle Tache</div></a>
+             <a href=\"{{path('app_equipe_new')}}\" class=\"menu-link\"><div class=\"menu-text\">Nouvelle equipe</div></a>
          </div>
          <div class=\"menu-item\">
-             <a href=\"{{path('app_equipe_index')}}\" class=\"menu-link\"><div class=\"menu-text\">Liste des taches </div></a>
+             <a href=\"{{path('app_equipe_index')}}\" class=\"menu-link\"><div class=\"menu-text\">Liste des equipes </div></a>
          </div>
          {# <div class=\"menu-item\">
               <a href=\"index_v3.html\" class=\"menu-link\"><div class=\"menu-text\">Dashboard v3</div></a>
@@ -419,10 +419,10 @@ class __TwigTemplate_0a4de1b128d853722a4b4bd3a2f0de86da1ab155a9c2c6d847041cda4a4
 </a>
 <div class=\"menu-submenu\">
     <div class=\"menu-item active\">
-        <a href=\"{{path('app_facture_new')}}\" class=\"menu-link\"><div class=\"menu-text\">Nouvelle Tache</div></a>
+        <a href=\"{{path('app_facture_new')}}\" class=\"menu-link\"><div class=\"menu-text\">Nouvelle Facture</div></a>
     </div>
     <div class=\"menu-item\">
-        <a href=\"{{path('app_facture_index')}}\" class=\"menu-link\"><div class=\"menu-text\">Liste des taches </div></a>
+        <a href=\"{{path('app_facture_index')}}\" class=\"menu-link\"><div class=\"menu-text\">Liste des Factures </div></a>
     </div>
     {# <div class=\"menu-item\">
          <a href=\"index_v3.html\" class=\"menu-link\"><div class=\"menu-text\">Dashboard v3</div></a>
@@ -440,10 +440,10 @@ class __TwigTemplate_0a4de1b128d853722a4b4bd3a2f0de86da1ab155a9c2c6d847041cda4a4
 </a>
 <div class=\"menu-submenu\">
     <div class=\"menu-item active\">
-        <a href=\"{{path('app_employe_new')}}\" class=\"menu-link\"><div class=\"menu-text\">Nouvelle Tache</div></a>
+        <a href=\"{{path('app_employe_new')}}\" class=\"menu-link\"><div class=\"menu-text\">Ajouter employé </div></a>
     </div>
     <div class=\"menu-item\">
-        <a href=\"{{path('app_employe_index')}}\" class=\"menu-link\"><div class=\"menu-text\">Liste des taches </div></a>
+        <a href=\"{{path('app_employe_index')}}\" class=\"menu-link\"><div class=\"menu-text\">Liste des employés</div></a>
     </div>
     {# <div class=\"menu-item\">
          <a href=\"index_v3.html\" class=\"menu-link\"><div class=\"menu-text\">Dashboard v3</div></a>
@@ -461,10 +461,10 @@ class __TwigTemplate_0a4de1b128d853722a4b4bd3a2f0de86da1ab155a9c2c6d847041cda4a4
 </a>
 <div class=\"menu-submenu\">
     <div class=\"menu-item active\">
-        <a href=\"{{path('app_domaine_new')}}\" class=\"menu-link\"><div class=\"menu-text\">Nouvelle Tache</div></a>
+        <a href=\"{{path('app_domaine_new')}}\" class=\"menu-link\"><div class=\"menu-text\">Nouveau domaine</div></a>
     </div>
     <div class=\"menu-item\">
-        <a href=\"{{path('app_domaine_index')}}\" class=\"menu-link\"><div class=\"menu-text\">Liste des taches </div></a>
+        <a href=\"{{path('app_domaine_index')}}\" class=\"menu-link\"><div class=\"menu-text\">Liste des domaines </div></a>
     </div>
     {# <div class=\"menu-item\">
          <a href=\"index_v3.html\" class=\"menu-link\"><div class=\"menu-text\">Dashboard v3</div></a>
@@ -482,10 +482,10 @@ class __TwigTemplate_0a4de1b128d853722a4b4bd3a2f0de86da1ab155a9c2c6d847041cda4a4
 </a>
 <div class=\"menu-submenu\">
     <div class=\"menu-item active\">
-        <a href=\"{{path('app_client_new')}}\" class=\"menu-link\"><div class=\"menu-text\">Nouvelle Tache</div></a>
+        <a href=\"{{path('app_client_new')}}\" class=\"menu-link\"><div class=\"menu-text\">Nouveau client</div></a>
     </div>
     <div class=\"menu-item\">
-        <a href=\"{{path('app_client_index')}}\" class=\"menu-link\"><div class=\"menu-text\">Liste des taches </div></a>
+        <a href=\"{{path('app_client_index')}}\" class=\"menu-link\"><div class=\"menu-text\">Liste des clients </div></a>
     </div>
     {# <div class=\"menu-item\">
          <a href=\"index_v3.html\" class=\"menu-link\"><div class=\"menu-text\">Dashboard v3</div></a>

@@ -16,6 +16,7 @@ security:
         all_users:
             chain:
                 providers: [app_user_provider,app_client_provider]
+    access_denied_url: /error
     firewalls:
         dev:
             pattern: ^/(_(profiler|wdt)|css|images|js)/

@@ -513,6 +513,7 @@ class ComposerStaticInit8201ee3e7ef0d800a8c33ed776337655
         'App\\Repository\\TacheRepository' => __DIR__ . '/../..' . '/src/Repository/TacheRepository.php',
         'App\\Repository\\UserRepository' => __DIR__ . '/../..' . '/src/Repository/UserRepository.php',
         'App\\Repository\\UtilisateurRepository' => __DIR__ . '/../..' . '/src/Repository/UtilisateurRepository.php',
+        'App\\Security\\AppAuthentificatorAuthenticator' => __DIR__ . '/../..' . '/src/Security/AppAuthentificatorAuthenticator.php',
         'App\\Security\\UserProvider' => __DIR__ . '/../..' . '/src/Security/UserProvider.php',
         'App\\Service\\TwilioService' => __DIR__ . '/../..' . '/src/Service/TwilioService.php',
         'CURLStringFile' => __DIR__ . '/..' . '/symfony/polyfill-php81/Resources/stubs/CURLStringFile.php',
