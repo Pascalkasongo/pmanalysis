@@ -41,6 +41,8 @@ return [
         '/role/new' => [[['_route' => 'app_role_new', '_controller' => 'App\\Controller\\RoleController::new'], null, ['GET' => 0, 'POST' => 1], null, false, false, null]],
         '/login' => [[['_route' => 'app_login', '_controller' => 'App\\Controller\\SecurityController::login'], null, null, null, false, false, null]],
         '/logout' => [[['_route' => 'app_logout', '_controller' => 'App\\Controller\\SecurityController::logout'], null, null, null, false, false, null]],
+        '/sprint' => [[['_route' => 'app_sprint_index', '_controller' => 'App\\Controller\\SprintController::index'], null, ['GET' => 0], null, true, false, null]],
+        '/sprint/new' => [[['_route' => 'app_sprint_new', '_controller' => 'App\\Controller\\SprintController::new'], null, ['GET' => 0, 'POST' => 1], null, false, false, null]],
         '/tache' => [[['_route' => 'app_tache_index', '_controller' => 'App\\Controller\\TacheController::index'], null, ['GET' => 0], null, true, false, null]],
         '/tache/new' => [[['_route' => 'app_tache_new', '_controller' => 'App\\Controller\\TacheController::new'], null, ['GET' => 0, 'POST' => 1], null, false, false, null]],
         '/user' => [[['_route' => 'app_user', '_controller' => 'App\\Controller\\UserController::index'], null, null, null, false, false, null]],
@@ -127,10 +129,15 @@ return [
                         .'|(*:733)'
                     .')'
                 .')'
+                .'|/sprint/([^/]++)(?'
+                    .'|(*:762)'
+                    .'|/edit(*:775)'
+                    .'|(*:783)'
+                .')'
                 .'|/tache/([^/]++)(?'
-                    .'|(*:761)'
-                    .'|/edit(*:774)'
-                    .'|(*:782)'
+                    .'|(*:810)'
+                    .'|/edit(*:823)'
+                    .'|(*:831)'
                 .')'
             .')/?$}sDu',
     ],
@@ -176,9 +183,12 @@ return [
         712 => [[['_route' => 'app_role_show', '_controller' => 'App\\Controller\\RoleController::show'], ['id'], ['GET' => 0], null, false, true, null]],
         725 => [[['_route' => 'app_role_edit', '_controller' => 'App\\Controller\\RoleController::edit'], ['id'], ['GET' => 0, 'POST' => 1], null, false, false, null]],
         733 => [[['_route' => 'app_role_delete', '_controller' => 'App\\Controller\\RoleController::delete'], ['id'], ['POST' => 0], null, false, true, null]],
-        761 => [[['_route' => 'app_tache_show', '_controller' => 'App\\Controller\\TacheController::show'], ['id'], ['GET' => 0], null, false, true, null]],
-        774 => [[['_route' => 'app_tache_edit', '_controller' => 'App\\Controller\\TacheController::edit'], ['id'], ['GET' => 0, 'POST' => 1], null, false, false, null]],
-        782 => [
+        762 => [[['_route' => 'app_sprint_show', '_controller' => 'App\\Controller\\SprintController::show'], ['id'], ['GET' => 0], null, false, true, null]],
+        775 => [[['_route' => 'app_sprint_edit', '_controller' => 'App\\Controller\\SprintController::edit'], ['id'], ['GET' => 0, 'POST' => 1], null, false, false, null]],
+        783 => [[['_route' => 'app_sprint_delete', '_controller' => 'App\\Controller\\SprintController::delete'], ['id'], ['POST' => 0], null, false, true, null]],
+        810 => [[['_route' => 'app_tache_show', '_controller' => 'App\\Controller\\TacheController::show'], ['id'], ['GET' => 0], null, false, true, null]],
+        823 => [[['_route' => 'app_tache_edit', '_controller' => 'App\\Controller\\TacheController::edit'], ['id'], ['GET' => 0, 'POST' => 1], null, false, false, null]],
+        831 => [
             [['_route' => 'app_tache_delete', '_controller' => 'App\\Controller\\TacheController::delete'], ['id'], ['POST' => 0], null, false, true, null],
             [null, null, null, null, false, false, 0],
         ],

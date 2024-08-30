@@ -4,6 +4,7 @@ namespace App\Controller;
 
 use App\Entity\Ressource;
 use App\Form\RessourceType;
+use App\Repository\NotificationRepository;
 use App\Repository\RessourceRepository;
 use Doctrine\ORM\EntityManagerInterface;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\IsGranted;
@@ -13,14 +14,15 @@ use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 
 #[Route('/ressource')]
-#[IsGranted('ROLE_CHEF_PROJET')]
 class RessourceController extends AbstractController
 {
     #[Route('/', name: 'app_ressource_index', methods: ['GET'])]
-    public function index(RessourceRepository $ressourceRepository): Response
+    public function index(RessourceRepository $ressourceRepository,NotificationRepository $notification): Response
     {
         return $this->render('ressource/index.html.twig', [
             'ressources' => $ressourceRepository->findAll(),
+            'notifications'=> $notification->findBy(['IsRead'=>false]),
+            'notification_read'=> $notification->findBy(['IsRead'=>true])
         ]);
     }
 

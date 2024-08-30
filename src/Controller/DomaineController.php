@@ -13,7 +13,6 @@ use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 
 #[Route('/domaine')]
-#[IsGranted('ROLE_CHEF_PROJET')]
 class DomaineController extends AbstractController
 {
     #[Route('/', name: 'app_domaine_index', methods: ['GET'])]

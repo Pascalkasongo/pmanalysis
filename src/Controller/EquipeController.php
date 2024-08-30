@@ -5,6 +5,7 @@ namespace App\Controller;
 use App\Entity\Equipe;
 use App\Form\EquipeType;
 use App\Repository\EquipeRepository;
+use App\Repository\NotificationRepository;
 use Doctrine\ORM\EntityManagerInterface;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\IsGranted;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
@@ -13,19 +14,20 @@ use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 
 #[Route('/equipe')]
-#[IsGranted('ROLE_CHEF_PROJET')]
 class EquipeController extends AbstractController
 {
     #[Route('/', name: 'app_equipe_index', methods: ['GET'])]
-    public function index(EquipeRepository $equipeRepository): Response
+    public function index(EquipeRepository $equipeRepository,NotificationRepository $notification): Response
     {
         return $this->render('equipe/index.html.twig', [
             'equipes' => $equipeRepository->findAll(),
+            'notifications'=> $notification->findBy(['IsRead'=>false]),
+            'notification_read'=> $notification->findBy(['IsRead'=>true])
         ]);
     }
 
     #[Route('/new', name: 'app_equipe_new', methods: ['GET', 'POST'])]
-    public function new(Request $request, EntityManagerInterface $entityManager): Response
+    public function new(Request $request, EntityManagerInterface $entityManager,NotificationRepository $notification): Response
     {
         $equipe = new Equipe();
         $form = $this->createForm(EquipeType::class, $equipe);
@@ -41,6 +43,8 @@ class EquipeController extends AbstractController
         return $this->renderForm('equipe/new.html.twig', [
             'equipe' => $equipe,
             'form' => $form,
+            'notifications'=> $notification->findBy(['IsRead'=>false]),
+            'notification_read'=> $notification->findBy(['IsRead'=>true])
         ]);
     }
 

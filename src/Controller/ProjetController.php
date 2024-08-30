@@ -7,8 +7,6 @@ use App\Form\ProjetType;
 use App\Repository\NotificationRepository;
 use App\Repository\ProjetRepository;
 use Doctrine\ORM\EntityManagerInterface;
-use Sensio\Bundle\FrameworkExtraBundle\Configuration\IsGranted;
-use Sensio\Bundle\FrameworkExtraBundle\Configuration\Security;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
@@ -16,14 +14,16 @@ use Symfony\Component\Routing\Annotation\Route;
 
 #[Route('/projet')]
 
-#[IsGranted('ROLE_CHEF_PROJET')]
+
 class ProjetController extends AbstractController
 {
     #[Route('/', name: 'app_projet_index', methods: ['GET'])]
-    public function index(ProjetRepository $projetRepository): Response
+    public function index(ProjetRepository $projetRepository,NotificationRepository $tache): Response
     {
         return $this->render('projet/index.html.twig', [
             'projets' => $projetRepository->findAll(),
+            'notifications'=> $tache->findBy(['IsRead'=>false]),
+            'notification_read'=> $tache->findBy(['IsRead'=>true])
         ]);
     }
 
@@ -44,16 +44,20 @@ class ProjetController extends AbstractController
         return $this->renderForm('projet/new.html.twig', [
             'projet' => $projet,
             'form' => $form,
-            'notifications'=>$tache->findAll()
+            'notifications'=>$tache->findBy(['IsRead'=>false]),
+            'notification_read'=> $tache->findBy(['IsRead'=>true])
         ]);
     }
 
     #[Route('/{id}', name: 'app_projet_show', methods: ['GET'])]
-    public function show(Projet $projet): Response
+    public function show(Projet $projet,NotificationRepository $tache): Response
     {
         return $this->render('projet/show.html.twig', [
             'projet' => $projet,
+            'notifications'=>$tache->findBy(['IsRead'=>false]),
+            'notification_read'=> $tache->findBy(['IsRead'=>true])
         ]);
+      
     }
 
     #[Route('/{id}/edit', name: 'app_projet_edit', methods: ['GET', 'POST'])]

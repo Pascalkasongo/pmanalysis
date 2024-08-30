@@ -3,8 +3,10 @@
 namespace App\Controller;
 
 use App\Entity\Employe;
+use App\Entity\Notification;
 use App\Form\EmployeType;
 use App\Repository\EmployeRepository;
+use App\Repository\NotificationRepository;
 use Doctrine\ORM\EntityManagerInterface;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\IsGranted;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
@@ -14,19 +16,20 @@ use Symfony\Component\PasswordHasher\Hasher\UserPasswordHasherInterface;
 use Symfony\Component\Routing\Annotation\Route;
 
 #[Route('/employe')]
-#[IsGranted('ROLE_DIRECTEUR')]
 class EmployeController extends AbstractController
 {
     #[Route('/', name: 'app_employe_index', methods: ['GET'])]
-    public function index(EmployeRepository $employeRepository): Response
+    public function index(EmployeRepository $employeRepository,NotificationRepository $notification): Response
     {
         return $this->render('employe/index.html.twig', [
             'employes' => $employeRepository->findAll(),
+            'notifications'=> $notification->findBy(['IsRead'=>false]),
+            'notification_read'=> $notification->findBy(['IsRead'=>true])
         ]);
     }
 
     #[Route('/new', name: 'app_employe_new', methods: ['GET', 'POST'])]
-    public function new(Request $request, EntityManagerInterface $entityManager,UserPasswordHasherInterface $userPasswordHasher): Response
+    public function new(Request $request, EntityManagerInterface $entityManager,UserPasswordHasherInterface $userPasswordHasher,NotificationRepository $notification): Response
     {
         $employe = new Employe();
         $form = $this->createForm(EmployeType::class, $employe);
@@ -48,6 +51,8 @@ class EmployeController extends AbstractController
         return $this->renderForm('employe/new.html.twig', [
             'employe' => $employe,
             'form' => $form,
+            'notifications'=> $notification->findBy(['IsRead'=>false]),
+            'notification_read'=> $notification->findBy(['IsRead'=>true])
         ]);
     }
 

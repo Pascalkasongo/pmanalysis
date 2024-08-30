@@ -5,6 +5,7 @@ namespace App\Controller;
 use App\Entity\Fonction;
 use App\Form\FonctionType;
 use App\Repository\FonctionRepository;
+use App\Repository\NotificationRepository;
 use Doctrine\ORM\EntityManagerInterface;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
@@ -15,10 +16,12 @@ use Symfony\Component\Routing\Annotation\Route;
 class FonctionController extends AbstractController
 {
     #[Route('/', name: 'app_fonction_index', methods: ['GET'])]
-    public function index(FonctionRepository $fonctionRepository): Response
+    public function index(FonctionRepository $fonctionRepository,NotificationRepository $notification): Response
     {
         return $this->render('fonction/index.html.twig', [
             'fonctions' => $fonctionRepository->findAll(),
+            'notifications'=> $notification->findBy(['IsRead'=>false]),
+            'notification_read'=> $notification->findBy(['IsRead'=>true])
         ]);
     }
 
@@ -43,10 +46,12 @@ class FonctionController extends AbstractController
     }
 
     #[Route('/{id}', name: 'app_fonction_show', methods: ['GET'])]
-    public function show(Fonction $fonction): Response
+    public function show(Fonction $fonction,NotificationRepository $notification): Response
     {
         return $this->render('fonction/show.html.twig', [
             'fonction' => $fonction,
+            'notifications'=> $notification->findBy(['IsRead'=>false]),
+            'notification_read'=> $notification->findBy(['IsRead'=>true])
         ]);
     }
 

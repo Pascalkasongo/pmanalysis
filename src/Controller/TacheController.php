@@ -4,6 +4,7 @@ namespace App\Controller;
 
 use App\Entity\Tache;
 use App\Form\TacheType;
+use App\Repository\NotificationRepository;
 use App\Repository\TacheRepository;
 use Doctrine\ORM\EntityManagerInterface;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\IsGranted;
@@ -17,15 +18,17 @@ use Symfony\Component\Routing\Annotation\Route;
 class TacheController extends AbstractController
 {
     #[Route('/', name: 'app_tache_index', methods: ['GET'])]
-    public function index(TacheRepository $tacheRepository): Response
+    public function index(TacheRepository $tacheRepository,NotificationRepository $notification): Response
     {
         return $this->render('tache/index.html.twig', [
             'taches' => $tacheRepository->findAll(),
+            'notifications'=> $notification->findBy(['IsRead'=>false]),
+            'notification_read'=> $notification->findBy(['IsRead'=>true])
         ]);
     }
-    #[IsGranted('ROLE_CHEF_PROJET')]
+   
     #[Route('/new', name: 'app_tache_new', methods: ['GET', 'POST'])]
-    public function new(Request $request, EntityManagerInterface $entityManager): Response
+    public function new(Request $request, EntityManagerInterface $entityManager,NotificationRepository $notification): Response
     {
         $tache = new Tache();
         $form = $this->createForm(TacheType::class, $tache);
@@ -41,6 +44,8 @@ class TacheController extends AbstractController
         return $this->renderForm('tache/new.html.twig', [
             'tache' => $tache,
             'form' => $form,
+            'notifications'=> $notification->findBy(['IsRead'=>false]),
+            'notification_read'=> $notification->findBy(['IsRead'=>true])
         ]);
     }
 
@@ -51,9 +56,9 @@ class TacheController extends AbstractController
             'tache' => $tache,
         ]);
     }
-    #[IsGranted('ROLE_CHEF')]
+
     #[Route('/{id}/edit', name: 'app_tache_edit', methods: ['GET', 'POST'])]
-    public function edit(Request $request, Tache $tache, EntityManagerInterface $entityManager): Response
+    public function edit(Request $request, Tache $tache, EntityManagerInterface $entityManager,NotificationRepository $notification): Response
     {
         $form = $this->createForm(TacheType::class, $tache);
         $form->handleRequest($request);
@@ -67,9 +72,11 @@ class TacheController extends AbstractController
         return $this->renderForm('tache/edit.html.twig', [
             'tache' => $tache,
             'form' => $form,
+            'notification'=> $notification->findBy(['IsRead'=>false]),
+            'notification_read'=> $notification->findBy(['IsRead'=>true])
         ]);
     }
-    #[IsGranted('ROLE_CHEF_PROJET')]
+   
     #[Route('/{id}', name: 'app_tache_delete', methods: ['POST'])]
     public function delete(Request $request, Tache $tache, EntityManagerInterface $entityManager): Response
     {

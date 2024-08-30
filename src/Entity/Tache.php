@@ -44,6 +44,9 @@ class Tache
     #[ORM\ManyToOne(inversedBy: 'taches')]
     private ?Ressource $ressource = null;
 
+    #[ORM\ManyToOne(inversedBy: 'taches')]
+    private ?Sprint $sprint = null;
+
     public function getId(): ?int
     {
         return $this->id;
@@ -165,6 +168,18 @@ class Tache
     public function setRessource(?Ressource $ressource): static
     {
         $this->ressource = $ressource;
+
+        return $this;
+    }
+
+    public function getSprint(): ?Sprint
+    {
+        return $this->sprint;
+    }
+
+    public function setSprint(?Sprint $sprint): static
+    {
+        $this->sprint = $sprint;
 
         return $this;
     }

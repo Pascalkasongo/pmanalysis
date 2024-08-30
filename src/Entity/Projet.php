@@ -43,10 +43,14 @@ class Projet
     #[ORM\OneToMany(mappedBy: 'projet', targetEntity: Facture::class)]
     private Collection $factures;
 
+    #[ORM\OneToMany(mappedBy: 'projet', targetEntity: Sprint::class)]
+    private Collection $sprints;
+
     public function __construct()
     {
         $this->taches = new ArrayCollection();
         $this->factures = new ArrayCollection();
+        $this->sprints = new ArrayCollection();
     }
 
     public function getId(): ?int
@@ -192,6 +196,36 @@ class Projet
             // set the owning side to null (unless already changed)
             if ($facture->getProjet() === $this) {
                 $facture->setProjet(null);
+            }
+        }
+
+        return $this;
+    }
+
+    /**
+     * @return Collection<int, Sprint>
+     */
+    public function getSprints(): Collection
+    {
+        return $this->sprints;
+    }
+
+    public function addSprint(Sprint $sprint): static
+    {
+        if (!$this->sprints->contains($sprint)) {
+            $this->sprints->add($sprint);
+            $sprint->setProjet($this);
+        }
+
+        return $this;
+    }
+
+    public function removeSprint(Sprint $sprint): static
+    {
+        if ($this->sprints->removeElement($sprint)) {
+            // set the owning side to null (unless already changed)
+            if ($sprint->getProjet() === $this) {
+                $sprint->setProjet(null);
             }
         }
 

@@ -58,7 +58,7 @@ class HomeController extends AbstractController
         
         
        }elseif($this->isGranted('ROLE_CHEF')){
-            return new Response("chef d\'equipe");
+            return $this->render('admindek-html/index_chef_projet.html.twig');
        }elseif($this->isGranted('ROLE_ADMIN')){
             Return new Response('administrateur');
        }
