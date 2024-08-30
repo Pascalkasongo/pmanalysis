@@ -1,0 +1,38 @@
+<!-- templates/content/navbar.html.twig -->
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> </title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        .top-bar {
+            background-color: #f8f9fa;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        .top-bar .nav-item a {
+            color: #333;
+        }
+        .top-bar .nav-item a:hover {
+            color: #007bff;
+        }
+    </style>
+</head>
+<body>
+    <!-- Barre de navigation secondaire -->
+    <nav class="navbar navbar-light top-bar">
+        <a class="navbar-brand" href="{{path('app_home')}}">PMANALYSIS</a>
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="{{path('app_home')}}">Homepage</a>
+            </li>
+            <li class="nav-item">
+                <button class="btn btn-primary" onclick="window.print()">Imprimer</button>
+            </li>
+        </ul>
+    </nav>
+
+  
+</body>
+</html>

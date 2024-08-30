@@ -52,6 +52,10 @@
     </div>
     <div class="menu-header">Navigation</div>
         <div class="menu-item has-sub active closed">
+{%  if app.session.get('user_role')[0] == 'ROLE_CHEF_PROJET' or app.session.get('user_role')[0] == 'ROLE_DIRECTEUR'  %}
+    
+
+
             <a href="javascript:;" class="menu-link">
                 <div class="menu-icon">
                 <i class="fa fa-briefcase"></i> </div>
@@ -108,9 +112,30 @@
               <a href="index_v3.html" class="menu-link"><div class="menu-text">Dashboard v3</div></a>
          </div> #}
      </div>
-     
+     <div class="menu-item has-sub active ">
+<a href="javascript:;" class="menu-link">
+    <div class="menu-icon">
+    <i class="fa fa-customer"></i> </div>
+    <div class="menu-text">Ressource</div>
+    <div class="menu-caret"></div>
+</a>
+<div class="menu-submenu">
+    <div class="menu-item active">
+        <a href="{{path('app_ressource_new')}}" class="menu-link"><div class="menu-text">Nouvelle Ressource</div></a>
+    </div>
+    <div class="menu-item">
+        <a href="{{path('app_ressource_index')}}" class="menu-link"><div class="menu-text">Liste des ressources </div></a>
+    </div>
+    {# <div class="menu-item">
+         <a href="index_v3.html" class="menu-link"><div class="menu-text">Dashboard v3</div></a>
+    </div> #}
+</div>
 
-</div><div class="menu-item has-sub active ">
+</div>
+{% endif %}
+{% if app.session.get('user_role')[0] == 'ROLE_DIRECTEUR' %}
+
+<div class="menu-item has-sub active ">
 <a href="javascript:;" class="menu-link">
     <div class="menu-icon">
     <i class="fa fa-print"></i> </div>
@@ -215,26 +240,9 @@
 
 
 </div>
-<div class="menu-item has-sub active ">
-<a href="javascript:;" class="menu-link">
-    <div class="menu-icon">
-    <i class="fa fa-customer"></i> </div>
-    <div class="menu-text">Ressource</div>
-    <div class="menu-caret"></div>
-</a>
-<div class="menu-submenu">
-    <div class="menu-item active">
-        <a href="{{path('app_ressource_new')}}" class="menu-link"><div class="menu-text">Nouvelle Ressource</div></a>
-    </div>
-    <div class="menu-item">
-        <a href="{{path('app_ressource_index')}}" class="menu-link"><div class="menu-text">Liste des ressources </div></a>
-    </div>
-    {# <div class="menu-item">
-         <a href="index_v3.html" class="menu-link"><div class="menu-text">Dashboard v3</div></a>
-    </div> #}
-</div>
 
 
+{% endif %}
 </div>
     </div>
 </div>

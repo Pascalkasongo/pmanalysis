@@ -50,12 +50,15 @@ class __TwigTemplate_c5b33491b12903bdcdcd569f31a6e8837cbaf8a1548dc694c08d7ddaedf
 ";
         // line 5
         yield from $this->unwrap()->yieldBlock('body', $context, $blocks);
+        // line 20
+        yield Twig\Extension\CoreExtension::include($this->env, $context, "content/data.html.twig");
         
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
 
         return; yield '';
     }
 
+    // line 5
     public function block_body($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -122,7 +125,7 @@ class __TwigTemplate_c5b33491b12903bdcdcd569f31a6e8837cbaf8a1548dc694c08d7ddaedf
      */
     public function getDebugInfo()
     {
-        return array (  95 => 18,  91 => 17,  85 => 14,  81 => 13,  77 => 12,  71 => 9,  66 => 6,  52 => 5,  46 => 2,  42 => 1,);
+        return array (  98 => 18,  94 => 17,  88 => 14,  84 => 13,  80 => 12,  74 => 9,  69 => 6,  62 => 5,  54 => 20,  52 => 5,  46 => 2,  42 => 1,);
     }
 
     public function getSourceContext()
@@ -146,6 +149,6 @@ class __TwigTemplate_c5b33491b12903bdcdcd569f31a6e8837cbaf8a1548dc694c08d7ddaedf
     {{ form_end(form) }}
     <a href=\"{{ path('app_fonction_index') }}\">back to list</a>
 {% endblock %}
-", "fonction/new.html.twig", "C:\\Users\\SYNS-MANAGER\\Documents\\GitHub\\pmanalysis\\templates\\fonction\\new.html.twig");
+{{include('content/data.html.twig')}}", "fonction/new.html.twig", "C:\\Users\\SYNS-MANAGER\\Documents\\GitHub\\pmanalysis\\templates\\fonction\\new.html.twig");
     }
 }

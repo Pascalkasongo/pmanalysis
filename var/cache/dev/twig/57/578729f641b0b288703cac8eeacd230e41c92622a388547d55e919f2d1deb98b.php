@@ -110,6 +110,13 @@ class __TwigTemplate_0a4de1b128d853722a4b4bd3a2f0de86da1ab155a9c2c6d847041cda4a4
     </div>
     <div class=\"menu-header\">Navigation</div>
         <div class=\"menu-item has-sub active closed\">
+";
+        // line 55
+        if (((CoreExtension::getAttribute($this->env, $this->source, CoreExtension::getAttribute($this->env, $this->source, CoreExtension::getAttribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 55, $this->source); })()), "session", [], "any", false, false, false, 55), "get", ["user_role"], "method", false, false, false, 55), 0, [], "array", false, false, false, 55) == "ROLE_CHEF_PROJET") || (CoreExtension::getAttribute($this->env, $this->source, CoreExtension::getAttribute($this->env, $this->source, CoreExtension::getAttribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 55, $this->source); })()), "session", [], "any", false, false, false, 55), "get", ["user_role"], "method", false, false, false, 55), 0, [], "array", false, false, false, 55) == "ROLE_DIRECTEUR"))) {
+            // line 56
+            yield "    
+
+
             <a href=\"javascript:;\" class=\"menu-link\">
                 <div class=\"menu-icon\">
                 <i class=\"fa fa-briefcase\"></i> </div>
@@ -119,19 +126,19 @@ class __TwigTemplate_0a4de1b128d853722a4b4bd3a2f0de86da1ab155a9c2c6d847041cda4a4
             <div class=\"menu-submenu\">
                 <div class=\"menu-item active\">
                     <a href=\"";
-        // line 63
-        yield $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_projet_new");
-        yield "\" class=\"menu-link\"><div class=\"menu-text\">Enregistrer projet</div></a>
+            // line 67
+            yield $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_projet_new");
+            yield "\" class=\"menu-link\"><div class=\"menu-text\">Enregistrer projet</div></a>
                 </div>
                 <div class=\"menu-item\">
                     <a href=\"";
-        // line 66
-        yield $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_projet_index");
-        yield "\" class=\"menu-link\"><div class=\"menu-text\">Liste Projets</div></a>
+            // line 70
+            yield $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_projet_index");
+            yield "\" class=\"menu-link\"><div class=\"menu-text\">Liste Projets</div></a>
                 </div>
                 ";
-        // line 71
-        yield "            </div> 
+            // line 75
+            yield "            </div> 
         <div class=\"menu-item has-sub active \">
             <a href=\"javascript:;\" class=\"menu-link\">
                 <div class=\"menu-icon\">
@@ -142,19 +149,19 @@ class __TwigTemplate_0a4de1b128d853722a4b4bd3a2f0de86da1ab155a9c2c6d847041cda4a4
             <div class=\"menu-submenu\">
                 <div class=\"menu-item active\">
                     <a href=\"";
-        // line 81
-        yield $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_tache_new");
-        yield "\" class=\"menu-link\"><div class=\"menu-text\">Nouvelle Tache</div></a>
+            // line 85
+            yield $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_tache_new");
+            yield "\" class=\"menu-link\"><div class=\"menu-text\">Nouvelle Tache</div></a>
                 </div>
                 <div class=\"menu-item\">
                     <a href=\"";
-        // line 84
-        yield $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_tache_index");
-        yield " \" class=\"menu-link\"><div class=\"menu-text\">Liste des taches </div></a>
+            // line 88
+            yield $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_tache_index");
+            yield " \" class=\"menu-link\"><div class=\"menu-text\">Liste des taches </div></a>
                 </div>
                 ";
-        // line 89
-        yield "            </div>
+            // line 93
+            yield "            </div>
             
     
      </div>
@@ -168,22 +175,51 @@ class __TwigTemplate_0a4de1b128d853722a4b4bd3a2f0de86da1ab155a9c2c6d847041cda4a4
      <div class=\"menu-submenu\">
          <div class=\"menu-item active\">
              <a href=\"";
-        // line 102
-        yield $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_equipe_new");
-        yield "\" class=\"menu-link\"><div class=\"menu-text\">Nouvelle equipe</div></a>
+            // line 106
+            yield $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_equipe_new");
+            yield "\" class=\"menu-link\"><div class=\"menu-text\">Nouvelle equipe</div></a>
          </div>
          <div class=\"menu-item\">
              <a href=\"";
-        // line 105
-        yield $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_equipe_index");
-        yield "\" class=\"menu-link\"><div class=\"menu-text\">Liste des equipes </div></a>
+            // line 109
+            yield $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_equipe_index");
+            yield "\" class=\"menu-link\"><div class=\"menu-text\">Liste des equipes </div></a>
          </div>
          ";
-        // line 110
-        yield "     </div>
-     
+            // line 114
+            yield "     </div>
+     <div class=\"menu-item has-sub active \">
+<a href=\"javascript:;\" class=\"menu-link\">
+    <div class=\"menu-icon\">
+    <i class=\"fa fa-customer\"></i> </div>
+    <div class=\"menu-text\">Ressource</div>
+    <div class=\"menu-caret\"></div>
+</a>
+<div class=\"menu-submenu\">
+    <div class=\"menu-item active\">
+        <a href=\"";
+            // line 124
+            yield $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_ressource_new");
+            yield "\" class=\"menu-link\"><div class=\"menu-text\">Nouvelle Ressource</div></a>
+    </div>
+    <div class=\"menu-item\">
+        <a href=\"";
+            // line 127
+            yield $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_ressource_index");
+            yield "\" class=\"menu-link\"><div class=\"menu-text\">Liste des ressources </div></a>
+    </div>
+    ";
+            // line 132
+            yield "</div>
 
-</div><div class=\"menu-item has-sub active \">
+</div>
+";
+        }
+        // line 136
+        if ((CoreExtension::getAttribute($this->env, $this->source, CoreExtension::getAttribute($this->env, $this->source, CoreExtension::getAttribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 136, $this->source); })()), "session", [], "any", false, false, false, 136), "get", ["user_role"], "method", false, false, false, 136), 0, [], "array", false, false, false, 136) == "ROLE_DIRECTEUR")) {
+            // line 137
+            yield "
+<div class=\"menu-item has-sub active \">
 <a href=\"javascript:;\" class=\"menu-link\">
     <div class=\"menu-icon\">
     <i class=\"fa fa-print\"></i> </div>
@@ -193,19 +229,19 @@ class __TwigTemplate_0a4de1b128d853722a4b4bd3a2f0de86da1ab155a9c2c6d847041cda4a4
 <div class=\"menu-submenu\">
     <div class=\"menu-item active\">
         <a href=\"";
-        // line 122
-        yield $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_facture_new");
-        yield "\" class=\"menu-link\"><div class=\"menu-text\">Nouvelle Facture</div></a>
+            // line 147
+            yield $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_facture_new");
+            yield "\" class=\"menu-link\"><div class=\"menu-text\">Nouvelle Facture</div></a>
     </div>
     <div class=\"menu-item\">
         <a href=\"";
-        // line 125
-        yield $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_facture_index");
-        yield "\" class=\"menu-link\"><div class=\"menu-text\">Liste des Factures </div></a>
+            // line 150
+            yield $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_facture_index");
+            yield "\" class=\"menu-link\"><div class=\"menu-text\">Liste des Factures </div></a>
     </div>
     ";
-        // line 130
-        yield "</div>
+            // line 155
+            yield "</div>
 
 
 </div>
@@ -219,19 +255,19 @@ class __TwigTemplate_0a4de1b128d853722a4b4bd3a2f0de86da1ab155a9c2c6d847041cda4a4
 <div class=\"menu-submenu\">
     <div class=\"menu-item active\">
         <a href=\"";
-        // line 143
-        yield $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_employe_new");
-        yield "\" class=\"menu-link\"><div class=\"menu-text\">Ajouter employé </div></a>
+            // line 168
+            yield $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_employe_new");
+            yield "\" class=\"menu-link\"><div class=\"menu-text\">Ajouter employé </div></a>
     </div>
     <div class=\"menu-item\">
         <a href=\"";
-        // line 146
-        yield $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_employe_index");
-        yield "\" class=\"menu-link\"><div class=\"menu-text\">Liste des employés</div></a>
+            // line 171
+            yield $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_employe_index");
+            yield "\" class=\"menu-link\"><div class=\"menu-text\">Liste des employés</div></a>
     </div>
     ";
-        // line 151
-        yield "</div>
+            // line 176
+            yield "</div>
 
 
 </div>
@@ -245,19 +281,19 @@ class __TwigTemplate_0a4de1b128d853722a4b4bd3a2f0de86da1ab155a9c2c6d847041cda4a4
 <div class=\"menu-submenu\">
     <div class=\"menu-item active\">
         <a href=\"";
-        // line 164
-        yield $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_domaine_new");
-        yield "\" class=\"menu-link\"><div class=\"menu-text\">Nouveau domaine</div></a>
+            // line 189
+            yield $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_domaine_new");
+            yield "\" class=\"menu-link\"><div class=\"menu-text\">Nouveau domaine</div></a>
     </div>
     <div class=\"menu-item\">
         <a href=\"";
-        // line 167
-        yield $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_domaine_index");
-        yield "\" class=\"menu-link\"><div class=\"menu-text\">Liste des domaines </div></a>
+            // line 192
+            yield $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_domaine_index");
+            yield "\" class=\"menu-link\"><div class=\"menu-text\">Liste des domaines </div></a>
     </div>
     ";
-        // line 172
-        yield "</div>
+            // line 197
+            yield "</div>
 
 
 </div>
@@ -271,19 +307,19 @@ class __TwigTemplate_0a4de1b128d853722a4b4bd3a2f0de86da1ab155a9c2c6d847041cda4a4
 <div class=\"menu-submenu\">
     <div class=\"menu-item active\">
         <a href=\"";
-        // line 185
-        yield $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_client_new");
-        yield "\" class=\"menu-link\"><div class=\"menu-text\">Nouveau client</div></a>
+            // line 210
+            yield $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_client_new");
+            yield "\" class=\"menu-link\"><div class=\"menu-text\">Nouveau client</div></a>
     </div>
     <div class=\"menu-item\">
         <a href=\"";
-        // line 188
-        yield $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_client_index");
-        yield "\" class=\"menu-link\"><div class=\"menu-text\">Liste des clients </div></a>
+            // line 213
+            yield $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_client_index");
+            yield "\" class=\"menu-link\"><div class=\"menu-text\">Liste des clients </div></a>
     </div>
     ";
-        // line 193
-        yield "</div>
+            // line 218
+            yield "</div>
 
 
 </div>
@@ -297,48 +333,28 @@ class __TwigTemplate_0a4de1b128d853722a4b4bd3a2f0de86da1ab155a9c2c6d847041cda4a4
 <div class=\"menu-submenu\">
     <div class=\"menu-item active\">
         <a href=\"";
-        // line 206
-        yield $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_fonction_new");
-        yield "\" class=\"menu-link\"><div class=\"menu-text\">Nouvelle Fonction</div></a>
+            // line 231
+            yield $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_fonction_new");
+            yield "\" class=\"menu-link\"><div class=\"menu-text\">Nouvelle Fonction</div></a>
     </div>
     <div class=\"menu-item\">
         <a href=\"";
-        // line 209
-        yield $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_fonction_index");
-        yield "\" class=\"menu-link\"><div class=\"menu-text\">Liste des Fonctions </div></a>
+            // line 234
+            yield $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_fonction_index");
+            yield "\" class=\"menu-link\"><div class=\"menu-text\">Liste des Fonctions </div></a>
     </div>
     ";
-        // line 214
-        yield "</div>
+            // line 239
+            yield "</div>
 
 
 </div>
-<div class=\"menu-item has-sub active \">
-<a href=\"javascript:;\" class=\"menu-link\">
-    <div class=\"menu-icon\">
-    <i class=\"fa fa-customer\"></i> </div>
-    <div class=\"menu-text\">Ressource</div>
-    <div class=\"menu-caret\"></div>
-</a>
-<div class=\"menu-submenu\">
-    <div class=\"menu-item active\">
-        <a href=\"";
-        // line 227
-        yield $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_ressource_new");
-        yield "\" class=\"menu-link\"><div class=\"menu-text\">Nouvelle Ressource</div></a>
-    </div>
-    <div class=\"menu-item\">
-        <a href=\"";
-        // line 230
-        yield $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_ressource_index");
-        yield "\" class=\"menu-link\"><div class=\"menu-text\">Liste des ressources </div></a>
-    </div>
-    ";
-        // line 235
+
+
+";
+        }
+        // line 246
         yield "</div>
-
-
-</div>
     </div>
 </div>
     </div>
@@ -375,7 +391,7 @@ class __TwigTemplate_0a4de1b128d853722a4b4bd3a2f0de86da1ab155a9c2c6d847041cda4a4
      */
     public function getDebugInfo()
     {
-        return array (  338 => 235,  333 => 230,  327 => 227,  312 => 214,  307 => 209,  301 => 206,  286 => 193,  281 => 188,  275 => 185,  260 => 172,  255 => 167,  249 => 164,  234 => 151,  229 => 146,  223 => 143,  208 => 130,  203 => 125,  197 => 122,  183 => 110,  178 => 105,  172 => 102,  157 => 89,  152 => 84,  146 => 81,  134 => 71,  129 => 66,  123 => 63,  86 => 28,  82 => 27,  80 => 26,  77 => 25,  75 => 24,  72 => 23,  70 => 22,  66 => 20,  64 => 19,  57 => 15,  41 => 1,);
+        return array (  357 => 246,  348 => 239,  343 => 234,  337 => 231,  322 => 218,  317 => 213,  311 => 210,  296 => 197,  291 => 192,  285 => 189,  270 => 176,  265 => 171,  259 => 168,  244 => 155,  239 => 150,  233 => 147,  221 => 137,  219 => 136,  213 => 132,  208 => 127,  202 => 124,  190 => 114,  185 => 109,  179 => 106,  164 => 93,  159 => 88,  153 => 85,  141 => 75,  136 => 70,  130 => 67,  117 => 56,  115 => 55,  86 => 28,  82 => 27,  80 => 26,  77 => 25,  75 => 24,  72 => 23,  70 => 22,  66 => 20,  64 => 19,  57 => 15,  41 => 1,);
     }
 
     public function getSourceContext()
@@ -434,6 +450,10 @@ class __TwigTemplate_0a4de1b128d853722a4b4bd3a2f0de86da1ab155a9c2c6d847041cda4a4
     </div>
     <div class=\"menu-header\">Navigation</div>
         <div class=\"menu-item has-sub active closed\">
+{%  if app.session.get('user_role')[0] == 'ROLE_CHEF_PROJET' or app.session.get('user_role')[0] == 'ROLE_DIRECTEUR'  %}
+    
+
+
             <a href=\"javascript:;\" class=\"menu-link\">
                 <div class=\"menu-icon\">
                 <i class=\"fa fa-briefcase\"></i> </div>
@@ -490,9 +510,30 @@ class __TwigTemplate_0a4de1b128d853722a4b4bd3a2f0de86da1ab155a9c2c6d847041cda4a4
               <a href=\"index_v3.html\" class=\"menu-link\"><div class=\"menu-text\">Dashboard v3</div></a>
          </div> #}
      </div>
-     
+     <div class=\"menu-item has-sub active \">
+<a href=\"javascript:;\" class=\"menu-link\">
+    <div class=\"menu-icon\">
+    <i class=\"fa fa-customer\"></i> </div>
+    <div class=\"menu-text\">Ressource</div>
+    <div class=\"menu-caret\"></div>
+</a>
+<div class=\"menu-submenu\">
+    <div class=\"menu-item active\">
+        <a href=\"{{path('app_ressource_new')}}\" class=\"menu-link\"><div class=\"menu-text\">Nouvelle Ressource</div></a>
+    </div>
+    <div class=\"menu-item\">
+        <a href=\"{{path('app_ressource_index')}}\" class=\"menu-link\"><div class=\"menu-text\">Liste des ressources </div></a>
+    </div>
+    {# <div class=\"menu-item\">
+         <a href=\"index_v3.html\" class=\"menu-link\"><div class=\"menu-text\">Dashboard v3</div></a>
+    </div> #}
+</div>
 
-</div><div class=\"menu-item has-sub active \">
+</div>
+{% endif %}
+{% if app.session.get('user_role')[0] == 'ROLE_DIRECTEUR' %}
+
+<div class=\"menu-item has-sub active \">
 <a href=\"javascript:;\" class=\"menu-link\">
     <div class=\"menu-icon\">
     <i class=\"fa fa-print\"></i> </div>
@@ -597,26 +638,9 @@ class __TwigTemplate_0a4de1b128d853722a4b4bd3a2f0de86da1ab155a9c2c6d847041cda4a4
 
 
 </div>
-<div class=\"menu-item has-sub active \">
-<a href=\"javascript:;\" class=\"menu-link\">
-    <div class=\"menu-icon\">
-    <i class=\"fa fa-customer\"></i> </div>
-    <div class=\"menu-text\">Ressource</div>
-    <div class=\"menu-caret\"></div>
-</a>
-<div class=\"menu-submenu\">
-    <div class=\"menu-item active\">
-        <a href=\"{{path('app_ressource_new')}}\" class=\"menu-link\"><div class=\"menu-text\">Nouvelle Ressource</div></a>
-    </div>
-    <div class=\"menu-item\">
-        <a href=\"{{path('app_ressource_index')}}\" class=\"menu-link\"><div class=\"menu-text\">Liste des ressources </div></a>
-    </div>
-    {# <div class=\"menu-item\">
-         <a href=\"index_v3.html\" class=\"menu-link\"><div class=\"menu-text\">Dashboard v3</div></a>
-    </div> #}
-</div>
 
 
+{% endif %}
 </div>
     </div>
 </div>

@@ -107,7 +107,7 @@ class __TwigTemplate_fdb9203417940129e011c9e2d51955a5a62bf27771ab00343e28b6e700a
             <div class=\"form-group\">
                         ";
         // line 17
-        yield $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(CoreExtension::getAttribute($this->env, $this->source, (isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 17, $this->source); })()), "nombre", [], "any", false, false, false, 17), 'label', ["label" => "Nom de l'equipe"]);
+        yield $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(CoreExtension::getAttribute($this->env, $this->source, (isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 17, $this->source); })()), "nombre", [], "any", false, false, false, 17), 'label', ["label" => "Nombre Membre de l'equipe"]);
         yield "
                         ";
         // line 18
@@ -198,7 +198,7 @@ class __TwigTemplate_fdb9203417940129e011c9e2d51955a5a62bf27771ab00343e28b6e700a
                         {{ form_errors(form.nom_equipe) }}
             </div>
             <div class=\"form-group\">
-                        {{ form_label(form.nombre, 'Nom de l\\'equipe') }}
+                        {{ form_label(form.nombre, 'Nombre Membre de l\\'equipe') }}
                         {{ form_widget(form.nombre, {'attr': {'class': 'form-control', 'placeholder': \"Nombre\"}}) }}
                         {{ form_errors(form.nombre) }}
             </div>

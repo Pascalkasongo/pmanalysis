@@ -49,6 +49,7 @@ return [
     'app_home' => [[], ['_controller' => 'App\\Controller\\HomeController::index'], [], [['text', '/home']], [], [], []],
     'app_notification_index' => [[], ['_controller' => 'App\\Controller\\NotificationController::index'], [], [['text', '/user-notification/']], [], [], []],
     'app_notification_new' => [[], ['_controller' => 'App\\Controller\\NotificationController::new'], [], [['text', '/user-notification/new']], [], [], []],
+    'notification_read' => [['id'], ['_controller' => 'App\\Controller\\NotificationController::markAsRead'], [], [['variable', '/', '[^/]++', 'id', true], ['text', '/user-notification/notification/read']], [], [], []],
     'app_notification_show' => [['id'], ['_controller' => 'App\\Controller\\NotificationController::show'], [], [['variable', '/', '[^/]++', 'id', true], ['text', '/user-notification']], [], [], []],
     'app_notification_edit' => [['id'], ['_controller' => 'App\\Controller\\NotificationController::edit'], [], [['text', '/edit'], ['variable', '/', '[^/]++', 'id', true], ['text', '/user-notification']], [], [], []],
     'app_notification_delete' => [['id'], ['_controller' => 'App\\Controller\\NotificationController::delete'], [], [['variable', '/', '[^/]++', 'id', true], ['text', '/user-notification']], [], [], []],

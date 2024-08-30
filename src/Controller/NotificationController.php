@@ -48,6 +48,20 @@ class NotificationController extends AbstractController
         ]);
     }
 
+   #[Route('/notification/read/{id}',name:'notification_read',methods:"GET")]
+    public function markAsRead($id, EntityManagerInterface $em): Response  
+    {
+        $notification = $em->getRepository(Notification::class)->find($id);
+
+
+        $notification->setIsRead(true);
+        $em->flush();
+
+        return $this->renderForm('notification/index.html.twig',[
+            'notification'=>$notification
+        ]);
+    }
+
     #[Route('/{id}', name: 'app_notification_show', methods: ['GET'])]
     public function show(Notification $notification): Response
     {

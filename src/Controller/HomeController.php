@@ -10,6 +10,7 @@ use App\Repository\EquipeRepository;
 use App\Repository\NotificationRepository;
 use App\Repository\ProjetRepository;
 use App\Repository\TacheRepository;
+use PhpParser\Node\Stmt\Return_;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\RedirectResponse;
 use Symfony\Component\HttpFoundation\Response;
@@ -28,25 +29,40 @@ class HomeController extends AbstractController
   
  
     #[Route('/home',name:'app_home')]
-    public function index(SessionInterface $session, NotificationRepository $notificationRepo,ProjetRepository $projet,TacheRepository $tache, EquipeRepository $equipe,Security $security): Response
+    public function index( NotificationRepository $notificationRepo,ProjetRepository $projet,TacheRepository $tache, EquipeRepository $equipe,Security $security): Response
     {
-
-        $notifications = $notificationRepo->findBy(['IsRead'=>false]);
-        $notificationsfiltered =[];
-        foreach ($notifications as $notification){
-            if(!empty($notification->getTitre())&& !empty($notification->getDescription())&&!empty($notification->getClient())){
-                $notificationsfiltered[]=$notification;
+       if($this->isGranted('ROLE_DIRECTEUR') || $this->isGranted('ROLE_CHEF_PROJET')){
+            $notifications_notread = $notificationRepo->findBy(['IsRead'=>false]);
+            $notifications_read = $notificationRepo->findBy(['IsRead'=>true]);
+            $notificationsfiltered =[];
+            $notificationsfiltered_read =[];
+            foreach ($notifications_notread as $notification){
+                if(!empty($notification->getTitre())&& !empty($notification->getDescription())&&!empty($notification->getClient())){
+                    $notificationsfiltered[]=$notification;
+                }
             }
-        }
-        return $this->render('admindek-html/index.html.twig', [
-            'controller_name' => 'HomeController',
-            'notifications'=>$notificationsfiltered,
-            'tache'=>$tache->findAll(),
-            'equipe'=>$equipe->findAll(),
-            'projet'=>$projet->findAll(),
-            
-        ]);
-     
+            foreach ($notifications_read as $notification){
+                if(!empty($notification->getTitre())&& !empty($notification->getDescription())&&!empty($notification->getClient())){
+                    $notificationsfiltered_read[]=$notification;
+                }
+            }
+            return $this->render('admindek-html/index.html.twig', [
+                'controller_name' => 'HomeController',
+                'notifications'=>$notificationsfiltered,
+                'notification_read'=>$notifications_read,
+                'tache'=>$tache->findAll(),
+                'equipe'=>$equipe->findAll(),
+                'projet'=>$projet->findAll(),
+                
+            ]);
+        
+        
+       }elseif($this->isGranted('ROLE_CHEF')){
+            return new Response("chef d\'equipe");
+       }elseif($this->isGranted('ROLE_ADMIN')){
+            Return new Response('administrateur');
+       }
+
         
         
     }
