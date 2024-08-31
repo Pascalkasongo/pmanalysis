@@ -1,21 +1,30 @@
 {{include('content/navbar.html.twig')}}
 {{include('content/slidebar.html.twig')}}
 
-{% block title %}Projets{% endblock %}
+<style>
+    .table-responsive {
+        overflow-x: auto; /* Enable horizontal scrolling */
+        -webkit-overflow-scrolling: touch; /* Smooth scrolling on touch devices */
+    }
+    .table {
+        min-width: 100%; /* Ensure table takes up at least the container's width */
+    }
+</style>
 
 {% block body %}
 <div class="pcoded-content">
              
     <div class="container mt-4">
     <h1>Projet </h1>
+    <div class="table-responsive">
 
+ 
     <table class="table">
         <thead>
             <tr>
                 <th>Id</th>
                 <th>Nom</th>
                 <th>Description</th>
-                <th>Cout</th>
                 <th>Domaine</th>
                 <th>actions</th>
             </tr>
@@ -26,7 +35,6 @@
                 <td>{{ projet.id }}</td>
                 <td>{{ projet.nom }}</td>
                 <td>{{ projet.description }}</td>
-                <td>{{ projet.cout }}</td>
                 <td>{{projet.domaine.nomDomaine}}
                 <td>
                     <a href="{{ path('app_projet_show', {'id': projet.id}) }}"class="btn btn-primary btn-sm" title="View"><i class="fas fa-eye"></i></a>
@@ -42,7 +50,7 @@
         </tbody>
     </table>
 
-    <a href="{{ path('app_projet_new') }}">Create new</a>
+</div>
     </div>
 </div>
 {{include('content/data.html.twig')}}

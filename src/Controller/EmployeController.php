@@ -17,19 +17,23 @@ use Symfony\Component\Routing\Annotation\Route;
 
 #[Route('/employe')]
 class EmployeController extends AbstractController
-{
+{private NotificationRepository $notification;
+
+    public function __construct(NotificationRepository $notification) {
+        $this->notification = $notification;
+    }
     #[Route('/', name: 'app_employe_index', methods: ['GET'])]
-    public function index(EmployeRepository $employeRepository,NotificationRepository $notification): Response
+    public function index(EmployeRepository $employeRepository): Response
     {
         return $this->render('employe/index.html.twig', [
             'employes' => $employeRepository->findAll(),
-            'notifications'=> $notification->findBy(['IsRead'=>false]),
-            'notification_read'=> $notification->findBy(['IsRead'=>true])
+           'notifications'=> $this->notification->findBy(['IsRead'=>false]),
+            'notification_read'=>$this->notification->findBy(['IsRead'=>true])
         ]);
     }
 
     #[Route('/new', name: 'app_employe_new', methods: ['GET', 'POST'])]
-    public function new(Request $request, EntityManagerInterface $entityManager,UserPasswordHasherInterface $userPasswordHasher,NotificationRepository $notification): Response
+    public function new(Request $request, EntityManagerInterface $entityManager,UserPasswordHasherInterface $userPasswordHasher): Response
     {
         $employe = new Employe();
         $form = $this->createForm(EmployeType::class, $employe);
@@ -51,8 +55,8 @@ class EmployeController extends AbstractController
         return $this->renderForm('employe/new.html.twig', [
             'employe' => $employe,
             'form' => $form,
-            'notifications'=> $notification->findBy(['IsRead'=>false]),
-            'notification_read'=> $notification->findBy(['IsRead'=>true])
+           'notifications'=> $this->notification->findBy(['IsRead'=>false]),
+            'notification_read'=>$this->notification->findBy(['IsRead'=>true])
         ]);
     }
 
@@ -61,6 +65,8 @@ class EmployeController extends AbstractController
     {
         return $this->render('employe/show.html.twig', [
             'employe' => $employe,
+            'notifications'=> $this->notification->findBy(['IsRead'=>false]),
+            'notification_read'=>$this->notification->findBy(['IsRead'=>true])
         ]);
     }
 

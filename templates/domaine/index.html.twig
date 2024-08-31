@@ -1,9 +1,11 @@
-{% extends 'base.html.twig' %}
-
-{% block title %}Domaine index{% endblock %}
+{{ include('content/navbar.html.twig') }}
+{{ include('content/slidebar.html.twig') }}
 
 {% block body %}
-    <h1>Domaine index</h1>
+<div class="pcoded-content">
+                
+<div class="container mt-4">
+    <h1>Domaine </h1>
 
     <table class="table">
         <thead>
@@ -20,9 +22,10 @@
                 <td>{{ domaine.id }}</td>
                 <td>{{ domaine.nomDomaine }}</td>
                 <td>{{ domaine.typeDomaine }}</td>
-                <td>
-                    <a href="{{ path('app_domaine_show', {'id': domaine.id}) }}">show</a>
-                    <a href="{{ path('app_domaine_edit', {'id': domaine.id}) }}">edit</a>
+                    <td>
+                    <a href="{{ path('app_domaine_show', {'id': domaine.id}) }}"class="btn btn-primary btn-sm" title="View"><i class="fas fa-eye"></i></a>
+                    <a href="{{ path('app_domaine_edit', {'id': domaine.id}) }}"class="btn btn-warning btn-sm" title="Edit"><i class="fas fa-edit"></i></a>
+                    <a href="{{ path('app_domaine_delete', {'id': domaine.id}) }}"class="btn btn-danger btn-sm" title="Delete"><i class="fas fa-trash"></i></a>
                 </td>
             </tr>
         {% else %}
@@ -32,6 +35,7 @@
         {% endfor %}
         </tbody>
     </table>
-
-    <a href="{{ path('app_domaine_new') }}">Create new</a>
+</div>
+</div>
+    {{ include('content/data.html.twig') }}
 {% endblock %}

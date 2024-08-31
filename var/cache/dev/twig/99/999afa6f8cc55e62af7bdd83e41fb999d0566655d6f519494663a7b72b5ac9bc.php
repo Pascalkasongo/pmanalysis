@@ -25,16 +25,11 @@ class __TwigTemplate_9cdc97defed96eee552f0fbeea77cad03505b919e105af822da6e8ec162
 
         $this->source = $this->getSourceContext();
 
+        $this->parent = false;
+
         $this->blocks = [
-            'title' => [$this, 'block_title'],
             'body' => [$this, 'block_body'],
         ];
-    }
-
-    protected function doGetParent(array $context)
-    {
-        // line 1
-        return "base.html.twig";
     }
 
     protected function doDisplay(array $context, array $blocks = [])
@@ -43,36 +38,34 @@ class __TwigTemplate_9cdc97defed96eee552f0fbeea77cad03505b919e105af822da6e8ec162
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "template", "domaine/index.html.twig"));
 
-        $this->parent = $this->loadTemplate("base.html.twig", "domaine/index.html.twig", 1);
-        yield from $this->parent->unwrap()->yield($context, array_merge($this->blocks, $blocks));
-        
-        $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
+        // line 1
+        yield Twig\Extension\CoreExtension::include($this->env, $context, "content/navbar.html.twig");
+        yield "
+";
+        // line 2
+        yield Twig\Extension\CoreExtension::include($this->env, $context, "content/slidebar.html.twig");
+        yield "
 
-    }
-
-    // line 3
-    public function block_title($context, array $blocks = [])
-    {
-        $macros = $this->macros;
-        $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
-        $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "title"));
-
-        yield "Domaine index";
+";
+        // line 4
+        yield from $this->unwrap()->yieldBlock('body', $context, $blocks);
         
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
 
         return; yield '';
     }
 
-    // line 5
     public function block_body($context, array $blocks = [])
     {
         $macros = $this->macros;
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "body"));
 
-        // line 6
-        yield "    <h1>Domaine index</h1>
+        // line 5
+        yield "<div class=\"pcoded-content\">
+                
+<div class=\"container mt-4\">
+    <h1>Domaine </h1>
 
     <table class=\"table\">
         <thead>
@@ -85,41 +78,45 @@ class __TwigTemplate_9cdc97defed96eee552f0fbeea77cad03505b919e105af822da6e8ec162
         </thead>
         <tbody>
         ";
-        // line 18
+        // line 20
         $context['_parent'] = $context;
-        $context['_seq'] = CoreExtension::ensureTraversable((isset($context["domaines"]) || array_key_exists("domaines", $context) ? $context["domaines"] : (function () { throw new RuntimeError('Variable "domaines" does not exist.', 18, $this->source); })()));
+        $context['_seq'] = CoreExtension::ensureTraversable((isset($context["domaines"]) || array_key_exists("domaines", $context) ? $context["domaines"] : (function () { throw new RuntimeError('Variable "domaines" does not exist.', 20, $this->source); })()));
         $context['_iterated'] = false;
         foreach ($context['_seq'] as $context["_key"] => $context["domaine"]) {
-            // line 19
+            // line 21
             yield "            <tr>
                 <td>";
-            // line 20
-            yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(CoreExtension::getAttribute($this->env, $this->source, $context["domaine"], "id", [], "any", false, false, false, 20), "html", null, true);
-            yield "</td>
-                <td>";
-            // line 21
-            yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(CoreExtension::getAttribute($this->env, $this->source, $context["domaine"], "nomDomaine", [], "any", false, false, false, 21), "html", null, true);
-            yield "</td>
-                <td>";
             // line 22
-            yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(CoreExtension::getAttribute($this->env, $this->source, $context["domaine"], "typeDomaine", [], "any", false, false, false, 22), "html", null, true);
+            yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(CoreExtension::getAttribute($this->env, $this->source, $context["domaine"], "id", [], "any", false, false, false, 22), "html", null, true);
             yield "</td>
-                <td>
-                    <a href=\"";
+                <td>";
+            // line 23
+            yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(CoreExtension::getAttribute($this->env, $this->source, $context["domaine"], "nomDomaine", [], "any", false, false, false, 23), "html", null, true);
+            yield "</td>
+                <td>";
             // line 24
-            yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_domaine_show", ["id" => CoreExtension::getAttribute($this->env, $this->source, $context["domaine"], "id", [], "any", false, false, false, 24)]), "html", null, true);
-            yield "\">show</a>
+            yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(CoreExtension::getAttribute($this->env, $this->source, $context["domaine"], "typeDomaine", [], "any", false, false, false, 24), "html", null, true);
+            yield "</td>
+                    <td>
                     <a href=\"";
-            // line 25
-            yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_domaine_edit", ["id" => CoreExtension::getAttribute($this->env, $this->source, $context["domaine"], "id", [], "any", false, false, false, 25)]), "html", null, true);
-            yield "\">edit</a>
+            // line 26
+            yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_domaine_show", ["id" => CoreExtension::getAttribute($this->env, $this->source, $context["domaine"], "id", [], "any", false, false, false, 26)]), "html", null, true);
+            yield "\"class=\"btn btn-primary btn-sm\" title=\"View\"><i class=\"fas fa-eye\"></i></a>
+                    <a href=\"";
+            // line 27
+            yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_domaine_edit", ["id" => CoreExtension::getAttribute($this->env, $this->source, $context["domaine"], "id", [], "any", false, false, false, 27)]), "html", null, true);
+            yield "\"class=\"btn btn-warning btn-sm\" title=\"Edit\"><i class=\"fas fa-edit\"></i></a>
+                    <a href=\"";
+            // line 28
+            yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_domaine_delete", ["id" => CoreExtension::getAttribute($this->env, $this->source, $context["domaine"], "id", [], "any", false, false, false, 28)]), "html", null, true);
+            yield "\"class=\"btn btn-danger btn-sm\" title=\"Delete\"><i class=\"fas fa-trash\"></i></a>
                 </td>
             </tr>
         ";
             $context['_iterated'] = true;
         }
         if (!$context['_iterated']) {
-            // line 29
+            // line 32
             yield "            <tr>
                 <td colspan=\"4\">no records found</td>
             </tr>
@@ -128,14 +125,15 @@ class __TwigTemplate_9cdc97defed96eee552f0fbeea77cad03505b919e105af822da6e8ec162
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['domaine'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 33
+        // line 36
         yield "        </tbody>
     </table>
-
-    <a href=\"";
-        // line 36
-        yield $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_domaine_new");
-        yield "\">Create new</a>
+</div>
+</div>
+    ";
+        // line 40
+        yield Twig\Extension\CoreExtension::include($this->env, $context, "content/data.html.twig");
+        yield "
 ";
         
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
@@ -164,17 +162,19 @@ class __TwigTemplate_9cdc97defed96eee552f0fbeea77cad03505b919e105af822da6e8ec162
      */
     public function getDebugInfo()
     {
-        return array (  137 => 36,  132 => 33,  123 => 29,  114 => 25,  110 => 24,  105 => 22,  101 => 21,  97 => 20,  94 => 19,  89 => 18,  75 => 6,  68 => 5,  54 => 3,  37 => 1,);
+        return array (  135 => 40,  129 => 36,  120 => 32,  111 => 28,  107 => 27,  103 => 26,  98 => 24,  94 => 23,  90 => 22,  87 => 21,  82 => 20,  65 => 5,  51 => 4,  46 => 2,  42 => 1,);
     }
 
     public function getSourceContext()
     {
-        return new Source("{% extends 'base.html.twig' %}
-
-{% block title %}Domaine index{% endblock %}
+        return new Source("{{ include('content/navbar.html.twig') }}
+{{ include('content/slidebar.html.twig') }}
 
 {% block body %}
-    <h1>Domaine index</h1>
+<div class=\"pcoded-content\">
+                
+<div class=\"container mt-4\">
+    <h1>Domaine </h1>
 
     <table class=\"table\">
         <thead>
@@ -191,9 +191,10 @@ class __TwigTemplate_9cdc97defed96eee552f0fbeea77cad03505b919e105af822da6e8ec162
                 <td>{{ domaine.id }}</td>
                 <td>{{ domaine.nomDomaine }}</td>
                 <td>{{ domaine.typeDomaine }}</td>
-                <td>
-                    <a href=\"{{ path('app_domaine_show', {'id': domaine.id}) }}\">show</a>
-                    <a href=\"{{ path('app_domaine_edit', {'id': domaine.id}) }}\">edit</a>
+                    <td>
+                    <a href=\"{{ path('app_domaine_show', {'id': domaine.id}) }}\"class=\"btn btn-primary btn-sm\" title=\"View\"><i class=\"fas fa-eye\"></i></a>
+                    <a href=\"{{ path('app_domaine_edit', {'id': domaine.id}) }}\"class=\"btn btn-warning btn-sm\" title=\"Edit\"><i class=\"fas fa-edit\"></i></a>
+                    <a href=\"{{ path('app_domaine_delete', {'id': domaine.id}) }}\"class=\"btn btn-danger btn-sm\" title=\"Delete\"><i class=\"fas fa-trash\"></i></a>
                 </td>
             </tr>
         {% else %}
@@ -203,8 +204,9 @@ class __TwigTemplate_9cdc97defed96eee552f0fbeea77cad03505b919e105af822da6e8ec162
         {% endfor %}
         </tbody>
     </table>
-
-    <a href=\"{{ path('app_domaine_new') }}\">Create new</a>
+</div>
+</div>
+    {{ include('content/data.html.twig') }}
 {% endblock %}
 ", "domaine/index.html.twig", "C:\\Users\\SYNS-MANAGER\\Documents\\GitHub\\pmanalysis\\templates\\domaine\\index.html.twig");
     }

@@ -15,13 +15,18 @@ use Symfony\Component\Routing\Annotation\Route;
 #[Route('/fonction')]
 class FonctionController extends AbstractController
 {
+    private NotificationRepository $notification;
+
+    public function __construct(NotificationRepository $notification) {
+        $this->notification = $notification;
+    }
     #[Route('/', name: 'app_fonction_index', methods: ['GET'])]
-    public function index(FonctionRepository $fonctionRepository,NotificationRepository $notification): Response
+    public function index(FonctionRepository $fonctionRepository): Response
     {
         return $this->render('fonction/index.html.twig', [
             'fonctions' => $fonctionRepository->findAll(),
-            'notifications'=> $notification->findBy(['IsRead'=>false]),
-            'notification_read'=> $notification->findBy(['IsRead'=>true])
+            'notifications'=> $this->notification->findBy(['IsRead'=>false]),
+            'notification_read'=>$this->notification->findBy(['IsRead'=>true])
         ]);
     }
 
@@ -42,16 +47,18 @@ class FonctionController extends AbstractController
         return $this->renderForm('fonction/new.html.twig', [
             'fonction' => $fonction,
             'form' => $form,
+            'notifications'=> $this->notification->findBy(['IsRead'=>false]),
+            'notification_read'=>$this->notification->findBy(['IsRead'=>true])
         ]);
     }
 
     #[Route('/{id}', name: 'app_fonction_show', methods: ['GET'])]
-    public function show(Fonction $fonction,NotificationRepository $notification): Response
+    public function show(Fonction $fonction): Response
     {
         return $this->render('fonction/show.html.twig', [
             'fonction' => $fonction,
-            'notifications'=> $notification->findBy(['IsRead'=>false]),
-            'notification_read'=> $notification->findBy(['IsRead'=>true])
+            'notifications'=> $this->notification->findBy(['IsRead'=>false]),
+            'notification_read'=>$this->notification->findBy(['IsRead'=>true])
         ]);
     }
 

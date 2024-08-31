@@ -23,7 +23,13 @@
                 <tr>
                     <td>{{ nombre }}</td>
                     <td>{{ facture.projet.nom }}</td>
-                    <td>{{ facture.montant }} $</td>
+                        {% set montantH_total = 0 %}
+                        {% for tache in facture.projet.taches %}
+                            {% set montantH_total =montantH_total+ (tache.coutHoraire * tache.nombreHeure)+tache.ressource.coutRessource|default(0) %}
+                        {% endfor %}
+                    <td>
+                        {{montantH_total}}
+                    $</td>
                     <td>
                         <a href="{{ path('app_facture_show', {'id': facture.id}) }}"class="btn btn-primary btn-sm" title="View"><i class="fas fa-eye"></i></a>
                         <a href="{{ path('app_facture_edit', {'id': facture.id}) }}"class="btn btn-warning btn-sm" title="Edit"><i class="fas fa-edit"></i></a>

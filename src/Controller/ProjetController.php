@@ -17,18 +17,23 @@ use Symfony\Component\Routing\Annotation\Route;
 
 class ProjetController extends AbstractController
 {
+    private NotificationRepository $notification;
+
+    public function __construct(NotificationRepository $notification) {
+        $this->notification = $notification;
+    }
     #[Route('/', name: 'app_projet_index', methods: ['GET'])]
-    public function index(ProjetRepository $projetRepository,NotificationRepository $tache): Response
+    public function index(ProjetRepository $projetRepository): Response
     {
         return $this->render('projet/index.html.twig', [
             'projets' => $projetRepository->findAll(),
-            'notifications'=> $tache->findBy(['IsRead'=>false]),
-            'notification_read'=> $tache->findBy(['IsRead'=>true])
+            'notifications'=> $this->notification->findBy(['IsRead'=>false]),
+            'notification_read'=>$this->notification->findBy(['IsRead'=>true])
         ]);
     }
 
     #[Route('/new', name: 'app_projet_new', methods: ['GET', 'POST'])]
-    public function new(Request $request, EntityManagerInterface $entityManager,NotificationRepository $tache): Response
+    public function new(Request $request, EntityManagerInterface $entityManager): Response
     {
         $projet = new Projet();
         $form = $this->createForm(ProjetType::class, $projet);
@@ -44,18 +49,18 @@ class ProjetController extends AbstractController
         return $this->renderForm('projet/new.html.twig', [
             'projet' => $projet,
             'form' => $form,
-            'notifications'=>$tache->findBy(['IsRead'=>false]),
-            'notification_read'=> $tache->findBy(['IsRead'=>true])
+            'notifications'=> $this->notification->findBy(['IsRead'=>false]),
+            'notification_read'=>$this->notification->findBy(['IsRead'=>true])
         ]);
     }
 
     #[Route('/{id}', name: 'app_projet_show', methods: ['GET'])]
-    public function show(Projet $projet,NotificationRepository $tache): Response
+    public function show(Projet $projet): Response
     {
         return $this->render('projet/show.html.twig', [
             'projet' => $projet,
-            'notifications'=>$tache->findBy(['IsRead'=>false]),
-            'notification_read'=> $tache->findBy(['IsRead'=>true])
+            'notifications'=> $this->notification->findBy(['IsRead'=>false]),
+            'notification_read'=>$this->notification->findBy(['IsRead'=>true])
         ]);
       
     }
@@ -75,6 +80,8 @@ class ProjetController extends AbstractController
         return $this->renderForm('projet/edit.html.twig', [
             'projet' => $projet,
             'form' => $form,
+            'notifications'=> $this->notification->findBy(['IsRead'=>false]),
+            'notification_read'=>$this->notification->findBy(['IsRead'=>true])
         ]);
     }
 

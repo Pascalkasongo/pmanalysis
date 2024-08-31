@@ -40,6 +40,10 @@ class __TwigTemplate_e1fc8f660992bdfbd2931dbf01b7168ef50522fd2d90d8dbb6f47609c7a
         // line 1
         yield Twig\Extension\CoreExtension::include($this->env, $context, "static/navbar.html.twig");
         yield "
+";
+        // line 2
+        yield Twig\Extension\CoreExtension::include($this->env, $context, "static/slidebar.html.twig");
+        yield "
 <style>
     .service-item {
     display: flex;
@@ -105,14 +109,14 @@ class __TwigTemplate_e1fc8f660992bdfbd2931dbf01b7168ef50522fd2d90d8dbb6f47609c7a
                 </div>
                 <div class=\"row g-4 justify-content-center\">
                     ";
-        // line 66
-        if ((isset($context["projets"]) || array_key_exists("projets", $context) ? $context["projets"] : (function () { throw new RuntimeError('Variable "projets" does not exist.', 66, $this->source); })())) {
-            // line 67
+        // line 67
+        if ((isset($context["projets"]) || array_key_exists("projets", $context) ? $context["projets"] : (function () { throw new RuntimeError('Variable "projets" does not exist.', 67, $this->source); })())) {
+            // line 68
             yield "                    ";
             $context['_parent'] = $context;
-            $context['_seq'] = CoreExtension::ensureTraversable((isset($context["projets"]) || array_key_exists("projets", $context) ? $context["projets"] : (function () { throw new RuntimeError('Variable "projets" does not exist.', 67, $this->source); })()));
+            $context['_seq'] = CoreExtension::ensureTraversable((isset($context["projets"]) || array_key_exists("projets", $context) ? $context["projets"] : (function () { throw new RuntimeError('Variable "projets" does not exist.', 68, $this->source); })()));
             foreach ($context['_seq'] as $context["_key"] => $context["projet"]) {
-                // line 68
+                // line 69
                 yield "                    <div  class=\"col-md-6 col-lg-6 col-xl-3 wow fadeInUp\" data-wow-delay=\"0.2s\">
                         <a href=\"#\">
                         <div class=\"service-item\">
@@ -125,12 +129,12 @@ class __TwigTemplate_e1fc8f660992bdfbd2931dbf01b7168ef50522fd2d90d8dbb6f47609c7a
                         <div class=\"service-content p-4\">
                             <div class=\"service-content-inner\">
                     <div  class=\"d-inline-block h4 mb-4\">";
-                // line 79
-                yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(CoreExtension::getAttribute($this->env, $this->source, $context["projet"], "nom", [], "any", false, false, false, 79), "html", null, true);
+                // line 80
+                yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(CoreExtension::getAttribute($this->env, $this->source, $context["projet"], "nom", [], "any", false, false, false, 80), "html", null, true);
                 yield "</div>
                                 <p class=\"mb-4\">";
-                // line 80
-                yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(CoreExtension::getAttribute($this->env, $this->source, $context["projet"], "description", [], "any", false, false, false, 80), "html", null, true);
+                // line 81
+                yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(CoreExtension::getAttribute($this->env, $this->source, $context["projet"], "description", [], "any", false, false, false, 81), "html", null, true);
                 yield "</p>
                             <div class=\"container\">
                                 <div class=\"progress\">
@@ -149,10 +153,10 @@ class __TwigTemplate_e1fc8f660992bdfbd2931dbf01b7168ef50522fd2d90d8dbb6f47609c7a
             $_parent = $context['_parent'];
             unset($context['_seq'], $context['_iterated'], $context['_key'], $context['projet'], $context['_parent'], $context['loop']);
             $context = array_intersect_key($context, $_parent) + $_parent;
-            // line 94
+            // line 95
             yield "                    ";
         }
-        // line 95
+        // line 96
         yield "                    
                     
                     <div class=\"col-12 text-center wow fadeInUp\" data-wow-delay=\"0.2s\">
@@ -164,8 +168,8 @@ class __TwigTemplate_e1fc8f660992bdfbd2931dbf01b7168ef50522fd2d90d8dbb6f47609c7a
         <!-- Service End -->
 
         ";
-        // line 105
-        yield Twig\Extension\CoreExtension::include($this->env, $context, "static/data.html.twig");
+        // line 106
+        yield Twig\Extension\CoreExtension::include($this->env, $context, "content/data.html.twig");
         yield "
     
     ";
@@ -196,12 +200,13 @@ class __TwigTemplate_e1fc8f660992bdfbd2931dbf01b7168ef50522fd2d90d8dbb6f47609c7a
      */
     public function getDebugInfo()
     {
-        return array (  168 => 105,  156 => 95,  153 => 94,  133 => 80,  129 => 79,  116 => 68,  111 => 67,  109 => 66,  41 => 1,);
+        return array (  172 => 106,  160 => 96,  157 => 95,  137 => 81,  133 => 80,  120 => 69,  115 => 68,  113 => 67,  45 => 2,  41 => 1,);
     }
 
     public function getSourceContext()
     {
         return new Source("{{include('static/navbar.html.twig')}}
+{{include('static/slidebar.html.twig')}}
 <style>
     .service-item {
     display: flex;
@@ -305,7 +310,7 @@ class __TwigTemplate_e1fc8f660992bdfbd2931dbf01b7168ef50522fd2d90d8dbb6f47609c7a
         </div>
         <!-- Service End -->
 
-        {{include('static/data.html.twig')}}
+        {{include('content/data.html.twig')}}
     
     ", "home_user/service.html.twig", "C:\\Users\\SYNS-MANAGER\\Documents\\GitHub\\pmanalysis\\templates\\home_user\\service.html.twig");
     }

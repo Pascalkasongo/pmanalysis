@@ -4,6 +4,7 @@ namespace App\Controller;
 
 use App\Entity\Sprint;
 use App\Form\SprintType;
+use App\Repository\NotificationRepository;
 use App\Repository\SprintRepository;
 use Doctrine\ORM\EntityManagerInterface;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
@@ -15,7 +16,11 @@ use Symfony\Component\Routing\Annotation\Route;
 #[Route('/sprint')]
 class SprintController extends AbstractController
 {
+    private NotificationRepository $notification;
 
+    public function __construct(NotificationRepository $notification) {
+        $this->notification = $notification;
+    }
     // #[Route('/sprints/{projectId}', name: 'sprints_by_project')]
     // public function getSprintsByProject(int $projectId, SprintRepository $sprintRepository): JsonResponse
     // {
@@ -38,6 +43,8 @@ class SprintController extends AbstractController
     {
         return $this->render('sprint/index.html.twig', [
             'sprints' => $sprintRepository->findAll(),
+            'notifications'=> $this->notification->findBy(['IsRead'=>false]),
+            'notification_read'=>$this->notification->findBy(['IsRead'=>true])
         ]);
     }
 
@@ -58,6 +65,8 @@ class SprintController extends AbstractController
         return $this->renderForm('sprint/new.html.twig', [
             'sprint' => $sprint,
             'form' => $form,
+            'notifications'=> $this->notification->findBy(['IsRead'=>false]),
+            'notification_read'=>$this->notification->findBy(['IsRead'=>true])
         ]);
     }
 
@@ -84,6 +93,8 @@ class SprintController extends AbstractController
         return $this->renderForm('sprint/edit.html.twig', [
             'sprint' => $sprint,
             'form' => $form,
+            'notifications'=> $this->notification->findBy(['IsRead'=>false]),
+            'notification_read'=>$this->notification->findBy(['IsRead'=>true])
         ]);
     }
 

@@ -1,74 +1,165 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    
-<!-- Mirrored from themewagon.github.io/LifeSure/service.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 09 Aug 2024 04:57:01 GMT -->
-<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<!-- Mirrored from demo.dashboardpack.com/admindek-html/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 18 Nov 2022 12:14:05 GMT -->
 <head>
-        <meta charset="utf-8">
-        <title>PMUser</title>
-        <meta content="width=device-width, initial-scale=1.0" name="viewport">
-        <meta content="" name="keywords">
-        <meta content="" name="description">
-
-       
-        <link rel="stylesheet" href="{{asset('fontawesome/releases/v5.15.4/css/all.css')}}"/>
-        <link href="{{asset('cdn.jsdelivr.net/npm/bootstrap-icons%401.4.1/font/bootstrap-icons.css')}}" rel="stylesheet">
-
-        <link rel="stylesheet" href="{{asset('lib/animate/animate.min.css')}}"/>
-        <link href="{{asset('lib/lightbox/css/lightbox.min.css')}}" rel="stylesheet">
-        <link href="{{asset('lib/owlcarousel/assets/owl.carousel.min.css')}}" rel="stylesheet">
+<title>Admindek | Admin Template</title>
 
 
-        <link href="{{asset('user/css/bootstrap.min.css')}}" rel="stylesheet">
-        <link href="{{asset('user/css/style.css')}}" rel="stylesheet">
-    </head>
+<!--[if lt IE 10]>
+		<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+		<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+		<![endif]-->
 
-    <body>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="description" content="Admindek Bootstrap admin template made using Bootstrap 4 and it has huge amount of ready made feature, UI components, pages which completely fulfills any dashboard needs." />
+<meta name="keywords" content="flat ui, admin Admin , Responsive, Landing, Bootstrap, App, Template, Mobile, iOS, Android, apple, creative app">
+<meta name="author" content="colorlib" />
 
-       
+<link rel="icon" href="files/assets/images/favicon.ico" type="image/x-icon">
 
-   
-        <div class="container-fluid nav-bar px-0 px-lg-4 py-lg-0">
-            <div class="container">
-                <nav class="navbar navbar-expand-lg navbar-light"> 
-                    <a href="#" class="navbar-brand p-0">
-                        <h1 class="text-primary mb-0"><i class="fab fa-slack me-2"></i>PMANALYSIS</h1>
-                    
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Quicksand:500,700" rel="stylesheet">
+
+<link rel="stylesheet" type="text/css" href="{{asset('files/bower_components/bootstrap/css/bootstrap.min.css')}}">
+
+<link rel="stylesheet" href="{{asset('files/assets/pages/waves/css/waves.min.css" type="text/css')}}" media="all">
+
+<link rel="stylesheet" type="text/css" href={{asset('"files/assets/icon/feather/css/feather.css')}}">
+
+<link rel="stylesheet" type="text/css" href="{{asset('files/assets/css/font-awesome-n.min.css')}}">
+
+<link rel="stylesheet" href="{{asset('files/bower_components/chartist/css/chartist.css')}}" type="text/css" media="all">
+<link href="{{asset('assets/css/vendor.min.css"')}} rel="stylesheet" />
+<link href="{{asset('assets/css/default/app.min.css')}}" rel="stylesheet" />
+
+
+<link href="{{asset('assets/plugins/jvectormap-next/jquery-jvectormap.css')}}" rel="stylesheet" />
+<link href="{{asset('assets/plugins/bootstrap-datepicker/dist/css/bootstrap-datepicker.css')}}" rel="stylesheet" />
+<link href="{{asset('assets/plugins/gritter/css/jquery.gritter.css')}}" rel="stylesheet" />
+
+<link rel="stylesheet" type="text/css" href="{{asset('files/assets/css/style.css')}}">
+<link rel="stylesheet" type="text/css" href="{{asset('files/assets/css/widget.css')}}">
+</head>
+<style>
+	.initial {
+    width: 50px; /* Largeur et hauteur égales pour un cercle */
+    height: 50px;
+    background-color: #3498db; /* Couleur de fond */
+    color: white; /* Couleur du texte */
+    font-size: 24px; /* Taille du texte */
+    font-weight: bold; /* Texte en gras */
+    text-align: center; /* Centrer le texte horizontalement */
+    line-height: 50px; /* Centrer le texte verticalement */
+    border-radius: 50%; /* Border-radius de 50% pour un cercle */
+    display: inline-block; /* Affichage en ligne avec bloc */
+}
+
+</style>
+<body classe="pace-done">
+    <div id="app" class="app app-header-fixed app-sidebar-fixed has-scroll">
+        <div id="header" class="app-header">
+            <div class="navbar-header">
+                <a href="index.html" class="navbar-brand"><span class="navbar-logo"></span> <b class="me-3px">PMANALYSIS</b></a>
+                <button type="button" class="navbar-mobile-toggler" data-toggle="app-sidebar-mobile">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav mx-0 mx-lg-2">
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link" data-bs-toggle="dropdown">
+                        <span class="dropdown-toggle">Projets</span>
                     </a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-                        <span class="fa fa-bars"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarCollapse">
-                        <div class="navbar-nav mx-0 mx-lg-2">
-                           
-                            <a href="blog.html" class="nav-item nav-link"></a>
-                            <div class="nav-item dropdown">
-                                <a href="#" class="nav-link" data-bs-toggle="dropdown">
-                                    <span class="dropdown-toggle">Projets</span>
-                                </a>
-                                <div class="dropdown-menu">
-                                    <a href="{{path('app_user_project')}}" class="dropdown-item">Mes projets</a>
-                                    <a href="{{path('app_notification_new')}}" class="dropdown-item">Soumetre unprojet</a>
-                                    
-                                </div>
-                            </div>
-                            <a href="contact.html" class="nav-item nav-link">Contact</a>
-                            
-                        </div>
+                    <div class="dropdown-menu">
+                        <a href="{{ path('app_user_project') }}" class="dropdown-item">Mes projets</a>
+                        <a href="{{ path('app_notification_new') }}" class="dropdown-item">Soumettre un projet</a>
                     </div>
-                    <div class="d-none d-xl-flex flex-shrink-0 ps-4">
-                        <div class="nav-item dropdown">
-                            
-                                <span class="dropdown-toggle">{{app.user.nomClient}}</span>
-                           
-                            <div class="dropdown-menu">
-                                <a href="{{path('app_logout')}}" class="dropdown-item">Se deconnecter</a>
-                                <a href="#" class="dropdown-item">Parametre</a>
-                                
-                            </div>
-                        </div>
-                    </div>
-                </nav>
+                </div>
             </div>
         </div>
+            <div class="navbar-nav">
+                <div class="navbar-item navbar-form">
+                    <form action="" method="POST" name="search">
+                    <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Enter keyword">
+                    <button type="submit" class="btn btn-search"><i class="fa fa-search"></i></button>
+                    </div>
+                    </form>
+                </div>
+
+                {% if app.session.get('user_role')[0] == ('ROLE_CHEF_PROJET') or app.session.get('user_role')[0] == ('ROLE_DIRECTEUR')  %}
+            
+                <div class="navbar-item dropdown">
+                    <a href="#" data-bs-toggle="dropdown" class="navbar-link dropdown-toggle icon">
+                        <i class="fa fa-bell"></i>
+                    <span class="badge bg-danger">{{notifications|length }}</span>
+                    </a>
+                    <div class="dropdown-menu media-list dropdown-menu-end">
+                        <div class="dropdown-header">NOTIFICATIONS ({{notifications|length }})</div>
+                            {% for notification in notifications %}
+                           
+                            <a href="javascript:;" class="dropdown-item media">
+                               
+                                <a href="{{path('notification_read',{'id':notification.id})}}" class="dropdown-item media" >
+                                    <div class="media-body">
+                                        <p class="media-heading">{{notification.titre|lower}} <i class="fa fa-exclamation-circle text-danger"></i></p>
+                                        <div class="text-muted fs-10px">{{notification.description}}</div>
+                                    </div>
+                                </a>
+                            </a>
+                        {% endfor %}
+                        
+                    </div>
+                </div>
+                <div class="navbar-item dropdown">
+                    <a href="#" data-bs-toggle="dropdown" class="navbar-link dropdown-toggle icon">
+                        <i class="fa fa-bell"></i>
+                    <span class="badge ">{{notification_read|length }}</span>
+                    </a>
+                    <div class="dropdown-menu media-list dropdown-menu-end">
+                        <div class="dropdown-header">NOTIFICATIONS ({{notification_read|length }})</div>
+                            {% for notification in notification_read %}
+                           
+                            <a href="javascript:;" class="dropdown-item media">
+                               
+                                <a href="{{path('notification_read',{'id':notification.id})}}" class="dropdown-item media" >
+                                    <div class="media-body">
+                                        <p class="media-heading">{{notification.titre|lower}} <i class="fa fa-exclamation-circle text-danger"></i></p>
+                                        <div class="text-muted fs-10px">{{notification.description}}</div>
+                                    </div>
+                                </a>
+                            </a>
+                        {% endfor %}
+                        
+                    </div>
+                </div>
+                        
+            {% endif %}
+                <div class="navbar-item navbar-user dropdown">
+                    <a href="#" class="navbar-link dropdown-toggle d-flex align-items-center" data-bs-toggle="dropdown" aria-expanded="false">
+                        <img src="../assets/img/user/user-13.jpg" alt="">
+                        <span>
+                            <span class="d-none d-md-inline"> {{app.session.get('user_name')}}</span>
+                            
+                        </span>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-end me-1" style="">
+                       
+                        <a href="#" class="dropdown-item">Calendar</a>
+                        {# <a href="extra_settings_page.html" class="dropdown-item">Settings</a> #}
+                        <div class="dropdown-divider"></div>
+                        <a href="{{path('app_logout')}}" class="dropdown-item">Log Out</a>
+                    </div>
+                </div>
+            </div>
+
+            </div>
+
+        </div>  
+    </div>
+</body>

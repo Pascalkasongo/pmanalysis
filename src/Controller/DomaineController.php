@@ -5,6 +5,7 @@ namespace App\Controller;
 use App\Entity\Domaine;
 use App\Form\DomaineType;
 use App\Repository\DomaineRepository;
+use App\Repository\NotificationRepository;
 use Doctrine\ORM\EntityManagerInterface;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\IsGranted;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
@@ -15,11 +16,18 @@ use Symfony\Component\Routing\Annotation\Route;
 #[Route('/domaine')]
 class DomaineController extends AbstractController
 {
+    private NotificationRepository $notification;
+
+    public function __construct(NotificationRepository $notification) {
+        $this->notification = $notification;
+    }
     #[Route('/', name: 'app_domaine_index', methods: ['GET'])]
     public function index(DomaineRepository $domaineRepository): Response
     {
         return $this->render('domaine/index.html.twig', [
             'domaines' => $domaineRepository->findAll(),
+            'notifications'=> $this->notification->findBy(['IsRead'=>false]),
+            'notification_read'=>$this->notification->findBy(['IsRead'=>true])
         ]);
     }
 
@@ -40,6 +48,8 @@ class DomaineController extends AbstractController
         return $this->renderForm('domaine/new.html.twig', [
             'domaine' => $domaine,
             'form' => $form,
+            'notifications'=> $this->notification->findBy(['IsRead'=>false]),
+            'notification_read'=>$this->notification->findBy(['IsRead'=>true])
         ]);
     }
 
@@ -48,6 +58,8 @@ class DomaineController extends AbstractController
     {
         return $this->render('domaine/show.html.twig', [
             'domaine' => $domaine,
+            'notifications'=> $this->notification->findBy(['IsRead'=>false]),
+            'notification_read'=>$this->notification->findBy(['IsRead'=>true])
         ]);
     }
 
@@ -66,6 +78,8 @@ class DomaineController extends AbstractController
         return $this->renderForm('domaine/edit.html.twig', [
             'domaine' => $domaine,
             'form' => $form,
+            'notifications'=> $this->notification->findBy(['IsRead'=>false]),
+            'notification_read'=>$this->notification->findBy(['IsRead'=>true])
         ]);
     }
 

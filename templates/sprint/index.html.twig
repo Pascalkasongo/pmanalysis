@@ -1,8 +1,10 @@
-{% extends 'base.html.twig' %}
-
-{% block title %}Sprint index{% endblock %}
+{{include('content/navbar.html.twig')}}
+{{include('content/slidebar.html.twig')}}
+{% block title %}Tache index{% endblock %}
 
 {% block body %}
+<div class="pcoded-content">
+    <div class="container mt-4">
     <h1>Sprint index</h1>
 
     <table class="table">
@@ -34,6 +36,8 @@
         {% endfor %}
         </tbody>
     </table>
+</div>
+</div>
 
-    <a href="{{ path('app_sprint_new') }}">Create new</a>
+{{ include('content/data.html.twig') }}
 {% endblock %}

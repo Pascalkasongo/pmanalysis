@@ -28,7 +28,6 @@ class __TwigTemplate_7b8980575713c5753ca926db3ed836155dfbf88241255649de6736104f5
         $this->parent = false;
 
         $this->blocks = [
-            'title' => [$this, 'block_title'],
             'body' => [$this, 'block_body'],
         ];
     }
@@ -47,13 +46,18 @@ class __TwigTemplate_7b8980575713c5753ca926db3ed836155dfbf88241255649de6736104f5
         yield Twig\Extension\CoreExtension::include($this->env, $context, "content/slidebar.html.twig");
         yield "
 
+<style>
+    .table-responsive {
+        overflow-x: auto; /* Enable horizontal scrolling */
+        -webkit-overflow-scrolling: touch; /* Smooth scrolling on touch devices */
+    }
+    .table {
+        min-width: 100%; /* Ensure table takes up at least the container's width */
+    }
+</style>
+
 ";
-        // line 4
-        yield from $this->unwrap()->yieldBlock('title', $context, $blocks);
-        // line 5
-        yield "
-";
-        // line 6
+        // line 14
         yield from $this->unwrap()->yieldBlock('body', $context, $blocks);
         
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
@@ -61,85 +65,67 @@ class __TwigTemplate_7b8980575713c5753ca926db3ed836155dfbf88241255649de6736104f5
         return; yield '';
     }
 
-    // line 4
-    public function block_title($context, array $blocks = [])
-    {
-        $macros = $this->macros;
-        $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
-        $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "title"));
-
-        yield "Projets";
-        
-        $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
-
-        return; yield '';
-    }
-
-    // line 6
     public function block_body($context, array $blocks = [])
     {
         $macros = $this->macros;
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "body"));
 
-        // line 7
+        // line 15
         yield "<div class=\"pcoded-content\">
              
     <div class=\"container mt-4\">
     <h1>Projet </h1>
+    <div class=\"table-responsive\">
 
+ 
     <table class=\"table\">
         <thead>
             <tr>
                 <th>Id</th>
                 <th>Nom</th>
                 <th>Description</th>
-                <th>Cout</th>
                 <th>Domaine</th>
                 <th>actions</th>
             </tr>
         </thead>
         <tbody>
         ";
-        // line 24
+        // line 33
         $context['_parent'] = $context;
-        $context['_seq'] = CoreExtension::ensureTraversable((isset($context["projets"]) || array_key_exists("projets", $context) ? $context["projets"] : (function () { throw new RuntimeError('Variable "projets" does not exist.', 24, $this->source); })()));
+        $context['_seq'] = CoreExtension::ensureTraversable((isset($context["projets"]) || array_key_exists("projets", $context) ? $context["projets"] : (function () { throw new RuntimeError('Variable "projets" does not exist.', 33, $this->source); })()));
         $context['_iterated'] = false;
         foreach ($context['_seq'] as $context["_key"] => $context["projet"]) {
-            // line 25
+            // line 34
             yield "            <tr>
                 <td>";
-            // line 26
-            yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(CoreExtension::getAttribute($this->env, $this->source, $context["projet"], "id", [], "any", false, false, false, 26), "html", null, true);
+            // line 35
+            yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(CoreExtension::getAttribute($this->env, $this->source, $context["projet"], "id", [], "any", false, false, false, 35), "html", null, true);
             yield "</td>
                 <td>";
-            // line 27
-            yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(CoreExtension::getAttribute($this->env, $this->source, $context["projet"], "nom", [], "any", false, false, false, 27), "html", null, true);
+            // line 36
+            yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(CoreExtension::getAttribute($this->env, $this->source, $context["projet"], "nom", [], "any", false, false, false, 36), "html", null, true);
             yield "</td>
                 <td>";
-            // line 28
-            yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(CoreExtension::getAttribute($this->env, $this->source, $context["projet"], "description", [], "any", false, false, false, 28), "html", null, true);
+            // line 37
+            yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(CoreExtension::getAttribute($this->env, $this->source, $context["projet"], "description", [], "any", false, false, false, 37), "html", null, true);
             yield "</td>
                 <td>";
-            // line 29
-            yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(CoreExtension::getAttribute($this->env, $this->source, $context["projet"], "cout", [], "any", false, false, false, 29), "html", null, true);
-            yield "</td>
-                <td>";
-            // line 30
-            yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(CoreExtension::getAttribute($this->env, $this->source, CoreExtension::getAttribute($this->env, $this->source, $context["projet"], "domaine", [], "any", false, false, false, 30), "nomDomaine", [], "any", false, false, false, 30), "html", null, true);
+            // line 38
+            yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(CoreExtension::getAttribute($this->env, $this->source, CoreExtension::getAttribute($this->env, $this->source, $context["projet"], "domaine", [], "any", false, false, false, 38), "nomDomaine", [], "any", false, false, false, 38), "html", null, true);
             yield "
                 <td>
                     <a href=\"";
-            // line 32
-            yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_projet_show", ["id" => CoreExtension::getAttribute($this->env, $this->source, $context["projet"], "id", [], "any", false, false, false, 32)]), "html", null, true);
+            // line 40
+            yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_projet_show", ["id" => CoreExtension::getAttribute($this->env, $this->source, $context["projet"], "id", [], "any", false, false, false, 40)]), "html", null, true);
             yield "\"class=\"btn btn-primary btn-sm\" title=\"View\"><i class=\"fas fa-eye\"></i></a>
                     <a href=\"";
-            // line 33
-            yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_projet_edit", ["id" => CoreExtension::getAttribute($this->env, $this->source, $context["projet"], "id", [], "any", false, false, false, 33)]), "html", null, true);
+            // line 41
+            yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_projet_edit", ["id" => CoreExtension::getAttribute($this->env, $this->source, $context["projet"], "id", [], "any", false, false, false, 41)]), "html", null, true);
             yield "\"class=\"btn btn-warning btn-sm\" title=\"Edit\"><i class=\"fas fa-edit\"></i></a>
                     <a href=\"";
-            // line 34
-            yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_projet_delete", ["id" => CoreExtension::getAttribute($this->env, $this->source, $context["projet"], "id", [], "any", false, false, false, 34)]), "html", null, true);
+            // line 42
+            yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_projet_delete", ["id" => CoreExtension::getAttribute($this->env, $this->source, $context["projet"], "id", [], "any", false, false, false, 42)]), "html", null, true);
             yield "\"class=\"btn btn-danger btn-sm\" title=\"Delete\"><i class=\"fas fa-trash\"></i></a>
                 </td>
             </tr>
@@ -147,7 +133,7 @@ class __TwigTemplate_7b8980575713c5753ca926db3ed836155dfbf88241255649de6736104f5
             $context['_iterated'] = true;
         }
         if (!$context['_iterated']) {
-            // line 38
+            // line 46
             yield "            <tr>
                 <td colspan=\"7\">no records found</td>
             </tr>
@@ -156,18 +142,15 @@ class __TwigTemplate_7b8980575713c5753ca926db3ed836155dfbf88241255649de6736104f5
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['projet'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 42
+        // line 50
         yield "        </tbody>
     </table>
 
-    <a href=\"";
-        // line 45
-        yield $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_projet_new");
-        yield "\">Create new</a>
+</div>
     </div>
 </div>
 ";
-        // line 48
+        // line 56
         yield Twig\Extension\CoreExtension::include($this->env, $context, "content/data.html.twig");
         yield "
 ";
@@ -198,7 +181,7 @@ class __TwigTemplate_7b8980575713c5753ca926db3ed836155dfbf88241255649de6736104f5
      */
     public function getDebugInfo()
     {
-        return array (  171 => 48,  165 => 45,  160 => 42,  151 => 38,  142 => 34,  138 => 33,  134 => 32,  129 => 30,  125 => 29,  121 => 28,  117 => 27,  113 => 26,  110 => 25,  105 => 24,  86 => 7,  79 => 6,  65 => 4,  57 => 6,  54 => 5,  52 => 4,  47 => 2,  43 => 1,);
+        return array (  154 => 56,  146 => 50,  137 => 46,  128 => 42,  124 => 41,  120 => 40,  115 => 38,  111 => 37,  107 => 36,  103 => 35,  100 => 34,  95 => 33,  75 => 15,  61 => 14,  46 => 2,  42 => 1,);
     }
 
     public function getSourceContext()
@@ -206,21 +189,30 @@ class __TwigTemplate_7b8980575713c5753ca926db3ed836155dfbf88241255649de6736104f5
         return new Source("{{include('content/navbar.html.twig')}}
 {{include('content/slidebar.html.twig')}}
 
-{% block title %}Projets{% endblock %}
+<style>
+    .table-responsive {
+        overflow-x: auto; /* Enable horizontal scrolling */
+        -webkit-overflow-scrolling: touch; /* Smooth scrolling on touch devices */
+    }
+    .table {
+        min-width: 100%; /* Ensure table takes up at least the container's width */
+    }
+</style>
 
 {% block body %}
 <div class=\"pcoded-content\">
              
     <div class=\"container mt-4\">
     <h1>Projet </h1>
+    <div class=\"table-responsive\">
 
+ 
     <table class=\"table\">
         <thead>
             <tr>
                 <th>Id</th>
                 <th>Nom</th>
                 <th>Description</th>
-                <th>Cout</th>
                 <th>Domaine</th>
                 <th>actions</th>
             </tr>
@@ -231,7 +223,6 @@ class __TwigTemplate_7b8980575713c5753ca926db3ed836155dfbf88241255649de6736104f5
                 <td>{{ projet.id }}</td>
                 <td>{{ projet.nom }}</td>
                 <td>{{ projet.description }}</td>
-                <td>{{ projet.cout }}</td>
                 <td>{{projet.domaine.nomDomaine}}
                 <td>
                     <a href=\"{{ path('app_projet_show', {'id': projet.id}) }}\"class=\"btn btn-primary btn-sm\" title=\"View\"><i class=\"fas fa-eye\"></i></a>
@@ -247,7 +238,7 @@ class __TwigTemplate_7b8980575713c5753ca926db3ed836155dfbf88241255649de6736104f5
         </tbody>
     </table>
 
-    <a href=\"{{ path('app_projet_new') }}\">Create new</a>
+</div>
     </div>
 </div>
 {{include('content/data.html.twig')}}

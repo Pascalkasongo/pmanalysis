@@ -16,13 +16,18 @@ use Symfony\Component\Routing\Annotation\Route;
 #[Route('/ressource')]
 class RessourceController extends AbstractController
 {
+    private NotificationRepository $notification;
+
+    public function __construct(NotificationRepository $notification) {
+        $this->notification = $notification;
+    }
     #[Route('/', name: 'app_ressource_index', methods: ['GET'])]
-    public function index(RessourceRepository $ressourceRepository,NotificationRepository $notification): Response
+    public function index(RessourceRepository $ressourceRepository): Response
     {
         return $this->render('ressource/index.html.twig', [
             'ressources' => $ressourceRepository->findAll(),
-            'notifications'=> $notification->findBy(['IsRead'=>false]),
-            'notification_read'=> $notification->findBy(['IsRead'=>true])
+            'notifications'=> $this->notification->findBy(['IsRead'=>false]),
+            'notification_read'=>$this->notification->findBy(['IsRead'=>true])
         ]);
     }
 
@@ -43,6 +48,8 @@ class RessourceController extends AbstractController
         return $this->renderForm('ressource/new.html.twig', [
             'ressource' => $ressource,
             'form' => $form,
+            'notifications'=> $this->notification->findBy(['IsRead'=>false]),
+            'notification_read'=>$this->notification->findBy(['IsRead'=>true])
         ]);
     }
 
@@ -51,6 +58,7 @@ class RessourceController extends AbstractController
     {
         return $this->render('ressource/show.html.twig', [
             'ressource' => $ressource,
+            
         ]);
     }
 

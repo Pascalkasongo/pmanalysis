@@ -26,7 +26,6 @@ class ProjetType extends AbstractType
                 'widget' => 'single_text',
                 'html5' => true,
                     'attr' => ['class' => 'form-control'],])
-            ->add('cout')
             ->add('domaine', EntityType::class, [
                 'class' => Domaine::class,
                 'choice_label' => 'nom_domaine',

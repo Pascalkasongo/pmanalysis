@@ -118,22 +118,42 @@ class __TwigTemplate_73b99ae73f5d27f3303acbdb372c3fb4cde8c6ba13a23cb4fe76c67e0ed
             // line 25
             yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(CoreExtension::getAttribute($this->env, $this->source, CoreExtension::getAttribute($this->env, $this->source, $context["facture"], "projet", [], "any", false, false, false, 25), "nom", [], "any", false, false, false, 25), "html", null, true);
             yield "</td>
-                    <td>";
+                        ";
             // line 26
-            yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(CoreExtension::getAttribute($this->env, $this->source, $context["facture"], "montant", [], "any", false, false, false, 26), "html", null, true);
-            yield " \$</td>
+            $context["montantH_total"] = 0;
+            // line 27
+            yield "                        ";
+            $context['_parent'] = $context;
+            $context['_seq'] = CoreExtension::ensureTraversable(CoreExtension::getAttribute($this->env, $this->source, CoreExtension::getAttribute($this->env, $this->source, $context["facture"], "projet", [], "any", false, false, false, 27), "taches", [], "any", false, false, false, 27));
+            foreach ($context['_seq'] as $context["_key"] => $context["tache"]) {
+                // line 28
+                yield "                            ";
+                $context["montantH_total"] = (((isset($context["montantH_total"]) || array_key_exists("montantH_total", $context) ? $context["montantH_total"] : (function () { throw new RuntimeError('Variable "montantH_total" does not exist.', 28, $this->source); })()) + (CoreExtension::getAttribute($this->env, $this->source, $context["tache"], "coutHoraire", [], "any", false, false, false, 28) * CoreExtension::getAttribute($this->env, $this->source, $context["tache"], "nombreHeure", [], "any", false, false, false, 28))) + ((CoreExtension::getAttribute($this->env, $this->source, CoreExtension::getAttribute($this->env, $this->source, $context["tache"], "ressource", [], "any", false, true, false, 28), "coutRessource", [], "any", true, true, false, 28)) ? (Twig\Extension\CoreExtension::default(CoreExtension::getAttribute($this->env, $this->source, CoreExtension::getAttribute($this->env, $this->source, $context["tache"], "ressource", [], "any", false, true, false, 28), "coutRessource", [], "any", false, false, false, 28), 0)) : (0)));
+                // line 29
+                yield "                        ";
+            }
+            $_parent = $context['_parent'];
+            unset($context['_seq'], $context['_iterated'], $context['_key'], $context['tache'], $context['_parent'], $context['loop']);
+            $context = array_intersect_key($context, $_parent) + $_parent;
+            // line 30
+            yield "                    <td>
+                        ";
+            // line 31
+            yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape((isset($context["montantH_total"]) || array_key_exists("montantH_total", $context) ? $context["montantH_total"] : (function () { throw new RuntimeError('Variable "montantH_total" does not exist.', 31, $this->source); })()), "html", null, true);
+            yield "
+                    \$</td>
                     <td>
                         <a href=\"";
-            // line 28
-            yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_facture_show", ["id" => CoreExtension::getAttribute($this->env, $this->source, $context["facture"], "id", [], "any", false, false, false, 28)]), "html", null, true);
+            // line 34
+            yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_facture_show", ["id" => CoreExtension::getAttribute($this->env, $this->source, $context["facture"], "id", [], "any", false, false, false, 34)]), "html", null, true);
             yield "\"class=\"btn btn-primary btn-sm\" title=\"View\"><i class=\"fas fa-eye\"></i></a>
                         <a href=\"";
-            // line 29
-            yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_facture_edit", ["id" => CoreExtension::getAttribute($this->env, $this->source, $context["facture"], "id", [], "any", false, false, false, 29)]), "html", null, true);
+            // line 35
+            yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_facture_edit", ["id" => CoreExtension::getAttribute($this->env, $this->source, $context["facture"], "id", [], "any", false, false, false, 35)]), "html", null, true);
             yield "\"class=\"btn btn-warning btn-sm\" title=\"Edit\"><i class=\"fas fa-edit\"></i></a>
                         <a href=\"";
-            // line 30
-            yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_facture_delete", ["id" => CoreExtension::getAttribute($this->env, $this->source, $context["facture"], "id", [], "any", false, false, false, 30)]), "html", null, true);
+            // line 36
+            yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_facture_delete", ["id" => CoreExtension::getAttribute($this->env, $this->source, $context["facture"], "id", [], "any", false, false, false, 36)]), "html", null, true);
             yield "\"class=\"btn btn-danger btn-sm\" title=\"Delete\"><i class=\"fas fa-trash\"></i></a>
                     </td>
                 </tr>
@@ -141,7 +161,7 @@ class __TwigTemplate_73b99ae73f5d27f3303acbdb372c3fb4cde8c6ba13a23cb4fe76c67e0ed
             $context['_iterated'] = true;
         }
         if (!$context['_iterated']) {
-            // line 34
+            // line 40
             yield "                <tr>
                     <td colspan=\"4\">no records found</td>
                 </tr>
@@ -150,18 +170,18 @@ class __TwigTemplate_73b99ae73f5d27f3303acbdb372c3fb4cde8c6ba13a23cb4fe76c67e0ed
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['facture'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 38
+        // line 44
         yield "            </tbody>
         </table>
          <a href=\"";
-        // line 40
+        // line 46
         yield $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_facture_new");
         yield "\" class=\"btn btn-primary\">Create new</a>
     </div>
 </div>
    
     ";
-        // line 44
+        // line 50
         yield Twig\Extension\CoreExtension::include($this->env, $context, "content/data.html.twig");
         yield "
 ";
@@ -192,7 +212,7 @@ class __TwigTemplate_73b99ae73f5d27f3303acbdb372c3fb4cde8c6ba13a23cb4fe76c67e0ed
      */
     public function getDebugInfo()
     {
-        return array (  165 => 44,  158 => 40,  154 => 38,  145 => 34,  136 => 30,  132 => 29,  128 => 28,  123 => 26,  119 => 25,  115 => 24,  112 => 23,  109 => 22,  103 => 21,  101 => 20,  85 => 6,  78 => 5,  64 => 3,  56 => 5,  53 => 4,  51 => 3,  47 => 2,  43 => 1,);
+        return array (  185 => 50,  178 => 46,  174 => 44,  165 => 40,  156 => 36,  152 => 35,  148 => 34,  142 => 31,  139 => 30,  133 => 29,  130 => 28,  125 => 27,  123 => 26,  119 => 25,  115 => 24,  112 => 23,  109 => 22,  103 => 21,  101 => 20,  85 => 6,  78 => 5,  64 => 3,  56 => 5,  53 => 4,  51 => 3,  47 => 2,  43 => 1,);
     }
 
     public function getSourceContext()
@@ -222,7 +242,13 @@ class __TwigTemplate_73b99ae73f5d27f3303acbdb372c3fb4cde8c6ba13a23cb4fe76c67e0ed
                 <tr>
                     <td>{{ nombre }}</td>
                     <td>{{ facture.projet.nom }}</td>
-                    <td>{{ facture.montant }} \$</td>
+                        {% set montantH_total = 0 %}
+                        {% for tache in facture.projet.taches %}
+                            {% set montantH_total =montantH_total+ (tache.coutHoraire * tache.nombreHeure)+tache.ressource.coutRessource|default(0) %}
+                        {% endfor %}
+                    <td>
+                        {{montantH_total}}
+                    \$</td>
                     <td>
                         <a href=\"{{ path('app_facture_show', {'id': facture.id}) }}\"class=\"btn btn-primary btn-sm\" title=\"View\"><i class=\"fas fa-eye\"></i></a>
                         <a href=\"{{ path('app_facture_edit', {'id': facture.id}) }}\"class=\"btn btn-warning btn-sm\" title=\"Edit\"><i class=\"fas fa-edit\"></i></a>

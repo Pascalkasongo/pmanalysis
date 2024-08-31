@@ -55,6 +55,8 @@ class __TwigTemplate_75f484b4c3e3c17ebcc22c075f44bafe6931173d2084898f8a3927d594a
 ";
         // line 6
         yield from $this->unwrap()->yieldBlock('body', $context, $blocks);
+        // line 40
+        yield Twig\Extension\CoreExtension::include($this->env, $context, "content/data.html.twig");
         
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
 
@@ -176,7 +178,7 @@ class __TwigTemplate_75f484b4c3e3c17ebcc22c075f44bafe6931173d2084898f8a3927d594a
      */
     public function getDebugInfo()
     {
-        return array (  149 => 38,  144 => 35,  135 => 31,  126 => 27,  122 => 26,  118 => 25,  113 => 23,  109 => 22,  106 => 21,  101 => 20,  86 => 7,  79 => 6,  65 => 4,  57 => 6,  54 => 5,  52 => 4,  47 => 2,  43 => 1,);
+        return array (  151 => 38,  146 => 35,  137 => 31,  128 => 27,  124 => 26,  120 => 25,  115 => 23,  111 => 22,  108 => 21,  103 => 20,  88 => 7,  81 => 6,  67 => 4,  59 => 40,  57 => 6,  54 => 5,  52 => 4,  47 => 2,  43 => 1,);
     }
 
     public function getSourceContext()
@@ -220,6 +222,6 @@ class __TwigTemplate_75f484b4c3e3c17ebcc22c075f44bafe6931173d2084898f8a3927d594a
 
     <a href=\"{{ path('app_fonction_new') }}\">Create new</a>
 {% endblock %}
-", "fonction/index.html.twig", "C:\\Users\\SYNS-MANAGER\\Documents\\GitHub\\pmanalysis\\templates\\fonction\\index.html.twig");
+{{include('content/data.html.twig')}}", "fonction/index.html.twig", "C:\\Users\\SYNS-MANAGER\\Documents\\GitHub\\pmanalysis\\templates\\fonction\\index.html.twig");
     }
 }

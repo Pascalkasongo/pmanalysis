@@ -45,4 +45,14 @@ class TacheRepository extends ServiceEntityRepository
 //            ->getOneOrNullResult()
 //        ;
 //    }
+
+public function findByChef($chef): array
+{
+    return $this->createQueryBuilder('t')
+        ->join('t.equipe', 'e')
+        ->andWhere('e.chef = :chef')
+        ->setParameter('chef', $chef)
+        ->getQuery()
+        ->getResult();
+}
 }

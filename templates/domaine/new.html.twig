@@ -1,11 +1,28 @@
-{% extends 'base.html.twig' %}
+{{ include('content/navbar.html.twig') }}
+{{ include('content/slidebar.html.twig') }}
 
-{% block title %}New Domaine{% endblock %}
 
 {% block body %}
-    <h1>Create new Domaine</h1>
-
-    {{ include('domaine/_form.html.twig') }}
-
-    <a href="{{ path('app_domaine_index') }}">back to list</a>
+<div class="pcoded-content">
+                
+<div class="container mt-4">
+    <h1>Nouveau Domaine</h1>
+        {{form_start(form)}}
+      
+           <div class="form-group">
+                   {{ form_label(form.nom_domaine, 'Nom ') }}
+                   {{ form_widget(form.nom_domaine, {'attr': {'class': 'form-control', 'placeholder': "Nom  domaine"}}) }}
+                   {{ form_errors(form.nom_domaine) }}
+           </div>
+           <div class="form-group">
+                   {{ form_label(form.type_domaine, 'type_domaine') }}
+                   {{ form_widget(form.type_domaine, {'attr': {'class': 'form-control', 'placeholder': "type_domaine projet"}}) }}
+                   {{ form_errors(form.type_domaine) }}
+           </div><br>
+           <button type="submit" class="btn btn-primary">Soumettre</button>
+       </div>
+       </div>
+           
+       {{form_end(form)}}
+    {{ include('content/data.html.twig') }}
 {% endblock %}

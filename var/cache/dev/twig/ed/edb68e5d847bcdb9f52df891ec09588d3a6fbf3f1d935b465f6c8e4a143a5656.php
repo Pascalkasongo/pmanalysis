@@ -71,11 +71,11 @@ class __TwigTemplate_a86f31d3328b2d435fcdbbfc1882fb55ace22142ee64978de4c2267ba6c
         yield "
         <!-- En-tête du bon de commande -->
         <div class=\"invoice-header\">
-            <h1>Bon de Commande</h1>
-            <p><strong>Projet :</strong>";
-        // line 35
-        yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(CoreExtension::getAttribute($this->env, $this->source, (isset($context["notification"]) || array_key_exists("notification", $context) ? $context["notification"] : (function () { throw new RuntimeError('Variable "notification" does not exist.', 35, $this->source); })()), "titre", [], "any", false, false, false, 35), "html", null, true);
-        yield " </p>
+            <h1> <p><strong>Projet :</strong>";
+        // line 34
+        yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(CoreExtension::getAttribute($this->env, $this->source, (isset($context["notification"]) || array_key_exists("notification", $context) ? $context["notification"] : (function () { throw new RuntimeError('Variable "notification" does not exist.', 34, $this->source); })()), "titre", [], "any", false, false, false, 34), "html", null, true);
+        yield " </p></h1>
+           
         </div>
 
         <!-- Description du bon de commande -->
@@ -160,7 +160,7 @@ class __TwigTemplate_a86f31d3328b2d435fcdbbfc1882fb55ace22142ee64978de4c2267ba6c
      */
     public function getDebugInfo()
     {
-        return array (  116 => 89,  108 => 51,  104 => 50,  100 => 49,  96 => 48,  86 => 41,  77 => 35,  71 => 31,  41 => 1,);
+        return array (  116 => 89,  108 => 51,  104 => 50,  100 => 49,  96 => 48,  86 => 41,  76 => 34,  71 => 31,  41 => 1,);
     }
 
     public function getSourceContext()
@@ -198,8 +198,8 @@ class __TwigTemplate_a86f31d3328b2d435fcdbbfc1882fb55ace22142ee64978de4c2267ba6c
 
         <!-- En-tête du bon de commande -->
         <div class=\"invoice-header\">
-            <h1>Bon de Commande</h1>
-            <p><strong>Projet :</strong>{{notification.titre}} </p>
+            <h1> <p><strong>Projet :</strong>{{notification.titre}} </p></h1>
+           
         </div>
 
         <!-- Description du bon de commande -->

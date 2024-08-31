@@ -28,8 +28,7 @@ class Projet
     #[ORM\Column(type: Types::DATETIME_MUTABLE)]
     private ?\DateTimeInterface $date_up = null;
 
-    #[ORM\Column]
-    private ?int $cout = null;
+    
 
     #[ORM\ManyToOne(inversedBy: 'projets')]
     private ?Domaine $domaine = null;
@@ -106,17 +105,7 @@ class Projet
         return $this;
     }
 
-    public function getCout(): ?int
-    {
-        return $this->cout;
-    }
-
-    public function setCout(int $cout): static
-    {
-        $this->cout = $cout;
-
-        return $this;
-    }
+    
 
     public function getDomaine(): ?Domaine
     {

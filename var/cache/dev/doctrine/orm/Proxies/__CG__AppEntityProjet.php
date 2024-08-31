@@ -67,10 +67,10 @@ class Projet extends \App\Entity\Projet implements \Doctrine\ORM\Proxy\Proxy
     public function __sleep()
     {
         if ($this->__isInitialized__) {
-            return ['__isInitialized__', '' . "\0" . 'App\\Entity\\Projet' . "\0" . 'id', '' . "\0" . 'App\\Entity\\Projet' . "\0" . 'nom', '' . "\0" . 'App\\Entity\\Projet' . "\0" . 'description', '' . "\0" . 'App\\Entity\\Projet' . "\0" . 'date_from', '' . "\0" . 'App\\Entity\\Projet' . "\0" . 'date_up', '' . "\0" . 'App\\Entity\\Projet' . "\0" . 'cout', '' . "\0" . 'App\\Entity\\Projet' . "\0" . 'domaine', '' . "\0" . 'App\\Entity\\Projet' . "\0" . 'taches', '' . "\0" . 'App\\Entity\\Projet' . "\0" . 'client', '' . "\0" . 'App\\Entity\\Projet' . "\0" . 'factures', '' . "\0" . 'App\\Entity\\Projet' . "\0" . 'sprints'];
+            return ['__isInitialized__', '' . "\0" . 'App\\Entity\\Projet' . "\0" . 'id', '' . "\0" . 'App\\Entity\\Projet' . "\0" . 'nom', '' . "\0" . 'App\\Entity\\Projet' . "\0" . 'description', '' . "\0" . 'App\\Entity\\Projet' . "\0" . 'date_from', '' . "\0" . 'App\\Entity\\Projet' . "\0" . 'date_up', '' . "\0" . 'App\\Entity\\Projet' . "\0" . 'domaine', '' . "\0" . 'App\\Entity\\Projet' . "\0" . 'taches', '' . "\0" . 'App\\Entity\\Projet' . "\0" . 'client', '' . "\0" . 'App\\Entity\\Projet' . "\0" . 'factures', '' . "\0" . 'App\\Entity\\Projet' . "\0" . 'sprints'];
         }
 
-        return ['__isInitialized__', '' . "\0" . 'App\\Entity\\Projet' . "\0" . 'id', '' . "\0" . 'App\\Entity\\Projet' . "\0" . 'nom', '' . "\0" . 'App\\Entity\\Projet' . "\0" . 'description', '' . "\0" . 'App\\Entity\\Projet' . "\0" . 'date_from', '' . "\0" . 'App\\Entity\\Projet' . "\0" . 'date_up', '' . "\0" . 'App\\Entity\\Projet' . "\0" . 'cout', '' . "\0" . 'App\\Entity\\Projet' . "\0" . 'domaine', '' . "\0" . 'App\\Entity\\Projet' . "\0" . 'taches', '' . "\0" . 'App\\Entity\\Projet' . "\0" . 'client', '' . "\0" . 'App\\Entity\\Projet' . "\0" . 'factures', '' . "\0" . 'App\\Entity\\Projet' . "\0" . 'sprints'];
+        return ['__isInitialized__', '' . "\0" . 'App\\Entity\\Projet' . "\0" . 'id', '' . "\0" . 'App\\Entity\\Projet' . "\0" . 'nom', '' . "\0" . 'App\\Entity\\Projet' . "\0" . 'description', '' . "\0" . 'App\\Entity\\Projet' . "\0" . 'date_from', '' . "\0" . 'App\\Entity\\Projet' . "\0" . 'date_up', '' . "\0" . 'App\\Entity\\Projet' . "\0" . 'domaine', '' . "\0" . 'App\\Entity\\Projet' . "\0" . 'taches', '' . "\0" . 'App\\Entity\\Projet' . "\0" . 'client', '' . "\0" . 'App\\Entity\\Projet' . "\0" . 'factures', '' . "\0" . 'App\\Entity\\Projet' . "\0" . 'sprints'];
     }
 
     /**
@@ -278,28 +278,6 @@ class Projet extends \App\Entity\Projet implements \Doctrine\ORM\Proxy\Proxy
         $this->__initializer__ && $this->__initializer__->__invoke($this, 'setDateUp', [$date_up]);
 
         return parent::setDateUp($date_up);
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function getCout(): ?int
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getCout', []);
-
-        return parent::getCout();
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function setCout(int $cout): static
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'setCout', [$cout]);
-
-        return parent::setCout($cout);
     }
 
     /**
