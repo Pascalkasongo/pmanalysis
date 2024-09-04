@@ -91,24 +91,22 @@
                     </div>
                     </form>
                 </div>
-
-                {% if app.session.get('user_role')[0] == ('ROLE_CHEF_PROJET') or app.session.get('user_role')[0] == ('ROLE_DIRECTEUR')  %}
             
                 <div class="navbar-item dropdown">
                     <a href="#" data-bs-toggle="dropdown" class="navbar-link dropdown-toggle icon">
                         <i class="fa fa-bell"></i>
-                    <span class="badge bg-danger">{{notifications|length }}</span>
+                    <span class="badge bg-danger">{{notification|length}} </span>
                     </a>
                     <div class="dropdown-menu media-list dropdown-menu-end">
-                        <div class="dropdown-header">NOTIFICATIONS ({{notifications|length }})</div>
-                            {% for notification in notifications %}
+                        <div class="dropdown-header">NOTIFICATIONS{{notification|length}} </div>
+                            {% for notification in notification %}
                            
                             <a href="javascript:;" class="dropdown-item media">
                                
                                 <a href="{{path('notification_read',{'id':notification.id})}}" class="dropdown-item media" >
                                     <div class="media-body">
-                                        <p class="media-heading">{{notification.titre|lower}} <i class="fa fa-exclamation-circle text-danger"></i></p>
-                                        <div class="text-muted fs-10px">{{notification.description}}</div>
+                                        <p class="media-heading">{{notification.nomTache|lower}} <i class="fa fa-exclamation-circle text-danger"></i></p>
+                                        <div class="text-muted fs-10px">{{notification.nomTache}}</div>
                                     </div>
                                 </a>
                             </a>
@@ -116,30 +114,7 @@
                         
                     </div>
                 </div>
-                <div class="navbar-item dropdown">
-                    <a href="#" data-bs-toggle="dropdown" class="navbar-link dropdown-toggle icon">
-                        <i class="fa fa-bell"></i>
-                    <span class="badge ">{{notification_read|length }}</span>
-                    </a>
-                    <div class="dropdown-menu media-list dropdown-menu-end">
-                        <div class="dropdown-header">NOTIFICATIONS ({{notification_read|length }})</div>
-                            {% for notification in notification_read %}
-                           
-                            <a href="javascript:;" class="dropdown-item media">
-                               
-                                <a href="{{path('notification_read',{'id':notification.id})}}" class="dropdown-item media" >
-                                    <div class="media-body">
-                                        <p class="media-heading">{{notification.titre|lower}} <i class="fa fa-exclamation-circle text-danger"></i></p>
-                                        <div class="text-muted fs-10px">{{notification.description}}</div>
-                                    </div>
-                                </a>
-                            </a>
-                        {% endfor %}
-                        
-                    </div>
-                </div>
-                        
-            {% endif %}
+                
                 <div class="navbar-item navbar-user dropdown">
                     <a href="#" class="navbar-link dropdown-toggle d-flex align-items-center" data-bs-toggle="dropdown" aria-expanded="false">
                         <img src="../assets/img/user/user-13.jpg" alt="">

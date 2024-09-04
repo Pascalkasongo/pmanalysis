@@ -76,6 +76,7 @@ class TacheController extends AbstractController
         $form->handleRequest($request);
 
         if ($form->isSubmitted() && $form->isValid()) {
+            $tache->setIsNotified(true);
             $entityManager->flush();
 
             return $this->redirectToRoute('app_chef_task', [], Response::HTTP_SEE_OTHER);

@@ -177,27 +177,8 @@
 
 
 </div>
-<div class="menu-item has-sub active ">
-<a href="javascript:;" class="menu-link">
-    <div class="menu-icon">
-    <i class="fa fa-users"></i> </div>
-    <div class="menu-text">Employe</div>
-    <div class="menu-caret"></div>
-</a>
-<div class="menu-submenu">
-    <div class="menu-item active">
-        <a href="{{path('app_employe_new')}}" class="menu-link"><div class="menu-text">Ajouter employé </div></a>
-    </div>
-    <div class="menu-item">
-        <a href="{{path('app_employe_index')}}" class="menu-link"><div class="menu-text">Liste des employés</div></a>
-    </div>
-    {# <div class="menu-item">
-         <a href="index_v3.html" class="menu-link"><div class="menu-text">Dashboard v3</div></a>
-    </div> #}
-</div>
 
 
-</div>
 <div class="menu-item has-sub active ">
 <a href="javascript:;" class="menu-link">
     <div class="menu-icon">
@@ -219,27 +200,7 @@
 
 
 </div>
-<div class="menu-item has-sub active ">
-<a href="javascript:;" class="menu-link">
-    <div class="menu-icon">
-    <i class="fa fa-customer"></i> </div>
-    <div class="menu-text">Client</div>
-    <div class="menu-caret"></div>
-</a>
-<div class="menu-submenu">
-    <div class="menu-item active">
-        <a href="{{path('app_client_new')}}" class="menu-link"><div class="menu-text">Nouveau client</div></a>
-    </div>
-    <div class="menu-item">
-        <a href="{{path('app_client_index')}}" class="menu-link"><div class="menu-text">Liste des clients </div></a>
-    </div>
-    {# <div class="menu-item">
-         <a href="index_v3.html" class="menu-link"><div class="menu-text">Dashboard v3</div></a>
-    </div> #}
-</div>
 
-
-</div>
 <div class="menu-item has-sub active ">
 <a href="javascript:;" class="menu-link">
     <div class="menu-icon">
@@ -300,6 +261,52 @@
         <a href="{{path('app_sprint_user')}}" class="menu-link"><div class="menu-text">Liste de mes sprints </div>
            
     </a>
+    </div>
+    {# <div class="menu-item">
+         <a href="index_v3.html" class="menu-link"><div class="menu-text">Dashboard v3</div></a>
+    </div> #}
+</div>
+
+
+</div>
+
+{% endif %}
+
+{% if app.session.get('user_role')[0] =='ROLE_ADMIN' or app.session.get('user_role')[0] =='ROLE_DIRECTEUR'  %}
+<div class="menu-item has-sub active ">
+<a href="javascript:;" class="menu-link">
+    <div class="menu-icon">
+    <i class="fa fa-users"></i> </div>
+    <div class="menu-text">Employe</div>
+    <div class="menu-caret"></div>
+</a>
+<div class="menu-submenu">
+    <div class="menu-item active">
+        <a href="{{path('app_employe_new')}}" class="menu-link"><div class="menu-text">Ajouter employé </div></a>
+    </div>
+    <div class="menu-item">
+        <a href="{{path('app_employe_index')}}" class="menu-link"><div class="menu-text">Liste des employés</div></a>
+    </div>
+    {# <div class="menu-item">
+         <a href="index_v3.html" class="menu-link"><div class="menu-text">Dashboard v3</div></a>
+    </div> #}
+</div>
+
+
+</div>
+<div class="menu-item has-sub active ">
+<a href="javascript:;" class="menu-link">
+    <div class="menu-icon">
+    <i class="fa fa-customer"></i> </div>
+    <div class="menu-text">Client</div>
+    <div class="menu-caret"></div>
+</a>
+<div class="menu-submenu">
+    <div class="menu-item active">
+        <a href="{{path('app_client_new')}}" class="menu-link"><div class="menu-text">Nouveau client</div></a>
+    </div>
+    <div class="menu-item">
+        <a href="{{path('app_client_index')}}" class="menu-link"><div class="menu-text">Liste des clients </div></a>
     </div>
     {# <div class="menu-item">
          <a href="index_v3.html" class="menu-link"><div class="menu-text">Dashboard v3</div></a>

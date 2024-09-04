@@ -5049,14 +5049,15 @@
         <argument key="tache" type="service_closure" id=".errored..service_locator.CDhANYI.App\Entity\Tache"/>
       </argument>
     </service>
-    <service id=".service_locator.1yXxVY1" class="Symfony\Component\DependencyInjection\ServiceLocator">
+    <service id=".service_locator.WEkPnSj" class="Symfony\Component\DependencyInjection\ServiceLocator">
       <tag name="container.service_locator"/>
       <argument type="collection">
         <argument key="projetRepository" type="service_closure" id="App\Repository\ProjetRepository"/>
         <argument key="security" type="service_closure" id="security.helper"/>
+        <argument key="tacheRepository" type="service_closure" id="App\Repository\TacheRepository"/>
       </argument>
     </service>
-    <service id=".service_locator.84GCJyp" class="Symfony\Component\DependencyInjection\ServiceLocator">
+    <service id=".service_locator.lq1Bvr6" class="Symfony\Component\DependencyInjection\ServiceLocator">
       <tag name="container.service_locator"/>
       <argument type="collection">
         <argument key="App\Controller\ChefTaskController::index" type="service_closure" id=".service_locator.tqE.zGO"/>
@@ -5140,7 +5141,7 @@
         <argument key="App\Controller\TacheController::index" type="service_closure" id=".service_locator.4HNHIcL"/>
         <argument key="App\Controller\TacheController::new" type="service_closure" id=".service_locator.l2QwsaZ"/>
         <argument key="App\Controller\TacheController::show" type="service_closure" id=".service_locator.2lBK97_"/>
-        <argument key="App\Controller\UserProjectController::index" type="service_closure" id=".service_locator.1yXxVY1"/>
+        <argument key="App\Controller\UserProjectController::index" type="service_closure" id=".service_locator.WEkPnSj"/>
         <argument key="App\Kernel::loadRoutes" type="service_closure" id=".service_locator.KfbR3DY"/>
         <argument key="App\Kernel::registerContainerConfiguration" type="service_closure" id=".service_locator.KfbR3DY"/>
         <argument key="kernel::loadRoutes" type="service_closure" id=".service_locator.KfbR3DY"/>
@@ -5226,7 +5227,7 @@
         <argument key="App\Controller\TacheController:index" type="service_closure" id=".service_locator.4HNHIcL"/>
         <argument key="App\Controller\TacheController:new" type="service_closure" id=".service_locator.l2QwsaZ"/>
         <argument key="App\Controller\TacheController:show" type="service_closure" id=".service_locator.2lBK97_"/>
-        <argument key="App\Controller\UserProjectController:index" type="service_closure" id=".service_locator.1yXxVY1"/>
+        <argument key="App\Controller\UserProjectController:index" type="service_closure" id=".service_locator.WEkPnSj"/>
         <argument key="kernel:loadRoutes" type="service_closure" id=".service_locator.KfbR3DY"/>
         <argument key="kernel:registerContainerConfiguration" type="service_closure" id=".service_locator.KfbR3DY"/>
       </argument>
@@ -5744,12 +5745,12 @@
       <argument type="service" id="security.token_storage"/>
     </service>
     <service id="debug.argument_resolver.service.inner" class="Symfony\Component\HttpKernel\Controller\ArgumentResolver\ServiceValueResolver">
-      <argument type="service" id=".service_locator.84GCJyp"/>
+      <argument type="service" id=".service_locator.lq1Bvr6"/>
     </service>
     <service id="debug.argument_resolver.default.inner" class="Symfony\Component\HttpKernel\Controller\ArgumentResolver\DefaultValueResolver"/>
     <service id="debug.argument_resolver.variadic.inner" class="Symfony\Component\HttpKernel\Controller\ArgumentResolver\VariadicValueResolver"/>
     <service id="debug.argument_resolver.not_tagged_controller.inner" class="Symfony\Component\HttpKernel\Controller\ArgumentResolver\NotTaggedControllerValueResolver">
-      <argument type="service" id=".service_locator.84GCJyp"/>
+      <argument type="service" id=".service_locator.lq1Bvr6"/>
     </service>
     <service id=".doctrine.orm.default_metadata_driver.inner" class="Doctrine\Persistence\Mapping\Driver\MappingDriverChain">
       <call method="addDriver">
@@ -6463,7 +6464,7 @@
     <service id="Symfony\Component\Security\Core\User\UserCheckerInterface" alias="security.user_checker"/>
     <service id="container.env_var_processors_locator" alias=".service_locator.gSv9zYw" public="true"/>
     <service id="twig.loader.filesystem" alias="twig.loader.native_filesystem"/>
-    <service id="argument_resolver.controller_locator" alias=".service_locator.84GCJyp"/>
+    <service id="argument_resolver.controller_locator" alias=".service_locator.lq1Bvr6"/>
     <service id="Psr\Log\LoggerInterface $requestLogger" alias="monolog.logger.request"/>
     <service id="Psr\Log\LoggerInterface $consoleLogger" alias="monolog.logger.console"/>
     <service id="Psr\Log\LoggerInterface $cacheLogger" alias="monolog.logger.cache"/>
@@ -6490,8 +6491,8 @@
     <service id=".service_locator.CubzJEE" alias=".service_locator.6Vk5gGa"/>
     <service id=".service_locator.7vssRpD" alias=".service_locator.rv0q7kY"/>
     <service id=".service_locator.87TvLY8" alias=".service_locator.CDhANYI"/>
-    <service id=".service_locator.yyMrrGo" alias=".service_locator.1yXxVY1"/>
-    <service id=".service_locator.t3s6keS" alias=".service_locator.84GCJyp"/>
+    <service id=".service_locator.Y4ZsEYP" alias=".service_locator.WEkPnSj"/>
+    <service id=".service_locator.9_O7ZQ1" alias=".service_locator.lq1Bvr6"/>
     <service id=".service_locator.wKF4yn1" alias=".service_locator.19_mNxd"/>
     <service id=".service_locator.QT4dOaU" alias=".service_locator.fZqqck7"/>
     <service id=".service_locator.qBCHs1a" alias=".service_locator.QXcJQkF"/>
@@ -6566,7 +6567,7 @@
     <service id=".service_locator.38GTmG9" alias=".service_locator.4HNHIcL"/>
     <service id=".service_locator.XW6j2yM" alias=".service_locator.2lBK97_"/>
     <service id=".service_locator.ifrsrHG" alias=".service_locator.CDhANYI"/>
-    <service id=".service_locator..AyRSdA" alias=".service_locator.1yXxVY1"/>
+    <service id=".service_locator.ddHsWZ5" alias=".service_locator.WEkPnSj"/>
     <service id=".service_locator.ADknlmN" alias=".service_locator.l1ae.Qz"/>
     <service id=".service_locator.u6DWx23" alias=".service_locator.cXsfP3P"/>
     <service id=".service_locator.aa1PbBb" alias=".service_locator.nLgZj7R"/>

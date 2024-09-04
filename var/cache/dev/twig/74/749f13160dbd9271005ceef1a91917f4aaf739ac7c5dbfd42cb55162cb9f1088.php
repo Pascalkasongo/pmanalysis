@@ -134,7 +134,7 @@ class __TwigTemplate_e1fc8f660992bdfbd2931dbf01b7168ef50522fd2d90d8dbb6f47609c7a
                             <button class=\"btn btn-primary\">Voir plus</button>
                             </div>
                         </div>
-                   
+                        
                 </div>
                 
                     ";
@@ -272,7 +272,7 @@ class __TwigTemplate_e1fc8f660992bdfbd2931dbf01b7168ef50522fd2d90d8dbb6f47609c7a
                             <button class=\"btn btn-primary\">Voir plus</button>
                             </div>
                         </div>
-                   
+                        
                 </div>
                 
                     {%endfor%}

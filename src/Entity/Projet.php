@@ -45,11 +45,15 @@ class Projet
     #[ORM\OneToMany(mappedBy: 'projet', targetEntity: Sprint::class)]
     private Collection $sprints;
 
+    #[ORM\OneToMany(mappedBy: 'projet', targetEntity: NotificationSprint::class)]
+    private Collection $notificationSprints;
+
     public function __construct()
     {
         $this->taches = new ArrayCollection();
         $this->factures = new ArrayCollection();
         $this->sprints = new ArrayCollection();
+        $this->notificationSprints = new ArrayCollection();
     }
 
     public function getId(): ?int
@@ -215,6 +219,36 @@ class Projet
             // set the owning side to null (unless already changed)
             if ($sprint->getProjet() === $this) {
                 $sprint->setProjet(null);
+            }
+        }
+
+        return $this;
+    }
+
+    /**
+     * @return Collection<int, NotificationSprint>
+     */
+    public function getNotificationSprints(): Collection
+    {
+        return $this->notificationSprints;
+    }
+
+    public function addNotificationSprint(NotificationSprint $notificationSprint): static
+    {
+        if (!$this->notificationSprints->contains($notificationSprint)) {
+            $this->notificationSprints->add($notificationSprint);
+            $notificationSprint->setProjet($this);
+        }
+
+        return $this;
+    }
+
+    public function removeNotificationSprint(NotificationSprint $notificationSprint): static
+    {
+        if ($this->notificationSprints->removeElement($notificationSprint)) {
+            // set the owning side to null (unless already changed)
+            if ($notificationSprint->getProjet() === $this) {
+                $notificationSprint->setProjet(null);
             }
         }
 

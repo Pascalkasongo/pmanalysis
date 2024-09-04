@@ -207,68 +207,64 @@ class __TwigTemplate_9be42f620d4852b7007ebf115ffe0db01f535f35fb9f596870029b85bb9
             yield "                        
                     </div>
                 </div>
-                <style>
-                    .dropdown-menu {
-                        max-height: 400px; /* Hauteur maximale du menu déroulant */
-                        width: 300px;      /* Largeur fixe du menu déroulant */
-                        overflow-y: auto;  /* Ajoute une barre de défilement verticale si nécessaire */
-                        overflow-x: hidden;/* Assure qu'il n'y a pas de défilement horizontal */
-                    }
-                </style>
-                
                 <div class=\"navbar-item dropdown\">
                     <a href=\"#\" data-bs-toggle=\"dropdown\" class=\"navbar-link dropdown-toggle icon\">
                         <i class=\"fa fa-bell\"></i>
-                        <span class=\"badge \">";
-            // line 118
-            yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(Twig\Extension\CoreExtension::length($this->env->getCharset(), (isset($context["notification_read"]) || array_key_exists("notification_read", $context) ? $context["notification_read"] : (function () { throw new RuntimeError('Variable "notification_read" does not exist.', 118, $this->source); })())), "html", null, true);
+                    <span class=\"badge \">";
+            // line 109
+            yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(Twig\Extension\CoreExtension::length($this->env->getCharset(), (isset($context["notification_read"]) || array_key_exists("notification_read", $context) ? $context["notification_read"] : (function () { throw new RuntimeError('Variable "notification_read" does not exist.', 109, $this->source); })())), "html", null, true);
             yield "</span>
                     </a>
-                    <div class=\"dropdown-menu dropdown-menu-end\">
+                    <div class=\"dropdown-menu media-list dropdown-menu-end\">
                         <div class=\"dropdown-header\">NOTIFICATIONS (";
-            // line 121
-            yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(Twig\Extension\CoreExtension::length($this->env->getCharset(), (isset($context["notification_read"]) || array_key_exists("notification_read", $context) ? $context["notification_read"] : (function () { throw new RuntimeError('Variable "notification_read" does not exist.', 121, $this->source); })())), "html", null, true);
+            // line 112
+            yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(Twig\Extension\CoreExtension::length($this->env->getCharset(), (isset($context["notification_read"]) || array_key_exists("notification_read", $context) ? $context["notification_read"] : (function () { throw new RuntimeError('Variable "notification_read" does not exist.', 112, $this->source); })())), "html", null, true);
             yield ")</div>
-                        ";
-            // line 122
+                            ";
+            // line 113
             $context['_parent'] = $context;
-            $context['_seq'] = CoreExtension::ensureTraversable((isset($context["notification_read"]) || array_key_exists("notification_read", $context) ? $context["notification_read"] : (function () { throw new RuntimeError('Variable "notification_read" does not exist.', 122, $this->source); })()));
+            $context['_seq'] = CoreExtension::ensureTraversable((isset($context["notification_read"]) || array_key_exists("notification_read", $context) ? $context["notification_read"] : (function () { throw new RuntimeError('Variable "notification_read" does not exist.', 113, $this->source); })()));
             foreach ($context['_seq'] as $context["_key"] => $context["notification"]) {
-                // line 123
-                yield "                            <a href=\"";
-                yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("notification_read", ["id" => CoreExtension::getAttribute($this->env, $this->source, $context["notification"], "id", [], "any", false, false, false, 123)]), "html", null, true);
-                yield "\" class=\"dropdown-item d-flex align-items-center\">
-                                <div class=\"media-body\">
-                                    <p class=\"media-heading mb-0\">";
-                // line 125
-                yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(Twig\Extension\CoreExtension::lower($this->env->getCharset(), CoreExtension::getAttribute($this->env, $this->source, $context["notification"], "titre", [], "any", false, false, false, 125)), "html", null, true);
+                // line 114
+                yield "                           
+                            <a href=\"javascript:;\" class=\"dropdown-item media\">
+                               
+                                <a href=\"";
+                // line 117
+                yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("notification_read", ["id" => CoreExtension::getAttribute($this->env, $this->source, $context["notification"], "id", [], "any", false, false, false, 117)]), "html", null, true);
+                yield "\" class=\"dropdown-item media\" >
+                                    <div class=\"media-body\">
+                                        <p class=\"media-heading\">";
+                // line 119
+                yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(Twig\Extension\CoreExtension::lower($this->env->getCharset(), CoreExtension::getAttribute($this->env, $this->source, $context["notification"], "titre", [], "any", false, false, false, 119)), "html", null, true);
                 yield " <i class=\"fa fa-exclamation-circle text-danger\"></i></p>
-                                    <div class=\"text-muted fs-10px\">";
-                // line 126
-                yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(CoreExtension::getAttribute($this->env, $this->source, $context["notification"], "description", [], "any", false, false, false, 126), "html", null, true);
+                                        <div class=\"text-muted fs-10px\">";
+                // line 120
+                yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(CoreExtension::getAttribute($this->env, $this->source, $context["notification"], "description", [], "any", false, false, false, 120), "html", null, true);
                 yield "</div>
-                                </div>
+                                    </div>
+                                </a>
                             </a>
                         ";
             }
             $_parent = $context['_parent'];
             unset($context['_seq'], $context['_iterated'], $context['_key'], $context['notification'], $context['_parent'], $context['loop']);
             $context = array_intersect_key($context, $_parent) + $_parent;
-            // line 130
-            yield "                    </div>
+            // line 125
+            yield "                        
+                    </div>
                 </div>
-                
                         
             ";
         }
-        // line 135
+        // line 130
         yield "                <div class=\"navbar-item navbar-user dropdown\">
                     <a href=\"#\" class=\"navbar-link dropdown-toggle d-flex align-items-center\" data-bs-toggle=\"dropdown\" aria-expanded=\"false\">
                         <img src=\"../assets/img/user/user-13.jpg\" alt=\"\">
                         <span>
                             <span class=\"d-none d-md-inline\"> ";
-        // line 139
-        yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(CoreExtension::getAttribute($this->env, $this->source, CoreExtension::getAttribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 139, $this->source); })()), "session", [], "any", false, false, false, 139), "get", ["user_name"], "method", false, false, false, 139), "html", null, true);
+        // line 134
+        yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(CoreExtension::getAttribute($this->env, $this->source, CoreExtension::getAttribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 134, $this->source); })()), "session", [], "any", false, false, false, 134), "get", ["user_name"], "method", false, false, false, 134), "html", null, true);
         yield "</span>
                             
                         </span>
@@ -277,10 +273,10 @@ class __TwigTemplate_9be42f620d4852b7007ebf115ffe0db01f535f35fb9f596870029b85bb9
                        
                         <a href=\"#\" class=\"dropdown-item\">Calendar</a>
                         ";
-        // line 147
+        // line 142
         yield "                        <div class=\"dropdown-divider\"></div>
                         <a href=\"";
-        // line 148
+        // line 143
         yield $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_logout");
         yield "\" class=\"dropdown-item\">Log Out</a>
                     </div>
@@ -319,7 +315,7 @@ class __TwigTemplate_9be42f620d4852b7007ebf115ffe0db01f535f35fb9f596870029b85bb9
      */
     public function getDebugInfo()
     {
-        return array (  284 => 148,  281 => 147,  271 => 139,  265 => 135,  258 => 130,  248 => 126,  244 => 125,  238 => 123,  234 => 122,  230 => 121,  224 => 118,  207 => 103,  196 => 98,  192 => 97,  187 => 95,  182 => 92,  178 => 91,  174 => 90,  168 => 87,  162 => 83,  160 => 82,  119 => 44,  115 => 43,  110 => 41,  106 => 40,  102 => 39,  96 => 36,  92 => 35,  88 => 34,  83 => 32,  78 => 30,  73 => 28,  68 => 26,  41 => 1,);
+        return array (  280 => 143,  277 => 142,  267 => 134,  261 => 130,  254 => 125,  243 => 120,  239 => 119,  234 => 117,  229 => 114,  225 => 113,  221 => 112,  215 => 109,  207 => 103,  196 => 98,  192 => 97,  187 => 95,  182 => 92,  178 => 91,  174 => 90,  168 => 87,  162 => 83,  160 => 82,  119 => 44,  115 => 43,  110 => 41,  106 => 40,  102 => 39,  96 => 36,  92 => 35,  88 => 34,  83 => 32,  78 => 30,  73 => 28,  68 => 26,  41 => 1,);
     }
 
     public function getSourceContext()
@@ -429,33 +425,28 @@ class __TwigTemplate_9be42f620d4852b7007ebf115ffe0db01f535f35fb9f596870029b85bb9
                         
                     </div>
                 </div>
-                <style>
-                    .dropdown-menu {
-                        max-height: 400px; /* Hauteur maximale du menu déroulant */
-                        width: 300px;      /* Largeur fixe du menu déroulant */
-                        overflow-y: auto;  /* Ajoute une barre de défilement verticale si nécessaire */
-                        overflow-x: hidden;/* Assure qu'il n'y a pas de défilement horizontal */
-                    }
-                </style>
-                
                 <div class=\"navbar-item dropdown\">
                     <a href=\"#\" data-bs-toggle=\"dropdown\" class=\"navbar-link dropdown-toggle icon\">
                         <i class=\"fa fa-bell\"></i>
-                        <span class=\"badge \">{{ notification_read|length }}</span>
+                    <span class=\"badge \">{{notification_read|length }}</span>
                     </a>
-                    <div class=\"dropdown-menu dropdown-menu-end\">
-                        <div class=\"dropdown-header\">NOTIFICATIONS ({{ notification_read|length }})</div>
-                        {% for notification in notification_read %}
-                            <a href=\"{{ path('notification_read', {'id': notification.id}) }}\" class=\"dropdown-item d-flex align-items-center\">
-                                <div class=\"media-body\">
-                                    <p class=\"media-heading mb-0\">{{ notification.titre|lower }} <i class=\"fa fa-exclamation-circle text-danger\"></i></p>
-                                    <div class=\"text-muted fs-10px\">{{ notification.description }}</div>
-                                </div>
+                    <div class=\"dropdown-menu media-list dropdown-menu-end\">
+                        <div class=\"dropdown-header\">NOTIFICATIONS ({{notification_read|length }})</div>
+                            {% for notification in notification_read %}
+                           
+                            <a href=\"javascript:;\" class=\"dropdown-item media\">
+                               
+                                <a href=\"{{path('notification_read',{'id':notification.id})}}\" class=\"dropdown-item media\" >
+                                    <div class=\"media-body\">
+                                        <p class=\"media-heading\">{{notification.titre|lower}} <i class=\"fa fa-exclamation-circle text-danger\"></i></p>
+                                        <div class=\"text-muted fs-10px\">{{notification.description}}</div>
+                                    </div>
+                                </a>
                             </a>
                         {% endfor %}
+                        
                     </div>
                 </div>
-                
                         
             {% endif %}
                 <div class=\"navbar-item navbar-user dropdown\">

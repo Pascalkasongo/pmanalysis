@@ -2,6 +2,7 @@
 
 namespace App\Repository;
 
+use App\Entity\Client;
 use App\Entity\Tache;
 use Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepository;
 use Doctrine\Persistence\ManagerRegistry;
@@ -73,6 +74,17 @@ public function findByChef($chef): array
     //         ->getQuery()
     //         ->getResult();                   // Récupérer les résultats
     // }
+
+    public function findByClient(Client $client): array
+    {
+        return $this->createQueryBuilder('t')
+            ->join('t.projet', 'p')
+            ->where('p.client = :client')
+            ->where('t.is_notified = :notified')
+            ->setParameter('notified', true)
+            ->getQuery()
+            ->getResult();
+    }
     
     
 }

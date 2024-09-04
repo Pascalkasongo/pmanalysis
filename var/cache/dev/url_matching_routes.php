@@ -42,7 +42,6 @@ return [
         '/role/new' => [[['_route' => 'app_role_new', '_controller' => 'App\\Controller\\RoleController::new'], null, ['GET' => 0, 'POST' => 1], null, false, false, null]],
         '/login' => [[['_route' => 'app_login', '_controller' => 'App\\Controller\\SecurityController::login'], null, null, null, false, false, null]],
         '/logout' => [[['_route' => 'app_logout', '_controller' => 'App\\Controller\\SecurityController::logout'], null, null, null, false, false, null]],
-        '/sprint-user' => [[['_route' => 'app_sprint_user', '_controller' => 'App\\Controller\\SprintChefContronllerController::mySprint'], null, null, null, false, false, null]],
         '/sprint' => [[['_route' => 'app_sprint_index', '_controller' => 'App\\Controller\\SprintController::index'], null, ['GET' => 0], null, true, false, null]],
         '/sprint/new' => [[['_route' => 'app_sprint_new', '_controller' => 'App\\Controller\\SprintController::new'], null, ['GET' => 0, 'POST' => 1], null, false, false, null]],
         '/tache' => [[['_route' => 'app_tache_index', '_controller' => 'App\\Controller\\TacheController::index'], null, ['GET' => 0], null, true, false, null]],

@@ -64,7 +64,9 @@ class HomeController extends AbstractController
                 'taches'=>$tache->findByChef($security->getUser())
             ]);
        }elseif($this->isGranted('ROLE_ADMIN')){
-            Return new Response('administrateur');
+        return $this->render('admindek-html/index_admin.html.twig',[
+            'taches'=>$tache->findByChef($security->getUser())
+        ]);
        }
 
         

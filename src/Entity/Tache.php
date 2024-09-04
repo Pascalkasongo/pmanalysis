@@ -47,6 +47,9 @@ class Tache
     #[ORM\ManyToOne(inversedBy: 'taches')]
     private ?Sprint $sprint = null;
 
+    #[ORM\Column(nullable: true)]
+    private ?bool $is_notified = null;
+
     public function getId(): ?int
     {
         return $this->id;
@@ -180,6 +183,18 @@ class Tache
     public function setSprint(?Sprint $sprint): static
     {
         $this->sprint = $sprint;
+
+        return $this;
+    }
+
+    public function isIsNotified(): ?bool
+    {
+        return $this->is_notified;
+    }
+
+    public function setIsNotified(?bool $is_notified): static
+    {
+        $this->is_notified = $is_notified;
 
         return $this;
     }
