@@ -135,13 +135,10 @@ return [
                     .'|/edit(*:775)'
                     .'|(*:783)'
                 .')'
-                .'|/tache/(?'
-                    .'|([^/]++)(*:810)'
-                    .'|tache\\-chef(*:829)'
-                    .'|([^/]++)(?'
-                        .'|/edit(*:853)'
-                        .'|(*:861)'
-                    .')'
+                .'|/tache/([^/]++)(?'
+                    .'|(*:810)'
+                    .'|/edit(*:823)'
+                    .'|(*:831)'
                 .')'
             .')/?$}sDu',
     ],
@@ -191,9 +188,8 @@ return [
         775 => [[['_route' => 'app_sprint_edit', '_controller' => 'App\\Controller\\SprintController::edit'], ['id'], ['GET' => 0, 'POST' => 1], null, false, false, null]],
         783 => [[['_route' => 'app_sprint_delete', '_controller' => 'App\\Controller\\SprintController::delete'], ['id'], ['POST' => 0], null, false, true, null]],
         810 => [[['_route' => 'app_tache_show', '_controller' => 'App\\Controller\\TacheController::show'], ['id'], ['GET' => 0], null, false, true, null]],
-        829 => [[['_route' => 'app_tache_chef', '_controller' => 'App\\Controller\\TacheController::myTask'], [], null, null, false, false, null]],
-        853 => [[['_route' => 'app_tache_edit', '_controller' => 'App\\Controller\\TacheController::edit'], ['id'], ['GET' => 0, 'POST' => 1], null, false, false, null]],
-        861 => [
+        823 => [[['_route' => 'app_tache_edit', '_controller' => 'App\\Controller\\TacheController::edit'], ['id'], ['GET' => 0, 'POST' => 1], null, false, false, null]],
+        831 => [
             [['_route' => 'app_tache_delete', '_controller' => 'App\\Controller\\TacheController::delete'], ['id'], ['POST' => 0], null, false, true, null],
             [null, null, null, null, false, false, 0],
         ],

@@ -48,6 +48,25 @@ class NotificationController extends AbstractController
         ]);
     }
 
+
+    // #[Route('/notifications', name: 'get_notifications', methods: ['GET'])]
+    // public function getNotifications(NotificationRepository $repository): JsonResponse
+    // {
+    //     $notifications = $repository->findAll();
+    //     $data = [];
+
+    //     foreach ($notifications as $notification) {
+    //         $data[] = [
+    //             'id' => $notification->getId(),
+    //             'content' => $notification->getContent(),
+    //         ];
+    //     }
+
+    //     return new JsonResponse($data);
+    // }
+
+
+
    #[Route('/notification/read/{id}',name:'notification_read',methods:"GET")]
     public function markAsRead($id, EntityManagerInterface $em): Response  
     {

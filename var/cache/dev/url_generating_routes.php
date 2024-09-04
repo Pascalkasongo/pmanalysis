@@ -86,7 +86,6 @@ return [
     'app_tache_index' => [[], ['_controller' => 'App\\Controller\\TacheController::index'], [], [['text', '/tache/']], [], [], []],
     'app_tache_new' => [[], ['_controller' => 'App\\Controller\\TacheController::new'], [], [['text', '/tache/new']], [], [], []],
     'app_tache_show' => [['id'], ['_controller' => 'App\\Controller\\TacheController::show'], [], [['variable', '/', '[^/]++', 'id', true], ['text', '/tache']], [], [], []],
-    'app_tache_chef' => [[], ['_controller' => 'App\\Controller\\TacheController::myTask'], [], [['text', '/tache/tache-chef']], [], [], []],
     'app_tache_edit' => [['id'], ['_controller' => 'App\\Controller\\TacheController::edit'], [], [['text', '/edit'], ['variable', '/', '[^/]++', 'id', true], ['text', '/tache']], [], [], []],
     'app_tache_delete' => [['id'], ['_controller' => 'App\\Controller\\TacheController::delete'], [], [['variable', '/', '[^/]++', 'id', true], ['text', '/tache']], [], [], []],
     'app_user' => [[], ['_controller' => 'App\\Controller\\UserController::index'], [], [['text', '/user']], [], [], []],

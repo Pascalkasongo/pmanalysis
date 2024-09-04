@@ -67,10 +67,7 @@ class TacheController extends AbstractController
     }
     
 
-    #[Route('/tache-chef',name:'app_tache_chef')]
-    public function myTask(Security $security){
-        dd($security->getUser());
-    }
+    
 
     #[Route('/{id}/edit', name: 'app_tache_edit', methods: ['GET', 'POST'])]
     public function edit(Request $request, Tache $tache, EntityManagerInterface $entityManager): Response
@@ -81,7 +78,7 @@ class TacheController extends AbstractController
         if ($form->isSubmitted() && $form->isValid()) {
             $entityManager->flush();
 
-            return $this->redirectToRoute('app_tache_index', [], Response::HTTP_SEE_OTHER);
+            return $this->redirectToRoute('app_chef_task', [], Response::HTTP_SEE_OTHER);
         }
 
         return $this->renderForm('tache/edit.html.twig', [

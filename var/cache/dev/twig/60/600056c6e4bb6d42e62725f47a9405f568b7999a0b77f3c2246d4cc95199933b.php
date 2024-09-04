@@ -150,13 +150,9 @@ class __TwigTemplate_95bc4c2e4dc5cc34240b4a4c277add1244eb9a35db65038b1c20bdbe600
             // line 32
             yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_tache_show", ["id" => CoreExtension::getAttribute($this->env, $this->source, $context["tache"], "id", [], "any", false, false, false, 32)]), "html", null, true);
             yield "\"class=\"btn btn-primary btn-sm\" title=\"View\"><i class=\"fas fa-eye\"></i></a>
-                        <a href=\"";
-            // line 33
-            yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_tache_edit", ["id" => CoreExtension::getAttribute($this->env, $this->source, $context["tache"], "id", [], "any", false, false, false, 33)]), "html", null, true);
-            yield "\"class=\"btn btn-warning btn-sm\" title=\"Edit\"><i class=\"fas fa-edit\"></i></a>
                          <a href=\"";
-            // line 34
-            yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_tache_delete", ["id" => CoreExtension::getAttribute($this->env, $this->source, $context["tache"], "id", [], "any", false, false, false, 34)]), "html", null, true);
+            // line 33
+            yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_tache_delete", ["id" => CoreExtension::getAttribute($this->env, $this->source, $context["tache"], "id", [], "any", false, false, false, 33)]), "html", null, true);
             yield "\"class=\"btn btn-danger btn-sm\" title=\"Delete\"><i class=\"fas fa-trash\"></i></a>
                 </td>
             </tr>
@@ -164,7 +160,7 @@ class __TwigTemplate_95bc4c2e4dc5cc34240b4a4c277add1244eb9a35db65038b1c20bdbe600
             $context['_iterated'] = true;
         }
         if (!$context['_iterated']) {
-            // line 38
+            // line 37
             yield "            <tr>
                 <td colspan=\"7\">no records found</td>
             </tr>
@@ -173,18 +169,18 @@ class __TwigTemplate_95bc4c2e4dc5cc34240b4a4c277add1244eb9a35db65038b1c20bdbe600
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['tache'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 42
+        // line 41
         yield "        </tbody>
     </table>
 
     <a href=\"";
-        // line 45
+        // line 44
         yield $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_tache_new");
         yield "\">Create new</a>
 </div>
 </div>
     ";
-        // line 48
+        // line 47
         yield Twig\Extension\CoreExtension::include($this->env, $context, "content/data.html.twig");
         yield "
 ";
@@ -215,7 +211,7 @@ class __TwigTemplate_95bc4c2e4dc5cc34240b4a4c277add1244eb9a35db65038b1c20bdbe600
      */
     public function getDebugInfo()
     {
-        return array (  188 => 48,  182 => 45,  177 => 42,  168 => 38,  159 => 34,  155 => 33,  151 => 32,  141 => 29,  133 => 28,  125 => 27,  117 => 26,  113 => 24,  110 => 23,  104 => 22,  102 => 21,  85 => 6,  78 => 5,  64 => 3,  56 => 5,  53 => 4,  51 => 3,  47 => 2,  43 => 1,);
+        return array (  184 => 47,  178 => 44,  173 => 41,  164 => 37,  155 => 33,  151 => 32,  141 => 29,  133 => 28,  125 => 27,  117 => 26,  113 => 24,  110 => 23,  104 => 22,  102 => 21,  85 => 6,  78 => 5,  64 => 3,  56 => 5,  53 => 4,  51 => 3,  47 => 2,  43 => 1,);
     }
 
     public function getSourceContext()
@@ -252,7 +248,6 @@ class __TwigTemplate_95bc4c2e4dc5cc34240b4a4c277add1244eb9a35db65038b1c20bdbe600
 
                 <td>
                      <a href=\"{{ path('app_tache_show', {'id': tache.id}) }}\"class=\"btn btn-primary btn-sm\" title=\"View\"><i class=\"fas fa-eye\"></i></a>
-                        <a href=\"{{ path('app_tache_edit', {'id': tache.id}) }}\"class=\"btn btn-warning btn-sm\" title=\"Edit\"><i class=\"fas fa-edit\"></i></a>
                          <a href=\"{{ path('app_tache_delete', {'id': tache.id}) }}\"class=\"btn btn-danger btn-sm\" title=\"Delete\"><i class=\"fas fa-trash\"></i></a>
                 </td>
             </tr>

@@ -13,6 +13,7 @@
                 <th>Nom Projet</th>
                 <th>Nom sprint</th>
                 <th>tache</th>
+                <th>Etat</th>
                 <th>actions</th>
             </tr>
         </thead>
@@ -24,7 +25,7 @@
                 <td>{% if tache and tache.projet.nom %}{{ tache.projet.nom }}{% else %}N/A{% endif %}</td>
                 <td>{% if tache and tache.sprint.titre %}{{ tache.sprint.titre }}{% else %}N/A{% endif %}</td>
                 <td>{% if tache and tache.nomTache %}{{ tache.nomTache }}{% else %}N/A{% endif %}</td>
-
+                <td>{{tache.etat.nomEtat}}</td>
                 <td>
                      <a href="{{ path('app_tache_show', {'id': tache.id}) }}"class="btn btn-primary btn-sm" title="View"><i class="fas fa-eye"></i></a>
                         <a href="{{ path('app_tache_edit', {'id': tache.id}) }}"class="btn btn-warning btn-sm" title="Edit"><i class="fas fa-edit"></i></a>
