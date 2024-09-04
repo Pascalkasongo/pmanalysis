@@ -78,6 +78,7 @@ return [
     'app_role_delete' => [['id'], ['_controller' => 'App\\Controller\\RoleController::delete'], [], [['variable', '/', '[^/]++', 'id', true], ['text', '/role']], [], [], []],
     'app_login' => [[], ['_controller' => 'App\\Controller\\SecurityController::login'], [], [['text', '/login']], [], [], []],
     'app_logout' => [[], ['_controller' => 'App\\Controller\\SecurityController::logout'], [], [['text', '/logout']], [], [], []],
+    'app_sprint_user' => [[], ['_controller' => 'App\\Controller\\SprintChefContronllerController::mySprint'], [], [['text', '/sprint-user']], [], [], []],
     'app_sprint_index' => [[], ['_controller' => 'App\\Controller\\SprintController::index'], [], [['text', '/sprint/']], [], [], []],
     'app_sprint_new' => [[], ['_controller' => 'App\\Controller\\SprintController::new'], [], [['text', '/sprint/new']], [], [], []],
     'app_sprint_show' => [['id'], ['_controller' => 'App\\Controller\\SprintController::show'], [], [['variable', '/', '[^/]++', 'id', true], ['text', '/sprint']], [], [], []],

@@ -5,6 +5,7 @@ namespace App\Repository;
 use App\Entity\Facture;
 use Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepository;
 use Doctrine\Persistence\ManagerRegistry;
+use Doctrine\DBAL\Exception;
 
 /**
  * @extends ServiceEntityRepository<Facture>
@@ -21,28 +22,22 @@ class FactureRepository extends ServiceEntityRepository
         parent::__construct($registry, Facture::class);
     }
 
-//    /**
-//     * @return Facture[] Returns an array of Facture objects
-//     */
-//    public function findByExampleField($value): array
-//    {
-//        return $this->createQueryBuilder('f')
-//            ->andWhere('f.exampleField = :val')
-//            ->setParameter('val', $value)
-//            ->orderBy('f.id', 'ASC')
-//            ->setMaxResults(10)
-//            ->getQuery()
-//            ->getResult()
-//        ;
-//    }
+    /**
+     * @return float Returns the sum of all facture amounts
+     * @throws Exception
+     */
+    public function getTotalAmount(): float
+    {
+        // Create a QueryBuilder instance
+        $qb = $this->createQueryBuilder('f');
 
-//    public function findOneBySomeField($value): ?Facture
-//    {
-//        return $this->createQueryBuilder('f')
-//            ->andWhere('f.exampleField = :val')
-//            ->setParameter('val', $value)
-//            ->getQuery()
-//            ->getOneOrNullResult()
-//        ;
-//    }
+        // Build the query to calculate the sum of amounts
+        $qb->select('SUM(f.montant) AS totalAmount'); // Replace 'amount' with the actual field name
+
+        // Execute the query and get the result
+        $result = $qb->getQuery()->getSingleScalarResult();
+
+        // Return the total amount, ensuring it's a float
+        return (float) $result;
+    }
 }

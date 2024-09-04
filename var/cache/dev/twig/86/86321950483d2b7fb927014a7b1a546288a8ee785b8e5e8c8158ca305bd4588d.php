@@ -117,23 +117,15 @@ class __TwigTemplate_7b8980575713c5753ca926db3ed836155dfbf88241255649de6736104f5
                 <td>
                     <a href=\"";
             // line 40
-            yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_projet_show", ["id" => CoreExtension::getAttribute($this->env, $this->source, $context["projet"], "id", [], "any", false, false, false, 40)]), "html", null, true);
-            yield "\"class=\"btn btn-primary btn-sm\" title=\"View\"><i class=\"fas fa-eye\"></i></a>
-                    <a href=\"";
-            // line 41
-            yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_projet_edit", ["id" => CoreExtension::getAttribute($this->env, $this->source, $context["projet"], "id", [], "any", false, false, false, 41)]), "html", null, true);
+            yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_projet_edit", ["id" => CoreExtension::getAttribute($this->env, $this->source, $context["projet"], "id", [], "any", false, false, false, 40)]), "html", null, true);
             yield "\"class=\"btn btn-warning btn-sm\" title=\"Edit\"><i class=\"fas fa-edit\"></i></a>
-                    <a href=\"";
-            // line 42
-            yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_projet_delete", ["id" => CoreExtension::getAttribute($this->env, $this->source, $context["projet"], "id", [], "any", false, false, false, 42)]), "html", null, true);
-            yield "\"class=\"btn btn-danger btn-sm\" title=\"Delete\"><i class=\"fas fa-trash\"></i></a>
                 </td>
             </tr>
         ";
             $context['_iterated'] = true;
         }
         if (!$context['_iterated']) {
-            // line 46
+            // line 44
             yield "            <tr>
                 <td colspan=\"7\">no records found</td>
             </tr>
@@ -142,7 +134,7 @@ class __TwigTemplate_7b8980575713c5753ca926db3ed836155dfbf88241255649de6736104f5
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['projet'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 50
+        // line 48
         yield "        </tbody>
     </table>
 
@@ -150,7 +142,7 @@ class __TwigTemplate_7b8980575713c5753ca926db3ed836155dfbf88241255649de6736104f5
     </div>
 </div>
 ";
-        // line 56
+        // line 54
         yield Twig\Extension\CoreExtension::include($this->env, $context, "content/data.html.twig");
         yield "
 ";
@@ -181,7 +173,7 @@ class __TwigTemplate_7b8980575713c5753ca926db3ed836155dfbf88241255649de6736104f5
      */
     public function getDebugInfo()
     {
-        return array (  154 => 56,  146 => 50,  137 => 46,  128 => 42,  124 => 41,  120 => 40,  115 => 38,  111 => 37,  107 => 36,  103 => 35,  100 => 34,  95 => 33,  75 => 15,  61 => 14,  46 => 2,  42 => 1,);
+        return array (  146 => 54,  138 => 48,  129 => 44,  120 => 40,  115 => 38,  111 => 37,  107 => 36,  103 => 35,  100 => 34,  95 => 33,  75 => 15,  61 => 14,  46 => 2,  42 => 1,);
     }
 
     public function getSourceContext()
@@ -225,9 +217,7 @@ class __TwigTemplate_7b8980575713c5753ca926db3ed836155dfbf88241255649de6736104f5
                 <td>{{ projet.description }}</td>
                 <td>{{projet.domaine.nomDomaine}}
                 <td>
-                    <a href=\"{{ path('app_projet_show', {'id': projet.id}) }}\"class=\"btn btn-primary btn-sm\" title=\"View\"><i class=\"fas fa-eye\"></i></a>
                     <a href=\"{{ path('app_projet_edit', {'id': projet.id}) }}\"class=\"btn btn-warning btn-sm\" title=\"Edit\"><i class=\"fas fa-edit\"></i></a>
-                    <a href=\"{{ path('app_projet_delete', {'id': projet.id}) }}\"class=\"btn btn-danger btn-sm\" title=\"Delete\"><i class=\"fas fa-trash\"></i></a>
                 </td>
             </tr>
         {% else %}

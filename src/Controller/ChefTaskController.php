@@ -15,10 +15,11 @@ class ChefTaskController extends AbstractController
     {
         $user = $security->getUser();
        
-
-        return $this->render('chef_task/index.html.twig', [
-            'controller_name' => 'ChefTaskController',
-            'taches'=> $tache->findByChef($user)
+      
+        return $this->render('admindek-html/index_chef_equipe.html.twig',[
+            'taches'=>$tache->findByChef($security->getUser())
         ]);
     }
+
+   
 }

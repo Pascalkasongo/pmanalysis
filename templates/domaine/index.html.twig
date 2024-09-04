@@ -23,9 +23,8 @@
                 <td>{{ domaine.nomDomaine }}</td>
                 <td>{{ domaine.typeDomaine }}</td>
                     <td>
-                    <a href="{{ path('app_domaine_show', {'id': domaine.id}) }}"class="btn btn-primary btn-sm" title="View"><i class="fas fa-eye"></i></a>
+                    
                     <a href="{{ path('app_domaine_edit', {'id': domaine.id}) }}"class="btn btn-warning btn-sm" title="Edit"><i class="fas fa-edit"></i></a>
-                    <a href="{{ path('app_domaine_delete', {'id': domaine.id}) }}"class="btn btn-danger btn-sm" title="Delete"><i class="fas fa-trash"></i></a>
                 </td>
             </tr>
         {% else %}

@@ -19,11 +19,16 @@
                 {{ form_widget(form.description, {'attr': {'class': 'form-control', 'placeholder': "Description sprint"}}) }}
                 {{ form_errors(form.description) }}
         </div>
-            <div class="form-group">
-            {{ form_label(form.projet, 'Description') }}
+        <div class="form-group">
+            {{ form_label(form.projet, 'Projet') }}
             {{ form_widget(form.projet, {'attr': {'class': 'form-control', 'placeholder': "Description sprint"}}) }}
             {{ form_errors(form.projet) }}
-    </div>
+        </div>
+        <div class="form-group">
+            {{ form_label(form.isCompleted, 'Completed') }}
+            {{ form_widget(form.isCompleted, {'attr': {'class': 'form-check-input'}}) }}
+            {{ form_errors(form.isCompleted) }}
+        </div>
         <button type="submit" class="btn btn-primary">Soumettre</button>
     </div>
     </div>

@@ -98,25 +98,18 @@ class __TwigTemplate_9cdc97defed96eee552f0fbeea77cad03505b919e105af822da6e8ec162
             yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(CoreExtension::getAttribute($this->env, $this->source, $context["domaine"], "typeDomaine", [], "any", false, false, false, 24), "html", null, true);
             yield "</td>
                     <td>
-                    <a href=\"";
-            // line 26
-            yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_domaine_show", ["id" => CoreExtension::getAttribute($this->env, $this->source, $context["domaine"], "id", [], "any", false, false, false, 26)]), "html", null, true);
-            yield "\"class=\"btn btn-primary btn-sm\" title=\"View\"><i class=\"fas fa-eye\"></i></a>
+                    
                     <a href=\"";
             // line 27
             yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_domaine_edit", ["id" => CoreExtension::getAttribute($this->env, $this->source, $context["domaine"], "id", [], "any", false, false, false, 27)]), "html", null, true);
             yield "\"class=\"btn btn-warning btn-sm\" title=\"Edit\"><i class=\"fas fa-edit\"></i></a>
-                    <a href=\"";
-            // line 28
-            yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_domaine_delete", ["id" => CoreExtension::getAttribute($this->env, $this->source, $context["domaine"], "id", [], "any", false, false, false, 28)]), "html", null, true);
-            yield "\"class=\"btn btn-danger btn-sm\" title=\"Delete\"><i class=\"fas fa-trash\"></i></a>
                 </td>
             </tr>
         ";
             $context['_iterated'] = true;
         }
         if (!$context['_iterated']) {
-            // line 32
+            // line 31
             yield "            <tr>
                 <td colspan=\"4\">no records found</td>
             </tr>
@@ -125,13 +118,13 @@ class __TwigTemplate_9cdc97defed96eee552f0fbeea77cad03505b919e105af822da6e8ec162
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['domaine'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 36
+        // line 35
         yield "        </tbody>
     </table>
 </div>
 </div>
     ";
-        // line 40
+        // line 39
         yield Twig\Extension\CoreExtension::include($this->env, $context, "content/data.html.twig");
         yield "
 ";
@@ -162,7 +155,7 @@ class __TwigTemplate_9cdc97defed96eee552f0fbeea77cad03505b919e105af822da6e8ec162
      */
     public function getDebugInfo()
     {
-        return array (  135 => 40,  129 => 36,  120 => 32,  111 => 28,  107 => 27,  103 => 26,  98 => 24,  94 => 23,  90 => 22,  87 => 21,  82 => 20,  65 => 5,  51 => 4,  46 => 2,  42 => 1,);
+        return array (  128 => 39,  122 => 35,  113 => 31,  104 => 27,  98 => 24,  94 => 23,  90 => 22,  87 => 21,  82 => 20,  65 => 5,  51 => 4,  46 => 2,  42 => 1,);
     }
 
     public function getSourceContext()
@@ -192,9 +185,8 @@ class __TwigTemplate_9cdc97defed96eee552f0fbeea77cad03505b919e105af822da6e8ec162
                 <td>{{ domaine.nomDomaine }}</td>
                 <td>{{ domaine.typeDomaine }}</td>
                     <td>
-                    <a href=\"{{ path('app_domaine_show', {'id': domaine.id}) }}\"class=\"btn btn-primary btn-sm\" title=\"View\"><i class=\"fas fa-eye\"></i></a>
+                    
                     <a href=\"{{ path('app_domaine_edit', {'id': domaine.id}) }}\"class=\"btn btn-warning btn-sm\" title=\"Edit\"><i class=\"fas fa-edit\"></i></a>
-                    <a href=\"{{ path('app_domaine_delete', {'id': domaine.id}) }}\"class=\"btn btn-danger btn-sm\" title=\"Delete\"><i class=\"fas fa-trash\"></i></a>
                 </td>
             </tr>
         {% else %}

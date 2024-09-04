@@ -6,12 +6,15 @@ use App\Entity\Sprint;
 use App\Form\SprintType;
 use App\Repository\NotificationRepository;
 use App\Repository\SprintRepository;
+use App\Repository\TacheRepository;
 use Doctrine\ORM\EntityManagerInterface;
+use Sensio\Bundle\FrameworkExtraBundle\Configuration\Security;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
+use Symfony\Component\Security\Core\Security as CoreSecurity;
 
 #[Route('/sprint')]
 class SprintController extends AbstractController
@@ -108,4 +111,5 @@ class SprintController extends AbstractController
 
         return $this->redirectToRoute('app_sprint_index', [], Response::HTTP_SEE_OTHER);
     }
+   
 }

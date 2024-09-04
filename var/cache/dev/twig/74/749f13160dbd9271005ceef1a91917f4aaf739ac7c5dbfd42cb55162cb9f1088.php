@@ -117,46 +117,35 @@ class __TwigTemplate_e1fc8f660992bdfbd2931dbf01b7168ef50522fd2d90d8dbb6f47609c7a
             $context['_seq'] = CoreExtension::ensureTraversable((isset($context["projets"]) || array_key_exists("projets", $context) ? $context["projets"] : (function () { throw new RuntimeError('Variable "projets" does not exist.', 68, $this->source); })()));
             foreach ($context['_seq'] as $context["_key"] => $context["projet"]) {
                 // line 69
-                yield "                    <div  class=\"col-md-6 col-lg-6 col-xl-3 wow fadeInUp\" data-wow-delay=\"0.2s\">
-                        <a href=\"#\">
-                        <div class=\"service-item\">
-                        <div class=\"service-img\">
-                            <img src=\"img/blog-1.png\" class=\"img-fluid rounded-top w-100\" alt=\"\">
-                            <div class=\"service-icon p-3\">
-                                <i class=\"fa fa-users fa-2x\"></i>
-                            </div>
-                        </div>
-                        <div class=\"service-content p-4\">
-                            <div class=\"service-content-inner\">
-                    <div  class=\"d-inline-block h4 mb-4\">";
-                // line 80
-                yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(CoreExtension::getAttribute($this->env, $this->source, $context["projet"], "nom", [], "any", false, false, false, 80), "html", null, true);
-                yield "</div>
-                                <p class=\"mb-4\">";
-                // line 81
-                yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(CoreExtension::getAttribute($this->env, $this->source, $context["projet"], "description", [], "any", false, false, false, 81), "html", null, true);
+                yield "                    <div class=\"col-md-6 col-lg-6 col-xl-3 wow fadeInUp\" data-wow-delay=\"0.2s\">
+                    
+                        <div class=\"card\">
+                            ";
+                // line 73
+                yield "                            <div class=\"card-body\">
+                                <h4 class=\"card-title\">";
+                // line 74
+                yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(CoreExtension::getAttribute($this->env, $this->source, $context["projet"], "nom", [], "any", false, false, false, 74), "html", null, true);
+                yield "</h4>
+                                <p class=\"card-text\">";
+                // line 75
+                yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(CoreExtension::getAttribute($this->env, $this->source, $context["projet"], "description", [], "any", false, false, false, 75), "html", null, true);
                 yield "</p>
-                            <div class=\"container\">
-                                <div class=\"progress\">
-                                    <div class=\"progress-bar\" role=\"progressbar\" aria-valuenow=\"70\" aria-valuemin=\"0\" aria-valuemax=\"100\" style=\"width:10%\">
-                                        <span class=\"sr-only\">70% Complete</span>
-                                    </div>
-                                </div>
-                            </div>
+                            <button class=\"btn btn-primary\">Voir plus</button>
                             </div>
                         </div>
-                    </div>
-                        </a>
-                    </div>
+                   
+                </div>
+                
                     ";
             }
             $_parent = $context['_parent'];
             unset($context['_seq'], $context['_iterated'], $context['_key'], $context['projet'], $context['_parent'], $context['loop']);
             $context = array_intersect_key($context, $_parent) + $_parent;
-            // line 95
+            // line 83
             yield "                    ";
         }
-        // line 96
+        // line 84
         yield "                    
                     
                     <div class=\"col-12 text-center wow fadeInUp\" data-wow-delay=\"0.2s\">
@@ -168,7 +157,7 @@ class __TwigTemplate_e1fc8f660992bdfbd2931dbf01b7168ef50522fd2d90d8dbb6f47609c7a
         <!-- Service End -->
 
         ";
-        // line 106
+        // line 94
         yield Twig\Extension\CoreExtension::include($this->env, $context, "content/data.html.twig");
         yield "
     
@@ -200,7 +189,7 @@ class __TwigTemplate_e1fc8f660992bdfbd2931dbf01b7168ef50522fd2d90d8dbb6f47609c7a
      */
     public function getDebugInfo()
     {
-        return array (  172 => 106,  160 => 96,  157 => 95,  137 => 81,  133 => 80,  120 => 69,  115 => 68,  113 => 67,  45 => 2,  41 => 1,);
+        return array (  161 => 94,  149 => 84,  146 => 83,  132 => 75,  128 => 74,  125 => 73,  120 => 69,  115 => 68,  113 => 67,  45 => 2,  41 => 1,);
     }
 
     public function getSourceContext()
@@ -273,31 +262,19 @@ class __TwigTemplate_e1fc8f660992bdfbd2931dbf01b7168ef50522fd2d90d8dbb6f47609c7a
                 <div class=\"row g-4 justify-content-center\">
                     {%if projets%}
                     {%for projet in projets%}
-                    <div  class=\"col-md-6 col-lg-6 col-xl-3 wow fadeInUp\" data-wow-delay=\"0.2s\">
-                        <a href=\"#\">
-                        <div class=\"service-item\">
-                        <div class=\"service-img\">
-                            <img src=\"img/blog-1.png\" class=\"img-fluid rounded-top w-100\" alt=\"\">
-                            <div class=\"service-icon p-3\">
-                                <i class=\"fa fa-users fa-2x\"></i>
+                    <div class=\"col-md-6 col-lg-6 col-xl-3 wow fadeInUp\" data-wow-delay=\"0.2s\">
+                    
+                        <div class=\"card\">
+                            {# <img src=\"img/blog-1.png\" class=\"card-img-top img-fluid rounded-top\" alt=\"Image du projet\"> #}
+                            <div class=\"card-body\">
+                                <h4 class=\"card-title\">{{ projet.nom }}</h4>
+                                <p class=\"card-text\">{{ projet.description }}</p>
+                            <button class=\"btn btn-primary\">Voir plus</button>
                             </div>
                         </div>
-                        <div class=\"service-content p-4\">
-                            <div class=\"service-content-inner\">
-                    <div  class=\"d-inline-block h4 mb-4\">{{projet.nom}}</div>
-                                <p class=\"mb-4\">{{projet.description}}</p>
-                            <div class=\"container\">
-                                <div class=\"progress\">
-                                    <div class=\"progress-bar\" role=\"progressbar\" aria-valuenow=\"70\" aria-valuemin=\"0\" aria-valuemax=\"100\" style=\"width:10%\">
-                                        <span class=\"sr-only\">70% Complete</span>
-                                    </div>
-                                </div>
-                            </div>
-                            </div>
-                        </div>
-                    </div>
-                        </a>
-                    </div>
+                   
+                </div>
+                
                     {%endfor%}
                     {%endif%}
                     

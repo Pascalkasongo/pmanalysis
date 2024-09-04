@@ -7,6 +7,7 @@ use App\Entity\Equipe;
 use App\Entity\Projet;
 use App\Entity\Tache;
 use App\Repository\EquipeRepository;
+use App\Repository\FactureRepository;
 use App\Repository\NotificationRepository;
 use App\Repository\ProjetRepository;
 use App\Repository\TacheRepository;
@@ -29,7 +30,7 @@ class HomeController extends AbstractController
   
  
     #[Route('/home',name:'app_home')]
-    public function index( NotificationRepository $notificationRepo,ProjetRepository $projet,TacheRepository $tache, EquipeRepository $equipe,Security $security): Response
+    public function index( NotificationRepository $notificationRepo,ProjetRepository $projet,TacheRepository $tache, EquipeRepository $equipe,FactureRepository $facture,Security $security): Response
     {
        if($this->isGranted('ROLE_DIRECTEUR') || $this->isGranted('ROLE_CHEF_PROJET')){
             $notifications_notread = $notificationRepo->findBy(['IsRead'=>false]);
@@ -53,12 +54,15 @@ class HomeController extends AbstractController
                 'tache'=>$tache->findAll(),
                 'equipe'=>$equipe->findAll(),
                 'projet'=>$projet->findAll(),
+                'facture'=>$facture->getTotalAmount()
                 
             ]);
         
         
        }elseif($this->isGranted('ROLE_CHEF')){
-            return $this->render('admindek-html/index_chef_equipe.html.twig');
+            return $this->render('admindek-html/index_chef_equipe.html.twig',[
+                'taches'=>$tache->findByChef($security->getUser())
+            ]);
        }elseif($this->isGranted('ROLE_ADMIN')){
             Return new Response('administrateur');
        }

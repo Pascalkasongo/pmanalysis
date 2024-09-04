@@ -103,28 +103,33 @@
                         
                     </div>
                 </div>
+                <style>
+                    .dropdown-menu {
+                        max-height: 400px; /* Hauteur maximale du menu déroulant */
+                        width: 300px;      /* Largeur fixe du menu déroulant */
+                        overflow-y: auto;  /* Ajoute une barre de défilement verticale si nécessaire */
+                        overflow-x: hidden;/* Assure qu'il n'y a pas de défilement horizontal */
+                    }
+                </style>
+                
                 <div class="navbar-item dropdown">
                     <a href="#" data-bs-toggle="dropdown" class="navbar-link dropdown-toggle icon">
                         <i class="fa fa-bell"></i>
-                    <span class="badge ">{{notification_read|length }}</span>
+                        <span class="badge ">{{ notification_read|length }}</span>
                     </a>
-                    <div class="dropdown-menu media-list dropdown-menu-end">
-                        <div class="dropdown-header">NOTIFICATIONS ({{notification_read|length }})</div>
-                            {% for notification in notification_read %}
-                           
-                            <a href="javascript:;" class="dropdown-item media">
-                               
-                                <a href="{{path('notification_read',{'id':notification.id})}}" class="dropdown-item media" >
-                                    <div class="media-body">
-                                        <p class="media-heading">{{notification.titre|lower}} <i class="fa fa-exclamation-circle text-danger"></i></p>
-                                        <div class="text-muted fs-10px">{{notification.description}}</div>
-                                    </div>
-                                </a>
+                    <div class="dropdown-menu dropdown-menu-end">
+                        <div class="dropdown-header">NOTIFICATIONS ({{ notification_read|length }})</div>
+                        {% for notification in notification_read %}
+                            <a href="{{ path('notification_read', {'id': notification.id}) }}" class="dropdown-item d-flex align-items-center">
+                                <div class="media-body">
+                                    <p class="media-heading mb-0">{{ notification.titre|lower }} <i class="fa fa-exclamation-circle text-danger"></i></p>
+                                    <div class="text-muted fs-10px">{{ notification.description }}</div>
+                                </div>
                             </a>
                         {% endfor %}
-                        
                     </div>
                 </div>
+                
                         
             {% endif %}
                 <div class="navbar-item navbar-user dropdown">

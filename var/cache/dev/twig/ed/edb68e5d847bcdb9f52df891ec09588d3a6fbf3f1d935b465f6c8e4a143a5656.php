@@ -101,7 +101,7 @@ class __TwigTemplate_a86f31d3328b2d435fcdbbfc1882fb55ace22142ee64978de4c2267ba6c
         yield "</p>
                 <p><strong>Téléphone :</strong> ";
         // line 50
-        yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(CoreExtension::getAttribute($this->env, $this->source, CoreExtension::getAttribute($this->env, $this->source, (isset($context["notification"]) || array_key_exists("notification", $context) ? $context["notification"] : (function () { throw new RuntimeError('Variable "notification" does not exist.', 50, $this->source); })()), "client", [], "any", false, false, false, 50), "adresse", [], "any", false, false, false, 50), "html", null, true);
+        yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(CoreExtension::getAttribute($this->env, $this->source, CoreExtension::getAttribute($this->env, $this->source, (isset($context["notification"]) || array_key_exists("notification", $context) ? $context["notification"] : (function () { throw new RuntimeError('Variable "notification" does not exist.', 50, $this->source); })()), "client", [], "any", false, false, false, 50), "telephone", [], "any", false, false, false, 50), "html", null, true);
         yield "</p>
                 <p><strong>Email :</strong> ";
         // line 51
@@ -214,7 +214,7 @@ class __TwigTemplate_a86f31d3328b2d435fcdbbfc1882fb55ace22142ee64978de4c2267ba6c
                 <h4>Informations Client</h4>
                 <p><strong>Nom :</strong> {{ notification.client.nomClient }}</p>
                 <p><strong>Adresse :</strong> {{notification.client.adresse }}</p>
-                <p><strong>Téléphone :</strong> {{notification.client.adresse }}</p>
+                <p><strong>Téléphone :</strong> {{notification.client.telephone }}</p>
                 <p><strong>Email :</strong> {{notification.client.email}}</p>
             </div>
         </div>

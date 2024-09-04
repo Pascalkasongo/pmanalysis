@@ -364,6 +364,13 @@
         <argument type="service" id=".service_locator.l1ae.Qz.App\Controller\SecurityController"/>
       </call>
     </service>
+    <service id="App\Controller\SprintChefContronllerController" class="App\Controller\SprintChefContronllerController" public="true" autowire="true" autoconfigure="true">
+      <tag name="controller.service_arguments"/>
+      <tag name="container.service_subscriber"/>
+      <call method="setContainer">
+        <argument type="service" id=".service_locator.l1ae.Qz.App\Controller\SprintChefContronllerController"/>
+      </call>
+    </service>
     <service id="App\Controller\SprintController" class="App\Controller\SprintController" public="true" autowire="true" autoconfigure="true">
       <tag name="controller.service_arguments"/>
       <tag name="container.service_subscriber"/>
@@ -474,6 +481,10 @@
       <argument type="service" id="doctrine"/>
     </service>
     <service id="App\Repository\FonctionRepository" class="App\Repository\FonctionRepository" autowire="true" autoconfigure="true">
+      <tag name="doctrine.repository_service"/>
+      <argument type="service" id="doctrine"/>
+    </service>
+    <service id="App\Repository\NoticationSprintRepository" class="App\Repository\NoticationSprintRepository" autowire="true" autoconfigure="true">
       <tag name="doctrine.repository_service"/>
       <argument type="service" id="doctrine"/>
     </service>
@@ -3006,7 +3017,7 @@
     <service id="doctrine.orm.configuration" class="Doctrine\ORM\Configuration" abstract="true"/>
     <service id="doctrine.orm.entity_manager.abstract" class="Doctrine\ORM\EntityManager" lazy="true" abstract="true"/>
     <service id="doctrine.orm.container_repository_factory" class="Doctrine\Bundle\DoctrineBundle\Repository\ContainerRepositoryFactory">
-      <argument type="service" id=".service_locator.Bf6EBsK"/>
+      <argument type="service" id=".service_locator.v0OYDFw"/>
     </service>
     <service id="doctrine.orm.manager_configurator.abstract" class="Doctrine\Bundle\DoctrineBundle\ManagerConfigurator" abstract="true">
       <argument type="collection"/>
@@ -4232,6 +4243,9 @@
     <service id=".instanceof.Symfony\Contracts\Service\ServiceSubscriberInterface.0.App\Controller\SecurityController" class="App\Controller\SecurityController" autowire="true" abstract="true"/>
     <service id=".instanceof.Symfony\Bundle\FrameworkBundle\Controller\AbstractController.0.App\Controller\SecurityController" class="App\Controller\SecurityController" autowire="true" abstract="true"/>
     <service id=".abstract.instanceof.App\Controller\SecurityController" class="App\Controller\SecurityController" autowire="true" autoconfigure="true" abstract="true"/>
+    <service id=".instanceof.Symfony\Contracts\Service\ServiceSubscriberInterface.0.App\Controller\SprintChefContronllerController" class="App\Controller\SprintChefContronllerController" autowire="true" abstract="true"/>
+    <service id=".instanceof.Symfony\Bundle\FrameworkBundle\Controller\AbstractController.0.App\Controller\SprintChefContronllerController" class="App\Controller\SprintChefContronllerController" autowire="true" abstract="true"/>
+    <service id=".abstract.instanceof.App\Controller\SprintChefContronllerController" class="App\Controller\SprintChefContronllerController" autowire="true" autoconfigure="true" abstract="true"/>
     <service id=".instanceof.Symfony\Contracts\Service\ServiceSubscriberInterface.0.App\Controller\SprintController" class="App\Controller\SprintController" autowire="true" abstract="true"/>
     <service id=".instanceof.Symfony\Bundle\FrameworkBundle\Controller\AbstractController.0.App\Controller\SprintController" class="App\Controller\SprintController" autowire="true" abstract="true"/>
     <service id=".abstract.instanceof.App\Controller\SprintController" class="App\Controller\SprintController" autowire="true" autoconfigure="true" abstract="true"/>
@@ -4294,6 +4308,8 @@
     <service id=".abstract.instanceof.App\Repository\FactureRepository" class="App\Repository\FactureRepository" autowire="true" autoconfigure="true" abstract="true"/>
     <service id=".instanceof.Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepositoryInterface.0.App\Repository\FonctionRepository" class="App\Repository\FonctionRepository" autowire="true" abstract="true"/>
     <service id=".abstract.instanceof.App\Repository\FonctionRepository" class="App\Repository\FonctionRepository" autowire="true" autoconfigure="true" abstract="true"/>
+    <service id=".instanceof.Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepositoryInterface.0.App\Repository\NoticationSprintRepository" class="App\Repository\NoticationSprintRepository" autowire="true" abstract="true"/>
+    <service id=".abstract.instanceof.App\Repository\NoticationSprintRepository" class="App\Repository\NoticationSprintRepository" autowire="true" autoconfigure="true" abstract="true"/>
     <service id=".instanceof.Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepositoryInterface.0.App\Repository\NotificationRepository" class="App\Repository\NotificationRepository" autowire="true" abstract="true"/>
     <service id=".abstract.instanceof.App\Repository\NotificationRepository" class="App\Repository\NotificationRepository" autowire="true" autoconfigure="true" abstract="true"/>
     <service id=".instanceof.Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepositoryInterface.0.App\Repository\PrioriteRepository" class="App\Repository\PrioriteRepository" autowire="true" abstract="true"/>
@@ -4870,10 +4886,11 @@
         <argument key="fonction" type="service_closure" id=".errored..service_locator.WAid7fk.App\Entity\Fonction"/>
       </argument>
     </service>
-    <service id=".service_locator.AW43DMG" class="Symfony\Component\DependencyInjection\ServiceLocator">
+    <service id=".service_locator.Ei9_nk6" class="Symfony\Component\DependencyInjection\ServiceLocator">
       <tag name="container.service_locator"/>
       <argument type="collection">
         <argument key="equipe" type="service_closure" id="App\Repository\EquipeRepository"/>
+        <argument key="facture" type="service_closure" id="App\Repository\FactureRepository"/>
         <argument key="notificationRepo" type="service_closure" id="App\Repository\NotificationRepository"/>
         <argument key="projet" type="service_closure" id="App\Repository\ProjetRepository"/>
         <argument key="security" type="service_closure" id="security.helper"/>
@@ -5039,7 +5056,7 @@
         <argument key="security" type="service_closure" id="security.helper"/>
       </argument>
     </service>
-    <service id=".service_locator.LLgWloo" class="Symfony\Component\DependencyInjection\ServiceLocator">
+    <service id=".service_locator.84GCJyp" class="Symfony\Component\DependencyInjection\ServiceLocator">
       <tag name="container.service_locator"/>
       <argument type="collection">
         <argument key="App\Controller\ChefTaskController::index" type="service_closure" id=".service_locator.tqE.zGO"/>
@@ -5083,7 +5100,7 @@
         <argument key="App\Controller\FonctionController::index" type="service_closure" id=".service_locator.WFmNc4M"/>
         <argument key="App\Controller\FonctionController::new" type="service_closure" id=".service_locator.l2QwsaZ"/>
         <argument key="App\Controller\FonctionController::show" type="service_closure" id=".service_locator.Y3X3d_D"/>
-        <argument key="App\Controller\HomeController::index" type="service_closure" id=".service_locator.AW43DMG"/>
+        <argument key="App\Controller\HomeController::index" type="service_closure" id=".service_locator.Ei9_nk6"/>
         <argument key="App\Controller\NotificationController::delete" type="service_closure" id=".service_locator.iPzJNuw"/>
         <argument key="App\Controller\NotificationController::edit" type="service_closure" id=".service_locator.iPzJNuw"/>
         <argument key="App\Controller\NotificationController::index" type="service_closure" id=".service_locator.6etVjkp"/>
@@ -5169,7 +5186,7 @@
         <argument key="App\Controller\FonctionController:index" type="service_closure" id=".service_locator.WFmNc4M"/>
         <argument key="App\Controller\FonctionController:new" type="service_closure" id=".service_locator.l2QwsaZ"/>
         <argument key="App\Controller\FonctionController:show" type="service_closure" id=".service_locator.Y3X3d_D"/>
-        <argument key="App\Controller\HomeController:index" type="service_closure" id=".service_locator.AW43DMG"/>
+        <argument key="App\Controller\HomeController:index" type="service_closure" id=".service_locator.Ei9_nk6"/>
         <argument key="App\Controller\NotificationController:delete" type="service_closure" id=".service_locator.iPzJNuw"/>
         <argument key="App\Controller\NotificationController:edit" type="service_closure" id=".service_locator.iPzJNuw"/>
         <argument key="App\Controller\NotificationController:index" type="service_closure" id=".service_locator.6etVjkp"/>
@@ -5381,7 +5398,7 @@
         <argument key="doctrine.orm.listeners.doctrine_token_provider_schema_subscriber" type="service_closure" id="doctrine.orm.listeners.doctrine_token_provider_schema_subscriber"/>
       </argument>
     </service>
-    <service id=".service_locator.Bf6EBsK" class="Symfony\Component\DependencyInjection\ServiceLocator">
+    <service id=".service_locator.v0OYDFw" class="Symfony\Component\DependencyInjection\ServiceLocator">
       <tag name="container.service_locator"/>
       <argument type="collection">
         <argument key="App\Repository\ClientRepository" type="service_closure" id="App\Repository\ClientRepository"/>
@@ -5392,6 +5409,7 @@
         <argument key="App\Repository\EtatRepository" type="service_closure" id="App\Repository\EtatRepository"/>
         <argument key="App\Repository\FactureRepository" type="service_closure" id="App\Repository\FactureRepository"/>
         <argument key="App\Repository\FonctionRepository" type="service_closure" id="App\Repository\FonctionRepository"/>
+        <argument key="App\Repository\NoticationSprintRepository" type="service_closure" id="App\Repository\NoticationSprintRepository"/>
         <argument key="App\Repository\NotificationRepository" type="service_closure" id="App\Repository\NotificationRepository"/>
         <argument key="App\Repository\PrioriteRepository" type="service_closure" id="App\Repository\PrioriteRepository"/>
         <argument key="App\Repository\ProjetClientRepository" type="service_closure" id="App\Repository\ProjetClientRepository"/>
@@ -5567,6 +5585,12 @@
       <argument type="service" id="service_container"/>
       <factory service=".service_locator.l1ae.Qz" method="withContext"/>
     </service>
+    <service id=".service_locator.l1ae.Qz.App\Controller\SprintChefContronllerController" class="Symfony\Component\DependencyInjection\ServiceLocator">
+      <tag name="container.service_locator_context" id="App\Controller\SprintChefContronllerController"/>
+      <argument>App\Controller\SprintChefContronllerController</argument>
+      <argument type="service" id="service_container"/>
+      <factory service=".service_locator.l1ae.Qz" method="withContext"/>
+    </service>
     <service id=".service_locator.l1ae.Qz.App\Controller\SprintController" class="Symfony\Component\DependencyInjection\ServiceLocator">
       <tag name="container.service_locator_context" id="App\Controller\SprintController"/>
       <argument>App\Controller\SprintController</argument>
@@ -5720,12 +5744,12 @@
       <argument type="service" id="security.token_storage"/>
     </service>
     <service id="debug.argument_resolver.service.inner" class="Symfony\Component\HttpKernel\Controller\ArgumentResolver\ServiceValueResolver">
-      <argument type="service" id=".service_locator.LLgWloo"/>
+      <argument type="service" id=".service_locator.84GCJyp"/>
     </service>
     <service id="debug.argument_resolver.default.inner" class="Symfony\Component\HttpKernel\Controller\ArgumentResolver\DefaultValueResolver"/>
     <service id="debug.argument_resolver.variadic.inner" class="Symfony\Component\HttpKernel\Controller\ArgumentResolver\VariadicValueResolver"/>
     <service id="debug.argument_resolver.not_tagged_controller.inner" class="Symfony\Component\HttpKernel\Controller\ArgumentResolver\NotTaggedControllerValueResolver">
-      <argument type="service" id=".service_locator.LLgWloo"/>
+      <argument type="service" id=".service_locator.84GCJyp"/>
     </service>
     <service id=".doctrine.orm.default_metadata_driver.inner" class="Doctrine\Persistence\Mapping\Driver\MappingDriverChain">
       <call method="addDriver">
@@ -6439,7 +6463,7 @@
     <service id="Symfony\Component\Security\Core\User\UserCheckerInterface" alias="security.user_checker"/>
     <service id="container.env_var_processors_locator" alias=".service_locator.gSv9zYw" public="true"/>
     <service id="twig.loader.filesystem" alias="twig.loader.native_filesystem"/>
-    <service id="argument_resolver.controller_locator" alias=".service_locator.LLgWloo"/>
+    <service id="argument_resolver.controller_locator" alias=".service_locator.84GCJyp"/>
     <service id="Psr\Log\LoggerInterface $requestLogger" alias="monolog.logger.request"/>
     <service id="Psr\Log\LoggerInterface $consoleLogger" alias="monolog.logger.console"/>
     <service id="Psr\Log\LoggerInterface $cacheLogger" alias="monolog.logger.cache"/>
@@ -6458,7 +6482,7 @@
     <service id=".service_locator.zJgRO22" alias=".service_locator.G6VsHmh"/>
     <service id=".service_locator.sy.PpqE" alias=".service_locator.JVUHItZ"/>
     <service id=".service_locator.k8_kl6W" alias=".service_locator.WAid7fk"/>
-    <service id=".service_locator.U7b5V1A" alias=".service_locator.AW43DMG"/>
+    <service id=".service_locator.IcSbvds" alias=".service_locator.Ei9_nk6"/>
     <service id=".service_locator.jlAV_Cy" alias=".service_locator.iPzJNuw"/>
     <service id=".service_locator.45Yq4M1" alias=".service_locator.oB26OpH"/>
     <service id=".service_locator.Th9IVhd" alias=".service_locator.QDkw4M0"/>
@@ -6467,7 +6491,7 @@
     <service id=".service_locator.7vssRpD" alias=".service_locator.rv0q7kY"/>
     <service id=".service_locator.87TvLY8" alias=".service_locator.CDhANYI"/>
     <service id=".service_locator.yyMrrGo" alias=".service_locator.1yXxVY1"/>
-    <service id=".service_locator.pVQQ5ix" alias=".service_locator.LLgWloo"/>
+    <service id=".service_locator.t3s6keS" alias=".service_locator.84GCJyp"/>
     <service id=".service_locator.wKF4yn1" alias=".service_locator.19_mNxd"/>
     <service id=".service_locator.QT4dOaU" alias=".service_locator.fZqqck7"/>
     <service id=".service_locator.qBCHs1a" alias=".service_locator.QXcJQkF"/>
@@ -6517,7 +6541,7 @@
     <service id=".service_locator.Hhm9Bdw" alias=".service_locator.WFmNc4M"/>
     <service id=".service_locator.aWUOlQU" alias=".service_locator.Y3X3d_D"/>
     <service id=".service_locator.Sd3J8_S" alias=".service_locator.WAid7fk"/>
-    <service id=".service_locator.TD5aJW8" alias=".service_locator.AW43DMG"/>
+    <service id=".service_locator.Ipd1pHf" alias=".service_locator.Ei9_nk6"/>
     <service id=".service_locator.NrlEDW3" alias=".service_locator.6etVjkp"/>
     <service id=".service_locator.dWbSMJQ" alias=".service_locator.DZXoutK"/>
     <service id=".service_locator.kydi4Ed" alias=".service_locator.5miB8_X"/>

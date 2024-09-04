@@ -1,11 +1,67 @@
 {{ include('content/navbar.html.twig') }}
 {{ include('content/slidebar.html.twig') }}
+<style>
+    .card {
+        display: flex;
+        flex-direction: column;
+        height: 100%; /* Assure que la carte occupe toute la hauteur de la colonne */
+        max-height: 100%; /* Assure que la carte ne dépasse pas la hauteur maximale */
+    }
+
+    .card-body {
+        flex: 1; /* Permet au corps de la carte de remplir l'espace restant */
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between; /* Assure que le bouton est poussé vers le bas */
+    }
+
+    .btn-primary {
+        margin-top: auto; /* Assure que le bouton est toujours en bas de la carte */
+    }
+
+    .row {
+        display: flex;
+        flex-wrap: wrap; /* Permet aux colonnes de se wraper sur plusieurs lignes si nécessaire */
+    }
+
+    .col-md-4,
+    .col-lg-4,
+    .col-xl-3 {
+        display: flex;
+        align-items: stretch; /* Assure que les colonnes ont la même hauteur */
+    }
+
+    .card {
+        width: 100%; /* Assure que la carte occupe toute la largeur de la colonne */
+        max-width: 100%; /* Empêche la carte de dépasser la largeur maximale de la colonne */
+    }
+</style>
 
 
-<div class="pcoded-content">
-    <div class="container mt-4">
-        Mes taches
+<!-- Service Start -->
+<div class="container-fluid service py-5">
+    <div class="container py-5">
+        <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
+            <h4 class="text-primary">Mes taches</h4>
+        </div>
+        <div class="row g-4 justify-content-center">
+            {% if taches %}
+                {% for tache in taches %}
+                    <div class="col-md-4 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="card">
+                            {# <img src="img/blog-1.png" class="card-img-top img-fluid rounded-top" alt="Image du projet"> #}
+                            <div class="card-body">
+                                <h4 class="card-title">{{ tache.nomTache|lower }}</h4>
+                                {# <p class="card-text">{{ tache.description }}</p> #}
+                            <a class="btn btn-primary"href="{{path('app_tache_edit',{'id':tache.id})}}">Voir plus</a>
+                            </div>
+                        </div>
+                    </div>
+                {% endfor %}
+            {% endif %}
+        </div>
     </div>
 </div>
+<!-- Service End -->
 
 {{ include('content/data.html.twig') }}
