@@ -222,13 +222,57 @@ class __TwigTemplate_988b924c238356a28718eba2ae0f45ea4ab9edc7657bc5ba17a693467e8
                     </div>
                 </div>
                 
+                <div class=\"navbar-item dropdown\">
+                    <a href=\"#\" data-bs-toggle=\"dropdown\" class=\"navbar-link dropdown-toggle icon\">
+                        <i class=\"fa fa-file\"></i>
+                    <span class=\"badge\">";
+        // line 121
+        yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(Twig\Extension\CoreExtension::length($this->env->getCharset(), (isset($context["factures"]) || array_key_exists("factures", $context) ? $context["factures"] : (function () { throw new RuntimeError('Variable "factures" does not exist.', 121, $this->source); })())), "html", null, true);
+        yield " </span>
+                    </a>
+                    <div class=\"dropdown-menu media-list dropdown-menu-end\">
+                        <div class=\"dropdown-header\">FACTURES";
+        // line 124
+        yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(Twig\Extension\CoreExtension::length($this->env->getCharset(), (isset($context["factures"]) || array_key_exists("factures", $context) ? $context["factures"] : (function () { throw new RuntimeError('Variable "factures" does not exist.', 124, $this->source); })())), "html", null, true);
+        yield " </div>
+                            ";
+        // line 125
+        $context['_parent'] = $context;
+        $context['_seq'] = CoreExtension::ensureTraversable((isset($context["factures"]) || array_key_exists("factures", $context) ? $context["factures"] : (function () { throw new RuntimeError('Variable "factures" does not exist.', 125, $this->source); })()));
+        foreach ($context['_seq'] as $context["_key"] => $context["facture"]) {
+            // line 126
+            yield "                           
+                            <a href=\"javascript:;\" class=\"dropdown-item media\">
+                               
+                                <a href=\"";
+            // line 129
+            yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_facture_client", ["id" => CoreExtension::getAttribute($this->env, $this->source, $context["facture"], "id", [], "any", false, false, false, 129)]), "html", null, true);
+            yield "\" class=\"dropdown-item media\" >
+                                    <div class=\"media-body\">
+                                        <p class=\"media-heading\">";
+            // line 131
+            yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(Twig\Extension\CoreExtension::lower($this->env->getCharset(), CoreExtension::getAttribute($this->env, $this->source, CoreExtension::getAttribute($this->env, $this->source, $context["facture"], "projet", [], "any", false, false, false, 131), "nom", [], "any", false, false, false, 131)), "html", null, true);
+            yield " <i class=\"fa fa-exclamation-circle text-danger\"></i></p>
+                                    </div>
+                                </a>
+                            </a>
+                        ";
+        }
+        $_parent = $context['_parent'];
+        unset($context['_seq'], $context['_iterated'], $context['_key'], $context['facture'], $context['_parent'], $context['loop']);
+        $context = array_intersect_key($context, $_parent) + $_parent;
+        // line 136
+        yield "                        
+                    </div>
+                </div>
+                
                 <div class=\"navbar-item navbar-user dropdown\">
                     <a href=\"#\" class=\"navbar-link dropdown-toggle d-flex align-items-center\" data-bs-toggle=\"dropdown\" aria-expanded=\"false\">
                         <img src=\"../assets/img/user/user-13.jpg\" alt=\"\">
                         <span>
                             <span class=\"d-none d-md-inline\"> ";
-        // line 122
-        yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(CoreExtension::getAttribute($this->env, $this->source, CoreExtension::getAttribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 122, $this->source); })()), "session", [], "any", false, false, false, 122), "get", ["user_name"], "method", false, false, false, 122), "html", null, true);
+        // line 144
+        yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(CoreExtension::getAttribute($this->env, $this->source, CoreExtension::getAttribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 144, $this->source); })()), "session", [], "any", false, false, false, 144), "get", ["user_name"], "method", false, false, false, 144), "html", null, true);
         yield "</span>
                             
                         </span>
@@ -237,10 +281,10 @@ class __TwigTemplate_988b924c238356a28718eba2ae0f45ea4ab9edc7657bc5ba17a693467e8
                        
                         <a href=\"#\" class=\"dropdown-item\">Calendar</a>
                         ";
-        // line 130
+        // line 152
         yield "                        <div class=\"dropdown-divider\"></div>
                         <a href=\"";
-        // line 131
+        // line 153
         yield $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_logout");
         yield "\" class=\"dropdown-item\">Log Out</a>
                     </div>
@@ -279,7 +323,7 @@ class __TwigTemplate_988b924c238356a28718eba2ae0f45ea4ab9edc7657bc5ba17a693467e8
      */
     public function getDebugInfo()
     {
-        return array (  244 => 131,  241 => 130,  231 => 122,  221 => 114,  210 => 109,  206 => 108,  201 => 106,  196 => 103,  192 => 102,  188 => 101,  182 => 98,  161 => 80,  157 => 79,  119 => 44,  115 => 43,  110 => 41,  106 => 40,  102 => 39,  96 => 36,  92 => 35,  88 => 34,  83 => 32,  78 => 30,  73 => 28,  68 => 26,  41 => 1,);
+        return array (  288 => 153,  285 => 152,  275 => 144,  265 => 136,  254 => 131,  249 => 129,  244 => 126,  240 => 125,  236 => 124,  230 => 121,  221 => 114,  210 => 109,  206 => 108,  201 => 106,  196 => 103,  192 => 102,  188 => 101,  182 => 98,  161 => 80,  157 => 79,  119 => 44,  115 => 43,  110 => 41,  106 => 40,  102 => 39,  96 => 36,  92 => 35,  88 => 34,  83 => 32,  78 => 30,  73 => 28,  68 => 26,  41 => 1,);
     }
 
     public function getSourceContext()
@@ -393,6 +437,28 @@ class __TwigTemplate_988b924c238356a28718eba2ae0f45ea4ab9edc7657bc5ba17a693467e8
                                     <div class=\"media-body\">
                                         <p class=\"media-heading\">{{notification.nomTache|lower}} <i class=\"fa fa-exclamation-circle text-danger\"></i></p>
                                         <div class=\"text-muted fs-10px\">{{notification.nomTache}}</div>
+                                    </div>
+                                </a>
+                            </a>
+                        {% endfor %}
+                        
+                    </div>
+                </div>
+                
+                <div class=\"navbar-item dropdown\">
+                    <a href=\"#\" data-bs-toggle=\"dropdown\" class=\"navbar-link dropdown-toggle icon\">
+                        <i class=\"fa fa-file\"></i>
+                    <span class=\"badge\">{{factures|length}} </span>
+                    </a>
+                    <div class=\"dropdown-menu media-list dropdown-menu-end\">
+                        <div class=\"dropdown-header\">FACTURES{{factures|length}} </div>
+                            {% for facture in factures %}
+                           
+                            <a href=\"javascript:;\" class=\"dropdown-item media\">
+                               
+                                <a href=\"{{path('app_facture_client',{'id':facture.id})}}\" class=\"dropdown-item media\" >
+                                    <div class=\"media-body\">
+                                        <p class=\"media-heading\">{{facture.projet.nom|lower}} <i class=\"fa fa-exclamation-circle text-danger\"></i></p>
                                     </div>
                                 </a>
                             </a>

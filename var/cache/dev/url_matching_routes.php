@@ -87,58 +87,61 @@ return [
                     .')'
                 .')'
                 .'|/f(?'
-                    .'|acture/([^/]++)(?'
-                        .'|(*:362)'
-                        .'|/edit(*:375)'
-                        .'|(*:383)'
+                    .'|acture/(?'
+                        .'|([^/]++)(*:362)'
+                        .'|my\\-facture/([^/]++)(*:390)'
+                        .'|([^/]++)(?'
+                            .'|/edit(*:414)'
+                            .'|(*:422)'
+                        .')'
                     .')'
                     .'|onction/([^/]++)(?'
-                        .'|(*:411)'
-                        .'|/edit(*:424)'
-                        .'|(*:432)'
+                        .'|(*:451)'
+                        .'|/edit(*:464)'
+                        .'|(*:472)'
                     .')'
                 .')'
                 .'|/user\\-notification/(?'
-                    .'|notification/read/([^/]++)(*:491)'
+                    .'|notification/read/([^/]++)(*:531)'
                     .'|([^/]++)(?'
-                        .'|(*:510)'
-                        .'|/edit(*:523)'
-                        .'|(*:531)'
+                        .'|(*:550)'
+                        .'|/edit(*:563)'
+                        .'|(*:571)'
                     .')'
                 .')'
                 .'|/pr(?'
                     .'|iorite/([^/]++)(?'
-                        .'|(*:565)'
-                        .'|/edit(*:578)'
-                        .'|(*:586)'
+                        .'|(*:605)'
+                        .'|/edit(*:618)'
+                        .'|(*:626)'
                     .')'
                     .'|ojet/([^/]++)(?'
-                        .'|(*:611)'
-                        .'|/edit(*:624)'
-                        .'|(*:632)'
+                        .'|(*:651)'
+                        .'|/edit(*:664)'
+                        .'|(*:672)'
                     .')'
                 .')'
                 .'|/r(?'
                     .'|essource/([^/]++)(?'
-                        .'|(*:667)'
-                        .'|/edit(*:680)'
-                        .'|(*:688)'
+                        .'|(*:707)'
+                        .'|/edit(*:720)'
+                        .'|(*:728)'
                     .')'
                     .'|ole/([^/]++)(?'
-                        .'|(*:712)'
-                        .'|/edit(*:725)'
-                        .'|(*:733)'
+                        .'|(*:752)'
+                        .'|/edit(*:765)'
+                        .'|(*:773)'
                     .')'
                 .')'
                 .'|/sprint/([^/]++)(?'
-                    .'|(*:762)'
-                    .'|/edit(*:775)'
-                    .'|(*:783)'
+                    .'|(*:802)'
+                    .'|/edit(*:815)'
+                    .'|(*:823)'
                 .')'
                 .'|/tache/([^/]++)(?'
-                    .'|(*:810)'
-                    .'|/edit(*:823)'
-                    .'|(*:831)'
+                    .'|(*:850)'
+                    .'|/edit(*:863)'
+                    .'|(*:871)'
                 .')'
             .')/?$}sDu',
     ],
@@ -163,33 +166,34 @@ return [
         321 => [[['_route' => 'app_etat_edit', '_controller' => 'App\\Controller\\EtatController::edit'], ['id'], ['GET' => 0, 'POST' => 1], null, false, false, null]],
         329 => [[['_route' => 'app_etat_delete', '_controller' => 'App\\Controller\\EtatController::delete'], ['id'], ['POST' => 0], null, false, true, null]],
         362 => [[['_route' => 'app_facture_show', '_controller' => 'App\\Controller\\FactureController::show'], ['id'], ['GET' => 0], null, false, true, null]],
-        375 => [[['_route' => 'app_facture_edit', '_controller' => 'App\\Controller\\FactureController::edit'], ['id'], ['GET' => 0, 'POST' => 1], null, false, false, null]],
-        383 => [[['_route' => 'app_facture_delete', '_controller' => 'App\\Controller\\FactureController::delete'], ['id'], ['POST' => 0], null, false, true, null]],
-        411 => [[['_route' => 'app_fonction_show', '_controller' => 'App\\Controller\\FonctionController::show'], ['id'], ['GET' => 0], null, false, true, null]],
-        424 => [[['_route' => 'app_fonction_edit', '_controller' => 'App\\Controller\\FonctionController::edit'], ['id'], ['GET' => 0, 'POST' => 1], null, false, false, null]],
-        432 => [[['_route' => 'app_fonction_delete', '_controller' => 'App\\Controller\\FonctionController::delete'], ['id'], ['POST' => 0], null, false, true, null]],
-        491 => [[['_route' => 'notification_read', '_controller' => 'App\\Controller\\NotificationController::markAsRead'], ['id'], ['GET' => 0], null, false, true, null]],
-        510 => [[['_route' => 'app_notification_show', '_controller' => 'App\\Controller\\NotificationController::show'], ['id'], ['GET' => 0], null, false, true, null]],
-        523 => [[['_route' => 'app_notification_edit', '_controller' => 'App\\Controller\\NotificationController::edit'], ['id'], ['GET' => 0, 'POST' => 1], null, false, false, null]],
-        531 => [[['_route' => 'app_notification_delete', '_controller' => 'App\\Controller\\NotificationController::delete'], ['id'], ['POST' => 0], null, false, true, null]],
-        565 => [[['_route' => 'app_priorite_show', '_controller' => 'App\\Controller\\PrioriteController::show'], ['id'], ['GET' => 0], null, false, true, null]],
-        578 => [[['_route' => 'app_priorite_edit', '_controller' => 'App\\Controller\\PrioriteController::edit'], ['id'], ['GET' => 0, 'POST' => 1], null, false, false, null]],
-        586 => [[['_route' => 'app_priorite_delete', '_controller' => 'App\\Controller\\PrioriteController::delete'], ['id'], ['POST' => 0], null, false, true, null]],
-        611 => [[['_route' => 'app_projet_show', '_controller' => 'App\\Controller\\ProjetController::show'], ['id'], ['GET' => 0], null, false, true, null]],
-        624 => [[['_route' => 'app_projet_edit', '_controller' => 'App\\Controller\\ProjetController::edit'], ['id'], ['GET' => 0, 'POST' => 1], null, false, false, null]],
-        632 => [[['_route' => 'app_projet_delete', '_controller' => 'App\\Controller\\ProjetController::delete'], ['id'], ['POST' => 0], null, false, true, null]],
-        667 => [[['_route' => 'app_ressource_show', '_controller' => 'App\\Controller\\RessourceController::show'], ['id'], ['GET' => 0], null, false, true, null]],
-        680 => [[['_route' => 'app_ressource_edit', '_controller' => 'App\\Controller\\RessourceController::edit'], ['id'], ['GET' => 0, 'POST' => 1], null, false, false, null]],
-        688 => [[['_route' => 'app_ressource_delete', '_controller' => 'App\\Controller\\RessourceController::delete'], ['id'], ['POST' => 0], null, false, true, null]],
-        712 => [[['_route' => 'app_role_show', '_controller' => 'App\\Controller\\RoleController::show'], ['id'], ['GET' => 0], null, false, true, null]],
-        725 => [[['_route' => 'app_role_edit', '_controller' => 'App\\Controller\\RoleController::edit'], ['id'], ['GET' => 0, 'POST' => 1], null, false, false, null]],
-        733 => [[['_route' => 'app_role_delete', '_controller' => 'App\\Controller\\RoleController::delete'], ['id'], ['POST' => 0], null, false, true, null]],
-        762 => [[['_route' => 'app_sprint_show', '_controller' => 'App\\Controller\\SprintController::show'], ['id'], ['GET' => 0], null, false, true, null]],
-        775 => [[['_route' => 'app_sprint_edit', '_controller' => 'App\\Controller\\SprintController::edit'], ['id'], ['GET' => 0, 'POST' => 1], null, false, false, null]],
-        783 => [[['_route' => 'app_sprint_delete', '_controller' => 'App\\Controller\\SprintController::delete'], ['id'], ['POST' => 0], null, false, true, null]],
-        810 => [[['_route' => 'app_tache_show', '_controller' => 'App\\Controller\\TacheController::show'], ['id'], ['GET' => 0], null, false, true, null]],
-        823 => [[['_route' => 'app_tache_edit', '_controller' => 'App\\Controller\\TacheController::edit'], ['id'], ['GET' => 0, 'POST' => 1], null, false, false, null]],
-        831 => [
+        390 => [[['_route' => 'app_facture_client', '_controller' => 'App\\Controller\\FactureController::read'], ['id'], ['GET' => 0], null, false, true, null]],
+        414 => [[['_route' => 'app_facture_edit', '_controller' => 'App\\Controller\\FactureController::edit'], ['id'], ['GET' => 0, 'POST' => 1], null, false, false, null]],
+        422 => [[['_route' => 'app_facture_delete', '_controller' => 'App\\Controller\\FactureController::delete'], ['id'], ['POST' => 0], null, false, true, null]],
+        451 => [[['_route' => 'app_fonction_show', '_controller' => 'App\\Controller\\FonctionController::show'], ['id'], ['GET' => 0], null, false, true, null]],
+        464 => [[['_route' => 'app_fonction_edit', '_controller' => 'App\\Controller\\FonctionController::edit'], ['id'], ['GET' => 0, 'POST' => 1], null, false, false, null]],
+        472 => [[['_route' => 'app_fonction_delete', '_controller' => 'App\\Controller\\FonctionController::delete'], ['id'], ['POST' => 0], null, false, true, null]],
+        531 => [[['_route' => 'notification_read', '_controller' => 'App\\Controller\\NotificationController::markAsRead'], ['id'], ['GET' => 0], null, false, true, null]],
+        550 => [[['_route' => 'app_notification_show', '_controller' => 'App\\Controller\\NotificationController::show'], ['id'], ['GET' => 0], null, false, true, null]],
+        563 => [[['_route' => 'app_notification_edit', '_controller' => 'App\\Controller\\NotificationController::edit'], ['id'], ['GET' => 0, 'POST' => 1], null, false, false, null]],
+        571 => [[['_route' => 'app_notification_delete', '_controller' => 'App\\Controller\\NotificationController::delete'], ['id'], ['POST' => 0], null, false, true, null]],
+        605 => [[['_route' => 'app_priorite_show', '_controller' => 'App\\Controller\\PrioriteController::show'], ['id'], ['GET' => 0], null, false, true, null]],
+        618 => [[['_route' => 'app_priorite_edit', '_controller' => 'App\\Controller\\PrioriteController::edit'], ['id'], ['GET' => 0, 'POST' => 1], null, false, false, null]],
+        626 => [[['_route' => 'app_priorite_delete', '_controller' => 'App\\Controller\\PrioriteController::delete'], ['id'], ['POST' => 0], null, false, true, null]],
+        651 => [[['_route' => 'app_projet_show', '_controller' => 'App\\Controller\\ProjetController::show'], ['id'], ['GET' => 0], null, false, true, null]],
+        664 => [[['_route' => 'app_projet_edit', '_controller' => 'App\\Controller\\ProjetController::edit'], ['id'], ['GET' => 0, 'POST' => 1], null, false, false, null]],
+        672 => [[['_route' => 'app_projet_delete', '_controller' => 'App\\Controller\\ProjetController::delete'], ['id'], ['POST' => 0], null, false, true, null]],
+        707 => [[['_route' => 'app_ressource_show', '_controller' => 'App\\Controller\\RessourceController::show'], ['id'], ['GET' => 0], null, false, true, null]],
+        720 => [[['_route' => 'app_ressource_edit', '_controller' => 'App\\Controller\\RessourceController::edit'], ['id'], ['GET' => 0, 'POST' => 1], null, false, false, null]],
+        728 => [[['_route' => 'app_ressource_delete', '_controller' => 'App\\Controller\\RessourceController::delete'], ['id'], ['POST' => 0], null, false, true, null]],
+        752 => [[['_route' => 'app_role_show', '_controller' => 'App\\Controller\\RoleController::show'], ['id'], ['GET' => 0], null, false, true, null]],
+        765 => [[['_route' => 'app_role_edit', '_controller' => 'App\\Controller\\RoleController::edit'], ['id'], ['GET' => 0, 'POST' => 1], null, false, false, null]],
+        773 => [[['_route' => 'app_role_delete', '_controller' => 'App\\Controller\\RoleController::delete'], ['id'], ['POST' => 0], null, false, true, null]],
+        802 => [[['_route' => 'app_sprint_show', '_controller' => 'App\\Controller\\SprintController::show'], ['id'], ['GET' => 0], null, false, true, null]],
+        815 => [[['_route' => 'app_sprint_edit', '_controller' => 'App\\Controller\\SprintController::edit'], ['id'], ['GET' => 0, 'POST' => 1], null, false, false, null]],
+        823 => [[['_route' => 'app_sprint_delete', '_controller' => 'App\\Controller\\SprintController::delete'], ['id'], ['POST' => 0], null, false, true, null]],
+        850 => [[['_route' => 'app_tache_show', '_controller' => 'App\\Controller\\TacheController::show'], ['id'], ['GET' => 0], null, false, true, null]],
+        863 => [[['_route' => 'app_tache_edit', '_controller' => 'App\\Controller\\TacheController::edit'], ['id'], ['GET' => 0, 'POST' => 1], null, false, false, null]],
+        871 => [
             [['_route' => 'app_tache_delete', '_controller' => 'App\\Controller\\TacheController::delete'], ['id'], ['POST' => 0], null, false, true, null],
             [null, null, null, null, false, false, 0],
         ],

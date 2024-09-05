@@ -3,6 +3,7 @@
 namespace App\Controller;
 
 use App\Entity\Client;
+use App\Repository\FactureRepository;
 use App\Repository\ProjetRepository;
 use App\Repository\TacheRepository;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
@@ -14,7 +15,7 @@ use Symfony\Component\Security\Core\Security;
 class UserProjectController extends AbstractController
 {
     #[Route('/projet', name: 'app_user_project', methods: ['GET'])]
-    public function index(Security $security, ProjetRepository $projetRepository,TacheRepository $tacheRepository): Response
+    public function index(Security $security, ProjetRepository $projetRepository,TacheRepository $tacheRepository,FactureRepository $facture): Response
     {
         $user = $security->getUser();
 
@@ -22,6 +23,7 @@ class UserProjectController extends AbstractController
         $projets = $projetRepository->findByClient($user);
         return $this->render('home_user/service.html.twig', [
            'projets'=>$projets,
+           'factures'=>$facture->findByClient($user),
            'notification'=>$tacheRepository->findByClient($user)
         ]);
     }

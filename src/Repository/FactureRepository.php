@@ -40,4 +40,14 @@ class FactureRepository extends ServiceEntityRepository
         // Return the total amount, ensuring it's a float
         return (float) $result;
     }
+    public function findByClient($client): array
+    {
+        return $this->createQueryBuilder('f')
+            ->join('f.projet', 'p')
+            ->join('p.client', 'c')
+            ->where('c.id = :client')
+            ->setParameter('client', $client)
+            ->getQuery()
+            ->getResult();
+    }
 }

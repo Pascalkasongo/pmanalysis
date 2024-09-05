@@ -115,6 +115,28 @@
                     </div>
                 </div>
                 
+                <div class="navbar-item dropdown">
+                    <a href="#" data-bs-toggle="dropdown" class="navbar-link dropdown-toggle icon">
+                        <i class="fa fa-file"></i>
+                    <span class="badge">{{factures|length}} </span>
+                    </a>
+                    <div class="dropdown-menu media-list dropdown-menu-end">
+                        <div class="dropdown-header">FACTURES{{factures|length}} </div>
+                            {% for facture in factures %}
+                           
+                            <a href="javascript:;" class="dropdown-item media">
+                               
+                                <a href="{{path('app_facture_client',{'id':facture.id})}}" class="dropdown-item media" >
+                                    <div class="media-body">
+                                        <p class="media-heading">{{facture.projet.nom|lower}} <i class="fa fa-exclamation-circle text-danger"></i></p>
+                                    </div>
+                                </a>
+                            </a>
+                        {% endfor %}
+                        
+                    </div>
+                </div>
+                
                 <div class="navbar-item navbar-user dropdown">
                     <a href="#" class="navbar-link dropdown-toggle d-flex align-items-center" data-bs-toggle="dropdown" aria-expanded="false">
                         <img src="../assets/img/user/user-13.jpg" alt="">

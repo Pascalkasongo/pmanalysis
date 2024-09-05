@@ -24,6 +24,9 @@ class Facture
     #[ORM\Column]
     private ?float $montant = null;
 
+    #[ORM\Column(nullable: true)]
+    private ?bool $is_factured = null;
+
     public function getId(): ?int
     {
         return $this->id;
@@ -62,6 +65,18 @@ class Facture
     public function setMontant(float $montant): static
     {
         $this->montant = $montant;
+
+        return $this;
+    }
+
+    public function isIsFactured(): ?bool
+    {
+        return $this->is_factured;
+    }
+
+    public function setIsFactured(?bool $is_factured): static
+    {
+        $this->is_factured = $is_factured;
 
         return $this;
     }

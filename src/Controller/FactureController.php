@@ -48,7 +48,7 @@ class FactureController extends AbstractController
            foreach ($taches as $tache){
                 $montant = $montant +($tache->getNombreHeure()*$tache->getCoutHoraire());
            }
-
+           $facture->setIsFactured(true);
            $facture->setMontant($montant);
 
             $entityManager->persist($facture);
@@ -75,6 +75,31 @@ class FactureController extends AbstractController
             'taches' => $taches,
             'projet'=> $projet = $facture->getProjet(),
             'facture'=>$facture
+        ]);
+    }
+
+    #[Route('/my-facture/{id}', name: 'app_facture_client', methods: ['GET'])]
+    public function read(int $id, FactureRepository $factureRepository, EntityManagerInterface $em): Response
+    {
+        // Récupérer la facture par l'identifiant
+        $facture = $factureRepository->find($id);
+
+        // Vérifier si la facture existe
+        if (!$facture) {
+            throw $this->createNotFoundException('La facture demandée n\'existe pas.');
+        }
+
+        // Récupérer le projet associé à la facture
+        $projet = $facture->getProjet();
+
+        // Récupérer les tâches associées au projet
+        $taches = $em->getRepository(Tache::class)->findBy(['projet' => $projet]);
+
+        // Passer les données à la vue
+        return $this->render('facture/facture.html.twig', [
+            'taches' => $taches,
+            'projet' => $projet,
+            'facture' => $facture
         ]);
     }
 

@@ -39,6 +39,7 @@ return [
     'app_facture_index' => [[], ['_controller' => 'App\\Controller\\FactureController::index'], [], [['text', '/facture/']], [], [], []],
     'app_facture_new' => [[], ['_controller' => 'App\\Controller\\FactureController::new'], [], [['text', '/facture/new']], [], [], []],
     'app_facture_show' => [['id'], ['_controller' => 'App\\Controller\\FactureController::show'], [], [['variable', '/', '[^/]++', 'id', true], ['text', '/facture']], [], [], []],
+    'app_facture_client' => [['id'], ['_controller' => 'App\\Controller\\FactureController::read'], [], [['variable', '/', '[^/]++', 'id', true], ['text', '/facture/my-facture']], [], [], []],
     'app_facture_edit' => [['id'], ['_controller' => 'App\\Controller\\FactureController::edit'], [], [['text', '/edit'], ['variable', '/', '[^/]++', 'id', true], ['text', '/facture']], [], [], []],
     'app_facture_delete' => [['id'], ['_controller' => 'App\\Controller\\FactureController::delete'], [], [['variable', '/', '[^/]++', 'id', true], ['text', '/facture']], [], [], []],
     'app_fonction_index' => [[], ['_controller' => 'App\\Controller\\FonctionController::index'], [], [['text', '/fonction/']], [], [], []],

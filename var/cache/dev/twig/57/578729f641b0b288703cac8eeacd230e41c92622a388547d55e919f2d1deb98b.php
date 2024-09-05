@@ -368,15 +368,9 @@ class __TwigTemplate_0a4de1b128d853722a4b4bd3a2f0de86da1ab155a9c2c6d847041cda4a4
 </a>
 <div class=\"menu-submenu\">
     
-    <div class=\"menu-item\">
-        <a href=\"";
-            // line 261
-            yield $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_sprint_user");
-            yield "\" class=\"menu-link\"><div class=\"menu-text\">Liste de mes sprints </div>
-           
-    </a>
-    </div>
     ";
+            // line 265
+            yield "    ";
             // line 268
             yield "</div>
 
@@ -484,7 +478,7 @@ class __TwigTemplate_0a4de1b128d853722a4b4bd3a2f0de86da1ab155a9c2c6d847041cda4a4
      */
     public function getDebugInfo()
     {
-        return array (  450 => 320,  442 => 314,  437 => 309,  431 => 306,  416 => 293,  411 => 288,  405 => 285,  394 => 276,  392 => 275,  389 => 274,  381 => 268,  374 => 261,  358 => 247,  351 => 240,  339 => 230,  337 => 229,  334 => 228,  325 => 221,  320 => 216,  314 => 213,  298 => 199,  293 => 194,  287 => 191,  270 => 176,  265 => 171,  259 => 168,  247 => 158,  245 => 157,  239 => 153,  234 => 148,  228 => 145,  216 => 135,  211 => 130,  205 => 127,  190 => 114,  185 => 109,  179 => 106,  164 => 93,  159 => 88,  153 => 85,  141 => 75,  136 => 70,  130 => 67,  117 => 56,  115 => 55,  86 => 28,  82 => 27,  80 => 26,  77 => 25,  75 => 24,  72 => 23,  70 => 22,  66 => 20,  64 => 19,  57 => 15,  41 => 1,);
+        return array (  444 => 320,  436 => 314,  431 => 309,  425 => 306,  410 => 293,  405 => 288,  399 => 285,  388 => 276,  386 => 275,  383 => 274,  375 => 268,  373 => 265,  358 => 247,  351 => 240,  339 => 230,  337 => 229,  334 => 228,  325 => 221,  320 => 216,  314 => 213,  298 => 199,  293 => 194,  287 => 191,  270 => 176,  265 => 171,  259 => 168,  247 => 158,  245 => 157,  239 => 153,  234 => 148,  228 => 145,  216 => 135,  211 => 130,  205 => 127,  190 => 114,  185 => 109,  179 => 106,  164 => 93,  159 => 88,  153 => 85,  141 => 75,  136 => 70,  130 => 67,  117 => 56,  115 => 55,  86 => 28,  82 => 27,  80 => 26,  77 => 25,  75 => 24,  72 => 23,  70 => 22,  66 => 20,  64 => 19,  57 => 15,  41 => 1,);
     }
 
     public function getSourceContext()
@@ -748,11 +742,11 @@ class __TwigTemplate_0a4de1b128d853722a4b4bd3a2f0de86da1ab155a9c2c6d847041cda4a4
 </a>
 <div class=\"menu-submenu\">
     
-    <div class=\"menu-item\">
+    {# <div class=\"menu-item\">
         <a href=\"{{path('app_sprint_user')}}\" class=\"menu-link\"><div class=\"menu-text\">Liste de mes sprints </div>
            
     </a>
-    </div>
+    </div> #}
     {# <div class=\"menu-item\">
          <a href=\"index_v3.html\" class=\"menu-link\"><div class=\"menu-text\">Dashboard v3</div></a>
     </div> #}
