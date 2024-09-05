@@ -53,10 +53,11 @@ public function findByChef($chef): array
             ->join('t.equipe', 'e')
             ->andWhere('e.chef = :chef')
             ->join('t.etat','s' )
-            ->andWhere('s.nom_etat IN (:encour, :bloquer)')
+            ->andWhere('s.nom_etat IN (:encour, :bloquer,:programmer)')
             ->setParameter('chef', $chef)
             ->setParameter('encour', 'Encours')
             ->setParameter('bloquer', 'Bloquer')
+            ->setParameter('programmer', 'Programmer')
             ->getQuery()
             ->getResult();
     }

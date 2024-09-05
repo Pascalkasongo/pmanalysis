@@ -48,6 +48,9 @@ class Projet
     #[ORM\OneToMany(mappedBy: 'projet', targetEntity: NotificationSprint::class)]
     private Collection $notificationSprints;
 
+    #[ORM\Column(nullable: true)]
+    private ?bool $is_factured = null;
+
     public function __construct()
     {
         $this->taches = new ArrayCollection();
@@ -251,6 +254,18 @@ class Projet
                 $notificationSprint->setProjet(null);
             }
         }
+
+        return $this;
+    }
+
+    public function isIsFactured(): ?bool
+    {
+        return $this->is_factured;
+    }
+
+    public function setIsFactured(?bool $is_factured): static
+    {
+        $this->is_factured = $is_factured;
 
         return $this;
     }

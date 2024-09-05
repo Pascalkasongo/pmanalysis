@@ -661,9 +661,19 @@ class FrameworkConfig implements \Symfony\Component\Config\Builder\ConfigBuilder
         return $this->lock;
     }
 
-    public function messenger(array $value = []): \Symfony\Config\Framework\MessengerConfig
+    /**
+     * @return \Symfony\Config\Framework\MessengerConfig|$this
+     */
+    public function messenger(mixed $value = []): \Symfony\Config\Framework\MessengerConfig|static
     {
-        if (null === $this->messenger) {
+        if (!\is_array($value)) {
+            $this->_usedProperties['messenger'] = true;
+            $this->messenger = $value;
+
+            return $this;
+        }
+
+        if (!$this->messenger instanceof \Symfony\Config\Framework\MessengerConfig) {
             $this->_usedProperties['messenger'] = true;
             $this->messenger = new \Symfony\Config\Framework\MessengerConfig($value);
         } elseif (0 < \func_num_args()) {
@@ -1028,7 +1038,7 @@ class FrameworkConfig implements \Symfony\Component\Config\Builder\ConfigBuilder
 
         if (array_key_exists('messenger', $value)) {
             $this->_usedProperties['messenger'] = true;
-            $this->messenger = new \Symfony\Config\Framework\MessengerConfig($value['messenger']);
+            $this->messenger = \is_array($value['messenger']) ? new \Symfony\Config\Framework\MessengerConfig($value['messenger']) : $value['messenger'];
             unset($value['messenger']);
         }
 
@@ -1188,7 +1198,7 @@ class FrameworkConfig implements \Symfony\Component\Config\Builder\ConfigBuilder
             $output['lock'] = $this->lock instanceof \Symfony\Config\Framework\LockConfig ? $this->lock->toArray() : $this->lock;
         }
         if (isset($this->_usedProperties['messenger'])) {
-            $output['messenger'] = $this->messenger->toArray();
+            $output['messenger'] = $this->messenger instanceof \Symfony\Config\Framework\MessengerConfig ? $this->messenger->toArray() : $this->messenger;
         }
         if (isset($this->_usedProperties['disallowSearchEngineIndex'])) {
             $output['disallow_search_engine_index'] = $this->disallowSearchEngineIndex;

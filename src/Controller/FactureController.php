@@ -44,6 +44,8 @@ class FactureController extends AbstractController
         if ($form->isSubmitted() && $form->isValid()) {
             $project_id = $facture->getProjet()->getId();
             $taches = $entityManager->getRepository(Tache::class)->findBy(['projet'=>$project_id]);
+
+            $projet = $facture->getProjet();
             $montant = 0;
            foreach ($taches as $tache){
                 $montant = $montant +($tache->getNombreHeure()*$tache->getCoutHoraire());
@@ -51,7 +53,7 @@ class FactureController extends AbstractController
 
            $facture->setIsFactured(true);
            $facture->setMontant($montant);
-
+           $projet->setIsFactured(true);
             $entityManager->persist($facture);
             $entityManager->flush();
 
