@@ -4,6 +4,7 @@ namespace App\Controller;
 
 use App\Entity\Notification;
 use App\Form\NotificationType;
+use App\Repository\FactureRepository;
 use App\Repository\NotificationRepository;
 use Doctrine\ORM\EntityManagerInterface;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
@@ -24,7 +25,7 @@ class NotificationController extends AbstractController
     }
 
     #[Route('/new', name: 'app_notification_new', methods: ['GET', 'POST'])]
-    public function new(Request $request, EntityManagerInterface $entityManager,Security $security): Response
+    public function new(Request $request, EntityManagerInterface $entityManager,Security $security,FactureRepository $facture): Response
     {
         $notification = new Notification();
         $form = $this->createForm(NotificationType::class, $notification);
@@ -45,6 +46,8 @@ class NotificationController extends AbstractController
         return $this->renderForm('notification/new.html.twig', [
             'notification' => $notification,
             'form' => $form,
+            'factures'=>$facture->findByClient($security->getUser()),
+           
         ]);
     }
 

@@ -147,11 +147,11 @@ class __TwigTemplate_df5e0027da76892ab9c285a9e7c412fc7912a4606e15997c8ebaee0ae66
             yield "</td>
                 <td>";
             // line 60
-            yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(CoreExtension::getAttribute($this->env, $this->source, CoreExtension::getAttribute($this->env, $this->source, $context["tache"], "ressource", [], "any", false, false, false, 60), "coutRessource", [], "any", false, false, false, 60), "html", null, true);
+            yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(((CoreExtension::getAttribute($this->env, $this->source, CoreExtension::getAttribute($this->env, $this->source, $context["tache"], "ressource", [], "any", false, true, false, 60), "coutRessource", [], "any", true, true, false, 60)) ? (Twig\Extension\CoreExtension::default(CoreExtension::getAttribute($this->env, $this->source, CoreExtension::getAttribute($this->env, $this->source, $context["tache"], "ressource", [], "any", false, true, false, 60), "coutRessource", [], "any", false, false, false, 60), 0)) : (0)), "html", null, true);
             yield "</td>
                 <td>\$";
             // line 61
-            yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(((CoreExtension::getAttribute($this->env, $this->source, $context["tache"], "coutHoraire", [], "any", false, false, false, 61) * CoreExtension::getAttribute($this->env, $this->source, $context["tache"], "nombreHeure", [], "any", false, false, false, 61)) + CoreExtension::getAttribute($this->env, $this->source, CoreExtension::getAttribute($this->env, $this->source, $context["tache"], "ressource", [], "any", false, false, false, 61), "coutRessource", [], "any", false, false, false, 61)), "html", null, true);
+            yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(((CoreExtension::getAttribute($this->env, $this->source, $context["tache"], "coutHoraire", [], "any", false, false, false, 61) * CoreExtension::getAttribute($this->env, $this->source, $context["tache"], "nombreHeure", [], "any", false, false, false, 61)) + ((CoreExtension::getAttribute($this->env, $this->source, CoreExtension::getAttribute($this->env, $this->source, $context["tache"], "ressource", [], "any", false, true, false, 61), "coutRessource", [], "any", true, true, false, 61)) ? (Twig\Extension\CoreExtension::default(CoreExtension::getAttribute($this->env, $this->source, CoreExtension::getAttribute($this->env, $this->source, $context["tache"], "ressource", [], "any", false, true, false, 61), "coutRessource", [], "any", false, false, false, 61), 0)) : (0))), "html", null, true);
             yield "</td>
                 ";
             // line 62
@@ -283,8 +283,8 @@ class __TwigTemplate_df5e0027da76892ab9c285a9e7c412fc7912a4606e15997c8ebaee0ae66
                 <td>{{tache.nomTache}}</td>
                 <td>\${{tache.coutHoraire}}</td>
                 <td>{{tache.nombreHeure}}</td>
-                <td>{{tache.ressource.coutRessource}}</td>
-                <td>\${{tache.coutHoraire*tache.nombreHeure+(tache.ressource.coutRessource)}}</td>
+                <td>{{tache.ressource.coutRessource|default(0)}}</td>
+                <td>\${{tache.coutHoraire*tache.nombreHeure+(tache.ressource.coutRessource|default(0))}}</td>
                 {% set total = total +(tache.coutHoraire*tache.nombreHeure)+(tache.ressource.coutRessource|default(0)) %}
             </tr>
             {%endfor%}

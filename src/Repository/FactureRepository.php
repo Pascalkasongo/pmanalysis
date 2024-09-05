@@ -46,6 +46,8 @@ class FactureRepository extends ServiceEntityRepository
             ->join('f.projet', 'p')
             ->join('p.client', 'c')
             ->where('c.id = :client')
+            ->andWhere('f.is_factured = :factured')
+            ->setParameter('factured', true)
             ->setParameter('client', $client)
             ->getQuery()
             ->getResult();

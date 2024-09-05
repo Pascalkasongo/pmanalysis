@@ -48,6 +48,7 @@ class FactureController extends AbstractController
            foreach ($taches as $tache){
                 $montant = $montant +($tache->getNombreHeure()*$tache->getCoutHoraire());
            }
+
            $facture->setIsFactured(true);
            $facture->setMontant($montant);
 
